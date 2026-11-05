@@ -1,0 +1,98 @@
+# Every external input the pipeline touches, with the authoritative URL first
+# and any fallback mirror second. `hsr fetch` tries sources in order and records
+# which one it used (plus a SHA-256 of the file) in data/raw/MANIFEST.json.
+
+boundaries:
+  # Census cartographic boundary files (1:500k). Vintage 2024 carries the
+  # 119th-Congress districts (= the lines used in Nov 2026 for every in-scope
+  # state except Ohio) and the state legislative districts used in 2024/2026,
+  # including Wisconsin's 2024 maps, Ohio's 2023 maps and Michigan's 2024
+  # court-ordered House redraw.
+  vintage: 2024
+  congress:
+    layer: cd119
+    urls:
+      - https://www2.census.gov/geo/tiger/GENZ{year}/shp/cb_{year}_us_cd119_500k.zip
+  state_senate:
+    layer: sldu
+    urls:
+      - https://www2.census.gov/geo/tiger/GENZ{year}/shp/cb_{year}_us_sldu_500k.zip
+  state_house:
+    layer: sldl
+    urls:
+      - https://www2.census.gov/geo/tiger/GENZ{year}/shp/cb_{year}_us_sldl_500k.zip
+  states:
+    urls:
+      - https://www2.census.gov/geo/tiger/GENZ{year}/shp/cb_{year}_us_state_500k.zip
+
+  # Public GitHub mirror of the 2023 cartographic boundary files (GeoJSON,
+  # converted with mapshaper by github.com/lint/CartoBoundaryGeoFiles). Used only
+  # when census.gov is unreachable. Its legislative layers are LSY 2022, so the
+  # states listed under `vintage_caveats` are flagged in every output.
+  mirror:
+    vintage: 2023
+    base: https://raw.githubusercontent.com/lint/CartoBoundaryGeoFiles/c8331b6ddad3b2762c2c3c89433b7067c53ab383/data/cb_2023_us_all_500k
+    files:
+      congress: cb_2023_us_cd118_500k.geojson
+      state_senate: cb_2023_us_sldu_500k.geojson
+      state_house: cb_2023_us_sldl_500k.geojson
+      states: cb_2023_us_state_500k.geojson
+
+# Districts whose Nov 2026 lines are NOT in the Census vintage above. Supply the
+# official plan file (zip/shp/geojson with one feature per district) at `path`
+# and the pipeline swaps it in. Until then, the affected districts are drawn
+# hatched and excluded from district-level corridor counts.
+overrides:
+  - state: OH
+    office: us_house
+    path: data/overrides/oh_congress_2026.zip
+    district_field: DISTRICT
+    reason: >-
+      Ohio Redistricting Commission adopted a new congressional map on
+      2025-10-31; it was used for the 2026 election. Census will not publish it
+      until the 120th-Congress vintage.
+    source_hint: Ohio Redistricting Commission / Ohio Secretary of State adopted-plan shapefile
+
+# Caveats applied when a layer comes from an older vintage than the 2026 lines.
+vintage_caveats:
+  2023:
+    state_senate:
+      WI: Wisconsin enacted new legislative maps in Feb 2024 (used 2024 and 2026).
+      OH: Ohio adopted new legislative maps in Sept 2023 (used 2024 and 2026).
+      MI: Detroit-area Senate districts were redrawn (Agee v. Benson) for 2026.
+    state_house:
+      WI: Wisconsin enacted new legislative maps in Feb 2024 (used 2024 and 2026).
+      OH: Ohio adopted new legislative maps in Sept 2023 (used 2024 and 2026).
+      MI: Detroit-area House districts were redrawn (Agee v. Benson) for 2024.
+  2024:
+    state_senate:
+      MI: Detroit-area Senate districts redrawn for 2026 may post-date this vintage; verify LSY.
+
+rosters:
+  # Sitting members going into the election; used for seats not on the 2026 ballot
+  # and as the "before" side of every flip calculation. Pin the commit you used.
+  congress_legislators:
+    repo: https://github.com/unitedstates/congress-legislators
+    file: legislators-current.yaml
+  openstates_people:
+    repo: https://github.com/openstates/people
+    path: data/{state}/legislature
+
+rail:
+  # BTS National Transportation Atlas Database (NTAD), ArcGIS FeatureServer.
+  narn_lines:
+    url: https://services.arcgis.com/xOi1kZaI0eWDREZv/arcgis/rest/services/NTAD_North_American_Rail_Network_Lines/FeatureServer/0
+  amtrak_stations:
+    url: https://services.arcgis.com/xOi1kZaI0eWDREZv/arcgis/rest/services/NTAD_Amtrak_Stations/FeatureServer/0
+  # Fallback network for routing when NTAD is unreachable (coarser, ~1-2 km).
+  natural_earth_railroads:
+    url: https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_railroads.geojson
+  natural_earth_lakes:
+    url: https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_lakes.geojson
+
+results:
+  # 2026 results are unofficial until each state certifies (late Nov - Dec 2026).
+  # The snapshot directory holds what was published on/after election night with
+  # per-row source URLs. Swap in certified returns with the adapters in
+  # src/hsr/results.py (MEDSL / OpenElections formats) once they are released.
+  snapshot: data/snapshots/2026-11-05

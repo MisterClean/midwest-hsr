@@ -1,0 +1,12 @@
+state,governor_party,state_senate_control,state_house_control,trifecta
+IL,D,D,D,D trifecta
+IN,R,R,R,R trifecta
+IA,D,R,R,divided
+KS,D,R,R,divided
+KY,D,R,R,divided
+MI,D,D,D,D trifecta
+MN,D,D,D,D trifecta
+MO,R,R,R,R trifecta
+NE,R,nonpartisan,,R governor; nonpartisan legislature
+OH,D,R,R,divided
+WI,D,D,D,D trifecta

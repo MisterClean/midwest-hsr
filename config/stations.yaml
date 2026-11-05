@@ -1,0 +1,137 @@
+# Stations and routing waypoints.
+# kind: station (existing Amtrak stop) | proposed (named in a plan, no service today)
+#       | via (shaping point used only to steer routing; never shown as a stop)
+# amtrak: Amtrak station code when one exists. `hsr fetch` replaces lat/lon with
+#   the BTS NTAD Amtrak Stations coordinates for any code it finds, and the QA
+#   step flags any station more than 15 km from the Natural Earth city point.
+stations:
+  # --- Illinois
+  CHI: {name: Chicago Union Station, state: IL, lat: 41.8787, lon: -87.6403, kind: station, amtrak: CHI}
+  GLN: {name: Glenview, state: IL, lat: 42.0746, lon: -87.8058, kind: station, amtrak: GLN}
+  JOL: {name: Joliet, state: IL, lat: 41.5247, lon: -88.0790, kind: station, amtrak: JOL}
+  DWT: {name: Dwight, state: IL, lat: 41.0938, lon: -88.4265, kind: station, amtrak: DWT}
+  PON: {name: Pontiac, state: IL, lat: 40.8786, lon: -88.6317, kind: station, amtrak: PON}
+  BNL: {name: Bloomington-Normal, state: IL, lat: 40.5102, lon: -88.9846, kind: station, amtrak: BNL}
+  LCN: {name: Lincoln, state: IL, lat: 40.1478, lon: -89.3631, kind: station, amtrak: LCN}
+  SPI: {name: Springfield, state: IL, lat: 39.8024, lon: -89.6516, kind: station, amtrak: SPI}
+  LTF: {name: Litchfield, state: IL, lat: 39.1753, lon: -89.6543, kind: via}
+  ESL: {name: East St. Louis, state: IL, lat: 38.6245, lon: -90.1591, kind: proposed}
+  UPK: {name: University Park, state: IL, lat: 41.4446, lon: -87.7209, kind: proposed}
+  KKI: {name: Kankakee, state: IL, lat: 41.1196, lon: -87.8650, kind: station, amtrak: KKI}
+  RTL: {name: Rantoul, state: IL, lat: 40.3086, lon: -88.1564, kind: station, amtrak: RTL}
+  CHM: {name: Champaign-Urbana, state: IL, lat: 40.1157, lon: -88.2414, kind: station, amtrak: CHM}
+  MTC: {name: Monticello, state: IL, lat: 40.0278, lon: -88.5734, kind: via}
+  I72D: {name: I-72 north of Decatur, state: IL, lat: 39.8930, lon: -88.9300, kind: via}
+  DEC: {name: Decatur, state: IL, lat: 39.8403, lon: -88.9548, kind: proposed}
+  PIA: {name: Peoria, state: IL, lat: 40.6918, lon: -89.5892, kind: proposed}
+  HMW: {name: Homewood, state: IL, lat: 41.5617, lon: -87.6687, kind: station, amtrak: HMW}
+  MAT: {name: Mattoon, state: IL, lat: 39.4831, lon: -88.3727, kind: station, amtrak: MAT}
+  EFG: {name: Effingham, state: IL, lat: 39.1200, lon: -88.5433, kind: station, amtrak: EFG}
+  CEN: {name: Centralia, state: IL, lat: 38.5250, lon: -89.1334, kind: station, amtrak: CEN}
+  CDL: {name: Carbondale, state: IL, lat: 37.7270, lon: -89.2168, kind: station, amtrak: CDL}
+  NPV: {name: Naperville, state: IL, lat: 41.7794, lon: -88.1456, kind: station, amtrak: NPV}
+  PLO: {name: Plano, state: IL, lat: 41.6627, lon: -88.5368, kind: station, amtrak: PLO}
+  MDT: {name: Mendota, state: IL, lat: 41.5473, lon: -89.1176, kind: station, amtrak: MDT}
+  PCT: {name: Princeton, state: IL, lat: 41.3685, lon: -89.4649, kind: station, amtrak: PCT}
+  WYN: {name: Wyanet, state: IL, lat: 41.3653, lon: -89.5845, kind: via}
+  GEN: {name: Geneseo, state: IL, lat: 41.4481, lon: -90.1543, kind: proposed}
+  MOL: {name: Moline (Quad Cities), state: IL, lat: 41.5072, lon: -90.5155, kind: proposed}
+  ELG: {name: Elgin, state: IL, lat: 42.0354, lon: -88.2826, kind: proposed}
+  BEL: {name: Belvidere, state: IL, lat: 42.2639, lon: -88.8443, kind: proposed}
+  RFD: {name: Rockford, state: IL, lat: 42.2711, lon: -89.0940, kind: proposed}
+  FPT: {name: Freeport, state: IL, lat: 42.2967, lon: -89.6212, kind: proposed}
+  GLA: {name: Galena, state: IL, lat: 42.4167, lon: -90.4290, kind: proposed}
+  MOR: {name: Morris, state: IL, lat: 41.3573, lon: -88.4212, kind: via}
+  OTW: {name: Ottawa, state: IL, lat: 41.3456, lon: -88.8426, kind: proposed}
+  LSP: {name: LaSalle-Peru, state: IL, lat: 41.3270, lon: -89.0937, kind: proposed}
+  # --- Missouri
+  STL: {name: St. Louis Gateway, state: MO, lat: 38.6235, lon: -90.2049, kind: station, amtrak: STL}
+  KWD: {name: Kirkwood, state: MO, lat: 38.5834, lon: -90.4068, kind: station, amtrak: KWD}
+  WAH: {name: Washington, state: MO, lat: 38.5581, lon: -91.0121, kind: station, amtrak: WAH}
+  HEM: {name: Hermann, state: MO, lat: 38.7043, lon: -91.4371, kind: station, amtrak: HEM}
+  JEF: {name: Jefferson City, state: MO, lat: 38.5779, lon: -92.1736, kind: station, amtrak: JEF}
+  SED: {name: Sedalia, state: MO, lat: 38.7045, lon: -93.2283, kind: station, amtrak: SED}
+  WAR: {name: Warrensburg, state: MO, lat: 38.7627, lon: -93.7360, kind: station, amtrak: WAR}
+  LEE: {name: Lee's Summit, state: MO, lat: 38.9109, lon: -94.3822, kind: station, amtrak: LEE}
+  IDP: {name: Independence, state: MO, lat: 39.0912, lon: -94.4155, kind: station, amtrak: IDP}
+  KCY: {name: Kansas City Union Station, state: MO, lat: 39.0846, lon: -94.5862, kind: station, amtrak: KCY}
+  # --- Wisconsin
+  MKA: {name: Milwaukee Airport, state: WI, lat: 42.9396, lon: -87.9247, kind: station, amtrak: MKA}
+  MKE: {name: Milwaukee Intermodal, state: WI, lat: 43.0346, lon: -87.9178, kind: station, amtrak: MKE}
+  WTN: {name: Watertown, state: WI, lat: 43.1950, lon: -88.7290, kind: via}
+  MSN: {name: Madison, state: WI, lat: 43.0880, lon: -89.3650, kind: proposed}
+  WDL: {name: Wisconsin Dells, state: WI, lat: 43.6275, lon: -89.7710, kind: station, amtrak: WDL}
+  WYV: {name: Wyeville, state: WI, lat: 44.0283, lon: -90.3876, kind: via}
+  EAU: {name: Eau Claire, state: WI, lat: 44.8113, lon: -91.4985, kind: proposed}
+  MNM: {name: Menomonie, state: WI, lat: 44.8755, lon: -91.9193, kind: via}
+  SUP: {name: Superior, state: WI, lat: 46.7208, lon: -92.1041, kind: proposed}
+  FDL: {name: Fond du Lac, state: WI, lat: 43.7730, lon: -88.4470, kind: proposed}
+  OSH: {name: Oshkosh, state: WI, lat: 44.0247, lon: -88.5426, kind: proposed}
+  APL: {name: Appleton, state: WI, lat: 44.2619, lon: -88.4154, kind: proposed}
+  GRB: {name: Green Bay, state: WI, lat: 44.5133, lon: -88.0133, kind: proposed}
+  # --- Minnesota
+  MSP: {name: St. Paul Union Depot, state: MN, lat: 44.9476, lon: -93.0862, kind: station, amtrak: MSP}
+  MPL: {name: Minneapolis (Target Field), state: MN, lat: 44.9832, lon: -93.2776, kind: proposed}
+  CRP: {name: Coon Rapids, state: MN, lat: 45.1732, lon: -93.3030, kind: proposed}
+  CMB: {name: Cambridge, state: MN, lat: 45.5727, lon: -93.2244, kind: proposed}
+  HNK: {name: Hinckley, state: MN, lat: 46.0113, lon: -92.9441, kind: proposed}
+  DUL: {name: Duluth, state: MN, lat: 46.7808, lon: -92.1005, kind: proposed}
+  # --- Indiana
+  HMI: {name: Hammond-Whiting, state: IN, lat: 41.6907, lon: -87.5060, kind: station, amtrak: HMI}
+  GRY: {name: Gary, state: IN, lat: 41.6020, lon: -87.3370, kind: via}
+  MCI: {name: Michigan City, state: IN, lat: 41.7177, lon: -86.9036, kind: proposed}
+  DYE: {name: Dyer, state: IN, lat: 41.4940, lon: -87.5216, kind: station, amtrak: DYE}
+  REN: {name: Rensselaer, state: IN, lat: 40.9368, lon: -87.1508, kind: station, amtrak: REN}
+  LAF: {name: Lafayette, state: IN, lat: 40.4192, lon: -86.8969, kind: station, amtrak: LAF}
+  CRF: {name: Crawfordsville, state: IN, lat: 40.0423, lon: -86.8977, kind: station, amtrak: CRF}
+  IND: {name: Indianapolis, state: IN, lat: 39.7625, lon: -86.1601, kind: station, amtrak: IND}
+  CON: {name: Connersville, state: IN, lat: 39.6411, lon: -85.1411, kind: station, amtrak: COI}
+  VPZ: {name: Valparaiso, state: IN, lat: 41.4675, lon: -87.0610, kind: proposed}
+  PLY: {name: Plymouth, state: IN, lat: 41.3434, lon: -86.3097, kind: proposed}
+  WSW: {name: Warsaw, state: IN, lat: 41.2381, lon: -85.8530, kind: proposed}
+  FTW: {name: Fort Wayne, state: IN, lat: 41.0797, lon: -85.1386, kind: proposed}
+  CLI: {name: Columbus (IN), state: IN, lat: 39.2014, lon: -85.9214, kind: proposed}
+  SEY: {name: Seymour, state: IN, lat: 38.9592, lon: -85.8903, kind: proposed}
+  JFV: {name: Jeffersonville, state: IN, lat: 38.2776, lon: -85.7372, kind: via}
+  # --- Kentucky
+  LOU: {name: Louisville, state: KY, lat: 38.2527, lon: -85.7585, kind: proposed}
+  # --- Michigan
+  NLS: {name: Niles, state: MI, lat: 41.8372, lon: -86.2520, kind: station, amtrak: NLS}
+  KAL: {name: Kalamazoo, state: MI, lat: 42.2953, lon: -85.5844, kind: station, amtrak: KAL}
+  BTL: {name: Battle Creek, state: MI, lat: 42.3185, lon: -85.1872, kind: station, amtrak: BTL}
+  JXN: {name: Jackson, state: MI, lat: 42.2486, lon: -84.3971, kind: station, amtrak: JXN}
+  ARB: {name: Ann Arbor, state: MI, lat: 42.2877, lon: -83.7433, kind: station, amtrak: ARB}
+  DER: {name: Dearborn, state: MI, lat: 42.3070, lon: -83.2358, kind: station, amtrak: DER}
+  DET: {name: Detroit, state: MI, lat: 42.3685, lon: -83.0738, kind: station, amtrak: DET}
+  MON: {name: Monroe, state: MI, lat: 41.9164, lon: -83.3977, kind: proposed}
+  SJM: {name: St. Joseph-Benton Harbor, state: MI, lat: 42.1086, lon: -86.4846, kind: station, amtrak: SJM}
+  BAM: {name: Bangor, state: MI, lat: 42.3126, lon: -86.1131, kind: station, amtrak: BAM}
+  HOM: {name: Holland, state: MI, lat: 42.7875, lon: -86.1089, kind: station, amtrak: HOM}
+  GRR: {name: Grand Rapids, state: MI, lat: 42.9592, lon: -85.6787, kind: station, amtrak: GRR}
+  ELN: {name: East Lansing, state: MI, lat: 42.7184, lon: -84.4959, kind: station, amtrak: LNS}
+  DRD: {name: Durand, state: MI, lat: 42.9122, lon: -83.9847, kind: station, amtrak: DRD}
+  FLN: {name: Flint, state: MI, lat: 43.0155, lon: -83.6868, kind: station, amtrak: FLN}
+  LPE: {name: Lapeer, state: MI, lat: 43.0514, lon: -83.3188, kind: station, amtrak: LPE}
+  PTH: {name: Port Huron, state: MI, lat: 42.9606, lon: -82.4430, kind: station, amtrak: PTH}
+  # --- Ohio
+  TOL: {name: Toledo, state: OH, lat: 41.6380, lon: -83.5421, kind: station, amtrak: TOL}
+  SKY: {name: Sandusky, state: OH, lat: 41.4490, lon: -82.7080, kind: station, amtrak: SKY}
+  ELY: {name: Elyria, state: OH, lat: 41.3684, lon: -82.1077, kind: station, amtrak: ELY}
+  CLE: {name: Cleveland, state: OH, lat: 41.5060, lon: -81.6990, kind: station, amtrak: CLE}
+  CRS: {name: Crestline, state: OH, lat: 40.7870, lon: -82.7370, kind: via}
+  DLW: {name: Delaware, state: OH, lat: 40.2987, lon: -83.0680, kind: proposed}
+  CBUS: {name: Columbus, state: OH, lat: 39.9690, lon: -83.0060, kind: proposed}
+  SPF: {name: Springfield (OH), state: OH, lat: 39.9242, lon: -83.8088, kind: proposed}
+  DAY: {name: Dayton, state: OH, lat: 39.7590, lon: -84.1916, kind: proposed}
+  SHV: {name: Sharonville, state: OH, lat: 39.2681, lon: -84.4133, kind: proposed}
+  CIN: {name: Cincinnati Union Terminal, state: OH, lat: 39.1100, lon: -84.5378, kind: station, amtrak: CIN}
+  LIM: {name: Lima, state: OH, lat: 40.7426, lon: -84.1052, kind: proposed}
+  KEN: {name: Kenton, state: OH, lat: 40.6470, lon: -83.6097, kind: via}
+  MRY: {name: Marysville, state: OH, lat: 40.2364, lon: -83.3671, kind: proposed}
+  # --- Iowa / Nebraska
+  DAV: {name: Davenport, state: IA, lat: 41.5236, lon: -90.5776, kind: via}
+  IOW: {name: Iowa City, state: IA, lat: 41.6573, lon: -91.5341, kind: proposed}
+  DSM: {name: Des Moines, state: IA, lat: 41.5868, lon: -93.6250, kind: proposed}
+  DBQ: {name: Dubuque, state: IA, lat: 42.5006, lon: -90.6646, kind: proposed}
+  CBF: {name: Council Bluffs, state: IA, lat: 41.2619, lon: -95.8608, kind: via}
+  OMA: {name: Omaha, state: NE, lat: 41.2507, lon: -95.9299, kind: station, amtrak: OMA}

@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "midwest-hsr"
+version = "0.1.0"
+description = "Reproducible data pipeline mapping Midwest high-speed rail corridors against 2026 election results"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "geopandas>=1.0",
+  "shapely>=2.0",
+  "pyogrio>=0.7",
+  "pyproj>=3.6",
+  "pandas>=2.1",
+  "networkx>=3.2",
+  "scipy>=1.11",
+  "pyyaml>=6.0",
+  "requests>=2.31",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5"]
+
+[project.scripts]
+hsr = "hsr.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

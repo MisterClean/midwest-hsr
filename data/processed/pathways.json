@@ -1,0 +1,5591 @@
+{
+  "chi-msp": [
+    {
+      "state": "IL",
+      "km": 76.0,
+      "governor": {
+        "name": "JB Pritzker",
+        "party": "D",
+        "source": "2026",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Juliana Stratton",
+          "party": "D",
+          "new": true
+        },
+        {
+          "name": "Tammy Duckworth",
+          "party": "D",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "IL",
+          "seats": 59,
+          "D": 45,
+          "R": 13,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 30,
+          "control": "D"
+        },
+        "state_house": {
+          "state": "IL",
+          "seats": 118,
+          "D": 80,
+          "R": 32,
+          "other": 0,
+          "uncalled": 6,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 60,
+          "control": "D"
+        }
+      },
+      "trifecta": "D trifecta",
+      "us_house_along": [
+        {
+          "district": "3",
+          "name": "Delia Ramirez",
+          "party": "D",
+          "margin": 51.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "5",
+          "name": "Mike Quigley",
+          "party": "D",
+          "margin": 51.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "7",
+          "name": "La Shawn K. Ford",
+          "party": "D",
+          "margin": 78.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "9",
+          "name": "Daniel Biss",
+          "party": "D",
+          "margin": 51.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "10",
+          "name": "Brad Schneider",
+          "party": "D",
+          "margin": 39.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 9,
+        "counted": 9,
+        "pending_boundaries": 0,
+        "D": 9,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 76.0,
+        "km_R": 0.0,
+        "with_stop": 1
+      },
+      "state_house_along": {
+        "districts": 15,
+        "counted": 15,
+        "pending_boundaries": 0,
+        "D": 15,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 76.0,
+        "km_R": 0.0,
+        "with_stop": 1
+      }
+    },
+    {
+      "state": "WI",
+      "km": 581.3,
+      "governor": {
+        "name": "David Crowley",
+        "party": "D",
+        "source": "2026",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Ron Johnson",
+          "party": "R",
+          "new": false
+        },
+        {
+          "name": "Tammy Baldwin",
+          "party": "D",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "WI",
+          "seats": 33,
+          "D": 18,
+          "R": 15,
+          "other": 0,
+          "uncalled": 0,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 17,
+          "control": "D"
+        },
+        "state_house": {
+          "state": "WI",
+          "seats": 99,
+          "D": 53,
+          "R": 46,
+          "other": 0,
+          "uncalled": 0,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 50,
+          "control": "D"
+        }
+      },
+      "trifecta": "D trifecta",
+      "us_house_along": [
+        {
+          "district": "1",
+          "name": "Mitchell Berman",
+          "party": "D",
+          "margin": 4.0,
+          "flipped": true,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "2",
+          "name": "Mark Pocan",
+          "party": "D",
+          "margin": null,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "3",
+          "name": "Rebecca Cooke",
+          "party": "D",
+          "margin": 6.6,
+          "flipped": true,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "4",
+          "name": "Gwen Moore",
+          "party": "D",
+          "margin": 62.5,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "5",
+          "name": "Scott Fitzgerald",
+          "party": "R",
+          "margin": 20.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "6",
+          "name": "Glenn Grothman",
+          "party": "R",
+          "margin": 9.5,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "7",
+          "name": "Michael Alfonso",
+          "party": "R",
+          "margin": 13.2,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 18,
+        "counted": 0,
+        "pending_boundaries": 18,
+        "D": 0,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 0.0,
+        "km_R": 0.0,
+        "with_stop": 4
+      },
+      "state_house_along": {
+        "districts": 35,
+        "counted": 0,
+        "pending_boundaries": 35,
+        "D": 0,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 0.0,
+        "km_R": 0.0,
+        "with_stop": 4
+      }
+    },
+    {
+      "state": "MN",
+      "km": 47.5,
+      "governor": {
+        "name": "Amy Klobuchar",
+        "party": "D",
+        "source": "2026",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Peggy Flanagan",
+          "party": "D",
+          "new": true
+        },
+        {
+          "name": "Amy Klobuchar",
+          "party": "D",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "MN",
+          "seats": 67,
+          "D": 37,
+          "R": 26,
+          "other": 0,
+          "uncalled": 4,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 34,
+          "control": "D"
+        },
+        "state_house": {
+          "state": "MN",
+          "seats": 134,
+          "D": 77,
+          "R": 55,
+          "other": 0,
+          "uncalled": 2,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 68,
+          "control": "D"
+        }
+      },
+      "trifecta": "D trifecta",
+      "us_house_along": [
+        {
+          "district": "4",
+          "name": "Betty McCollum",
+          "party": "D",
+          "margin": 46.3,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "5",
+          "name": "Ilhan Omar",
+          "party": "D",
+          "margin": 60.3,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 7,
+        "counted": 7,
+        "pending_boundaries": 0,
+        "D": 7,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 47.5,
+        "km_R": 0.0,
+        "with_stop": 2
+      },
+      "state_house_along": {
+        "districts": 9,
+        "counted": 9,
+        "pending_boundaries": 0,
+        "D": 9,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 1,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 47.2,
+        "km_R": 0.0,
+        "with_stop": 2
+      }
+    }
+  ],
+  "chi-stl-1": [
+    {
+      "state": "IL",
+      "km": 435.2,
+      "governor": {
+        "name": "JB Pritzker",
+        "party": "D",
+        "source": "2026",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Juliana Stratton",
+          "party": "D",
+          "new": true
+        },
+        {
+          "name": "Tammy Duckworth",
+          "party": "D",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "IL",
+          "seats": 59,
+          "D": 45,
+          "R": 13,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 30,
+          "control": "D"
+        },
+        "state_house": {
+          "state": "IL",
+          "seats": 118,
+          "D": 80,
+          "R": 32,
+          "other": 0,
+          "uncalled": 6,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 60,
+          "control": "D"
+        }
+      },
+      "trifecta": "D trifecta",
+      "us_house_along": [
+        {
+          "district": "1",
+          "name": "Jonathan Jackson",
+          "party": "D",
+          "margin": 40.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "2",
+          "name": "Donna Miller",
+          "party": "D",
+          "margin": 45.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "4",
+          "name": "Patty Garcia",
+          "party": "D",
+          "margin": 54.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "6",
+          "name": "Sean Casten",
+          "party": "D",
+          "margin": 25.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "7",
+          "name": "La Shawn K. Ford",
+          "party": "D",
+          "margin": 78.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "13",
+          "name": "Nikki Budzinski",
+          "party": "D",
+          "margin": 25.2,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "14",
+          "name": "Lauren Underwood",
+          "party": "D",
+          "margin": 25.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "15",
+          "name": "Mary Miller",
+          "party": "R",
+          "margin": 33.8,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "16",
+          "name": "Darin LaHood",
+          "party": "R",
+          "margin": 17.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "17",
+          "name": "Eric Sorensen",
+          "party": "D",
+          "margin": 20.2,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 18,
+        "counted": 18,
+        "pending_boundaries": 0,
+        "D": 12,
+        "R": 6,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 1,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 138.8,
+        "km_R": 296.3,
+        "with_stop": 5
+      },
+      "state_house_along": {
+        "districts": 26,
+        "counted": 26,
+        "pending_boundaries": 0,
+        "D": 14,
+        "R": 11,
+        "other": 0,
+        "undecided": 1,
+        "uncalled": 1,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 97.4,
+        "km_R": 334.4,
+        "with_stop": 5
+      }
+    },
+    {
+      "state": "MO",
+      "km": 2.1,
+      "governor": {
+        "name": "Mike Kehoe",
+        "party": "R",
+        "source": "holdover",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Eric Schmitt",
+          "party": "R",
+          "new": false
+        },
+        {
+          "name": "Josh Hawley",
+          "party": "R",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "MO",
+          "seats": 34,
+          "D": 12,
+          "R": 21,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 18,
+          "control": "R"
+        },
+        "state_house": {
+          "state": "MO",
+          "seats": 163,
+          "D": 68,
+          "R": 93,
+          "other": 0,
+          "uncalled": 2,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 82,
+          "control": "R"
+        }
+      },
+      "trifecta": "R trifecta",
+      "us_house_along": [
+        {
+          "district": "1",
+          "name": "Wesley Bell",
+          "party": "D",
+          "margin": 67.6,
+          "flipped": false,
+          "status": "reported",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 1,
+        "counted": 1,
+        "pending_boundaries": 0,
+        "D": 1,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 2.1,
+        "km_R": 0.0,
+        "with_stop": 1
+      },
+      "state_house_along": {
+        "districts": 2,
+        "counted": 2,
+        "pending_boundaries": 0,
+        "D": 2,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 2.1,
+        "km_R": 0.0,
+        "with_stop": 1
+      }
+    }
+  ],
+  "chi-stl-3": [
+    {
+      "state": "IL",
+      "km": 477.3,
+      "governor": {
+        "name": "JB Pritzker",
+        "party": "D",
+        "source": "2026",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Juliana Stratton",
+          "party": "D",
+          "new": true
+        },
+        {
+          "name": "Tammy Duckworth",
+          "party": "D",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "IL",
+          "seats": 59,
+          "D": 45,
+          "R": 13,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 30,
+          "control": "D"
+        },
+        "state_house": {
+          "state": "IL",
+          "seats": 118,
+          "D": 80,
+          "R": 32,
+          "other": 0,
+          "uncalled": 6,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 60,
+          "control": "D"
+        }
+      },
+      "trifecta": "D trifecta",
+      "us_house_along": [
+        {
+          "district": "1",
+          "name": "Jonathan Jackson",
+          "party": "D",
+          "margin": 40.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "2",
+          "name": "Donna Miller",
+          "party": "D",
+          "margin": 45.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "4",
+          "name": "Patty Garcia",
+          "party": "D",
+          "margin": 54.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "6",
+          "name": "Sean Casten",
+          "party": "D",
+          "margin": 25.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "7",
+          "name": "La Shawn K. Ford",
+          "party": "D",
+          "margin": 78.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "13",
+          "name": "Nikki Budzinski",
+          "party": "D",
+          "margin": 25.2,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "15",
+          "name": "Mary Miller",
+          "party": "R",
+          "margin": 33.8,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 20,
+        "counted": 20,
+        "pending_boundaries": 0,
+        "D": 14,
+        "R": 6,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 1,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 203.5,
+        "km_R": 273.8,
+        "with_stop": 5
+      },
+      "state_house_along": {
+        "districts": 30,
+        "counted": 30,
+        "pending_boundaries": 0,
+        "D": 18,
+        "R": 10,
+        "other": 0,
+        "undecided": 2,
+        "uncalled": 2,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 119.4,
+        "km_R": 326.0,
+        "with_stop": 5
+      }
+    },
+    {
+      "state": "MO",
+      "km": 2.1,
+      "governor": {
+        "name": "Mike Kehoe",
+        "party": "R",
+        "source": "holdover",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Eric Schmitt",
+          "party": "R",
+          "new": false
+        },
+        {
+          "name": "Josh Hawley",
+          "party": "R",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "MO",
+          "seats": 34,
+          "D": 12,
+          "R": 21,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 18,
+          "control": "R"
+        },
+        "state_house": {
+          "state": "MO",
+          "seats": 163,
+          "D": 68,
+          "R": 93,
+          "other": 0,
+          "uncalled": 2,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 82,
+          "control": "R"
+        }
+      },
+      "trifecta": "R trifecta",
+      "us_house_along": [
+        {
+          "district": "1",
+          "name": "Wesley Bell",
+          "party": "D",
+          "margin": 67.6,
+          "flipped": false,
+          "status": "reported",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 1,
+        "counted": 1,
+        "pending_boundaries": 0,
+        "D": 1,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 2.1,
+        "km_R": 0.0,
+        "with_stop": 1
+      },
+      "state_house_along": {
+        "districts": 2,
+        "counted": 2,
+        "pending_boundaries": 0,
+        "D": 2,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 2.1,
+        "km_R": 0.0,
+        "with_stop": 1
+      }
+    }
+  ],
+  "chi-stl-4": [
+    {
+      "state": "IL",
+      "km": 472.0,
+      "governor": {
+        "name": "JB Pritzker",
+        "party": "D",
+        "source": "2026",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Juliana Stratton",
+          "party": "D",
+          "new": true
+        },
+        {
+          "name": "Tammy Duckworth",
+          "party": "D",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "IL",
+          "seats": 59,
+          "D": 45,
+          "R": 13,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 30,
+          "control": "D"
+        },
+        "state_house": {
+          "state": "IL",
+          "seats": 118,
+          "D": 80,
+          "R": 32,
+          "other": 0,
+          "uncalled": 6,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 60,
+          "control": "D"
+        }
+      },
+      "trifecta": "D trifecta",
+      "us_house_along": [
+        {
+          "district": "1",
+          "name": "Jonathan Jackson",
+          "party": "D",
+          "margin": 40.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "2",
+          "name": "Donna Miller",
+          "party": "D",
+          "margin": 45.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "4",
+          "name": "Patty Garcia",
+          "party": "D",
+          "margin": 54.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "6",
+          "name": "Sean Casten",
+          "party": "D",
+          "margin": 25.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "7",
+          "name": "La Shawn K. Ford",
+          "party": "D",
+          "margin": 78.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "13",
+          "name": "Nikki Budzinski",
+          "party": "D",
+          "margin": 25.2,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "15",
+          "name": "Mary Miller",
+          "party": "R",
+          "margin": 33.8,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 19,
+        "counted": 19,
+        "pending_boundaries": 0,
+        "D": 14,
+        "R": 5,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 1,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 230.9,
+        "km_R": 241.1,
+        "with_stop": 5
+      },
+      "state_house_along": {
+        "districts": 29,
+        "counted": 29,
+        "pending_boundaries": 0,
+        "D": 18,
+        "R": 9,
+        "other": 0,
+        "undecided": 2,
+        "uncalled": 2,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 137.1,
+        "km_R": 301.2,
+        "with_stop": 5
+      }
+    },
+    {
+      "state": "MO",
+      "km": 2.1,
+      "governor": {
+        "name": "Mike Kehoe",
+        "party": "R",
+        "source": "holdover",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Eric Schmitt",
+          "party": "R",
+          "new": false
+        },
+        {
+          "name": "Josh Hawley",
+          "party": "R",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "MO",
+          "seats": 34,
+          "D": 12,
+          "R": 21,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 18,
+          "control": "R"
+        },
+        "state_house": {
+          "state": "MO",
+          "seats": 163,
+          "D": 68,
+          "R": 93,
+          "other": 0,
+          "uncalled": 2,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 82,
+          "control": "R"
+        }
+      },
+      "trifecta": "R trifecta",
+      "us_house_along": [
+        {
+          "district": "1",
+          "name": "Wesley Bell",
+          "party": "D",
+          "margin": 67.6,
+          "flipped": false,
+          "status": "reported",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 1,
+        "counted": 1,
+        "pending_boundaries": 0,
+        "D": 1,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 2.1,
+        "km_R": 0.0,
+        "with_stop": 1
+      },
+      "state_house_along": {
+        "districts": 2,
+        "counted": 2,
+        "pending_boundaries": 0,
+        "D": 2,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 2.1,
+        "km_R": 0.0,
+        "with_stop": 1
+      }
+    }
+  ],
+  "chi-stl-5": [
+    {
+      "state": "IL",
+      "km": 480.0,
+      "governor": {
+        "name": "JB Pritzker",
+        "party": "D",
+        "source": "2026",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Juliana Stratton",
+          "party": "D",
+          "new": true
+        },
+        {
+          "name": "Tammy Duckworth",
+          "party": "D",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "IL",
+          "seats": 59,
+          "D": 45,
+          "R": 13,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 30,
+          "control": "D"
+        },
+        "state_house": {
+          "state": "IL",
+          "seats": 118,
+          "D": 80,
+          "R": 32,
+          "other": 0,
+          "uncalled": 6,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 60,
+          "control": "D"
+        }
+      },
+      "trifecta": "D trifecta",
+      "us_house_along": [
+        {
+          "district": "1",
+          "name": "Jonathan Jackson",
+          "party": "D",
+          "margin": 40.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "2",
+          "name": "Donna Miller",
+          "party": "D",
+          "margin": 45.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "4",
+          "name": "Patty Garcia",
+          "party": "D",
+          "margin": 54.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "6",
+          "name": "Sean Casten",
+          "party": "D",
+          "margin": 25.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "7",
+          "name": "La Shawn K. Ford",
+          "party": "D",
+          "margin": 78.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "13",
+          "name": "Nikki Budzinski",
+          "party": "D",
+          "margin": 25.2,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "14",
+          "name": "Lauren Underwood",
+          "party": "D",
+          "margin": 25.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "15",
+          "name": "Mary Miller",
+          "party": "R",
+          "margin": 33.8,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 19,
+        "counted": 19,
+        "pending_boundaries": 0,
+        "D": 13,
+        "R": 6,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 1,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 237.1,
+        "km_R": 242.9,
+        "with_stop": 5
+      },
+      "state_house_along": {
+        "districts": 28,
+        "counted": 28,
+        "pending_boundaries": 0,
+        "D": 15,
+        "R": 11,
+        "other": 0,
+        "undecided": 2,
+        "uncalled": 2,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 124.6,
+        "km_R": 322.8,
+        "with_stop": 5
+      }
+    },
+    {
+      "state": "MO",
+      "km": 2.1,
+      "governor": {
+        "name": "Mike Kehoe",
+        "party": "R",
+        "source": "holdover",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Eric Schmitt",
+          "party": "R",
+          "new": false
+        },
+        {
+          "name": "Josh Hawley",
+          "party": "R",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "MO",
+          "seats": 34,
+          "D": 12,
+          "R": 21,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 18,
+          "control": "R"
+        },
+        "state_house": {
+          "state": "MO",
+          "seats": 163,
+          "D": 68,
+          "R": 93,
+          "other": 0,
+          "uncalled": 2,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 82,
+          "control": "R"
+        }
+      },
+      "trifecta": "R trifecta",
+      "us_house_along": [
+        {
+          "district": "1",
+          "name": "Wesley Bell",
+          "party": "D",
+          "margin": 67.6,
+          "flipped": false,
+          "status": "reported",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 1,
+        "counted": 1,
+        "pending_boundaries": 0,
+        "D": 1,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 2.1,
+        "km_R": 0.0,
+        "with_stop": 1
+      },
+      "state_house_along": {
+        "districts": 2,
+        "counted": 2,
+        "pending_boundaries": 0,
+        "D": 2,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 2.1,
+        "km_R": 0.0,
+        "with_stop": 1
+      }
+    }
+  ],
+  "chi-stl-7": [
+    {
+      "state": "IL",
+      "km": 492.2,
+      "governor": {
+        "name": "JB Pritzker",
+        "party": "D",
+        "source": "2026",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Juliana Stratton",
+          "party": "D",
+          "new": true
+        },
+        {
+          "name": "Tammy Duckworth",
+          "party": "D",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "IL",
+          "seats": 59,
+          "D": 45,
+          "R": 13,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 30,
+          "control": "D"
+        },
+        "state_house": {
+          "state": "IL",
+          "seats": 118,
+          "D": 80,
+          "R": 32,
+          "other": 0,
+          "uncalled": 6,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 60,
+          "control": "D"
+        }
+      },
+      "trifecta": "D trifecta",
+      "us_house_along": [
+        {
+          "district": "1",
+          "name": "Jonathan Jackson",
+          "party": "D",
+          "margin": 40.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "2",
+          "name": "Donna Miller",
+          "party": "D",
+          "margin": 45.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "4",
+          "name": "Patty Garcia",
+          "party": "D",
+          "margin": 54.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "6",
+          "name": "Sean Casten",
+          "party": "D",
+          "margin": 25.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "7",
+          "name": "La Shawn K. Ford",
+          "party": "D",
+          "margin": 78.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "13",
+          "name": "Nikki Budzinski",
+          "party": "D",
+          "margin": 25.2,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "14",
+          "name": "Lauren Underwood",
+          "party": "D",
+          "margin": 25.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "15",
+          "name": "Mary Miller",
+          "party": "R",
+          "margin": 33.8,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "16",
+          "name": "Darin LaHood",
+          "party": "R",
+          "margin": 17.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "17",
+          "name": "Eric Sorensen",
+          "party": "D",
+          "margin": 20.2,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 19,
+        "counted": 19,
+        "pending_boundaries": 0,
+        "D": 12,
+        "R": 7,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 1,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 162.9,
+        "km_R": 329.3,
+        "with_stop": 5
+      },
+      "state_house_along": {
+        "districts": 27,
+        "counted": 27,
+        "pending_boundaries": 0,
+        "D": 15,
+        "R": 11,
+        "other": 0,
+        "undecided": 1,
+        "uncalled": 1,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 122.8,
+        "km_R": 366.1,
+        "with_stop": 6
+      }
+    },
+    {
+      "state": "MO",
+      "km": 2.1,
+      "governor": {
+        "name": "Mike Kehoe",
+        "party": "R",
+        "source": "holdover",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Eric Schmitt",
+          "party": "R",
+          "new": false
+        },
+        {
+          "name": "Josh Hawley",
+          "party": "R",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "MO",
+          "seats": 34,
+          "D": 12,
+          "R": 21,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 18,
+          "control": "R"
+        },
+        "state_house": {
+          "state": "MO",
+          "seats": 163,
+          "D": 68,
+          "R": 93,
+          "other": 0,
+          "uncalled": 2,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 82,
+          "control": "R"
+        }
+      },
+      "trifecta": "R trifecta",
+      "us_house_along": [
+        {
+          "district": "1",
+          "name": "Wesley Bell",
+          "party": "D",
+          "margin": 67.6,
+          "flipped": false,
+          "status": "reported",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 1,
+        "counted": 1,
+        "pending_boundaries": 0,
+        "D": 1,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 2.1,
+        "km_R": 0.0,
+        "with_stop": 1
+      },
+      "state_house_along": {
+        "districts": 2,
+        "counted": 2,
+        "pending_boundaries": 0,
+        "D": 2,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 2.1,
+        "km_R": 0.0,
+        "with_stop": 1
+      }
+    }
+  ],
+  "chi-det": [
+    {
+      "state": "IL",
+      "km": 23.6,
+      "governor": {
+        "name": "JB Pritzker",
+        "party": "D",
+        "source": "2026",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Juliana Stratton",
+          "party": "D",
+          "new": true
+        },
+        {
+          "name": "Tammy Duckworth",
+          "party": "D",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "IL",
+          "seats": 59,
+          "D": 45,
+          "R": 13,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 30,
+          "control": "D"
+        },
+        "state_house": {
+          "state": "IL",
+          "seats": 118,
+          "D": 80,
+          "R": 32,
+          "other": 0,
+          "uncalled": 6,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 60,
+          "control": "D"
+        }
+      },
+      "trifecta": "D trifecta",
+      "us_house_along": [
+        {
+          "district": "1",
+          "name": "Jonathan Jackson",
+          "party": "D",
+          "margin": 40.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "2",
+          "name": "Donna Miller",
+          "party": "D",
+          "margin": 45.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "7",
+          "name": "La Shawn K. Ford",
+          "party": "D",
+          "margin": 78.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 5,
+        "counted": 5,
+        "pending_boundaries": 0,
+        "D": 5,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 23.2,
+        "km_R": 0.0,
+        "with_stop": 1
+      },
+      "state_house_along": {
+        "districts": 7,
+        "counted": 7,
+        "pending_boundaries": 0,
+        "D": 7,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 23.2,
+        "km_R": 0.0,
+        "with_stop": 1
+      }
+    },
+    {
+      "state": "IN",
+      "km": 74.4,
+      "governor": {
+        "name": "Mike Braun",
+        "party": "R",
+        "source": "holdover",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Todd Young",
+          "party": "R",
+          "new": false
+        },
+        {
+          "name": "Jim Banks",
+          "party": "R",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "IN",
+          "seats": 50,
+          "D": 15,
+          "R": 34,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 26,
+          "control": "R"
+        },
+        "state_house": {
+          "state": "IN",
+          "seats": 100,
+          "D": 45,
+          "R": 52,
+          "other": 0,
+          "uncalled": 3,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 51,
+          "control": "R"
+        }
+      },
+      "trifecta": "R trifecta",
+      "us_house_along": [
+        {
+          "district": "1",
+          "name": "Frank Mrvan",
+          "party": "D",
+          "margin": 26.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 4,
+        "counted": 4,
+        "pending_boundaries": 0,
+        "D": 3,
+        "R": 1,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 70.7,
+        "km_R": 3.6,
+        "with_stop": 2
+      },
+      "state_house_along": {
+        "districts": 5,
+        "counted": 5,
+        "pending_boundaries": 0,
+        "D": 5,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 74.4,
+        "km_R": 0.0,
+        "with_stop": 2
+      }
+    },
+    {
+      "state": "MI",
+      "km": 353.9,
+      "governor": {
+        "name": "Jocelyn Benson",
+        "party": "D",
+        "source": "2026",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Abdul El-Sayed",
+          "party": "D",
+          "new": true
+        },
+        {
+          "name": "Elissa Slotkin",
+          "party": "D",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "MI",
+          "seats": 38,
+          "D": 22,
+          "R": 15,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 20,
+          "control": "D"
+        },
+        "state_house": {
+          "state": "MI",
+          "seats": 110,
+          "D": 60,
+          "R": 46,
+          "other": 0,
+          "uncalled": 4,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 56,
+          "control": "D"
+        }
+      },
+      "trifecta": "D trifecta",
+      "us_house_along": [
+        {
+          "district": "4",
+          "name": "Sean McCann",
+          "party": "D",
+          "margin": 1.8,
+          "flipped": true,
+          "status": "leading",
+          "boundary_status": "current"
+        },
+        {
+          "district": "5",
+          "name": "Tim Walberg",
+          "party": "R",
+          "margin": 20.5,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "6",
+          "name": "Debbie Dingell",
+          "party": "D",
+          "margin": 37.1,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "12",
+          "name": "Rashida Tlaib",
+          "party": "D",
+          "margin": 54.8,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "13",
+          "name": "Donavan McKinney",
+          "party": "D",
+          "margin": 56.5,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 11,
+        "counted": 6,
+        "pending_boundaries": 5,
+        "D": 3,
+        "R": 3,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 150.9,
+        "km_R": 159.2,
+        "with_stop": 6
+      },
+      "state_house_along": {
+        "districts": 20,
+        "counted": 14,
+        "pending_boundaries": 6,
+        "D": 9,
+        "R": 4,
+        "other": 0,
+        "undecided": 1,
+        "uncalled": 1,
+        "flipped_to_D": 2,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 142.8,
+        "km_R": 167.5,
+        "with_stop": 7
+      }
+    }
+  ],
+  "chi-ind-cin": [
+    {
+      "state": "IL",
+      "km": 42.0,
+      "governor": {
+        "name": "JB Pritzker",
+        "party": "D",
+        "source": "2026",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Juliana Stratton",
+          "party": "D",
+          "new": true
+        },
+        {
+          "name": "Tammy Duckworth",
+          "party": "D",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "IL",
+          "seats": 59,
+          "D": 45,
+          "R": 13,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 30,
+          "control": "D"
+        },
+        "state_house": {
+          "state": "IL",
+          "seats": 118,
+          "D": 80,
+          "R": 32,
+          "other": 0,
+          "uncalled": 6,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 60,
+          "control": "D"
+        }
+      },
+      "trifecta": "D trifecta",
+      "us_house_along": [
+        {
+          "district": "1",
+          "name": "Jonathan Jackson",
+          "party": "D",
+          "margin": 40.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "2",
+          "name": "Donna Miller",
+          "party": "D",
+          "margin": 45.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "7",
+          "name": "La Shawn K. Ford",
+          "party": "D",
+          "margin": 78.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 8,
+        "counted": 8,
+        "pending_boundaries": 0,
+        "D": 8,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 42.0,
+        "km_R": 0.0,
+        "with_stop": 1
+      },
+      "state_house_along": {
+        "districts": 12,
+        "counted": 12,
+        "pending_boundaries": 0,
+        "D": 12,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 42.0,
+        "km_R": 0.0,
+        "with_stop": 1
+      }
+    },
+    {
+      "state": "IN",
+      "km": 398.2,
+      "governor": {
+        "name": "Mike Braun",
+        "party": "R",
+        "source": "holdover",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Todd Young",
+          "party": "R",
+          "new": false
+        },
+        {
+          "name": "Jim Banks",
+          "party": "R",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "IN",
+          "seats": 50,
+          "D": 15,
+          "R": 34,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 26,
+          "control": "R"
+        },
+        "state_house": {
+          "state": "IN",
+          "seats": 100,
+          "D": 45,
+          "R": 52,
+          "other": 0,
+          "uncalled": 3,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 51,
+          "control": "R"
+        }
+      },
+      "trifecta": "R trifecta",
+      "us_house_along": [
+        {
+          "district": "1",
+          "name": "Frank Mrvan",
+          "party": "D",
+          "margin": 26.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "4",
+          "name": "Jim Baird",
+          "party": "R",
+          "margin": 8.4,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "6",
+          "name": "Jefferson Shreve",
+          "party": "R",
+          "margin": 10.2,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "7",
+          "name": "Andre Carson",
+          "party": "D",
+          "margin": 56.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "9",
+          "name": "Erin Houchin",
+          "party": "R",
+          "margin": 10.5,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 16,
+        "counted": 16,
+        "pending_boundaries": 0,
+        "D": 6,
+        "R": 10,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 2,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 54.1,
+        "km_R": 344.1,
+        "with_stop": 6
+      },
+      "state_house_along": {
+        "districts": 19,
+        "counted": 19,
+        "pending_boundaries": 0,
+        "D": 9,
+        "R": 10,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 1,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 60.6,
+        "km_R": 337.5,
+        "with_stop": 6
+      }
+    },
+    {
+      "state": "OH",
+      "km": 47.5,
+      "governor": {
+        "name": "Amy Acton",
+        "party": "D",
+        "source": "2026",
+        "flipped": true
+      },
+      "us_senators": [
+        {
+          "name": "Sherrod Brown",
+          "party": "D",
+          "new": true
+        },
+        {
+          "name": "Bernie Moreno",
+          "party": "R",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "OH",
+          "seats": 33,
+          "D": 11,
+          "R": 21,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 17,
+          "control": "R"
+        },
+        "state_house": {
+          "state": "OH",
+          "seats": 99,
+          "D": 42,
+          "R": 52,
+          "other": 0,
+          "uncalled": 5,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 50,
+          "control": "R"
+        }
+      },
+      "trifecta": "divided",
+      "us_house_along": [
+        {
+          "district": "1",
+          "name": "Greg Landsman",
+          "party": "D",
+          "margin": 11.5,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "pending"
+        },
+        {
+          "district": "8",
+          "name": "Warren Davidson",
+          "party": "R",
+          "margin": 4.2,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "pending"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 3,
+        "counted": 0,
+        "pending_boundaries": 3,
+        "D": 0,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 0.0,
+        "km_R": 0.0,
+        "with_stop": 1
+      },
+      "state_house_along": {
+        "districts": 5,
+        "counted": 0,
+        "pending_boundaries": 5,
+        "D": 0,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 0.0,
+        "km_R": 0.0,
+        "with_stop": 1
+      }
+    }
+  ],
+  "chi-cle": [
+    {
+      "state": "IL",
+      "km": 23.6,
+      "governor": {
+        "name": "JB Pritzker",
+        "party": "D",
+        "source": "2026",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Juliana Stratton",
+          "party": "D",
+          "new": true
+        },
+        {
+          "name": "Tammy Duckworth",
+          "party": "D",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "IL",
+          "seats": 59,
+          "D": 45,
+          "R": 13,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 30,
+          "control": "D"
+        },
+        "state_house": {
+          "state": "IL",
+          "seats": 118,
+          "D": 80,
+          "R": 32,
+          "other": 0,
+          "uncalled": 6,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 60,
+          "control": "D"
+        }
+      },
+      "trifecta": "D trifecta",
+      "us_house_along": [
+        {
+          "district": "1",
+          "name": "Jonathan Jackson",
+          "party": "D",
+          "margin": 40.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "2",
+          "name": "Donna Miller",
+          "party": "D",
+          "margin": 45.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "7",
+          "name": "La Shawn K. Ford",
+          "party": "D",
+          "margin": 78.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 5,
+        "counted": 5,
+        "pending_boundaries": 0,
+        "D": 5,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 23.3,
+        "km_R": 0.0,
+        "with_stop": 1
+      },
+      "state_house_along": {
+        "districts": 7,
+        "counted": 7,
+        "pending_boundaries": 0,
+        "D": 7,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 23.3,
+        "km_R": 0.0,
+        "with_stop": 1
+      }
+    },
+    {
+      "state": "IN",
+      "km": 254.1,
+      "governor": {
+        "name": "Mike Braun",
+        "party": "R",
+        "source": "holdover",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Todd Young",
+          "party": "R",
+          "new": false
+        },
+        {
+          "name": "Jim Banks",
+          "party": "R",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "IN",
+          "seats": 50,
+          "D": 15,
+          "R": 34,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 26,
+          "control": "R"
+        },
+        "state_house": {
+          "state": "IN",
+          "seats": 100,
+          "D": 45,
+          "R": 52,
+          "other": 0,
+          "uncalled": 3,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 51,
+          "control": "R"
+        }
+      },
+      "trifecta": "R trifecta",
+      "us_house_along": [
+        {
+          "district": "1",
+          "name": "Frank Mrvan",
+          "party": "D",
+          "margin": 26.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "2",
+          "name": "Rudy Yakym",
+          "party": "R",
+          "margin": 5.2,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "3",
+          "name": "Marlin Stutzman",
+          "party": "R",
+          "margin": 9.8,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 9,
+        "counted": 9,
+        "pending_boundaries": 0,
+        "D": 3,
+        "R": 6,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 1,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 52.5,
+        "km_R": 201.6,
+        "with_stop": 1
+      },
+      "state_house_along": {
+        "districts": 15,
+        "counted": 15,
+        "pending_boundaries": 0,
+        "D": 8,
+        "R": 7,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 3,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 82.5,
+        "km_R": 171.6,
+        "with_stop": 1
+      }
+    },
+    {
+      "state": "OH",
+      "km": 247.8,
+      "governor": {
+        "name": "Amy Acton",
+        "party": "D",
+        "source": "2026",
+        "flipped": true
+      },
+      "us_senators": [
+        {
+          "name": "Sherrod Brown",
+          "party": "D",
+          "new": true
+        },
+        {
+          "name": "Bernie Moreno",
+          "party": "R",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "OH",
+          "seats": 33,
+          "D": 11,
+          "R": 21,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 17,
+          "control": "R"
+        },
+        "state_house": {
+          "state": "OH",
+          "seats": 99,
+          "D": 42,
+          "R": 52,
+          "other": 0,
+          "uncalled": 5,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 50,
+          "control": "R"
+        }
+      },
+      "trifecta": "divided",
+      "us_house_along": [
+        {
+          "district": "5",
+          "name": "Bob Latta",
+          "party": "R",
+          "margin": 11.7,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "pending"
+        },
+        {
+          "district": "7",
+          "name": "Brian Poindexter",
+          "party": "D",
+          "margin": 9.8,
+          "flipped": true,
+          "status": "called",
+          "boundary_status": "pending"
+        },
+        {
+          "district": "9",
+          "name": "Marcy Kaptur",
+          "party": "D",
+          "margin": 5.4,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "pending"
+        },
+        {
+          "district": "11",
+          "name": "Shontel M. Brown",
+          "party": "D",
+          "margin": 67.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "pending"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 6,
+        "counted": 0,
+        "pending_boundaries": 6,
+        "D": 0,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 0.0,
+        "km_R": 0.0,
+        "with_stop": 2
+      },
+      "state_house_along": {
+        "districts": 15,
+        "counted": 0,
+        "pending_boundaries": 15,
+        "D": 0,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 0.0,
+        "km_R": 0.0,
+        "with_stop": 2
+      }
+    }
+  ],
+  "cle-cin": [
+    {
+      "state": "OH",
+      "km": 425.0,
+      "governor": {
+        "name": "Amy Acton",
+        "party": "D",
+        "source": "2026",
+        "flipped": true
+      },
+      "us_senators": [
+        {
+          "name": "Sherrod Brown",
+          "party": "D",
+          "new": true
+        },
+        {
+          "name": "Bernie Moreno",
+          "party": "R",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "OH",
+          "seats": 33,
+          "D": 11,
+          "R": 21,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 17,
+          "control": "R"
+        },
+        "state_house": {
+          "state": "OH",
+          "seats": 99,
+          "D": 42,
+          "R": 52,
+          "other": 0,
+          "uncalled": 5,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 50,
+          "control": "R"
+        }
+      },
+      "trifecta": "divided",
+      "us_house_along": [
+        {
+          "district": "1",
+          "name": "Greg Landsman",
+          "party": "D",
+          "margin": 11.5,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "pending"
+        },
+        {
+          "district": "3",
+          "name": "Joyce Beatty",
+          "party": "D",
+          "margin": 54.4,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "pending"
+        },
+        {
+          "district": "4",
+          "name": "Jim Jordan",
+          "party": "R",
+          "margin": 33.2,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "pending"
+        },
+        {
+          "district": "5",
+          "name": "Bob Latta",
+          "party": "R",
+          "margin": 11.7,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "pending"
+        },
+        {
+          "district": "7",
+          "name": "Brian Poindexter",
+          "party": "D",
+          "margin": 9.8,
+          "flipped": true,
+          "status": "called",
+          "boundary_status": "pending"
+        },
+        {
+          "district": "8",
+          "name": "Warren Davidson",
+          "party": "R",
+          "margin": 4.2,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "pending"
+        },
+        {
+          "district": "10",
+          "name": "Kristina Knickerbocker",
+          "party": "D",
+          "margin": 1.6,
+          "flipped": true,
+          "status": "called",
+          "boundary_status": "pending"
+        },
+        {
+          "district": "11",
+          "name": "Shontel M. Brown",
+          "party": "D",
+          "margin": 67.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "pending"
+        },
+        {
+          "district": "15",
+          "name": "Don Leonard",
+          "party": "D",
+          "margin": 6.6,
+          "flipped": true,
+          "status": "called",
+          "boundary_status": "pending"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 18,
+        "counted": 0,
+        "pending_boundaries": 18,
+        "D": 0,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 0.0,
+        "km_R": 0.0,
+        "with_stop": 7
+      },
+      "state_house_along": {
+        "districts": 31,
+        "counted": 0,
+        "pending_boundaries": 31,
+        "D": 0,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 0.0,
+        "km_R": 0.0,
+        "with_stop": 7
+      }
+    }
+  ],
+  "chi-oma": [
+    {
+      "state": "IL",
+      "km": 261.5,
+      "governor": {
+        "name": "JB Pritzker",
+        "party": "D",
+        "source": "2026",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Juliana Stratton",
+          "party": "D",
+          "new": true
+        },
+        {
+          "name": "Tammy Duckworth",
+          "party": "D",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "IL",
+          "seats": 59,
+          "D": 45,
+          "R": 13,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 30,
+          "control": "D"
+        },
+        "state_house": {
+          "state": "IL",
+          "seats": 118,
+          "D": 80,
+          "R": 32,
+          "other": 0,
+          "uncalled": 6,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 60,
+          "control": "D"
+        }
+      },
+      "trifecta": "D trifecta",
+      "us_house_along": [
+        {
+          "district": "4",
+          "name": "Patty Garcia",
+          "party": "D",
+          "margin": 54.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "6",
+          "name": "Sean Casten",
+          "party": "D",
+          "margin": 25.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "7",
+          "name": "La Shawn K. Ford",
+          "party": "D",
+          "margin": 78.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "11",
+          "name": "Bill Foster",
+          "party": "D",
+          "margin": 30.8,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "14",
+          "name": "Lauren Underwood",
+          "party": "D",
+          "margin": 25.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "16",
+          "name": "Darin LaHood",
+          "party": "R",
+          "margin": 17.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "17",
+          "name": "Eric Sorensen",
+          "party": "D",
+          "margin": 20.2,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 14,
+        "counted": 14,
+        "pending_boundaries": 0,
+        "D": 10,
+        "R": 4,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 85.3,
+        "km_R": 176.2,
+        "with_stop": 5
+      },
+      "state_house_along": {
+        "districts": 20,
+        "counted": 20,
+        "pending_boundaries": 0,
+        "D": 14,
+        "R": 6,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 88.7,
+        "km_R": 172.7,
+        "with_stop": 6
+      }
+    },
+    {
+      "state": "IA",
+      "km": 450.1,
+      "governor": {
+        "name": "Rob Sand",
+        "party": "D",
+        "source": "2026",
+        "flipped": true
+      },
+      "us_senators": [
+        {
+          "name": "Josh Turek",
+          "party": "D",
+          "new": true
+        },
+        {
+          "name": "Chuck Grassley",
+          "party": "R",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "IA",
+          "seats": 50,
+          "D": 17,
+          "R": 32,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 26,
+          "control": "R"
+        },
+        "state_house": {
+          "state": "IA",
+          "seats": 100,
+          "D": 43,
+          "R": 52,
+          "other": 0,
+          "uncalled": 5,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 51,
+          "control": "R"
+        }
+      },
+      "trifecta": "divided",
+      "us_house_along": [
+        {
+          "district": "1",
+          "name": "Christina Bohannan",
+          "party": "D",
+          "margin": 9.2,
+          "flipped": true,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "2",
+          "name": "Lindsay James",
+          "party": "D",
+          "margin": 4.0,
+          "flipped": true,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "3",
+          "name": "Sarah Trone Garriott",
+          "party": "D",
+          "margin": 7.3,
+          "flipped": true,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "4",
+          "name": "Chris McGowan",
+          "party": "R",
+          "margin": 18.1,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 19,
+        "counted": 19,
+        "pending_boundaries": 0,
+        "D": 8,
+        "R": 11,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 60.7,
+        "km_R": 389.4,
+        "with_stop": 2
+      },
+      "state_house_along": {
+        "districts": 27,
+        "counted": 27,
+        "pending_boundaries": 0,
+        "D": 15,
+        "R": 11,
+        "other": 0,
+        "undecided": 1,
+        "uncalled": 1,
+        "flipped_to_D": 2,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 85.7,
+        "km_R": 357.2,
+        "with_stop": 2
+      }
+    },
+    {
+      "state": "NE",
+      "km": 1.1,
+      "governor": {
+        "name": "Jim Pillen",
+        "party": "R",
+        "source": "2026",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Pete Ricketts",
+          "party": "R",
+          "new": true
+        },
+        {
+          "name": "Deb Fischer",
+          "party": "R",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "NE",
+          "seats": 49,
+          "D": 0,
+          "R": 0,
+          "other": 45,
+          "uncalled": 4,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 25,
+          "control": "nonpartisan"
+        }
+      },
+      "trifecta": "R governor; nonpartisan legislature",
+      "us_house_along": [
+        {
+          "district": "2",
+          "name": "Denise Powell",
+          "party": "D",
+          "margin": 15.4,
+          "flipped": true,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 1,
+        "counted": 1,
+        "pending_boundaries": 0,
+        "D": 0,
+        "R": 0,
+        "other": 1,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 0.0,
+        "km_R": 0.0,
+        "with_stop": 1
+      },
+      "state_house_along": {
+        "districts": 0,
+        "counted": 0,
+        "pending_boundaries": 0,
+        "D": 0,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 0.0,
+        "km_R": 0.0,
+        "with_stop": 0
+      }
+    }
+  ],
+  "stl-kc": [
+    {
+      "state": "MO",
+      "km": 443.1,
+      "governor": {
+        "name": "Mike Kehoe",
+        "party": "R",
+        "source": "holdover",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Eric Schmitt",
+          "party": "R",
+          "new": false
+        },
+        {
+          "name": "Josh Hawley",
+          "party": "R",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "MO",
+          "seats": 34,
+          "D": 12,
+          "R": 21,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 18,
+          "control": "R"
+        },
+        "state_house": {
+          "state": "MO",
+          "seats": 163,
+          "D": 68,
+          "R": 93,
+          "other": 0,
+          "uncalled": 2,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 82,
+          "control": "R"
+        }
+      },
+      "trifecta": "R trifecta",
+      "us_house_along": [
+        {
+          "district": "1",
+          "name": "Wesley Bell",
+          "party": "D",
+          "margin": 67.6,
+          "flipped": false,
+          "status": "reported",
+          "boundary_status": "current"
+        },
+        {
+          "district": "2",
+          "name": "Fred Wellman",
+          "party": "D",
+          "margin": 4.9,
+          "flipped": true,
+          "status": "reported",
+          "boundary_status": "current"
+        },
+        {
+          "district": "3",
+          "name": "Bob Onder",
+          "party": "R",
+          "margin": 8.5,
+          "flipped": false,
+          "status": "reported",
+          "boundary_status": "current"
+        },
+        {
+          "district": "4",
+          "name": "Mark Alford",
+          "party": "R",
+          "margin": 25.3,
+          "flipped": false,
+          "status": "reported",
+          "boundary_status": "current"
+        },
+        {
+          "district": "5",
+          "name": "Emanuel Cleaver II",
+          "party": "D",
+          "margin": 41.4,
+          "flipped": false,
+          "status": "reported",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 15,
+        "counted": 15,
+        "pending_boundaries": 0,
+        "D": 7,
+        "R": 8,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 1,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 60.3,
+        "km_R": 382.9,
+        "with_stop": 9
+      },
+      "state_house_along": {
+        "districts": 30,
+        "counted": 30,
+        "pending_boundaries": 0,
+        "D": 17,
+        "R": 13,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 1,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 89.6,
+        "km_R": 353.5,
+        "with_stop": 10
+      }
+    }
+  ],
+  "chi-col": [
+    {
+      "state": "IL",
+      "km": 23.6,
+      "governor": {
+        "name": "JB Pritzker",
+        "party": "D",
+        "source": "2026",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Juliana Stratton",
+          "party": "D",
+          "new": true
+        },
+        {
+          "name": "Tammy Duckworth",
+          "party": "D",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "IL",
+          "seats": 59,
+          "D": 45,
+          "R": 13,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 30,
+          "control": "D"
+        },
+        "state_house": {
+          "state": "IL",
+          "seats": 118,
+          "D": 80,
+          "R": 32,
+          "other": 0,
+          "uncalled": 6,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 60,
+          "control": "D"
+        }
+      },
+      "trifecta": "D trifecta",
+      "us_house_along": [
+        {
+          "district": "1",
+          "name": "Jonathan Jackson",
+          "party": "D",
+          "margin": 40.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "2",
+          "name": "Donna Miller",
+          "party": "D",
+          "margin": 45.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "7",
+          "name": "La Shawn K. Ford",
+          "party": "D",
+          "margin": 78.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 5,
+        "counted": 5,
+        "pending_boundaries": 0,
+        "D": 5,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 23.3,
+        "km_R": 0.0,
+        "with_stop": 1
+      },
+      "state_house_along": {
+        "districts": 7,
+        "counted": 7,
+        "pending_boundaries": 0,
+        "D": 7,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 23.3,
+        "km_R": 0.0,
+        "with_stop": 1
+      }
+    },
+    {
+      "state": "IN",
+      "km": 256.9,
+      "governor": {
+        "name": "Mike Braun",
+        "party": "R",
+        "source": "holdover",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Todd Young",
+          "party": "R",
+          "new": false
+        },
+        {
+          "name": "Jim Banks",
+          "party": "R",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "IN",
+          "seats": 50,
+          "D": 15,
+          "R": 34,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 26,
+          "control": "R"
+        },
+        "state_house": {
+          "state": "IN",
+          "seats": 100,
+          "D": 45,
+          "R": 52,
+          "other": 0,
+          "uncalled": 3,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 51,
+          "control": "R"
+        }
+      },
+      "trifecta": "R trifecta",
+      "us_house_along": [
+        {
+          "district": "1",
+          "name": "Frank Mrvan",
+          "party": "D",
+          "margin": 26.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "2",
+          "name": "Rudy Yakym",
+          "party": "R",
+          "margin": 5.2,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "3",
+          "name": "Marlin Stutzman",
+          "party": "R",
+          "margin": 9.8,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 8,
+        "counted": 8,
+        "pending_boundaries": 0,
+        "D": 2,
+        "R": 6,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 42.0,
+        "km_R": 214.9,
+        "with_stop": 4
+      },
+      "state_house_along": {
+        "districts": 15,
+        "counted": 15,
+        "pending_boundaries": 0,
+        "D": 8,
+        "R": 7,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 2,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 78.9,
+        "km_R": 178.0,
+        "with_stop": 4
+      }
+    },
+    {
+      "state": "OH",
+      "km": 200.7,
+      "governor": {
+        "name": "Amy Acton",
+        "party": "D",
+        "source": "2026",
+        "flipped": true
+      },
+      "us_senators": [
+        {
+          "name": "Sherrod Brown",
+          "party": "D",
+          "new": true
+        },
+        {
+          "name": "Bernie Moreno",
+          "party": "R",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "OH",
+          "seats": 33,
+          "D": 11,
+          "R": 21,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 17,
+          "control": "R"
+        },
+        "state_house": {
+          "state": "OH",
+          "seats": 99,
+          "D": 42,
+          "R": 52,
+          "other": 0,
+          "uncalled": 5,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 50,
+          "control": "R"
+        }
+      },
+      "trifecta": "divided",
+      "us_house_along": [
+        {
+          "district": "3",
+          "name": "Joyce Beatty",
+          "party": "D",
+          "margin": 54.4,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "pending"
+        },
+        {
+          "district": "4",
+          "name": "Jim Jordan",
+          "party": "R",
+          "margin": 33.2,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "pending"
+        },
+        {
+          "district": "5",
+          "name": "Bob Latta",
+          "party": "R",
+          "margin": 11.7,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "pending"
+        },
+        {
+          "district": "15",
+          "name": "Don Leonard",
+          "party": "D",
+          "margin": 6.6,
+          "flipped": true,
+          "status": "called",
+          "boundary_status": "pending"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 5,
+        "counted": 0,
+        "pending_boundaries": 5,
+        "D": 0,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 0.0,
+        "km_R": 0.0,
+        "with_stop": 3
+      },
+      "state_house_along": {
+        "districts": 7,
+        "counted": 0,
+        "pending_boundaries": 7,
+        "D": 0,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 0.0,
+        "km_R": 0.0,
+        "with_stop": 3
+      }
+    }
+  ],
+  "ind-lou": [
+    {
+      "state": "IN",
+      "km": 182.1,
+      "governor": {
+        "name": "Mike Braun",
+        "party": "R",
+        "source": "holdover",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Todd Young",
+          "party": "R",
+          "new": false
+        },
+        {
+          "name": "Jim Banks",
+          "party": "R",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "IN",
+          "seats": 50,
+          "D": 15,
+          "R": 34,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 26,
+          "control": "R"
+        },
+        "state_house": {
+          "state": "IN",
+          "seats": 100,
+          "D": 45,
+          "R": 52,
+          "other": 0,
+          "uncalled": 3,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 51,
+          "control": "R"
+        }
+      },
+      "trifecta": "R trifecta",
+      "us_house_along": [
+        {
+          "district": "6",
+          "name": "Jefferson Shreve",
+          "party": "R",
+          "margin": 10.2,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "7",
+          "name": "Andre Carson",
+          "party": "D",
+          "margin": 56.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "9",
+          "name": "Erin Houchin",
+          "party": "R",
+          "margin": 10.5,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 7,
+        "counted": 7,
+        "pending_boundaries": 0,
+        "D": 1,
+        "R": 5,
+        "other": 0,
+        "undecided": 1,
+        "uncalled": 1,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 5.2,
+        "km_R": 135.7,
+        "with_stop": 3
+      },
+      "state_house_along": {
+        "districts": 8,
+        "counted": 8,
+        "pending_boundaries": 0,
+        "D": 3,
+        "R": 5,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 1,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 27.8,
+        "km_R": 154.3,
+        "with_stop": 3
+      }
+    },
+    {
+      "state": "KY",
+      "km": 2.0,
+      "governor": {
+        "name": "Andy Beshear",
+        "party": "D",
+        "source": "holdover",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Andy Barr",
+          "party": "R",
+          "new": true
+        },
+        {
+          "name": "Rand Paul",
+          "party": "R",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "KY",
+          "seats": 38,
+          "D": 8,
+          "R": 30,
+          "other": 0,
+          "uncalled": 0,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 20,
+          "control": "R"
+        },
+        "state_house": {
+          "state": "KY",
+          "seats": 100,
+          "D": 26,
+          "R": 73,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 51,
+          "control": "R"
+        }
+      },
+      "trifecta": "divided",
+      "us_house_along": [
+        {
+          "district": "3",
+          "name": "Morgan McGarvey",
+          "party": "D",
+          "margin": 40.6,
+          "flipped": false,
+          "status": "reported",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 1,
+        "counted": 1,
+        "pending_boundaries": 0,
+        "D": 1,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 2.0,
+        "km_R": 0.0,
+        "with_stop": 1
+      },
+      "state_house_along": {
+        "districts": 1,
+        "counted": 1,
+        "pending_boundaries": 0,
+        "D": 1,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 2.0,
+        "km_R": 0.0,
+        "with_stop": 1
+      }
+    }
+  ],
+  "msp-dul": [
+    {
+      "state": "MN",
+      "km": 207.4,
+      "governor": {
+        "name": "Amy Klobuchar",
+        "party": "D",
+        "source": "2026",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Peggy Flanagan",
+          "party": "D",
+          "new": true
+        },
+        {
+          "name": "Amy Klobuchar",
+          "party": "D",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "MN",
+          "seats": 67,
+          "D": 37,
+          "R": 26,
+          "other": 0,
+          "uncalled": 4,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 34,
+          "control": "D"
+        },
+        "state_house": {
+          "state": "MN",
+          "seats": 134,
+          "D": 77,
+          "R": 55,
+          "other": 0,
+          "uncalled": 2,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 68,
+          "control": "D"
+        }
+      },
+      "trifecta": "D trifecta",
+      "us_house_along": [
+        {
+          "district": "3",
+          "name": "Kelly Morrison",
+          "party": "D",
+          "margin": 28.2,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "5",
+          "name": "Ilhan Omar",
+          "party": "D",
+          "margin": 60.3,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "6",
+          "name": "Tom Emmer",
+          "party": "R",
+          "margin": 11.5,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "8",
+          "name": "Pete Stauber",
+          "party": "R",
+          "margin": 6.3,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 10,
+        "counted": 10,
+        "pending_boundaries": 0,
+        "D": 6,
+        "R": 4,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 1,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 34.4,
+        "km_R": 172.9,
+        "with_stop": 5
+      },
+      "state_house_along": {
+        "districts": 12,
+        "counted": 12,
+        "pending_boundaries": 0,
+        "D": 8,
+        "R": 4,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 1,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 79.3,
+        "km_R": 128.1,
+        "with_stop": 5
+      }
+    },
+    {
+      "state": "WI",
+      "km": 34.6,
+      "governor": {
+        "name": "David Crowley",
+        "party": "D",
+        "source": "2026",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Ron Johnson",
+          "party": "R",
+          "new": false
+        },
+        {
+          "name": "Tammy Baldwin",
+          "party": "D",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "WI",
+          "seats": 33,
+          "D": 18,
+          "R": 15,
+          "other": 0,
+          "uncalled": 0,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 17,
+          "control": "D"
+        },
+        "state_house": {
+          "state": "WI",
+          "seats": 99,
+          "D": 53,
+          "R": 46,
+          "other": 0,
+          "uncalled": 0,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 50,
+          "control": "D"
+        }
+      },
+      "trifecta": "D trifecta",
+      "us_house_along": [
+        {
+          "district": "7",
+          "name": "Michael Alfonso",
+          "party": "R",
+          "margin": 13.2,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 1,
+        "counted": 0,
+        "pending_boundaries": 1,
+        "D": 0,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 0.0,
+        "km_R": 0.0,
+        "with_stop": 1
+      },
+      "state_house_along": {
+        "districts": 1,
+        "counted": 0,
+        "pending_boundaries": 1,
+        "D": 0,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 0.0,
+        "km_R": 0.0,
+        "with_stop": 1
+      }
+    }
+  ],
+  "mke-grb": [
+    {
+      "state": "WI",
+      "km": 214.4,
+      "governor": {
+        "name": "David Crowley",
+        "party": "D",
+        "source": "2026",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Ron Johnson",
+          "party": "R",
+          "new": false
+        },
+        {
+          "name": "Tammy Baldwin",
+          "party": "D",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "WI",
+          "seats": 33,
+          "D": 18,
+          "R": 15,
+          "other": 0,
+          "uncalled": 0,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 17,
+          "control": "D"
+        },
+        "state_house": {
+          "state": "WI",
+          "seats": 99,
+          "D": 53,
+          "R": 46,
+          "other": 0,
+          "uncalled": 0,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 50,
+          "control": "D"
+        }
+      },
+      "trifecta": "D trifecta",
+      "us_house_along": [
+        {
+          "district": "4",
+          "name": "Gwen Moore",
+          "party": "D",
+          "margin": 62.5,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "5",
+          "name": "Scott Fitzgerald",
+          "party": "R",
+          "margin": 20.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "6",
+          "name": "Glenn Grothman",
+          "party": "R",
+          "margin": 9.5,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "8",
+          "name": "Tony Wied",
+          "party": "R",
+          "margin": 7.8,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 12,
+        "counted": 0,
+        "pending_boundaries": 12,
+        "D": 0,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 0.0,
+        "km_R": 0.0,
+        "with_stop": 4
+      },
+      "state_house_along": {
+        "districts": 21,
+        "counted": 0,
+        "pending_boundaries": 21,
+        "D": 0,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 0.0,
+        "km_R": 0.0,
+        "with_stop": 5
+      }
+    }
+  ],
+  "cle-det": [
+    {
+      "state": "OH",
+      "km": 148.0,
+      "governor": {
+        "name": "Amy Acton",
+        "party": "D",
+        "source": "2026",
+        "flipped": true
+      },
+      "us_senators": [
+        {
+          "name": "Sherrod Brown",
+          "party": "D",
+          "new": true
+        },
+        {
+          "name": "Bernie Moreno",
+          "party": "R",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "OH",
+          "seats": 33,
+          "D": 11,
+          "R": 21,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 17,
+          "control": "R"
+        },
+        "state_house": {
+          "state": "OH",
+          "seats": 99,
+          "D": 42,
+          "R": 52,
+          "other": 0,
+          "uncalled": 5,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 50,
+          "control": "R"
+        }
+      },
+      "trifecta": "divided",
+      "us_house_along": [
+        {
+          "district": "5",
+          "name": "Bob Latta",
+          "party": "R",
+          "margin": 11.7,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "pending"
+        },
+        {
+          "district": "7",
+          "name": "Brian Poindexter",
+          "party": "D",
+          "margin": 9.8,
+          "flipped": true,
+          "status": "called",
+          "boundary_status": "pending"
+        },
+        {
+          "district": "9",
+          "name": "Marcy Kaptur",
+          "party": "D",
+          "margin": 5.4,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "pending"
+        },
+        {
+          "district": "11",
+          "name": "Shontel M. Brown",
+          "party": "D",
+          "margin": 67.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "pending"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 5,
+        "counted": 0,
+        "pending_boundaries": 5,
+        "D": 0,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 0.0,
+        "km_R": 0.0,
+        "with_stop": 4
+      },
+      "state_house_along": {
+        "districts": 12,
+        "counted": 0,
+        "pending_boundaries": 12,
+        "D": 0,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 0.0,
+        "km_R": 0.0,
+        "with_stop": 4
+      }
+    },
+    {
+      "state": "MI",
+      "km": 82.2,
+      "governor": {
+        "name": "Jocelyn Benson",
+        "party": "D",
+        "source": "2026",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Abdul El-Sayed",
+          "party": "D",
+          "new": true
+        },
+        {
+          "name": "Elissa Slotkin",
+          "party": "D",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "MI",
+          "seats": 38,
+          "D": 22,
+          "R": 15,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 20,
+          "control": "D"
+        },
+        "state_house": {
+          "state": "MI",
+          "seats": 110,
+          "D": 60,
+          "R": 46,
+          "other": 0,
+          "uncalled": 4,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 56,
+          "control": "D"
+        }
+      },
+      "trifecta": "D trifecta",
+      "us_house_along": [
+        {
+          "district": "5",
+          "name": "Tim Walberg",
+          "party": "R",
+          "margin": 20.5,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "6",
+          "name": "Debbie Dingell",
+          "party": "D",
+          "margin": 37.1,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "13",
+          "name": "Donavan McKinney",
+          "party": "D",
+          "margin": 56.5,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 4,
+        "counted": 1,
+        "pending_boundaries": 3,
+        "D": 0,
+        "R": 1,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 0.0,
+        "km_R": 44.2,
+        "with_stop": 2
+      },
+      "state_house_along": {
+        "districts": 7,
+        "counted": 1,
+        "pending_boundaries": 6,
+        "D": 0,
+        "R": 1,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 0.0,
+        "km_R": 27.1,
+        "with_stop": 2
+      }
+    }
+  ],
+  "chi-dbq": [
+    {
+      "state": "IL",
+      "km": 278.0,
+      "governor": {
+        "name": "JB Pritzker",
+        "party": "D",
+        "source": "2026",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Juliana Stratton",
+          "party": "D",
+          "new": true
+        },
+        {
+          "name": "Tammy Duckworth",
+          "party": "D",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "IL",
+          "seats": 59,
+          "D": 45,
+          "R": 13,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 30,
+          "control": "D"
+        },
+        "state_house": {
+          "state": "IL",
+          "seats": 118,
+          "D": 80,
+          "R": 32,
+          "other": 0,
+          "uncalled": 6,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 60,
+          "control": "D"
+        }
+      },
+      "trifecta": "D trifecta",
+      "us_house_along": [
+        {
+          "district": "3",
+          "name": "Delia Ramirez",
+          "party": "D",
+          "margin": 51.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "4",
+          "name": "Patty Garcia",
+          "party": "D",
+          "margin": 54.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "6",
+          "name": "Sean Casten",
+          "party": "D",
+          "margin": 25.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "7",
+          "name": "La Shawn K. Ford",
+          "party": "D",
+          "margin": 78.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "8",
+          "name": "Melissa Bean",
+          "party": "D",
+          "margin": 29.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "11",
+          "name": "Bill Foster",
+          "party": "D",
+          "margin": 30.8,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "16",
+          "name": "Darin LaHood",
+          "party": "R",
+          "margin": 17.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "17",
+          "name": "Eric Sorensen",
+          "party": "D",
+          "margin": 20.2,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 12,
+        "counted": 12,
+        "pending_boundaries": 0,
+        "D": 10,
+        "R": 1,
+        "other": 0,
+        "undecided": 1,
+        "uncalled": 1,
+        "flipped_to_D": 2,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 106.3,
+        "km_R": 136.1,
+        "with_stop": 4
+      },
+      "state_house_along": {
+        "districts": 19,
+        "counted": 19,
+        "pending_boundaries": 0,
+        "D": 14,
+        "R": 3,
+        "other": 0,
+        "undecided": 2,
+        "uncalled": 2,
+        "flipped_to_D": 1,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 101.4,
+        "km_R": 153.2,
+        "with_stop": 6
+      }
+    },
+    {
+      "state": "IA",
+      "km": 1.3,
+      "governor": {
+        "name": "Rob Sand",
+        "party": "D",
+        "source": "2026",
+        "flipped": true
+      },
+      "us_senators": [
+        {
+          "name": "Josh Turek",
+          "party": "D",
+          "new": true
+        },
+        {
+          "name": "Chuck Grassley",
+          "party": "R",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "IA",
+          "seats": 50,
+          "D": 17,
+          "R": 32,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 26,
+          "control": "R"
+        },
+        "state_house": {
+          "state": "IA",
+          "seats": 100,
+          "D": 43,
+          "R": 52,
+          "other": 0,
+          "uncalled": 5,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 51,
+          "control": "R"
+        }
+      },
+      "trifecta": "divided",
+      "us_house_along": [
+        {
+          "district": "2",
+          "name": "Lindsay James",
+          "party": "D",
+          "margin": 4.0,
+          "flipped": true,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 1,
+        "counted": 1,
+        "pending_boundaries": 0,
+        "D": 1,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 1.3,
+        "km_R": 0.0,
+        "with_stop": 1
+      },
+      "state_house_along": {
+        "districts": 1,
+        "counted": 1,
+        "pending_boundaries": 0,
+        "D": 1,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 1.3,
+        "km_R": 0.0,
+        "with_stop": 1
+      }
+    }
+  ],
+  "chi-pia": [
+    {
+      "state": "IL",
+      "km": 235.1,
+      "governor": {
+        "name": "JB Pritzker",
+        "party": "D",
+        "source": "2026",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Juliana Stratton",
+          "party": "D",
+          "new": true
+        },
+        {
+          "name": "Tammy Duckworth",
+          "party": "D",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "IL",
+          "seats": 59,
+          "D": 45,
+          "R": 13,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 30,
+          "control": "D"
+        },
+        "state_house": {
+          "state": "IL",
+          "seats": 118,
+          "D": 80,
+          "R": 32,
+          "other": 0,
+          "uncalled": 6,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 60,
+          "control": "D"
+        }
+      },
+      "trifecta": "D trifecta",
+      "us_house_along": [
+        {
+          "district": "1",
+          "name": "Jonathan Jackson",
+          "party": "D",
+          "margin": 40.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "4",
+          "name": "Patty Garcia",
+          "party": "D",
+          "margin": 54.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "6",
+          "name": "Sean Casten",
+          "party": "D",
+          "margin": 25.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "7",
+          "name": "La Shawn K. Ford",
+          "party": "D",
+          "margin": 78.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "11",
+          "name": "Bill Foster",
+          "party": "D",
+          "margin": 30.8,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "14",
+          "name": "Lauren Underwood",
+          "party": "D",
+          "margin": 25.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "16",
+          "name": "Darin LaHood",
+          "party": "R",
+          "margin": 17.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "17",
+          "name": "Eric Sorensen",
+          "party": "D",
+          "margin": 20.2,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 11,
+        "counted": 11,
+        "pending_boundaries": 0,
+        "D": 7,
+        "R": 4,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 69.0,
+        "km_R": 165.8,
+        "with_stop": 4
+      },
+      "state_house_along": {
+        "districts": 16,
+        "counted": 16,
+        "pending_boundaries": 0,
+        "D": 11,
+        "R": 5,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 112.5,
+        "km_R": 122.1,
+        "with_stop": 4
+      }
+    }
+  ],
+  "chi-cdl": [
+    {
+      "state": "IL",
+      "km": 509.8,
+      "governor": {
+        "name": "JB Pritzker",
+        "party": "D",
+        "source": "2026",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Juliana Stratton",
+          "party": "D",
+          "new": true
+        },
+        {
+          "name": "Tammy Duckworth",
+          "party": "D",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "IL",
+          "seats": 59,
+          "D": 45,
+          "R": 13,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 30,
+          "control": "D"
+        },
+        "state_house": {
+          "state": "IL",
+          "seats": 118,
+          "D": 80,
+          "R": 32,
+          "other": 0,
+          "uncalled": 6,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 60,
+          "control": "D"
+        }
+      },
+      "trifecta": "D trifecta",
+      "us_house_along": [
+        {
+          "district": "1",
+          "name": "Jonathan Jackson",
+          "party": "D",
+          "margin": 40.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "2",
+          "name": "Donna Miller",
+          "party": "D",
+          "margin": 45.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "7",
+          "name": "La Shawn K. Ford",
+          "party": "D",
+          "margin": 78.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "12",
+          "name": "Mike Bost",
+          "party": "R",
+          "margin": 39.4,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "13",
+          "name": "Nikki Budzinski",
+          "party": "D",
+          "margin": 25.2,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "15",
+          "name": "Mary Miller",
+          "party": "R",
+          "margin": 33.8,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 16,
+        "counted": 16,
+        "pending_boundaries": 0,
+        "D": 10,
+        "R": 6,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 148.6,
+        "km_R": 361.3,
+        "with_stop": 8
+      },
+      "state_house_along": {
+        "districts": 23,
+        "counted": 23,
+        "pending_boundaries": 0,
+        "D": 14,
+        "R": 7,
+        "other": 0,
+        "undecided": 2,
+        "uncalled": 2,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 79.0,
+        "km_R": 371.9,
+        "with_stop": 9
+      }
+    }
+  ],
+  "chi-grr": [
+    {
+      "state": "IL",
+      "km": 23.6,
+      "governor": {
+        "name": "JB Pritzker",
+        "party": "D",
+        "source": "2026",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Juliana Stratton",
+          "party": "D",
+          "new": true
+        },
+        {
+          "name": "Tammy Duckworth",
+          "party": "D",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "IL",
+          "seats": 59,
+          "D": 45,
+          "R": 13,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 30,
+          "control": "D"
+        },
+        "state_house": {
+          "state": "IL",
+          "seats": 118,
+          "D": 80,
+          "R": 32,
+          "other": 0,
+          "uncalled": 6,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 60,
+          "control": "D"
+        }
+      },
+      "trifecta": "D trifecta",
+      "us_house_along": [
+        {
+          "district": "1",
+          "name": "Jonathan Jackson",
+          "party": "D",
+          "margin": 40.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "2",
+          "name": "Donna Miller",
+          "party": "D",
+          "margin": 45.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "7",
+          "name": "La Shawn K. Ford",
+          "party": "D",
+          "margin": 78.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 5,
+        "counted": 5,
+        "pending_boundaries": 0,
+        "D": 5,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 23.3,
+        "km_R": 0.0,
+        "with_stop": 1
+      },
+      "state_house_along": {
+        "districts": 7,
+        "counted": 7,
+        "pending_boundaries": 0,
+        "D": 7,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 23.3,
+        "km_R": 0.0,
+        "with_stop": 1
+      }
+    },
+    {
+      "state": "IN",
+      "km": 2.2,
+      "governor": {
+        "name": "Mike Braun",
+        "party": "R",
+        "source": "holdover",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Todd Young",
+          "party": "R",
+          "new": false
+        },
+        {
+          "name": "Jim Banks",
+          "party": "R",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "IN",
+          "seats": 50,
+          "D": 15,
+          "R": 34,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 26,
+          "control": "R"
+        },
+        "state_house": {
+          "state": "IN",
+          "seats": 100,
+          "D": 45,
+          "R": 52,
+          "other": 0,
+          "uncalled": 3,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 51,
+          "control": "R"
+        }
+      },
+      "trifecta": "R trifecta",
+      "us_house_along": [
+        {
+          "district": "1",
+          "name": "Frank Mrvan",
+          "party": "D",
+          "margin": 26.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 1,
+        "counted": 1,
+        "pending_boundaries": 0,
+        "D": 1,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 2.2,
+        "km_R": 0.0,
+        "with_stop": 1
+      },
+      "state_house_along": {
+        "districts": 1,
+        "counted": 1,
+        "pending_boundaries": 0,
+        "D": 1,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 2.2,
+        "km_R": 0.0,
+        "with_stop": 1
+      }
+    },
+    {
+      "state": "MI",
+      "km": 131.5,
+      "governor": {
+        "name": "Jocelyn Benson",
+        "party": "D",
+        "source": "2026",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Abdul El-Sayed",
+          "party": "D",
+          "new": true
+        },
+        {
+          "name": "Elissa Slotkin",
+          "party": "D",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "MI",
+          "seats": 38,
+          "D": 22,
+          "R": 15,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 20,
+          "control": "D"
+        },
+        "state_house": {
+          "state": "MI",
+          "seats": 110,
+          "D": 60,
+          "R": 46,
+          "other": 0,
+          "uncalled": 4,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 56,
+          "control": "D"
+        }
+      },
+      "trifecta": "D trifecta",
+      "us_house_along": [
+        {
+          "district": "3",
+          "name": "Hillary Scholten",
+          "party": "D",
+          "margin": 15.7,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "4",
+          "name": "Sean McCann",
+          "party": "D",
+          "margin": 1.8,
+          "flipped": true,
+          "status": "leading",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 4,
+        "counted": 4,
+        "pending_boundaries": 0,
+        "D": 2,
+        "R": 2,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 1,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 10.3,
+        "km_R": 121.2,
+        "with_stop": 3
+      },
+      "state_house_along": {
+        "districts": 9,
+        "counted": 9,
+        "pending_boundaries": 0,
+        "D": 5,
+        "R": 4,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 1,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 39.2,
+        "km_R": 92.3,
+        "with_stop": 4
+      }
+    }
+  ],
+  "chi-pth": [
+    {
+      "state": "IL",
+      "km": 23.6,
+      "governor": {
+        "name": "JB Pritzker",
+        "party": "D",
+        "source": "2026",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Juliana Stratton",
+          "party": "D",
+          "new": true
+        },
+        {
+          "name": "Tammy Duckworth",
+          "party": "D",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "IL",
+          "seats": 59,
+          "D": 45,
+          "R": 13,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 30,
+          "control": "D"
+        },
+        "state_house": {
+          "state": "IL",
+          "seats": 118,
+          "D": 80,
+          "R": 32,
+          "other": 0,
+          "uncalled": 6,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 60,
+          "control": "D"
+        }
+      },
+      "trifecta": "D trifecta",
+      "us_house_along": [
+        {
+          "district": "1",
+          "name": "Jonathan Jackson",
+          "party": "D",
+          "margin": 40.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "2",
+          "name": "Donna Miller",
+          "party": "D",
+          "margin": 45.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "7",
+          "name": "La Shawn K. Ford",
+          "party": "D",
+          "margin": 78.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 5,
+        "counted": 5,
+        "pending_boundaries": 0,
+        "D": 5,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 23.2,
+        "km_R": 0.0,
+        "with_stop": 1
+      },
+      "state_house_along": {
+        "districts": 7,
+        "counted": 7,
+        "pending_boundaries": 0,
+        "D": 7,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 23.2,
+        "km_R": 0.0,
+        "with_stop": 1
+      }
+    },
+    {
+      "state": "IN",
+      "km": 72.0,
+      "governor": {
+        "name": "Mike Braun",
+        "party": "R",
+        "source": "holdover",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Todd Young",
+          "party": "R",
+          "new": false
+        },
+        {
+          "name": "Jim Banks",
+          "party": "R",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "IN",
+          "seats": 50,
+          "D": 15,
+          "R": 34,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 26,
+          "control": "R"
+        },
+        "state_house": {
+          "state": "IN",
+          "seats": 100,
+          "D": 45,
+          "R": 52,
+          "other": 0,
+          "uncalled": 3,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 51,
+          "control": "R"
+        }
+      },
+      "trifecta": "R trifecta",
+      "us_house_along": [
+        {
+          "district": "1",
+          "name": "Frank Mrvan",
+          "party": "D",
+          "margin": 26.0,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 4,
+        "counted": 4,
+        "pending_boundaries": 0,
+        "D": 3,
+        "R": 1,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 68.4,
+        "km_R": 3.6,
+        "with_stop": 1
+      },
+      "state_house_along": {
+        "districts": 5,
+        "counted": 5,
+        "pending_boundaries": 0,
+        "D": 5,
+        "R": 0,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 72.0,
+        "km_R": 0.0,
+        "with_stop": 1
+      }
+    },
+    {
+      "state": "MI",
+      "km": 418.3,
+      "governor": {
+        "name": "Jocelyn Benson",
+        "party": "D",
+        "source": "2026",
+        "flipped": false
+      },
+      "us_senators": [
+        {
+          "name": "Abdul El-Sayed",
+          "party": "D",
+          "new": true
+        },
+        {
+          "name": "Elissa Slotkin",
+          "party": "D",
+          "new": false
+        }
+      ],
+      "chambers": {
+        "state_senate": {
+          "state": "MI",
+          "seats": 38,
+          "D": 22,
+          "R": 15,
+          "other": 0,
+          "uncalled": 1,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 20,
+          "control": "D"
+        },
+        "state_house": {
+          "state": "MI",
+          "seats": 110,
+          "D": 60,
+          "R": 46,
+          "other": 0,
+          "uncalled": 4,
+          "leaning_D": 0,
+          "leaning_R": 0,
+          "majority": 56,
+          "control": "D"
+        }
+      },
+      "trifecta": "D trifecta",
+      "us_house_along": [
+        {
+          "district": "4",
+          "name": "Sean McCann",
+          "party": "D",
+          "margin": 1.8,
+          "flipped": true,
+          "status": "leading",
+          "boundary_status": "current"
+        },
+        {
+          "district": "5",
+          "name": "Tim Walberg",
+          "party": "R",
+          "margin": 20.5,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "7",
+          "name": "William Lawrence",
+          "party": "D",
+          "margin": 3.3,
+          "flipped": true,
+          "status": "leading",
+          "boundary_status": "current"
+        },
+        {
+          "district": "8",
+          "name": "Kristen McDonald Rivet",
+          "party": "D",
+          "margin": 13.6,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        },
+        {
+          "district": "9",
+          "name": "Lisa McClain",
+          "party": "R",
+          "margin": 27.9,
+          "flipped": false,
+          "status": "called",
+          "boundary_status": "current"
+        }
+      ],
+      "state_senate_along": {
+        "districts": 10,
+        "counted": 10,
+        "pending_boundaries": 0,
+        "D": 4,
+        "R": 6,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 0,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 192.1,
+        "km_R": 226.2,
+        "with_stop": 7
+      },
+      "state_house_along": {
+        "districts": 21,
+        "counted": 21,
+        "pending_boundaries": 0,
+        "D": 12,
+        "R": 9,
+        "other": 0,
+        "undecided": 0,
+        "uncalled": 0,
+        "flipped_to_D": 2,
+        "flipped_to_R": 0,
+        "close": 0,
+        "km_D": 164.1,
+        "km_R": 254.2,
+        "with_stop": 8
+      }
+    }
+  ]
+}

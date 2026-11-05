@@ -1,0 +1,9 @@
+data/raw/
+data/interim/
+data/overrides/*
+!data/overrides/README.md
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.venv/

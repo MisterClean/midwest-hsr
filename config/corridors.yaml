@@ -1,0 +1,292 @@
+# Midwest high-speed and intercity rail corridors under serious consideration.
+#
+# tier:
+#   hsr      - dedicated high-speed backbone (150-220 mph) proposed by the High Speed
+#              Rail Alliance (HSRA), the FRA/MIPRC Midwest Regional Rail Plan (2021)
+#              or a state commission.
+#   regional - conventional / higher-speed (79-125 mph) corridors in the FRA Corridor
+#              ID program or the Midwest Regional Rail Plan that feed the backbone.
+# speed_label: compact top-speed tag for the map's departure board.
+# follow:
+#   rail     - route on the existing rail network between waypoints (NTAD NARN, or
+#              Natural Earth as a fallback). Used where a plan names an existing line.
+#   direct   - conceptual alignment: straight segments through waypoints (and `via`
+#              shaping points). Used for greenfield / interstate-ROW options whose
+#              alignments are not yet published as GIS.
+# waypoints: station ids from stations.yaml in travel order. A leading "~" marks a
+#   pass-through shaping point (the line goes by it but the plan names no stop there).
+# option_group / option: alternatives for one market; exactly one option per group
+#   is `default: true` and feeds network-wide totals. The map compares all options.
+#
+# Every corridor cites the documents its stops and status come from. Nothing here is
+# an engineering alignment; see docs/methodology.md for accuracy limits.
+
+sources:
+  ilhsr_2025: {title: "Illinois High-Speed Rail Commission, 2025 Annual Report", url: "https://idot.illinois.gov/content/dam/soi/en/web/idot/documents/programs-and-projects/rail-and-freight/hsr/2025-hsr-commision-2025-annualreport-final.pdf"}
+  ilhsr_page: {title: "IDOT High-Speed Rail Commission", url: "https://idot.illinois.gov/programs-and-projects/rail-and-freight/high-speed-rail-commission.html"}
+  hsra_220: {title: "High Speed Rail Alliance, 220 MPH High Speed Rail in the Midwest", url: "https://www.hsrail.org/220-mph-high-speed-rail-midwest"}
+  hsra_midwest: {title: "High Speed Rail Alliance, High Speed Rail in the Midwest", url: "https://www.hsrail.org/midwest/"}
+  hsra_mwrrp: {title: "High Speed Rail Alliance, FRA's New Midwest Regional Rail Plan", url: "https://hsrail.org/blog/fras-new-midwest-regional-rail-plan"}
+  fra_mwrrp: {title: "FRA, Midwest Regional Rail Plan release (2021)", url: "https://railroads.dot.gov/newsroom/press-releases/federal-railroad-administration-releases-midwest-regional-rail-plan-0"}
+  miprc_mwrrp: {title: "MIPRC, FRA & MIPRC release Midwest Regional Rail Plan", url: "https://miprc.org/News/MIPRC-News/fra-miprc-release-midwest-regional-rail-plan-a-40-year-look-ahead-at-what-could-be"}
+  fra_cid_2023: {title: "FRA, Corridor ID selections (Dec 8, 2023)", url: "https://railroads.dot.gov/sites/fra.dot.gov/files/2023-12/FRA%2013-23.pdf"}
+  miprc_cid: {title: "MIPRC, Midwestern states get big wins in Corridor ID", url: "https://miprc.org/News/News-From-MIPRC-States/midwestern-states-get-big-wins-in-federal-corridor-id-development-programs-inaugural-round"}
+  aao_cid: {title: "All Aboard Ohio, Big changes to the federal passenger rail funding program", url: "https://www.allaboardohio.org/posts/federal-passenger-rail-funding-program-updates"}
+  wiki_hub: {title: "Wikipedia, Chicago Hub Network (SNCF 2009 / MHSRA 2009 routes)", url: "https://en.wikipedia.org/wiki/Chicago_Hub_Network"}
+  fw_connect: {title: "City of Fort Wayne, Midwest Connect Corridor ID", url: "https://engage.cityoffortwayne.org/midwest-connect-passenger-rail-corridor-identification-development"}
+
+corridors:
+  # ------------------------------------------------------------------ HSR backbone
+  - id: chi-msp
+    name: Chicago – Milwaukee – Madison – Twin Cities
+    short: Twin Cities line
+    tier: hsr
+    speed: "186+ mph (FRA plan); up to 220 mph (HSRA)"
+    speed_label: "186–220 mph"
+    status: "Vision. FRA Midwest Regional Rail Plan's new high-speed 'foundation' line; Wisconsin's Milwaukee–Madison–Eau Claire–Twin Cities corridor is in Corridor ID (conventional service first)."
+    sources: [hsra_mwrrp, fra_mwrrp, miprc_cid]
+    follow: rail
+    waypoints: [CHI, ~GLN, MKA, MKE, ~WTN, MSN, ~WDL, ~WYV, EAU, ~MNM, MSP, MPL]
+
+  - id: chi-stl-1
+    name: Chicago – Springfield – St. Louis (via Joliet & Bloomington-Normal)
+    short: St. Louis line · Option 1/2
+    tier: hsr
+    option_group: chi-stl
+    option: "Routes 1-2: I-55 corridor (interstate or greenfield ROW)"
+    default: true
+    speed: "up to 220 mph, electrified, fully grade-separated"
+    speed_label: "220 mph"
+    status: "Feasibility study by the Illinois High-Speed Rail Commission (created 2021); eight route options identified in 2025, study due mid-2026. No route selected."
+    sources: [ilhsr_2025, ilhsr_page]
+    follow: direct
+    waypoints: [CHI, JOL, ~DWT, ~PON, BNL, ~LCN, SPI, ~LTF, ESL, STL]
+
+  - id: chi-stl-3
+    name: Chicago – Champaign – Springfield – St. Louis (via University Park)
+    short: St. Louis line · Option 3
+    tier: hsr
+    option_group: chi-stl
+    option: "Route 3: I-57 / I-72 / I-55 interstate ROW"
+    speed: "up to 220 mph"
+    speed_label: "220 mph"
+    status: "One of eight options in the Illinois HSR feasibility study."
+    sources: [ilhsr_2025]
+    follow: direct
+    waypoints: [CHI, UPK, ~KKI, ~RTL, CHM, ~MTC, ~I72D, SPI, ~LTF, ESL, STL]
+
+  - id: chi-stl-4
+    name: Chicago – Champaign – Decatur – Springfield – St. Louis (via University Park, greenfield)
+    short: St. Louis line · Option 4
+    tier: hsr
+    option_group: chi-stl
+    option: "Route 4: greenfield via University Park, Champaign, Decatur"
+    speed: "up to 220 mph"
+    speed_label: "220 mph"
+    status: "One of eight options in the Illinois HSR feasibility study."
+    sources: [ilhsr_2025]
+    follow: direct
+    waypoints: [CHI, UPK, CHM, DEC, SPI, ESL, STL]
+
+  - id: chi-stl-5
+    name: Chicago – Joliet – Champaign – Decatur – Springfield – St. Louis
+    short: St. Louis line · Option 5/6
+    tier: hsr
+    option_group: chi-stl
+    option: "Routes 5-6: via Joliet, Champaign, Decatur (greenfield or interstate-adjacent)"
+    speed: "up to 220 mph"
+    speed_label: "220 mph"
+    status: "One of eight options in the Illinois HSR feasibility study."
+    sources: [ilhsr_2025]
+    follow: direct
+    waypoints: [CHI, JOL, CHM, DEC, SPI, ESL, STL]
+
+  - id: chi-stl-7
+    name: Chicago – Bloomington-Normal – Peoria – Springfield – St. Louis
+    short: St. Louis line · Option 7/8
+    tier: hsr
+    option_group: chi-stl
+    option: "Routes 7-8: via Joliet, Bloomington-Normal, Peoria (interstate or greenfield)"
+    speed: "up to 220 mph"
+    speed_label: "220 mph"
+    status: "One of eight options in the Illinois HSR feasibility study."
+    sources: [ilhsr_2025]
+    follow: direct
+    waypoints: [CHI, JOL, ~DWT, ~PON, BNL, PIA, SPI, ~LTF, ESL, STL]
+
+  - id: chi-det
+    name: Chicago – Kalamazoo – Ann Arbor – Detroit
+    short: Detroit line
+    tier: hsr
+    speed: "110 mph today on Michigan-owned segments; HSRA backbone up to 220 mph"
+    speed_label: "110 → 220 mph"
+    status: "Pillar corridor in the FRA Midwest Regional Rail Plan and the HSRA network; Wolverine improvements in Corridor ID."
+    sources: [hsra_220, hsra_mwrrp, miprc_cid]
+    follow: rail
+    waypoints: [CHI, HMI, MCI, NLS, KAL, BTL, JXN, ARB, DER, DET]
+
+  - id: chi-ind-cin
+    name: Chicago – Lafayette – Indianapolis – Cincinnati
+    short: Indianapolis line
+    tier: hsr
+    speed: "HSRA backbone up to 220 mph"
+    speed_label: "up to 220 mph"
+    status: "Pillar corridor (Chicago–Indianapolis) in the FRA plan and HSRA network; Indianapolis–Chicago and daily Cardinal service in Corridor ID."
+    sources: [hsra_220, hsra_mwrrp, miprc_cid]
+    follow: rail
+    waypoints: [CHI, DYE, REN, LAF, CRF, IND, CON, CIN]
+
+  - id: chi-cle
+    name: Chicago – Fort Wayne – Toledo – Cleveland
+    short: Cleveland line
+    tier: hsr
+    speed: "HSRA backbone up to 220 mph"
+    speed_label: "up to 220 mph"
+    status: "HSRA's line to Detroit and Cleveland (toward Buffalo and New York); first-phase corridor in the 2009 SNCF study."
+    sources: [hsra_220, wiki_hub]
+    follow: rail
+    waypoints: [CHI, ~HMI, GRY, ~VPZ, FTW, TOL, ~SKY, ~ELY, CLE]
+
+  - id: cle-cin
+    name: Cleveland – Columbus – Dayton – Cincinnati (3C+D)
+    short: Ohio 3C+D
+    tier: hsr
+    speed: "Conventional first (Corridor ID); 220 mph in the 2009 MHSRA vision"
+    speed_label: "79 → 220 mph"
+    status: "Ohio corridor in FRA Corridor ID (selected Dec 2023, Step 1 complete); expected to use FRA's new Core service-development path."
+    sources: [fra_cid_2023, aao_cid, wiki_hub]
+    follow: rail
+    waypoints: [CLE, ~CRS, DLW, CBUS, SPF, DAY, SHV, CIN]
+
+  # ------------------------------------------------------------------ regional feeders
+  - id: chi-oma
+    name: Chicago – Quad Cities – Iowa City – Des Moines – Omaha
+    short: Iowa line
+    tier: regional
+    speed: "79-110 mph"
+    speed_label: "79–110 mph"
+    status: "Chicago–Quad Cities in Corridor ID (Illinois); Iowa City, Des Moines and Omaha extension in the FRA Midwest Regional Rail Plan."
+    sources: [miprc_cid, fra_mwrrp]
+    follow: rail
+    waypoints: [CHI, NPV, PLO, MDT, PCT, ~WYN, GEN, MOL, ~DAV, IOW, DSM, ~CBF, OMA]
+
+  - id: stl-kc
+    name: St. Louis – Jefferson City – Kansas City
+    short: Missouri River Runner
+    tier: regional
+    speed: "79 mph"
+    speed_label: "79 mph"
+    status: "Existing state-supported service; regional corridor in the FRA plan."
+    sources: [fra_mwrrp, wiki_hub]
+    follow: rail
+    waypoints: [STL, KWD, WAH, HEM, JEF, SED, WAR, LEE, IDP, KCY]
+
+  - id: chi-col
+    name: Chicago – Fort Wayne – Lima – Columbus (Midwest Connect)
+    short: Midwest Connect
+    tier: regional
+    speed: "79-110 mph"
+    speed_label: "79–110 mph"
+    status: "Corridor ID (continuing to Pittsburgh); new service."
+    sources: [miprc_cid, fw_connect, aao_cid]
+    follow: rail
+    waypoints: [CHI, ~GRY, VPZ, PLY, WSW, FTW, LIM, ~KEN, MRY, CBUS]
+
+  - id: ind-lou
+    name: Indianapolis – Columbus – Louisville
+    short: Louisville line
+    tier: regional
+    speed: "79 mph"
+    speed_label: "79 mph"
+    status: "Corridor ID (Indiana); new service."
+    sources: [miprc_cid]
+    follow: rail
+    waypoints: [IND, CLI, SEY, ~JFV, LOU]
+
+  - id: msp-dul
+    name: Minneapolis – Duluth (Northern Lights Express)
+    short: Northern Lights Express
+    tier: regional
+    speed: "90 mph"
+    speed_label: "90 mph"
+    status: "Corridor ID (Minnesota); new service."
+    sources: [miprc_cid, hsra_midwest]
+    follow: rail
+    waypoints: [MPL, CRP, CMB, HNK, SUP, DUL]
+
+  - id: mke-grb
+    name: Milwaukee – Fond du Lac – Green Bay
+    short: Green Bay extension
+    tier: regional
+    speed: "79 mph"
+    speed_label: "79 mph"
+    status: "Corridor ID (Wisconsin) Hiawatha extension."
+    sources: [miprc_cid]
+    follow: rail
+    waypoints: [MKE, FDL, OSH, APL, GRB]
+
+  - id: cle-det
+    name: Cleveland – Toledo – Detroit
+    short: Cleveland–Detroit
+    tier: regional
+    speed: "79 mph"
+    speed_label: "79 mph"
+    status: "Corridor ID; new service."
+    sources: [miprc_cid, aao_cid]
+    follow: rail
+    waypoints: [CLE, ELY, SKY, TOL, MON, DET]
+
+  - id: chi-dbq
+    name: Chicago – Rockford – Dubuque (Black Hawk)
+    short: Black Hawk
+    tier: regional
+    speed: "79 mph"
+    speed_label: "79 mph"
+    status: "HSRA priority corridor; restoration of the former Black Hawk route."
+    sources: [hsra_midwest]
+    follow: rail
+    waypoints: [CHI, ELG, BEL, RFD, FPT, GLA, DBQ]
+
+  - id: chi-pia
+    name: Chicago – Peoria
+    short: Peoria line
+    tier: regional
+    speed: "79 mph"
+    speed_label: "79 mph"
+    status: "Corridor ID (Illinois); new service. Routing not yet published; drawn along the Illinois River valley."
+    sources: [miprc_cid]
+    follow: rail
+    waypoints: [CHI, JOL, ~MOR, OTW, LSP, PIA]
+
+  - id: chi-cdl
+    name: Chicago – Champaign – Carbondale (Illini / Saluki)
+    short: Illini / Saluki
+    tier: regional
+    speed: "79 mph"
+    speed_label: "79 mph"
+    status: "Corridor ID (Illinois) service enhancement."
+    sources: [miprc_cid]
+    follow: rail
+    waypoints: [CHI, HMW, KKI, RTL, CHM, MAT, EFG, CEN, CDL]
+
+  - id: chi-grr
+    name: Chicago – Holland – Grand Rapids (Pere Marquette)
+    short: Pere Marquette
+    tier: regional
+    speed: "79 mph"
+    speed_label: "79 mph"
+    status: "Corridor ID (Michigan) service enhancement."
+    sources: [miprc_cid]
+    follow: rail
+    waypoints: [CHI, HMI, SJM, BAM, HOM, GRR]
+
+  - id: chi-pth
+    name: Chicago – East Lansing – Flint – Port Huron (Blue Water)
+    short: Blue Water
+    tier: regional
+    speed: "up to 110 mph on shared segments"
+    speed_label: "79–110 mph"
+    status: "Corridor ID (Michigan) service enhancement."
+    sources: [miprc_cid]
+    follow: rail
+    waypoints: [CHI, HMI, NLS, KAL, BTL, ELN, DRD, FLN, LPE, PTH]

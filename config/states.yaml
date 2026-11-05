@@ -1,0 +1,36 @@
+# States in scope for the Midwest HSR political-pathway analysis.
+# fips: Census state FIPS; usps: postal code.
+# chambers: legislative chambers and their Census SLD layer (sldu/sldl).
+#   Nebraska is unicameral and nonpartisan; its single chamber uses the SLDU layer.
+# up_2026: which seats were on the Nov 3, 2026 ballot (documentation only; the
+#   pipeline derives this from the results snapshot and treats every other seat
+#   as a holdover filled from the OpenStates roster).
+states:
+  IL: {fips: "17", name: Illinois,  chambers: {state_senate: sldu, state_house: sldl}, up_2026: "Senate: 2/3 of seats (staggered 4-4-2); House: all 118"}
+  IN: {fips: "18", name: Indiana,   chambers: {state_senate: sldu, state_house: sldl}, up_2026: "Senate: 25 of 50; House: all 100"}
+  IA: {fips: "19", name: Iowa,      chambers: {state_senate: sldu, state_house: sldl}, up_2026: "Senate: odd-numbered 25 of 50; House: all 100"}
+  KS: {fips: "20", name: Kansas,    chambers: {state_senate: sldu, state_house: sldl}, up_2026: "Senate: not up (specials only); House: all 125"}
+  KY: {fips: "21", name: Kentucky,  chambers: {state_senate: sldu, state_house: sldl}, up_2026: "Senate: even-numbered 19 of 38; House: all 100"}
+  MI: {fips: "26", name: Michigan,  chambers: {state_senate: sldu, state_house: sldl}, up_2026: "Senate: all 38; House: all 110"}
+  MN: {fips: "27", name: Minnesota, chambers: {state_senate: sldu, state_house: sldl}, up_2026: "Senate: all 67; House: all 134"}
+  MO: {fips: "29", name: Missouri,  chambers: {state_senate: sldu, state_house: sldl}, up_2026: "Senate: even-numbered 17 of 34; House: all 163"}
+  NE: {fips: "31", name: Nebraska,  chambers: {state_senate: sldu}, unicameral: true, nonpartisan: true, up_2026: "Legislature: even-numbered 24 of 49 plus specials"}
+  OH: {fips: "39", name: Ohio,      chambers: {state_senate: sldu, state_house: sldl}, up_2026: "Senate: odd-numbered 17 of 33; House: all 99"}
+  WI: {fips: "55", name: Wisconsin, chambers: {state_senate: sldu, state_house: sldl}, up_2026: "Senate: odd-numbered 17 of 33; Assembly: all 99"}
+
+# Total seats per chamber (used to validate holdover + 2026 winner coverage).
+chamber_sizes:
+  IL: {state_senate: 59, state_house: 118}
+  IN: {state_senate: 50, state_house: 100}
+  IA: {state_senate: 50, state_house: 100}
+  KS: {state_senate: 40, state_house: 125}
+  KY: {state_senate: 38, state_house: 100}
+  MI: {state_senate: 38, state_house: 110}
+  MN: {state_senate: 67, state_house: 134}
+  MO: {state_senate: 34, state_house: 163}
+  NE: {state_senate: 49}
+  OH: {state_senate: 33, state_house: 99}
+  WI: {state_senate: 33, state_house: 99}
+
+# Map extent for the web export (lon/lat).
+bbox: [-98.5, 36.4, -80.4, 49.5]

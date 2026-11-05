@@ -1,0 +1,724 @@
+<title>Who Holds the Track</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Proposed Midwest high-speed rail corridors laid over every congressional and state legislative district, colored by the Nov. 3, 2026 results.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+/* Layout: one-screen app. Left column = masthead + departure board / pathway strip;
+   right = the night map. Stacks to masthead → map → panel on phones.
+   Deliberately dark single theme: a rail map at night, track lit like signal lamps. */
+:root {
+  color-scheme: dark;
+  --ink: #0a0f1c;
+  --panel: #0e1526;
+  --land: #131b2e;
+  --water: #070b14;
+  --rule: #24304b;
+  --text: #e9edf6;
+  --muted: #8f9bb6;
+  --faint: #5d6984;
+  --signal: #ffb938;
+  --signal-soft: rgba(255, 185, 56, .18);
+  --regional: #c3cde3;
+  --dem: #4c8df6;
+  --rep: #ee5a52;
+  --np: #a68cf0;
+  --pending: #55617c;
+  --display: "Big Shoulders Display", "Big Shoulders", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --body: "Public Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s5: 24px; --s6: 32px;
+}
+html, body { height: 100%; }
+body { background: var(--ink); color: var(--text); font: 400 14px/1.45 var(--body); overflow: hidden; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--ink); }
+a { color: var(--signal); }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--signal); outline-offset: 2px; }
+
+.app { height: 100%; display: grid; grid-template-columns: minmax(340px, 420px) 1fr; }
+.side { min-width: 0; display: flex; flex-direction: column; background: var(--panel); border-right: 1px solid var(--rule);
+  overflow-y: auto; overscroll-behavior: contain;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: 16px; padding-block: 20px 28px; gap: var(--s5); }
+.mapwrap { position: relative; min-width: 0; background: var(--water); overflow: hidden;
+  padding-right: env(safe-area-inset-right, 0px); }
+
+/* Masthead */
+.eyebrow { font: 500 11px/1.3 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--signal); }
+h1 { font: 900 clamp(44px, 5.2vw, 64px)/.9 var(--display); letter-spacing: .005em; text-transform: uppercase; margin: 6px 0 10px; text-wrap: balance; }
+h1 .lamp { color: var(--signal); text-shadow: 0 0 18px rgba(255,185,56,.45); }
+.dek { color: #c9d1e3; margin: 0; max-width: 60ch; font-size: 14.5px; }
+.asof { margin-top: 8px; font: 400 11.5px/1.4 var(--mono); color: var(--muted); }
+
+/* Big numbers */
+.stats { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+.stat { background: var(--panel); padding: 12px 12px 10px; min-width: 0; }
+.stat .n { font: 800 34px/1 var(--display); font-variant-numeric: tabular-nums; }
+.stat .l { font-size: 12px; color: var(--muted); margin-top: 4px; }
+.split { display: flex; height: 6px; margin-top: 8px; background: var(--rule); }
+.split i { display: block; height: 100%; }
+.split .d { background: var(--dem); } .split .r { background: var(--rep); } .split .p { background: var(--pending); }
+.splitlab { display: flex; justify-content: space-between; font: 500 11px/1.2 var(--mono); margin-top: 4px; color: var(--muted); }
+.splitlab b { font-weight: 600; } .splitlab .d { color: var(--dem); } .splitlab .r { color: var(--rep); }
+
+.verdict { border-left: 3px solid var(--signal); padding: 2px 0 2px 12px; color: #dfe5f2; margin: 0; }
+.verdict strong { color: var(--text); }
+
+h2 { font: 800 22px/1 var(--display); text-transform: uppercase; letter-spacing: .02em; margin: 0 0 var(--s3); display: flex; align-items: baseline; justify-content: space-between; gap: var(--s3); }
+h2 small { font: 500 11px/1 var(--mono); color: var(--muted); letter-spacing: .06em; text-transform: uppercase; }
+
+/* Departure board */
+.board { display: flex; flex-direction: column; gap: 2px; }
+.row { display: grid; grid-template-columns: 10px 1fr auto; gap: 10px; align-items: center; text-align: left;
+  background: transparent; border: 0; border-bottom: 1px solid var(--rule); padding: 10px 4px; cursor: pointer; width: 100%; }
+.row:hover, .row[aria-pressed="true"] { background: rgba(255,255,255,.035); }
+.row[aria-pressed="true"] .rname { color: var(--signal); }
+.row .swatch { width: 10px; height: 10px; border-radius: 50%; background: var(--signal); box-shadow: 0 0 8px var(--signal); }
+.row.regional .swatch { background: transparent; border: 2px solid var(--regional); box-shadow: none; }
+.rname { font-weight: 600; font-size: 13.5px; line-height: 1.25; }
+.rmeta { font: 400 11px/1.3 var(--mono); color: var(--muted); margin-top: 2px; }
+.mini { width: 74px; }
+.mini .split { margin-top: 0; height: 5px; }
+.mini .splitlab { font-size: 10px; }
+.tierhead { font: 500 10.5px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--faint); margin: 14px 0 4px; }
+
+/* Map */
+#map { width: 100%; height: 100%; display: block; touch-action: none; }
+.land { fill: var(--land); }
+.state-out { fill: #0f1524; stroke: #1c2540; stroke-width: .6; vector-effect: non-scaling-stroke; }
+.lake { fill: var(--water); }
+.dist { stroke: var(--ink); stroke-width: .35; vector-effect: non-scaling-stroke; transition: opacity .25s; }
+.dist:hover { stroke: #fff; stroke-width: 1.2; }
+.dist.on { stroke: var(--signal); stroke-width: 1.4; }
+.dimmed .dist:not(.on) { opacity: .28; }
+.statebord { fill: none; stroke: #3a4767; stroke-width: 1; vector-effect: non-scaling-stroke; pointer-events: none; }
+.cor { fill: none; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; pointer-events: stroke; cursor: pointer; }
+.cor.hsr { stroke: var(--signal); stroke-width: 3.2; }
+.cor.glow { stroke: var(--signal); stroke-width: 11; opacity: .16; pointer-events: none; filter: blur(3px); }
+.cor.regional { stroke: var(--regional); stroke-width: 1.6; stroke-dasharray: 5 4; opacity: .85; }
+.cor.alt { stroke: var(--signal); stroke-width: 1.6; stroke-dasharray: 2 5; opacity: .7; }
+.cor.hit { stroke: transparent; stroke-width: 14; }
+.focus .cor:not(.sel):not(.hit):not(.glow) { opacity: .22; }
+.focus .cor.glow:not(.sel) { opacity: .04; }
+.cor.sel.hsr, .cor.sel.alt, .cor.sel.regional { stroke-width: 4; opacity: 1; stroke-dasharray: none; }
+.cor.sel.regional { stroke: #fff; }
+.stop { fill: var(--ink); stroke: var(--text); stroke-width: 1.3; vector-effect: non-scaling-stroke; }
+.stop.sel { stroke: var(--signal); }
+.train { fill: #fff; filter: drop-shadow(0 0 4px #fff) drop-shadow(0 0 10px var(--signal)); pointer-events: none; }
+.city { font: 600 11px/1 var(--body); fill: #dce3f2; paint-order: stroke; stroke: var(--ink); stroke-width: 3px; stroke-linejoin: round; pointer-events: none; }
+.city.small { font-size: 9.5px; fill: #aab4cb; }
+
+.mapui { position: absolute; display: flex; gap: var(--s2); z-index: 2; }
+.layers { top: calc(12px + env(safe-area-inset-top, 0px)); left: 12px; right: 12px; flex-wrap: wrap; pointer-events: none; }
+.seg { display: inline-flex; background: rgba(10,15,28,.86); border: 1px solid var(--rule); border-radius: 999px; padding: 3px; pointer-events: auto; backdrop-filter: blur(6px); flex-wrap: wrap; }
+.seg button { border: 0; background: transparent; padding: 6px 11px; border-radius: 999px; font-size: 12.5px; font-weight: 600; color: var(--muted); cursor: pointer; white-space: nowrap; }
+.seg button[aria-pressed="true"] { background: var(--text); color: var(--ink); }
+.zoom { right: calc(12px + env(safe-area-inset-right, 0px)); bottom: calc(12px + env(safe-area-inset-bottom, 0px)); flex-direction: column; }
+.zoom button { width: 34px; height: 34px; border-radius: 8px; border: 1px solid var(--rule); background: rgba(10,15,28,.86); cursor: pointer; font-size: 17px; line-height: 1; }
+.legend { left: 12px; bottom: calc(12px + env(safe-area-inset-bottom, 0px)); flex-direction: column; gap: 6px; background: rgba(10,15,28,.86);
+  border: 1px solid var(--rule); border-radius: 10px; padding: 10px 12px; font-size: 11.5px; color: #cbd3e6; max-width: 270px; backdrop-filter: blur(6px); }
+.legend .lrow { display: flex; align-items: center; gap: 8px; }
+.legend .ramp { display: flex; height: 8px; width: 120px; }
+.legend .ramp i { flex: 1; }
+.legend svg { flex: none; }
+.legend .lt { font: 500 10px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--faint); }
+
+.tip { position: absolute; z-index: 5; pointer-events: none; background: rgba(8,12,22,.96); border: 1px solid var(--rule); border-radius: 8px;
+  padding: 9px 11px; font-size: 12.5px; max-width: 270px; box-shadow: 0 8px 28px rgba(0,0,0,.5); }
+.tip .t1 { font: 700 13.5px/1.2 var(--body); }
+.tip .t2 { color: var(--muted); font: 400 11.5px/1.35 var(--mono); margin-top: 3px; }
+.tip .on { color: var(--signal); font-size: 11.5px; margin-top: 6px; }
+
+/* Party chips */
+.pc { display: inline-flex; align-items: center; justify-content: center; min-width: 18px; height: 18px; padding: 0 5px; border-radius: 4px;
+  font: 700 11px/1 var(--mono); color: #fff; background: var(--pending); vertical-align: 1px; }
+.pc.D { background: var(--dem); } .pc.R { background: var(--rep); } .pc.NP, .pc.I { background: var(--np); }
+.flip { font: 600 10px/1 var(--mono); color: var(--signal); border: 1px solid var(--signal); border-radius: 3px; padding: 2px 4px; margin-left: 4px; vertical-align: 1px; }
+.lead { font: 500 10px/1 var(--mono); color: var(--muted); border: 1px dashed var(--muted); border-radius: 3px; padding: 2px 4px; margin-left: 4px; }
+
+/* Detail / pathway strip */
+.back { background: none; border: 0; color: var(--muted); cursor: pointer; padding: 0; font: 500 12px var(--mono); letter-spacing: .06em; text-transform: uppercase; }
+.dtitle { font: 900 32px/.95 var(--display); text-transform: uppercase; margin: 8px 0 6px; text-wrap: balance; }
+.dmeta { font: 400 12px/1.5 var(--mono); color: var(--muted); }
+.status { margin: 10px 0 0; color: #cfd6e6; font-size: 13px; }
+.opts { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.opts button { border: 1px solid var(--rule); background: transparent; border-radius: 6px; padding: 6px 9px; font: 500 11.5px/1.2 var(--mono); color: var(--muted); cursor: pointer; text-align: left; }
+.opts button[aria-pressed="true"] { border-color: var(--signal); color: var(--signal); background: var(--signal-soft); }
+.optcmp { width: 100%; border-collapse: collapse; margin-top: 10px; font: 400 11.5px/1.3 var(--mono); }
+.optcmp th, .optcmp td { padding: 5px 4px; border-bottom: 1px solid var(--rule); text-align: right; font-variant-numeric: tabular-nums; }
+.optcmp th:first-child, .optcmp td:first-child { text-align: left; }
+.optcmp tr.cur td { color: var(--signal); }
+.tablewrap { overflow-x: auto; }
+
+.clock { display: grid; grid-template-columns: 1fr auto; gap: 6px 12px; align-items: center; border: 1px solid var(--rule); padding: 12px; margin-top: 14px; }
+.clock .big { font: 800 40px/1 var(--display); font-variant-numeric: tabular-nums; color: var(--signal); }
+.clock label { font-size: 12px; color: var(--muted); }
+.clock input { grid-column: 1 / -1; width: 100%; accent-color: var(--signal); }
+.clock .fine { grid-column: 1 / -1; font: 400 10.5px/1.4 var(--mono); color: var(--faint); }
+
+.strip { position: relative; margin-top: 18px; padding-left: 26px; }
+.strip::before { content: ""; position: absolute; left: 8px; top: 6px; bottom: 6px; width: 4px; background: var(--signal); border-radius: 2px; box-shadow: 0 0 10px rgba(255,185,56,.5); }
+.strip.regional::before { background: var(--regional); box-shadow: none; }
+.leg { position: relative; padding-bottom: 18px; }
+.leg::before { content: ""; position: absolute; left: -24px; top: 2px; width: 16px; height: 16px; border-radius: 50%; background: var(--panel); border: 3px solid var(--text); }
+.leg h3 { font: 800 20px/1 var(--display); text-transform: uppercase; margin: 0 0 2px; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.leg h3 small { font: 400 11px/1 var(--mono); color: var(--muted); text-transform: none; }
+.tri { display: inline-block; font: 600 10.5px/1 var(--mono); padding: 4px 6px; border-radius: 4px; border: 1px solid var(--rule); color: #cfd6e6; text-transform: uppercase; letter-spacing: .05em; }
+.tri.D { border-color: var(--dem); color: var(--dem); } .tri.R { border-color: var(--rep); color: var(--rep); } .tri.div { border-color: var(--np); color: var(--np); }
+.grid2 { display: grid; grid-template-columns: auto 1fr; gap: 4px 10px; margin-top: 8px; font-size: 12.5px; align-items: center; }
+.grid2 .k { color: var(--muted); font: 400 11px/1.2 var(--mono); text-transform: uppercase; letter-spacing: .05em; }
+.ch { font-variant-numeric: tabular-nums; }
+.stopsline { font: 400 11px/1.5 var(--mono); color: var(--muted); margin-top: 6px; }
+.reps { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.reps li { display: grid; grid-template-columns: 40px 1fr auto; gap: 8px; align-items: center; font-size: 12.5px; }
+.reps .dn { font: 500 11px/1 var(--mono); color: var(--muted); }
+.reps .mg { font: 500 11px/1 var(--mono); font-variant-numeric: tabular-nums; color: var(--muted); }
+.reps .mg.close { color: var(--signal); }
+.pend { font: 400 11px/1.4 var(--mono); color: var(--faint); margin-top: 6px; }
+
+.notes { font-size: 12px; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 16px; }
+.notes h2 { font-size: 18px; }
+.notes p { margin: 0 0 8px; max-width: 65ch; }
+.notes ul { margin: 0 0 8px; padding-left: 18px; }
+.notes li { margin-bottom: 4px; }
+.share { display: flex; gap: 8px; align-items: center; }
+.share button { border: 1px solid var(--signal); color: var(--signal); background: transparent; border-radius: 6px; padding: 7px 12px; font: 600 12px var(--mono); cursor: pointer; }
+.share span { font: 400 11px var(--mono); color: var(--muted); }
+.loading { position: absolute; inset: 0; display: grid; place-items: center; font: 500 12px var(--mono); color: var(--muted); letter-spacing: .1em; text-transform: uppercase; }
+
+@media (max-width: 860px) {
+  body { overflow: auto; }
+  .app { display: flex; flex-direction: column; height: auto; }
+  .side { display: contents; }
+  .side > * { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  .masthead { order: 1; padding-top: 18px; background: var(--panel); }
+  .mapwrap { order: 2; height: 62vh; min-height: 380px; border-block: 1px solid var(--rule); }
+  .side > .stats, .side > .verdict, .side > #overview, .side > #detail, .side > .notes { order: 3; }
+  .side > .stats { margin: 16px max(16px, env(safe-area-inset-left, 0px)) 0; padding: 0; }
+  #overview, #detail { padding-top: 18px; }
+  .notes { margin-top: 18px; padding-bottom: 28px; }
+  .legend { max-width: 210px; font-size: 11px; padding: 8px 10px; }
+  .legend .hideable { display: none; }
+  .seg button { padding: 5px 9px; font-size: 12px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="app">
+  <aside class="side" id="side">
+    <header class="masthead">
+      <div class="eyebrow">Midwest high-speed rail · after Nov. 3, 2026</div>
+      <h1>Who holds <span class="lamp">the track?</span></h1>
+      <p class="dek">Every proposed high-speed and regional rail corridor radiating from Chicago, laid over the districts whose winners will vote on it. Pick a line to see the political pathway from end to end.</p>
+      <div class="asof" id="asof">Unofficial results · loading…</div>
+    </header>
+
+    <div class="stats" id="stats" aria-live="polite"></div>
+    <p class="verdict" id="verdict"></p>
+
+    <section id="overview">
+      <h2>Departures <small id="boardnote">House seats along each line</small></h2>
+      <div class="board" id="board"></div>
+    </section>
+
+    <section id="detail" hidden></section>
+
+    <footer class="notes" id="notes">
+      <h2>About this map</h2>
+      <div class="share"><button type="button" id="copy">Copy link</button><span id="copied" aria-live="polite"></span></div>
+      <div id="notesbody"></div>
+    </footer>
+  </aside>
+
+  <section class="mapwrap" aria-label="Map of rail corridors and districts">
+    <svg id="map" role="img" aria-label="Map of the Midwest showing proposed rail corridors over election districts"></svg>
+    <div class="mapui layers"><div class="seg" id="layers" role="group" aria-label="District layer"></div></div>
+    <div class="mapui legend" id="legend"></div>
+    <div class="mapui zoom"><button type="button" id="zin" aria-label="Zoom in">+</button><button type="button" id="zout" aria-label="Zoom out">−</button><button type="button" id="zreset" aria-label="Reset view">⤢</button></div>
+    <div class="tip" id="tip" hidden></div>
+    <div class="loading" id="loading">Laying track…</div>
+  </section>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script>
+(() => {
+const OFFICES = {
+  us_house: { label: "U.S. House", short: "House", unit: "congressional districts" },
+  state_senate: { label: "State Senate", short: "State Senate", unit: "state senate districts" },
+  state_house: { label: "State House", short: "State House", unit: "state house districts" },
+  governor: { label: "Governors", short: "Governor", unit: "states" },
+  us_senate: { label: "U.S. Senate", short: "Senate", unit: "states" },
+};
+const PARTY_NAME = { D: "Democrat", R: "Republican", I: "Independent", NP: "Nonpartisan" };
+const STATE_NAME = { IL: "Illinois", IN: "Indiana", IA: "Iowa", KS: "Kansas", KY: "Kentucky", MI: "Michigan", MN: "Minnesota", MO: "Missouri", NE: "Nebraska", OH: "Ohio", WI: "Wisconsin" };
+const CITY_LABELS = { CHI: "Chicago", MKE: "Milwaukee", MSN: "Madison", MPL: "Minneapolis", MSP: "St. Paul", DET: "Detroit", CLE: "Cleveland", CBUS: "Columbus", CIN: "Cincinnati", IND: "Indianapolis", STL: "St. Louis", KCY: "Kansas City", DSM: "Des Moines", OMA: "Omaha", LOU: "Louisville", SPI: "Springfield", CHM: "Champaign", TOL: "Toledo", FTW: "Fort Wayne", GRR: "Grand Rapids", DUL: "Duluth", GRB: "Green Bay", PIA: "Peoria", DAY: "Dayton", KAL: "Kalamazoo", BNL: "Bloomington-Normal", MOL: "Quad Cities", IOW: "Iowa City", RFD: "Rockford", EAU: "Eau Claire", ARB: "Ann Arbor", LAF: "Lafayette", JEF: "Jefferson City", CDL: "Carbondale", FLN: "Flint", DBQ: "Dubuque" };
+const MAJOR = new Set(["CHI","MKE","MPL","DET","CLE","CBUS","CIN","IND","STL","KCY","DSM","OMA","LOU","MSN"]);
+const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const css = getComputedStyle(document.documentElement);
+const COL = { D: css.getPropertyValue("--dem").trim(), R: css.getPropertyValue("--rep").trim(), NP: css.getPropertyValue("--np").trim(), I: css.getPropertyValue("--np").trim() };
+
+const state = { office: "us_house", sel: null, group: {}, speed: 186, k: 1 };
+let A, CORR, STOPS, TOPO = {}, byCorridor = {}, byDistrict = {}, cfeat = {};
+
+const $ = (s) => document.querySelector(s);
+const fmt = d3.format(",");
+const km2mi = (k) => Math.round(k * 0.621371);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const chip = (p) => `<span class="pc ${p || ""}" title="${PARTY_NAME[p] || "Undecided"}">${p || "?"}</span>`;
+const dlabel = (id) => { const [o, st, d] = id.split(":"); return o === "us_house" ? `${st}-${d}` : `${st} ${o === "state_senate" ? (st === "NE" ? "LD" : "SD") : "HD"} ${d}`; };
+
+function fill(p, margin, status) {
+  if (!p || status === "uncalled" || status === "vacant") return "#3a4560";
+  const base = d3.color(COL[p] || "#8a8fa0");
+  const m = margin == null ? 18 : Math.min(Math.abs(margin), 30);
+  const t = 0.34 + 0.44 * (m / 30);
+  return d3.interpolateRgb(d3.color("#141c2f"), base)(t);
+}
+
+/* ---------------------------------------------------------------- data */
+Promise.all([
+  fetch("data/analysis.json").then((r) => r.json()),
+  fetch("data/corridors.json").then((r) => r.json()),
+  fetch("data/stops.json").then((r) => r.json()),
+  ...["us_house", "state_senate", "state_house", "states", "lakes"].map((n) => fetch(`data/${n}.topo.json`).then((r) => r.json())),
+]).then(([a, c, s, h, ss, sh, st, lk]) => {
+  A = a; CORR = c; STOPS = s;
+  TOPO = { us_house: h, state_senate: ss, state_house: sh, states: st, lakes: lk };
+  for (const r of A.corridor_districts) {
+    (byCorridor[r.c] ||= []).push(r);
+    (byDistrict[r.id] ||= []).push(r.c);
+  }
+  for (const f of CORR.features) cfeat[f.properties.id] = f;
+  for (const f of CORR.features) if (f.properties.option_group && f.properties.default) state.group[f.properties.option_group] = f.properties.id;
+  init();
+}).catch((e) => { $("#loading").textContent = "Could not load map data: " + e.message; });
+
+/* ------------------------------------------------------------- helpers */
+const corridorsVisible = () => CORR.features.filter((f) => {
+  const p = f.properties;
+  return !p.option_group || state.group[p.option_group] === p.id || (state.sel && cfeat[state.sel].properties.option_group === p.option_group);
+});
+const seat = (id) => A.seats[id] || {};
+const coreIds = () => CORR.features.filter((f) => f.properties.tier === "hsr" && (!f.properties.option_group || state.group[f.properties.option_group] === f.properties.id)).map((f) => f.properties.id);
+
+function countsFor(ids, office) {
+  const seen = new Map();
+  for (const cid of ids) for (const r of byCorridor[cid] || []) if (r.id.startsWith(office + ":")) seen.set(r.id, r);
+  let D = 0, R = 0, O = 0, U = 0, P = 0, flipD = 0, flipR = 0, close = 0;
+  for (const id of seen.keys()) {
+    if (pending.has(id)) { P++; continue; }
+    const s = seat(id);
+    if (s.p === "D") D++; else if (s.p === "R") R++; else if (s.p) O++; else U++;
+    if (s.f && s.p === "D") flipD++; if (s.f && s.p === "R") flipR++;
+    if (s.m != null && Math.abs(s.m) < 5) close++;
+  }
+  return { D, R, O, U, P, total: seen.size, flipD, flipR, close };
+}
+const pending = new Set();
+
+function splitBar(c, labels = true) {
+  const t = Math.max(1, c.D + c.R + c.O + (c.U || 0) + c.P);
+  const w = (n) => (100 * n / t).toFixed(1) + "%";
+  return `<div class="split" aria-hidden="true"><i class="d" style="width:${w(c.D)}"></i><i style="width:${w(c.O)};background:var(--np)"></i><i class="r" style="width:${w(c.R)}"></i><i style="width:${w(c.U || 0)};background:#3a4560"></i><i class="p" style="width:${w(c.P)}"></i></div>` +
+    (labels ? `<div class="splitlab"><span class="d"><b>${c.D}</b> D</span>${c.P ? `<span>${c.P} pending</span>` : ""}<span class="r"><b>${c.R}</b> R</span></div>` : "");
+}
+
+/* ----------------------------------------------------------------- map */
+let svg, gRoot, gDist, gCor, gGlow, gLine, gHit, gStop, gTrain, gLab, path, zoom, W, H, proj, trainSel = null;
+const activeHsr = (f) => f.properties.tier === "hsr" && !(f.properties.option_group && state.group[f.properties.option_group] !== f.properties.id);
+
+function init() {
+  $("#loading").remove();
+  const statesF = topojson.feature(TOPO.states, TOPO.states.objects.states).features;
+  for (const o of ["us_house", "state_senate", "state_house"]) {
+    for (const g of TOPO[o].objects[o].geometries) if (g.properties.bs === "p") pending.add(g.properties.id);
+  }
+  svg = d3.select("#map");
+  const box = svg.node().getBoundingClientRect();
+  W = box.width; H = box.height;
+  const inScope = { type: "FeatureCollection", features: statesF.filter((f) => f.properties.in_scope) };
+  proj = d3.geoConicEqualArea().parallels([38, 46]).rotate([89.5, 0]);
+  const pad = Math.min(W, H) * 0.06;
+  const narrow = W < 600;
+  proj.fitExtent([[pad, pad + (narrow ? 70 : 54)], [W - pad, H - pad - (narrow ? 10 : 0)]], inScope);
+  path = d3.geoPath(proj);
+
+  svg.attr("viewBox", `0 0 ${W} ${H}`);
+  const defs = svg.append("defs");
+  const hatch = defs.append("pattern").attr("id", "hatch").attr("patternUnits", "userSpaceOnUse").attr("width", 6).attr("height", 6).attr("patternTransform", "rotate(45)");
+  hatch.append("rect").attr("width", 6).attr("height", 6).attr("fill", "#1a2236");
+  hatch.append("line").attr("x1", 0).attr("y1", 0).attr("x2", 0).attr("y2", 6).attr("stroke", "#4b5874").attr("stroke-width", 2.2);
+  const split = defs.append("pattern").attr("id", "splitSen").attr("patternUnits", "userSpaceOnUse").attr("width", 14).attr("height", 14).attr("patternTransform", "rotate(45)");
+  split.append("rect").attr("width", 7).attr("height", 14).attr("fill", fill("D", 20));
+  split.append("rect").attr("x", 7).attr("width", 7).attr("height", 14).attr("fill", fill("R", 20));
+
+  gRoot = svg.append("g");
+  gRoot.append("g").selectAll("path").data(statesF).join("path").attr("class", (d) => d.properties.in_scope ? "land" : "state-out").attr("d", path);
+  gDist = gRoot.append("g").attr("class", "dists");
+  gRoot.append("g").selectAll("path").data(topojson.feature(TOPO.lakes, TOPO.lakes.objects.lakes).features).join("path").attr("class", "lake").attr("d", path);
+  gRoot.append("path").attr("class", "statebord").attr("d", path(topojson.mesh(TOPO.states, TOPO.states.objects.states, (a, b) => a !== b)));
+  gCor = gRoot.append("g");
+  gGlow = gCor.append("g"); gLine = gCor.append("g"); gHit = gCor.append("g"); gStop = gCor.append("g");
+  gTrain = gRoot.append("g");
+  gLab = gRoot.append("g");
+
+  zoom = d3.zoom().scaleExtent([1, 14]).translateExtent([[-W * .2, -H * .2], [W * 1.2, H * 1.2]]).on("zoom", (e) => {
+    gRoot.attr("transform", e.transform); state.k = e.transform.k; scaleMarks();
+  });
+  svg.call(zoom).on("dblclick.zoom", null);
+  $("#zin").onclick = () => svg.transition().duration(300).call(zoom.scaleBy, 1.6);
+  $("#zout").onclick = () => svg.transition().duration(300).call(zoom.scaleBy, 1 / 1.6);
+  $("#zreset").onclick = () => svg.transition().duration(500).call(zoom.transform, d3.zoomIdentity);
+  svg.on("click", (e) => { if (e.target === svg.node()) hideTip(); });
+
+  buildLayerSwitch();
+  drawDistricts();
+  drawCorridors();
+  drawLabels();
+  renderStats();
+  renderBoard();
+  renderNotes();
+  startTrains();
+  const h = location.hash.slice(1);
+  if (h && cfeat[h]) select(h, true);
+  window.addEventListener("hashchange", () => { const k = location.hash.slice(1); if (cfeat[k] && k !== state.sel) select(k); else if (!k && state.sel) select(null); });
+}
+
+function buildLayerSwitch() {
+  const seg = d3.select("#layers");
+  seg.selectAll("button").data(Object.keys(OFFICES)).join("button").attr("type", "button")
+    .text((d) => OFFICES[d].label).attr("aria-pressed", (d) => d === state.office)
+    .on("click", (e, d) => { state.office = d; seg.selectAll("button").attr("aria-pressed", (x) => x === d); drawDistricts(); renderBoard(); renderStats(); if (state.sel) renderDetail(); });
+}
+
+function districtFeatures() {
+  if (state.office === "governor" || state.office === "us_senate") {
+    return topojson.feature(TOPO.states, TOPO.states.objects.states).features.filter((f) => f.properties.in_scope).map((f) => ({ ...f, properties: { ...f.properties, id: `${state.office}:${f.properties.state}` } }));
+  }
+  const t = TOPO[state.office];
+  return topojson.feature(t, t.objects[state.office]).features;
+}
+
+function statewide(st) {
+  if (state.office === "governor") { const s = seat(`governor:${st}:`); return { p: s.p, label: s.h, s }; }
+  const sens = Object.entries(A.seats).filter(([k]) => k.startsWith(`us_senate:${st}:`)).map(([, v]) => v);
+  const ps = [...new Set(sens.map((s) => s.p))];
+  return { p: ps.length === 1 ? ps[0] : "split", sens };
+}
+
+function distFill(d) {
+  const id = d.properties.id;
+  if (state.office === "governor" || state.office === "us_senate") {
+    const w = statewide(d.properties.state);
+    if (w.p === "split") return "url(#splitSen)";
+    return fill(w.p, state.office === "governor" ? w.s.m : 20, w.s ? w.s.s : "called");
+  }
+  if (d.properties.bs === "p") return "url(#hatch)";
+  const s = seat(id);
+  if (s.p === "NP") return d3.interpolateRgb("#141c2f", COL.NP)(0.55);
+  return fill(s.p, s.m, s.s);
+}
+
+function drawDistricts() {
+  const feats = districtFeatures();
+  gDist.selectAll("path").data(feats, (d) => d.properties.id).join("path")
+    .attr("class", "dist").attr("d", path).attr("fill", distFill)
+    .on("mousemove", (e, d) => showTip(e, d)).on("mouseleave", hideTip)
+    .on("click", (e, d) => { e.stopPropagation(); showTip(e, d, true); });
+  markSelected();
+  renderLegend();
+}
+
+function drawCorridors() {
+  const vis = corridorsVisible();
+  const order = (f) => (f.properties.tier === "hsr" ? 2 : 1);
+  const data = vis.slice().sort((a, b) => order(a) - order(b));
+  const cls = (f) => {
+    const p = f.properties;
+    const alt = p.option_group && state.group[p.option_group] !== p.id;
+    return `cor ${alt ? "alt" : p.tier}${state.sel === p.id ? " sel" : ""}`;
+  };
+  gGlow.selectAll("path").data(data.filter(activeHsr), (f) => f.properties.id)
+    .join("path").attr("class", (f) => `cor glow${state.sel === f.properties.id ? " sel" : ""}`).attr("d", path);
+  gLine.selectAll("path").data(data, (f) => f.properties.id).join("path").attr("class", (f) => cls(f) + " line").attr("d", path).order();
+  gHit.selectAll("path").data(data, (f) => f.properties.id).join("path").attr("class", "cor hit").attr("d", path)
+    .on("click", (e, f) => { e.stopPropagation(); select(f.properties.id); })
+    .on("mousemove", (e, f) => showCorTip(e, f)).on("mouseleave", hideTip);
+  const stops = STOPS.filter((s) => vis.some((f) => f.properties.id === s.c));
+  const uniq = Array.from(d3.group(stops, (s) => s.id), ([id, arr]) => ({ id, ...arr[0], cs: arr.map((a) => a.c) }));
+  gStop.selectAll("circle").data(uniq, (s) => s.id).join("circle").attr("class", (s) => "stop" + (state.sel && s.cs.includes(state.sel) ? " sel" : ""))
+    .attr("cx", (s) => proj([s.x, s.y])[0]).attr("cy", (s) => proj([s.x, s.y])[1]);
+  refreshTrains();
+  scaleMarks();
+  gRoot.classed("focus", !!state.sel);
+}
+
+function drawLabels() {
+  const seen = new Set();
+  const labs = STOPS.filter((s) => CITY_LABELS[s.id] && !seen.has(s.id) && seen.add(s.id));
+  gLab.selectAll("text").data(labs, (s) => s.id).join("text").attr("class", (s) => "city" + (MAJOR.has(s.id) ? "" : " small"))
+    .attr("data-major", (s) => MAJOR.has(s.id) ? 1 : 0)
+    .attr("x", (s) => proj([s.x, s.y])[0]).attr("y", (s) => proj([s.x, s.y])[1]).text((s) => CITY_LABELS[s.id]);
+  scaleMarks();
+}
+
+function scaleMarks() {
+  const k = state.k;
+  gStop.selectAll("circle").attr("r", (s) => (MAJOR.has(s.id) ? 4.2 : 2.8) / Math.sqrt(k)).attr("stroke-width", 1.3);
+  gLab.selectAll("text").attr("font-size", (s) => (MAJOR.has(s.id) ? 11.5 : 9.5) / k).attr("dx", 6 / k).attr("dy", -6 / k)
+    .attr("stroke-width", 3 / k).style("display", (s) => (MAJOR.has(s.id) || k > 2.2 ? null : "none"));
+  gTrain.selectAll("circle").attr("r", 3.4 / Math.sqrt(k));
+}
+
+/* --------------------------------------------------------- tooltip */
+const tip = $("#tip");
+function placeTip(e) {
+  const r = $(".mapwrap").getBoundingClientRect();
+  let x = e.clientX - r.left + 14, y = e.clientY - r.top + 14;
+  tip.hidden = false;
+  const tw = tip.offsetWidth, th = tip.offsetHeight;
+  if (x + tw > r.width - 8) x = e.clientX - r.left - tw - 14;
+  if (y + th > r.height - 8) y = e.clientY - r.top - th - 14;
+  tip.style.left = Math.max(8, x) + "px"; tip.style.top = Math.max(8, y) + "px";
+}
+function hideTip() { tip.hidden = true; }
+function showTip(e, d) {
+  const id = d.properties.id;
+  let html;
+  if (state.office === "governor") {
+    const st = d.properties.state, s = seat(`governor:${st}:`);
+    html = `<div class="t1">${STATE_NAME[st]} governor</div><div class="t2">${chip(s.p)} ${esc(s.h)}${s.f ? '<span class="flip">FLIP</span>' : ""}</div><div class="t2">${s.src === "2026" ? (s.w ? `Won with ${s.w}%` : "Won Nov. 3") + (s.s === "leading" ? " · not yet called" : "") : "Not on the 2026 ballot"}</div>`;
+  } else if (state.office === "us_senate") {
+    const st = d.properties.state, w = statewide(st);
+    html = `<div class="t1">${STATE_NAME[st]} U.S. senators</div>` + w.sens.map((s) => `<div class="t2">${chip(s.p)} ${esc(s.h)}${s.src === "2026" ? " · elected Nov. 3" : ""}${s.f ? '<span class="flip">FLIP</span>' : ""}</div>`).join("");
+  } else {
+    const s = seat(id);
+    const name = s.h ? esc(s.h) : "Winner not yet called";
+    const res = s.src === "2026"
+      ? (s.m != null ? `Won by ${s.m.toFixed(1)} pts` : s.s === "uncalled" ? "Too early to call" : "Won Nov. 3") + (s.s === "leading" ? " · leading, not called" : "")
+      : s.src === "holdover" ? "Seat not on the 2026 ballot" : "";
+    const pend = d.properties.bs === "p" ? `<div class="t2">2026 lines are newer than this boundary file; result shown by district number.</div>` : "";
+    html = `<div class="t1">${dlabel(id)} ${chip(s.p)}${s.f ? '<span class="flip">FLIP</span>' : ""}</div><div class="t2">${name}${res ? " · " + res : ""}</div>${pend}`;
+    const on = (byDistrict[id] || []).map((c) => cfeat[c]).filter((f) => f && corridorsVisible().includes(f));
+    if (on.length) html += `<div class="on">On: ${on.map((f) => esc(f.properties.short)).join(" · ")}</div>`;
+  }
+  tip.innerHTML = html; placeTip(e);
+}
+function showCorTip(e, f) {
+  const p = f.properties;
+  tip.innerHTML = `<div class="t1">${esc(p.name)}</div><div class="t2">${fmt(km2mi(p.length_km))} mi · ${esc(p.speed)}</div><div class="on">Click for the political pathway</div>`;
+  placeTip(e);
+}
+
+/* ------------------------------------------------------ selection */
+function select(id, zoomTo = true, scroll = false) {
+  state.sel = id;
+  if (id && cfeat[id].properties.option_group) state.group[cfeat[id].properties.option_group] = id;
+  if (id) { if (location.hash.slice(1) !== id) location.hash = id; }
+  else if (location.hash) history.replaceState(null, "", location.pathname + location.search);
+  drawCorridors(); markSelected(); renderBoard(); renderStats();
+  $("#overview").hidden = !!id; $("#detail").hidden = !id;
+  if (id) { renderDetail(); if (scroll || window.innerWidth > 860) $("#side").scrollTop = 0; if (scroll && window.innerWidth <= 860) $("#detail").scrollIntoView({ block: "start", behavior: reduced ? "auto" : "smooth" }); }
+  if (id && zoomTo) {
+    const [[x0, y0], [x1, y1]] = path.bounds(cfeat[id]);
+    const k = Math.min(8, 0.82 / Math.max((x1 - x0) / W, (y1 - y0) / H));
+    const t = d3.zoomIdentity.translate(W / 2, H / 2).scale(k).translate(-(x0 + x1) / 2, -(y0 + y1) / 2);
+    svg.transition().duration(reduced ? 0 : 900).call(zoom.transform, t);
+  } else if (!id) svg.transition().duration(reduced ? 0 : 700).call(zoom.transform, d3.zoomIdentity);
+}
+function markSelected() {
+  const on = new Set(state.sel ? (byCorridor[state.sel] || []).map((r) => r.id) : []);
+  const statewideOn = new Set();
+  if (state.sel && (state.office === "governor" || state.office === "us_senate")) for (const s of A.pathways[state.sel] || []) statewideOn.add(`${state.office}:${s.state}`);
+  gDist.selectAll("path").classed("on", (d) => on.has(d.properties.id) || statewideOn.has(d.properties.id));
+  gDist.classed("dimmed", !!state.sel);
+}
+
+/* ------------------------------------------------------------ panels */
+function renderStats() {
+  const ids = state.sel ? [state.sel] : coreIds();
+  const len = d3.sum(ids, (i) => cfeat[i].properties.length_km);
+  const h = countsFor(ids, "us_house"), ss = countsFor(ids, "state_senate"), sh = countsFor(ids, "state_house");
+  const states = new Set(ids.flatMap((i) => (A.pathways[i] || []).map((s) => s.state)));
+  const tri = A.trifectas.filter((t) => states.has(t.state));
+  const dT = tri.filter((t) => t.trifecta === "D trifecta").length, rT = tri.filter((t) => t.trifecta === "R trifecta").length;
+  $("#stats").innerHTML = `
+    <div class="stat"><div class="n">${fmt(km2mi(len))}</div><div class="l">miles of ${state.sel ? "this line" : "proposed 150–220 mph backbone"}</div></div>
+    <div class="stat"><div class="n">${states.size}</div><div class="l">states · <b style="color:var(--dem)">${dT}</b> D trifecta, <b style="color:var(--rep)">${rT}</b> R trifecta</div></div>
+    <div class="stat"><div class="n">${h.total}</div><div class="l">U.S. House districts touched</div>${splitBar(h)}</div>
+    <div class="stat"><div class="n">${ss.total + sh.total}</div><div class="l">state legislative districts touched</div>${splitBar({ D: ss.D + sh.D, R: ss.R + sh.R, O: ss.O + sh.O, U: ss.U + sh.U, P: ss.P + sh.P })}</div>`;
+  const flips = h.flipD + h.flipR;
+  const triList = (k) => tri.filter((t) => t.trifecta === k).map((t) => t.state).join(", ");
+  const ctl = (c) => (c === "D" ? "Democratic" : c === "R" ? "Republican" : c);
+  const divided = tri.filter((t) => !/trifecta/.test(t.trifecta)).map((t) => {
+    const legs = [...new Set([t.state_senate_control, t.state_house_control].filter(Boolean))];
+    const leg = legs.length === 1 ? `a ${ctl(legs[0])} legislature` : `a split legislature`;
+    return `${STATE_NAME[t.state]} pairs a ${ctl(t.governor_party)} governor with ${t.state === "NE" ? "a nonpartisan legislature" : leg}`;
+  });
+  $("#verdict").innerHTML = state.sel
+    ? `<strong>${esc(cfeat[state.sel].properties.short)}</strong> crosses ${[...states].map((s) => STATE_NAME[s]).join(", ")}. ${h.close ? `${h.close} House seat${h.close > 1 ? "s" : ""} along it ${h.close > 1 ? "were" : "was"} decided by under 5 points.` : ""}`
+    : `Along the backbone, <strong>${triList("D trifecta") || "no state"}</strong> now ${dT === 1 ? "has" : "have"} Democratic trifectas and <strong>${triList("R trifecta") || "no state"}</strong> Republican ones${divided.length ? `. ${divided.join(". ")}` : ""}. ${flips ? `${flips} House seat${flips > 1 ? "s" : ""} on these lines changed party on Nov. 3.` : ""}`;
+}
+
+function renderBoard() {
+  const office = ["governor", "us_senate"].includes(state.office) ? "us_house" : state.office;
+  $("#boardnote").textContent = `${OFFICES[office].short} seats along each line`;
+  const groups = {};
+  const rows = [];
+  for (const f of CORR.features) {
+    const p = f.properties;
+    if (p.option_group) { if (groups[p.option_group]) continue; groups[p.option_group] = 1; }
+    rows.push(p.option_group ? cfeat[state.group[p.option_group]].properties : p);
+  }
+  const html = (tier, title) => `<div class="tierhead">${title}</div>` + rows.filter((p) => p.tier === tier).map((p) => {
+    const c = countsFor([p.id], office);
+    const nm = p.option_group ? p.name.replace(/ \(.*\)$/, "") : p.name;
+    return `<button type="button" class="row ${tier}" data-id="${p.id}" aria-pressed="${state.sel === p.id}">
+      <span class="swatch"></span>
+      <span><div class="rname">${esc(nm)}</div><div class="rmeta">${fmt(km2mi(p.length_km))} mi · ${esc(p.speed_label || p.speed)}${p.option_group ? " · 5 route options" : ""}</div></span>
+      <span class="mini">${splitBar(c)}</span></button>`;
+  }).join("");
+  $("#board").innerHTML = html("hsr", "High-speed backbone") + html("regional", "Regional feeders");
+  for (const b of document.querySelectorAll("#board .row")) b.onclick = () => select(b.dataset.id, true, true);
+}
+
+function fmtTime(h) { const m = Math.round(h * 60); return `${Math.floor(m / 60)}h ${String(m % 60).padStart(2, "0")}m`; }
+
+function renderDetail() {
+  const p = cfeat[state.sel].properties;
+  const steps = A.pathways[p.id] || [];
+  const stops = STOPS.filter((s) => s.c === p.id).sort((a, b) => a.o - b.o);
+  const src = p.sources.split(",").map((k) => A.sources[k]).filter(Boolean);
+  const short = (n) => (n || "").replace(/ \(.*\)$/, "").replace(/ (Union Station|Gateway|Union Terminal|Intermodal|Union Depot)$/, "");
+  const from = short(stops[0]?.n), to = short(stops.at(-1)?.n);
+
+  let opts = "";
+  if (p.option_group) {
+    const sib = CORR.features.filter((f) => f.properties.option_group === p.option_group).map((f) => f.properties);
+    const rowsHtml = sib.map((o) => {
+      const c = countsFor([o.id], "us_house"), s = countsFor([o.id], "state_senate"), hh = countsFor([o.id], "state_house");
+      return `<tr class="${o.id === p.id ? "cur" : ""}"><td>${esc(o.short.split("·")[1]?.trim() || o.short)}</td><td>${km2mi(o.length_km)}</td><td>${c.D}–${c.R}</td><td>${s.D + hh.D}–${s.R + hh.R}</td></tr>`;
+    }).join("");
+    opts = `<div class="opts" role="group" aria-label="Route options">${sib.map((o) => `<button type="button" data-opt="${o.id}" aria-pressed="${o.id === p.id}">${esc(o.short.split("·")[1]?.trim() || o.short)}</button>`).join("")}</div>
+      <div class="dmeta" style="margin-top:8px">${esc(p.option)}</div>
+      <div class="tablewrap"><table class="optcmp"><thead><tr><th>Option</th><th>Miles</th><th>House D–R</th><th>Legis. D–R</th></tr></thead><tbody>${rowsHtml}</tbody></table></div>`;
+  }
+
+  const legs = steps.map((s) => {
+    const sen = s.chambers.state_senate, hou = s.chambers.state_house;
+    const triCls = /^D trifecta/.test(s.trifecta) ? "D" : /^R trifecta/.test(s.trifecta) ? "R" : "div";
+    const ctrl = (c, lbl) => c ? `<span class="k">${lbl}</span><span class="ch">${c.control === "nonpartisan" ? "Nonpartisan unicameral" : `${chip(c.control === "D" || c.control === "R" ? c.control : "")} ${c.D} D · ${c.R} R${c.uncalled ? ` <span class="lead">${c.uncalled} uncalled</span>` : ""}`}</span>` : "";
+    const reps = s.us_house_along.map((r) => {
+      const m = r.margin == null ? "" : `${r.margin < 0 ? "" : "+"}${r.margin.toFixed(1)}`;
+      return `<li><span class="dn">${s.state}-${esc(r.district)}</span><span>${chip(r.party)} ${esc(r.name)}${r.flipped ? '<span class="flip">FLIP</span>' : ""}${r.status === "leading" ? '<span class="lead">not called</span>' : ""}${r.boundary_status === "pending" ? '<span class="lead">new map</span>' : ""}</span><span class="mg ${r.margin != null && Math.abs(r.margin) < 5 ? "close" : ""}">${m}</span></li>`;
+    }).join("");
+    const lsen = s.state_senate_along, lhou = s.state_house_along;
+    const und = (lsen.undecided || 0) + (lhou.undecided || 0);
+    const legis = `${lsen.D + lhou.D} D · ${lsen.R + lhou.R} R${lsen.other + lhou.other ? ` · ${lsen.other + lhou.other} other` : ""}${und ? ` · ${und} not yet called` : ""}`;
+    const pend = lsen.pending_boundaries + lhou.pending_boundaries;
+    const stateStops = stops.filter((x) => x.st === s.state).map((x) => esc(x.n.replace(/ (Union Station|Gateway|Union Terminal|Intermodal)$/, ""))).join(" → ");
+    return `<div class="leg"><h3>${STATE_NAME[s.state] || s.state} <small>${km2mi(s.km)} mi</small> <span class="tri ${triCls}">${esc(s.trifecta)}</span></h3>
+      ${stateStops ? `<div class="stopsline">${stateStops}</div>` : ""}
+      <div class="grid2">
+        <span class="k">Governor</span><span>${s.governor ? `${chip(s.governor.party)} ${esc(s.governor.name)}${s.governor.flipped ? '<span class="flip">FLIP</span>' : ""}` : "—"}</span>
+        ${ctrl(sen, s.state === "NE" ? "Legislature" : "Senate")}${ctrl(hou, "House")}
+        <span class="k">U.S. Senate</span><span>${s.us_senators.map((x) => `${chip(x.party)} ${esc(x.name)}${x.new ? " <span class=\"lead\">new</span>" : ""}${s.governor && s.governor.name === x.name ? " <span class=\"lead\">governor-elect; seat to be filled by appointment</span>" : ""}`).join("<br>")}</span>
+        <span class="k">Legislators on line</span><span>${legis}${pend ? ` <span class="lead">${pend} more await new boundary file</span>` : ""}</span>
+      </div>
+      ${reps ? `<ul class="reps" aria-label="U.S. House members along the line">${reps}</ul>` : ""}
+    </div>`;
+  }).join("");
+
+  $("#detail").innerHTML = `
+    <div class="share" style="justify-content:space-between"><button type="button" class="back" id="back">← All lines</button><span><button type="button" id="copyline">Copy link to this line</button></span></div>
+    <div class="eyebrow" style="margin-top:12px">${p.tier === "hsr" ? "High-speed backbone" : "Regional feeder"}</div>
+    <div class="dtitle">${esc(from)} → ${esc(to)}</div>
+    <div class="dmeta">${esc(p.name)}<br>${fmt(km2mi(p.length_km))} mi (${fmt(Math.round(p.length_km))} km) · ${esc(p.speed)}</div>
+    <p class="status">${esc(p.status)}</p>
+    ${opts}
+    <div class="clock">
+      <label for="spd">Average speed <b id="spdv">${state.speed}</b> mph</label><div class="big" id="ttime"></div>
+      <input type="range" id="spd" min="60" max="220" step="1" value="${state.speed}">
+      <div class="fine">Illustrative: this alignment's length ÷ average speed. Not a schedule; real trips add stops and slower urban segments.</div>
+    </div>
+    <div class="strip ${p.tier}">${legs || '<p class="pend">No district data for this line.</p>'}</div>
+    <div class="pend">Sources: ${src.map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>`).join(" · ")}</div>
+    <div class="pend">Alignment: ${p.follow === "direct" ? "conceptual straight segments between the study's named cities" : `routed on the ${A.meta.rail_network === "ntad" ? "BTS North American Rail Network" : "Natural Earth rail network"} (${Math.round(p.rail_share * 100)}% on mapped track)`}. Not an engineering alignment.</div>`;
+  $("#back").onclick = () => select(null);
+  $("#copyline").onclick = async (e) => {
+    try { await navigator.clipboard.writeText(location.href); e.target.textContent = "Link copied"; }
+    catch { e.target.textContent = location.href; }
+  };
+  for (const b of document.querySelectorAll("#detail .opts button")) b.onclick = () => select(b.dataset.opt);
+  const upd = () => { const v = +$("#spd").value; state.speed = v; $("#spdv").textContent = v; $("#ttime").textContent = fmtTime(p.length_km * 0.621371 / v); };
+  $("#spd").oninput = upd; upd();
+}
+
+function renderLegend() {
+  const ramp = (p) => [5, 12, 20, 30].map((m) => `<i style="background:${fill(p, m)}"></i>`).join("");
+  const stw = state.office === "governor" || state.office === "us_senate";
+  $("#legend").innerHTML = `
+    <div class="lt">${OFFICES[state.office].label} · Nov. 3, 2026</div>
+    <div class="lrow"><span class="ramp">${ramp("D")}</span><span>Democrat</span></div>
+    <div class="lrow"><span class="ramp">${ramp("R")}</span><span>Republican</span></div>
+    ${stw ? (state.office === "us_senate" ? `<div class="lrow"><svg width="22" height="10"><rect width="22" height="10" fill="url(#splitSen)"/></svg><span>Split delegation</span></div>` : "") :
+      `<div class="lrow hideable"><span style="font-size:11px;color:var(--muted)">Brighter = wider margin</span></div>
+       <div class="lrow"><svg width="22" height="10"><rect width="22" height="10" fill="url(#hatch)"/></svg><span>New 2026 lines, boundary file pending</span></div>
+       <div class="lrow hideable"><svg width="22" height="10"><rect width="22" height="10" fill="#3a4560"/></svg><span>Not yet called</span></div>`}
+    <div class="lrow"><svg width="22" height="10"><line x1="1" y1="5" x2="21" y2="5" stroke="var(--signal)" stroke-width="3"/></svg><span>High-speed backbone (150–220 mph)</span></div>
+    <div class="lrow"><svg width="22" height="10"><line x1="1" y1="5" x2="21" y2="5" stroke="var(--regional)" stroke-width="1.6" stroke-dasharray="5 4"/></svg><span>Regional feeder (79–125 mph)</span></div>`;
+}
+
+function renderNotes() {
+  const m = A.meta;
+  const date = m.results_snapshot;
+  $("#asof").innerHTML = `Unofficial results captured ${date} · not certified`;
+  const pendingStates = [...new Set([...pending].map((id) => id.split(":")[1]))].sort();
+  $("#notesbody").innerHTML = `
+    <p>Corridors come from the High Speed Rail Alliance's Midwest network, the FRA and Midwest Interstate Passenger Rail Commission's 2021 Midwest Regional Rail Plan, the FRA Corridor ID program, and the Illinois High-Speed Rail Commission's Chicago–St. Louis feasibility study, which has eight route options and no chosen route. Lines are drawn through the cities each plan names; none is an engineering alignment.</p>
+    <ul>
+      <li><b>Results.</b> U.S. House, Senate and governor races from AP-fed Poliwave pages; state legislative races from MultiState's results pages; both captured ${date}. "Not called" races show the current leader. Seats not on the 2026 ballot show the sitting member from OpenStates.</li>
+      <li><b>Boundaries.</b> Census cartographic boundary files (vintage ${esc(Object.values(m.boundary_vintage)[0])}). Hatched districts in ${pendingStates.join(", ")} were redrawn after that vintage: Ohio's 2026 congressional map, Wisconsin's and Ohio's legislative maps, and Michigan's court-ordered Detroit-area redraw. They are left out of district counts until the newer files are loaded.</li>
+      <li><b>"Touched"</b> means the line runs at least 0.5 km through the district or a named stop sits in it.</li>
+      <li><b>Margins</b> are the winner's share minus the runner-up's, in percentage points, where the source reported percentages.</li>
+    </ul>
+    <p>Reproducible code, configs and data snapshots: <a href="https://github.com/MisterClean/midwest-hsr" target="_blank" rel="noopener">github.com/MisterClean/midwest-hsr</a>.</p>`;
+  $("#copy").onclick = async () => {
+    const url = location.href;
+    try { await navigator.clipboard.writeText(url); $("#copied").textContent = "Link copied"; }
+    catch { $("#copied").textContent = url; }
+  };
+}
+
+/* ------------------------------------------------------------- trains */
+function refreshTrains() {
+  if (reduced || !gTrain) return;
+  const ns = gLine.selectAll("path").filter(activeHsr).nodes();
+  const tr = ns.flatMap((n) => { const L = n.getTotalLength(); return [{ n, L, off: 0, dir: 1 }, { n, L, off: 0.5, dir: -1 }]; });
+  trainSel = gTrain.selectAll("circle").data(tr).join("circle").attr("class", "train").attr("r", 3.4 / Math.sqrt(state.k));
+}
+function startTrains() {
+  if (reduced) return;
+  refreshTrains();
+  let last = performance.now(), t = 0;
+  const tick = (now) => {
+    if (!document.hidden && trainSel) {
+      t += Math.min(0.1, (now - last) / 1000);
+      trainSel.each(function (d) {
+        const u = ((t * 60) / d.L + d.off) % 1;
+        const pt = d.n.getPointAtLength((d.dir > 0 ? u : 1 - u) * d.L);
+        this.setAttribute("cx", pt.x); this.setAttribute("cy", pt.y);
+      });
+    }
+    last = now;
+    requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
+}
+})();
+</script>
