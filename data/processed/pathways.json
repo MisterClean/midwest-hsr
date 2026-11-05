@@ -7,7 +7,8 @@
         "name": "JB Pritzker",
         "party": "D",
         "source": "2026",
-        "flipped": false
+        "flipped": false,
+        "status": "called"
       },
       "us_senators": [
         {
@@ -135,7 +136,8 @@
         "name": "David Crowley",
         "party": "D",
         "source": "2026",
-        "flipped": false
+        "flipped": false,
+        "status": "called"
       },
       "us_senators": [
         {
@@ -281,7 +283,8 @@
         "name": "Amy Klobuchar",
         "party": "D",
         "source": "2026",
-        "flipped": false
+        "flipped": false,
+        "status": "called"
       },
       "us_senators": [
         {
@@ -384,7 +387,8 @@
         "name": "JB Pritzker",
         "party": "D",
         "source": "2026",
-        "flipped": false
+        "flipped": false,
+        "status": "called"
       },
       "us_senators": [
         {
@@ -557,7 +561,8 @@
         "name": "Mike Kehoe",
         "party": "R",
         "source": "holdover",
-        "flipped": false
+        "flipped": false,
+        "status": "holdover"
       },
       "us_senators": [
         {
@@ -651,7 +656,8 @@
         "name": "JB Pritzker",
         "party": "D",
         "source": "2026",
-        "flipped": false
+        "flipped": false,
+        "status": "called"
       },
       "us_senators": [
         {
@@ -797,7 +803,8 @@
         "name": "Mike Kehoe",
         "party": "R",
         "source": "holdover",
-        "flipped": false
+        "flipped": false,
+        "status": "holdover"
       },
       "us_senators": [
         {
@@ -891,7 +898,8 @@
         "name": "JB Pritzker",
         "party": "D",
         "source": "2026",
-        "flipped": false
+        "flipped": false,
+        "status": "called"
       },
       "us_senators": [
         {
@@ -1037,7 +1045,8 @@
         "name": "Mike Kehoe",
         "party": "R",
         "source": "holdover",
-        "flipped": false
+        "flipped": false,
+        "status": "holdover"
       },
       "us_senators": [
         {
@@ -1131,7 +1140,8 @@
         "name": "JB Pritzker",
         "party": "D",
         "source": "2026",
-        "flipped": false
+        "flipped": false,
+        "status": "called"
       },
       "us_senators": [
         {
@@ -1286,7 +1296,8 @@
         "name": "Mike Kehoe",
         "party": "R",
         "source": "holdover",
-        "flipped": false
+        "flipped": false,
+        "status": "holdover"
       },
       "us_senators": [
         {
@@ -1380,7 +1391,8 @@
         "name": "JB Pritzker",
         "party": "D",
         "source": "2026",
-        "flipped": false
+        "flipped": false,
+        "status": "called"
       },
       "us_senators": [
         {
@@ -1553,7 +1565,8 @@
         "name": "Mike Kehoe",
         "party": "R",
         "source": "holdover",
-        "flipped": false
+        "flipped": false,
+        "status": "holdover"
       },
       "us_senators": [
         {
@@ -1647,7 +1660,8 @@
         "name": "JB Pritzker",
         "party": "D",
         "source": "2026",
-        "flipped": false
+        "flipped": false,
+        "status": "called"
       },
       "us_senators": [
         {
@@ -1757,7 +1771,8 @@
         "name": "Mike Braun",
         "party": "R",
         "source": "holdover",
-        "flipped": false
+        "flipped": false,
+        "status": "holdover"
       },
       "us_senators": [
         {
@@ -1849,7 +1864,8 @@
         "name": "Jocelyn Benson",
         "party": "D",
         "source": "2026",
-        "flipped": false
+        "flipped": false,
+        "status": "called"
       },
       "us_senators": [
         {
@@ -1979,7 +1995,8 @@
         "name": "JB Pritzker",
         "party": "D",
         "source": "2026",
-        "flipped": false
+        "flipped": false,
+        "status": "called"
       },
       "us_senators": [
         {
@@ -2089,7 +2106,8 @@
         "name": "Mike Braun",
         "party": "R",
         "source": "holdover",
-        "flipped": false
+        "flipped": false,
+        "status": "holdover"
       },
       "us_senators": [
         {
@@ -2217,7 +2235,8 @@
         "name": "Amy Acton",
         "party": "D",
         "source": "2026",
-        "flipped": true
+        "flipped": true,
+        "status": "called"
       },
       "us_senators": [
         {
@@ -2320,7 +2339,8 @@
         "name": "JB Pritzker",
         "party": "D",
         "source": "2026",
-        "flipped": false
+        "flipped": false,
+        "status": "called"
       },
       "us_senators": [
         {
@@ -2430,7 +2450,8 @@
         "name": "Mike Braun",
         "party": "R",
         "source": "holdover",
-        "flipped": false
+        "flipped": false,
+        "status": "holdover"
       },
       "us_senators": [
         {
@@ -2540,7 +2561,8 @@
         "name": "Amy Acton",
         "party": "D",
         "source": "2026",
-        "flipped": true
+        "flipped": true,
+        "status": "called"
       },
       "us_senators": [
         {
@@ -2661,7 +2683,8 @@
         "name": "Amy Acton",
         "party": "D",
         "source": "2026",
-        "flipped": true
+        "flipped": true,
+        "status": "called"
       },
       "us_senators": [
         {
@@ -2827,7 +2850,8 @@
         "name": "JB Pritzker",
         "party": "D",
         "source": "2026",
-        "flipped": false
+        "flipped": false,
+        "status": "called"
       },
       "us_senators": [
         {
@@ -2973,7 +2997,8 @@
         "name": "Rob Sand",
         "party": "D",
         "source": "2026",
-        "flipped": true
+        "flipped": true,
+        "status": "called"
       },
       "us_senators": [
         {
@@ -3092,7 +3117,8 @@
         "name": "Jim Pillen",
         "party": "R",
         "source": "2026",
-        "flipped": false
+        "flipped": false,
+        "status": "leading"
       },
       "us_senators": [
         {
@@ -3120,7 +3146,7 @@
           "control": "nonpartisan"
         }
       },
-      "trifecta": "R governor; nonpartisan legislature",
+      "trifecta": "R governor; nonpartisan legislature (governor race not called)",
       "us_house_along": [
         {
           "district": "2",
@@ -3174,7 +3200,8 @@
         "name": "Mike Kehoe",
         "party": "R",
         "source": "holdover",
-        "flipped": false
+        "flipped": false,
+        "status": "holdover"
       },
       "us_senators": [
         {
@@ -3304,7 +3331,8 @@
         "name": "JB Pritzker",
         "party": "D",
         "source": "2026",
-        "flipped": false
+        "flipped": false,
+        "status": "called"
       },
       "us_senators": [
         {
@@ -3414,7 +3442,8 @@
         "name": "Mike Braun",
         "party": "R",
         "source": "holdover",
-        "flipped": false
+        "flipped": false,
+        "status": "holdover"
       },
       "us_senators": [
         {
@@ -3524,7 +3553,8 @@
         "name": "Amy Acton",
         "party": "D",
         "source": "2026",
-        "flipped": true
+        "flipped": true,
+        "status": "called"
       },
       "us_senators": [
         {
@@ -3645,7 +3675,8 @@
         "name": "Mike Braun",
         "party": "R",
         "source": "holdover",
-        "flipped": false
+        "flipped": false,
+        "status": "holdover"
       },
       "us_senators": [
         {
@@ -3755,7 +3786,8 @@
         "name": "Andy Beshear",
         "party": "D",
         "source": "holdover",
-        "flipped": false
+        "flipped": false,
+        "status": "holdover"
       },
       "us_senators": [
         {
@@ -3849,7 +3881,8 @@
         "name": "Amy Klobuchar",
         "party": "D",
         "source": "2026",
-        "flipped": false
+        "flipped": false,
+        "status": "called"
       },
       "us_senators": [
         {
@@ -3968,7 +4001,8 @@
         "name": "David Crowley",
         "party": "D",
         "source": "2026",
-        "flipped": false
+        "flipped": false,
+        "status": "called"
       },
       "us_senators": [
         {
@@ -4062,7 +4096,8 @@
         "name": "David Crowley",
         "party": "D",
         "source": "2026",
-        "flipped": false
+        "flipped": false,
+        "status": "called"
       },
       "us_senators": [
         {
@@ -4183,7 +4218,8 @@
         "name": "Amy Acton",
         "party": "D",
         "source": "2026",
-        "flipped": true
+        "flipped": true,
+        "status": "called"
       },
       "us_senators": [
         {
@@ -4302,7 +4338,8 @@
         "name": "Jocelyn Benson",
         "party": "D",
         "source": "2026",
-        "flipped": false
+        "flipped": false,
+        "status": "called"
       },
       "us_senators": [
         {
@@ -4414,7 +4451,8 @@
         "name": "JB Pritzker",
         "party": "D",
         "source": "2026",
-        "flipped": false
+        "flipped": false,
+        "status": "called"
       },
       "us_senators": [
         {
@@ -4569,7 +4607,8 @@
         "name": "Rob Sand",
         "party": "D",
         "source": "2026",
-        "flipped": true
+        "flipped": true,
+        "status": "called"
       },
       "us_senators": [
         {
@@ -4663,7 +4702,8 @@
         "name": "JB Pritzker",
         "party": "D",
         "source": "2026",
-        "flipped": false
+        "flipped": false,
+        "status": "called"
       },
       "us_senators": [
         {
@@ -4820,7 +4860,8 @@
         "name": "JB Pritzker",
         "party": "D",
         "source": "2026",
-        "flipped": false
+        "flipped": false,
+        "status": "called"
       },
       "us_senators": [
         {
@@ -4959,7 +5000,8 @@
         "name": "JB Pritzker",
         "party": "D",
         "source": "2026",
-        "flipped": false
+        "flipped": false,
+        "status": "called"
       },
       "us_senators": [
         {
@@ -5069,7 +5111,8 @@
         "name": "Mike Braun",
         "party": "R",
         "source": "holdover",
-        "flipped": false
+        "flipped": false,
+        "status": "holdover"
       },
       "us_senators": [
         {
@@ -5161,7 +5204,8 @@
         "name": "Jocelyn Benson",
         "party": "D",
         "source": "2026",
-        "flipped": false
+        "flipped": false,
+        "status": "called"
       },
       "us_senators": [
         {
@@ -5264,7 +5308,8 @@
         "name": "JB Pritzker",
         "party": "D",
         "source": "2026",
-        "flipped": false
+        "flipped": false,
+        "status": "called"
       },
       "us_senators": [
         {
@@ -5374,7 +5419,8 @@
         "name": "Mike Braun",
         "party": "R",
         "source": "holdover",
-        "flipped": false
+        "flipped": false,
+        "status": "holdover"
       },
       "us_senators": [
         {
@@ -5466,7 +5512,8 @@
         "name": "Jocelyn Benson",
         "party": "D",
         "source": "2026",
-        "flipped": false
+        "flipped": false,
+        "status": "called"
       },
       "us_senators": [
         {

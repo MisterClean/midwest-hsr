@@ -314,7 +314,8 @@ function countsFor(ids, office) {
     if (pending.has(id)) { P++; continue; }
     const s = seat(id);
     if (s.p === "D") D++; else if (s.p === "R") R++; else if (s.p) O++; else U++;
-    if (s.f && s.p === "D") flipD++; if (s.f && s.p === "R") flipR++;
+    const firm = s.s !== "leading" && s.s !== "uncalled";
+    if (s.f && firm && s.p === "D") flipD++; if (s.f && firm && s.p === "R") flipR++;
     if (s.m != null && Math.abs(s.m) < 5) close++;
   }
   return { D, R, O, U, P, total: seen.size, flipD, flipR, close };
@@ -546,14 +547,15 @@ function renderStats() {
   const h = countsFor(ids, "us_house"), ss = countsFor(ids, "state_senate"), sh = countsFor(ids, "state_house");
   const states = new Set(ids.flatMap((i) => (A.pathways[i] || []).map((s) => s.state)));
   const tri = A.trifectas.filter((t) => states.has(t.state));
-  const dT = tri.filter((t) => t.trifecta === "D trifecta").length, rT = tri.filter((t) => t.trifecta === "R trifecta").length;
+  const isT = (t, p) => t.trifecta.startsWith(p + " trifecta");
+  const dT = tri.filter((t) => isT(t, "D")).length, rT = tri.filter((t) => isT(t, "R")).length;
   $("#stats").innerHTML = `
     <div class="stat"><div class="n">${fmt(km2mi(len))}</div><div class="l">miles of ${state.sel ? "this line" : "proposed 150–220 mph backbone"}</div></div>
     <div class="stat"><div class="n">${states.size}</div><div class="l">states · <b style="color:var(--dem)">${dT}</b> D trifecta, <b style="color:var(--rep)">${rT}</b> R trifecta</div></div>
     <div class="stat"><div class="n">${h.total}</div><div class="l">U.S. House districts touched</div>${splitBar(h)}</div>
     <div class="stat"><div class="n">${ss.total + sh.total}</div><div class="l">state legislative districts touched</div>${splitBar({ D: ss.D + sh.D, R: ss.R + sh.R, O: ss.O + sh.O, U: ss.U + sh.U, P: ss.P + sh.P })}</div>`;
   const flips = h.flipD + h.flipR;
-  const triList = (k) => tri.filter((t) => t.trifecta === k).map((t) => t.state).join(", ");
+  const triList = (k) => tri.filter((t) => t.trifecta.startsWith(k)).map((t) => t.state).join(", ");
   const ctl = (c) => (c === "D" ? "Democratic" : c === "R" ? "Republican" : c);
   const divided = tri.filter((t) => !/trifecta/.test(t.trifecta)).map((t) => {
     const legs = [...new Set([t.state_senate_control, t.state_house_control].filter(Boolean))];
@@ -562,7 +564,7 @@ function renderStats() {
   });
   $("#verdict").innerHTML = state.sel
     ? `<strong>${esc(cfeat[state.sel].properties.short)}</strong> crosses ${[...states].map((s) => STATE_NAME[s]).join(", ")}. ${h.close ? `${h.close} House seat${h.close > 1 ? "s" : ""} along it ${h.close > 1 ? "were" : "was"} decided by under 5 points.` : ""}`
-    : `Along the backbone, <strong>${triList("D trifecta") || "no state"}</strong> now ${dT === 1 ? "has" : "have"} Democratic trifectas and <strong>${triList("R trifecta") || "no state"}</strong> Republican ones${divided.length ? `. ${divided.join(". ")}` : ""}. ${flips ? `${flips} House seat${flips > 1 ? "s" : ""} on these lines changed party on Nov. 3.` : ""}`;
+    : `Along the backbone, <strong>${triList("D trifecta") || "no state"}</strong> now ${dT === 1 ? "has" : "have"} Democratic trifectas and <strong>${triList("R trifecta") || "no state"}</strong> Republican ones${divided.length ? `. ${divided.join(". ")}` : ""}. ${flips ? `${flips} House seat${flips > 1 ? "s" : ""} on these lines changed party on Nov. 3${h.P ? `, not counting ${h.P} district${h.P > 1 ? "s" : ""} on maps awaiting a new boundary file` : ""}.` : ""}`;
 }
 
 function renderBoard() {
@@ -625,7 +627,7 @@ function renderDetail() {
     return `<div class="leg"><h3>${STATE_NAME[s.state] || s.state} <small>${km2mi(s.km)} mi</small> <span class="tri ${triCls}">${esc(s.trifecta)}</span></h3>
       ${stateStops ? `<div class="stopsline">${stateStops}</div>` : ""}
       <div class="grid2">
-        <span class="k">Governor</span><span>${s.governor ? `${chip(s.governor.party)} ${esc(s.governor.name)}${s.governor.flipped ? '<span class="flip">FLIP</span>' : ""}` : "—"}</span>
+        <span class="k">Governor</span><span>${s.governor ? `${chip(s.governor.party)} ${esc(s.governor.name)}${s.governor.flipped ? '<span class="flip">FLIP</span>' : ""}${s.governor.status === "leading" ? '<span class="lead">not called</span>' : ""}` : "—"}</span>
         ${ctrl(sen, s.state === "NE" ? "Legislature" : "Senate")}${ctrl(hou, "House")}
         <span class="k">U.S. Senate</span><span>${s.us_senators.map((x) => `${chip(x.party)} ${esc(x.name)}${x.new ? " <span class=\"lead\">new</span>" : ""}${s.governor && s.governor.name === x.name ? " <span class=\"lead\">governor-elect; seat to be filled by appointment</span>" : ""}`).join("<br>")}</span>
         <span class="k">Legislators on line</span><span>${legis}${pend ? ` <span class="lead">${pend} more await new boundary file</span>` : ""}</span>

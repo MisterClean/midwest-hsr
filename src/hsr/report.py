@@ -57,7 +57,7 @@ def build() -> str:
                          ("nonpartisan" if r.iloc[0].control == "nonpartisan"
                           else f"{r.iloc[0].control} {r.iloc[0].D}–{r.iloc[0].R}"
                                + (f" ({r.iloc[0].uncalled} uncalled)" if r.iloc[0].uncalled else "")))
-        flip = " (flip)" if str(g.flipped) == "True" else ""
+        flip = (" (flip)" if str(g.flipped) == "True" else "") + (" (leading, not called)" if g.status == "leading" else "")
         out.append(f"| {t.state} | {g.holder} ({g.party}){flip} | {cells[0]} | {cells[1]} | {t.trifecta} |")
     out.append("")
 

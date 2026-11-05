@@ -277,6 +277,7 @@ def trifectas(seat_df: pd.DataFrame, control: pd.DataFrame) -> pd.DataFrame:
     for st in C.states():
         g = seat_df[(seat_df.office == "governor") & (seat_df.state == st)]
         gov = g.party.iloc[0] if len(g) else ""
+        gov_open = len(g) and g.status.iloc[0] in ("leading", "uncalled")
         ch = control[control.state == st].set_index("office")["control"].to_dict()
         legs = set(ch.values())
         if "nonpartisan" in legs:
@@ -287,6 +288,8 @@ def trifectas(seat_df: pd.DataFrame, control: pd.DataFrame) -> pd.DataFrame:
             status = "undecided"
         else:
             status = "divided"
+        if gov_open:
+            status += " (governor race not called)"
         rows.append({"state": st, "governor_party": gov, **{f"{k}_control": v for k, v in ch.items()},
                      "trifecta": status})
     return pd.DataFrame(rows)

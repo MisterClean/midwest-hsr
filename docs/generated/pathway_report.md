@@ -16,12 +16,12 @@ _Generated from the pipeline. Results snapshot: 2026-11-05 (unofficial). Boundar
 | IL | JB Pritzker (D) | D 45–13 (1 uncalled) | D 80–32 (6 uncalled) | D trifecta |
 | IN | Mike Braun (R) | R 15–34 (1 uncalled) | R 45–52 (3 uncalled) | R trifecta |
 | IA | Rob Sand (D) (flip) | R 17–32 (1 uncalled) | R 43–52 (5 uncalled) | divided |
-| KS | Cindy Holscher (D) | R 9–31 | R 49–65 (11 uncalled) | divided |
+| KS | Cindy Holscher (D) (leading, not called) | R 9–31 | R 49–65 (11 uncalled) | divided (governor race not called) |
 | KY | Andy Beshear (D) | R 8–30 | R 26–73 (1 uncalled) | divided |
 | MI | Jocelyn Benson (D) | D 22–15 (1 uncalled) | D 60–46 (4 uncalled) | D trifecta |
 | MN | Amy Klobuchar (D) | D 37–26 (4 uncalled) | D 77–55 (2 uncalled) | D trifecta |
 | MO | Mike Kehoe (R) | R 12–21 (1 uncalled) | R 68–93 (2 uncalled) | R trifecta |
-| NE | Jim Pillen (R) | nonpartisan | — | R governor; nonpartisan legislature |
+| NE | Jim Pillen (R) (leading, not called) | nonpartisan | — | R governor; nonpartisan legislature (governor race not called) |
 | OH | Amy Acton (D) (flip) | R 11–21 (1 uncalled) | R 42–52 (5 uncalled) | divided |
 | WI | David Crowley (D) | D 18–15 | D 53–46 | D trifecta |
 
@@ -180,7 +180,7 @@ U.S. House districts: 10 D / 2 R; state legislative: 47 D / 32 R.
 |---|---|---|---|---|---|
 | IL | 262 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-4 Patty Garcia (D, +54.6); IL-6 Sean Casten (D, +25.0); IL-7 La Shawn K. Ford (D, +78.0); IL-11 Bill Foster (D, +30.8); IL-14 Lauren Underwood (D, +25.0); IL-16 Darin LaHood (R, +17.6); IL-17 Eric Sorensen (D, +20.2) |
 | IA | 450 | Rob Sand (D) | divided | Josh Turek (D), Chuck Grassley (R) | IA-1 Christina Bohannan (D, +9.2) *flip*; IA-2 Lindsay James (D, +4.0) *flip*; IA-3 Sarah Trone Garriott (D, +7.3) *flip*; IA-4 Chris McGowan (R, +18.1) |
-| NE | 1 | Jim Pillen (R) | R governor; nonpartisan legislature | Pete Ricketts (R), Deb Fischer (R) | NE-2 Denise Powell (D, +15.4) *flip* |
+| NE | 1 | Jim Pillen (R) | R governor; nonpartisan legislature (governor race not called) | Pete Ricketts (R), Deb Fischer (R) | NE-2 Denise Powell (D, +15.4) *flip* |
 
 Seats along this line decided by under 5 points: IA:2 Lindsay James (D, +4.0)
 

@@ -110,7 +110,7 @@ def pathways(lines: gpd.GeoDataFrame, layers: dict, seats: pd.DataFrame, control
             steps.append({
                 "state": st, "km": km,
                 "governor": None if gov is None else {"name": gov.holder, "party": gov.party, "source": gov.source,
-                                                      "flipped": bool(gov.flipped)},
+                                                      "flipped": bool(gov.flipped), "status": gov.status},
                 "us_senators": [{"name": r.holder, "party": r.party, "new": r.source == "2026"} for r in sens.itertuples()],
                 "chambers": {o: ctrl.loc[o].to_dict() for o in ctrl.index},
                 "trifecta": tri["trifecta"],

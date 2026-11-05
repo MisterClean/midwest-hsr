@@ -37,8 +37,10 @@ project development), dollars obligated, and any 2025–26 federal grant cancell
 - Governors: [table §2]. Flips: Iowa (R→D), Ohio (R→D).
 - Legislatures: Wisconsin flipped to Democratic control of both chambers; Michigan and
   Minnesota moved from split to Democratic control. [table §2]
-- Trifectas after inauguration: D in IL, MI, MN, WI; R in IN, MO; divided in IA, KS, KY, OH;
-  Nebraska has a Republican governor and a nonpartisan legislature.
+- Trifectas after inauguration: D in IL, MI, MN, WI; R in IN, MO; divided in IA, KY, OH.
+  Kansas is divided if Cindy Holscher's 50.3–49.7 lead holds (not called as of Nov 5);
+  Nebraska has a Republican governor (Pillen leading, not called) and a nonpartisan
+  legislature.
 - U.S. Senate seats that changed hands in the region (IA, KS, OH) and the open seats
   (IL, KY, MI, MN). Note: Minnesota's Amy Klobuchar won the governorship, so her Senate seat
   will be filled by appointment.
