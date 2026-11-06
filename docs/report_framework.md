@@ -98,9 +98,10 @@ Corridors to treat as case studies:
 
 - Seats on the lines decided by < 5 points (§3 lists them per corridor).
 - Uncalled races (status `leading` / `uncalled` in `seats.csv`).
-- Boundary caveats: Ohio's 2026 congressional map is exact for 73 whole counties; the 15
-  split counties need the Commission's block file. WI / OH / Detroit-area legislative maps
-  are pending in the mirror build.
+- Boundary caveat: Missouri uses the 119th congressional layer because Census's 120th
+  Missouri product still contains a superseded map. All 2026 legislative boundaries
+  are loaded. Older `--mirror` builds have additional Ohio, Wisconsin, and Michigan
+  caveats.
 
 ## 7. Methods and sources
 

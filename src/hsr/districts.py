@@ -6,8 +6,8 @@ import re
 from pathlib import Path
 
 import geopandas as gpd
-import yaml
 import pandas as pd
+import yaml
 
 from . import config as C
 
@@ -57,6 +57,10 @@ def build_layer(office: str, raw: dict, override_dir: Path | None = None) -> gpd
         "boundary_status": "current",
         "boundary_note": "",
     }, geometry=gdf.geometry.values, crs=gdf.crs)
+    if office == "us_house" and info["vintage"] == 2026:
+        out.loc[out["state"] == "MO", "boundary_note"] = (
+            "Missouri used its 2022/2024 congressional map in 2026. Census's 120th layer "
+            "still shows the superseded 2025 plan, so this geometry comes from its 119th layer.")
 
     # Districts whose 2026 lines post-date this vintage.
     caveats = C.sources()["vintage_caveats"].get(info["vintage"], {}).get(office, {})
@@ -71,6 +75,8 @@ def build_layer(office: str, raw: dict, override_dir: Path | None = None) -> gpd
     # Districts redrawn after this vintage (e.g. Ohio's 2026 congressional map).
     for ov in C.sources().get("overrides", []):
         if ov["office"] != office:
+            continue
+        if info["vintage"] >= 2026:
             continue
         st = ov["state"]
         new = resolve_override(ov, office, raw)
@@ -202,7 +208,8 @@ def override_from_composition(ov: dict, office: str, raw: dict) -> gpd.GeoDataFr
     """Official county composition: exact whole counties, split counties marked pending."""
     st = ov["state"]
     fips = C.states()[st]["fips"]
-    comp = yaml.safe_load(open(C.ROOT / ov["composition"], encoding="utf-8"))
+    with open(C.ROOT / ov["composition"], encoding="utf-8") as fh:
+        comp = yaml.safe_load(fh)
     counties = _read(raw["counties"]["path"]).to_crs(C.CRS_LONLAT)
     counties = counties[counties["STATEFP"] == fips].set_index("NAME")
     whole = {c: str(d) for d, cs in comp["whole"].items() for c in (cs or [])}

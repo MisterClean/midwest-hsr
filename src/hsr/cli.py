@@ -4,12 +4,12 @@ from __future__ import annotations
 import argparse
 import json
 import logging
-from pathlib import Path
 
 import geopandas as gpd
 import pandas as pd
 
-from . import analysis, config as C, districts, export, fetch, report, results, routing
+from . import analysis, districts, export, fetch, report, results, routing
+from . import config as C
 
 log = logging.getLogger("hsr")
 
@@ -20,7 +20,7 @@ def _raw_paths() -> dict:
          for k, v in m.items() if k.startswith("boundaries.")}
     rail = {"network": C.ROOT / m["rail.network"]["path"], "network_source": m["rail.network"].get("source"),
             "lakes": C.ROOT / m["rail.lakes"]["path"] if "rail.lakes" in m else None}
-    if "rail.amtrak_stations" in m:
+    if rail["network_source"] == "ntad" and "rail.amtrak_stations" in m:
         rail["amtrak_stations"] = C.ROOT / m["rail.amtrak_stations"]["path"]
     ros = {"congress": C.ROOT / m["rosters.congress_legislators"]["path"],
            "openstates": C.ROOT / m["rosters.openstates_people"]["path"],
@@ -101,7 +101,7 @@ def cmd_export(a) -> None:
         "boundary_mirror": any(v["mirror"] for v in raw["boundaries"].values()),
         "rail_network": raw["rail"]["network_source"],
         "openstates_commit": raw["rosters"]["openstates_commit"],
-        "pending_note": "Hatched districts: the 2026 lines are newer than the boundary file used here.",
+        "pending_note": "Hatched districts have boundaries newer than the available source file.",
         "ohio_cd_method": str(layers["us_house"].loc[layers["us_house"].state == "OH", "vintage"].iloc[0]),
     }
     lines["segments"] = [[]] * len(lines)
@@ -145,7 +145,7 @@ def main(argv=None) -> None:
     logging.basicConfig(level=logging.DEBUG if a.verbose else logging.INFO, format="%(levelname)s %(message)s")
     C.ensure_dirs()
     if a.cmd == "all":
-        cmd_fetch(a); cmd_build(a); cmd_analyze(a); cmd_export(a); report.write()  # noqa: E702
+        cmd_fetch(a); cmd_build(a); cmd_analyze(a); cmd_export(a); report.write()
     else:
         {"fetch": cmd_fetch, "build": cmd_build, "analyze": cmd_analyze, "export": cmd_export, "qa": cmd_qa,
          "report": lambda _a: report.write()}[a.cmd](a)

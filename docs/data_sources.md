@@ -38,8 +38,10 @@ Certified replacements: state election offices (mid-Nov to mid-Dec 2026), MIT El
 
 ## Boundaries
 
-- Census cartographic boundary files, `https://www2.census.gov/geo/tiger/GENZ{year}/shp/`.
-- Fallback mirror: `github.com/lint/CartoBoundaryGeoFiles` @ `c8331b6` (CB 2023, GeoJSON).
+- [Census TIGERweb Legislative service](https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Legislative/MapServer): layer 0 is the 120th Congressional Districts; layers 1 and 2 are the 2026 upper and lower state legislative districts. The fetcher queries each of the 11 states separately as full-resolution EPSG:4326 GeoJSON, checks the feature count against the number of seats, and records source URLs and a SHA-256 in `data/raw/MANIFEST.json`.
+- Missouri's 2026 congressional geometry comes from [TIGERweb layer 4](https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Legislative/MapServer/4), the 119th Congress. [Census warns](https://www.census.gov/programs-surveys/decennial-census/about/rdo/congressional-districts.html) that its 120th products still include the superseded 2025 map; the 2022/2024 lines were used in 2026. Switch Missouri only after Census confirms regeneration.
+- States and counties for context come from Census 2024 cartographic boundary files. The old [2023 GeoJSON mirror](https://github.com/lint/CartoBoundaryGeoFiles/tree/c8331b6ddad3b2762c2c3c89433b7067c53ab383/data/cb_2023_us_all_500k) remains available with `hsr fetch --mirror` for offline fallback; those legislative boundaries are flagged where outdated.
+- [TIGER/Line 2026 shapefiles](https://www2.census.gov/geo/tiger/TIGER2026/) are an alternate high-resolution source by state (`CD`, `SLDU`, `SLDL`), but TIGERweb is the direct GeoJSON source used here. The map export simplifies these full-resolution inputs to compact TopoJSON.
 
 ## Rosters
 

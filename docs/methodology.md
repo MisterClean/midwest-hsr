@@ -27,20 +27,24 @@ a majority of all seats. Trifecta = governor and both chambers held by the same 
 
 ## Boundaries
 
-Census cartographic boundary files (1:500k). Each district carries `boundary_status`:
+Census TIGERweb full-resolution GeoJSON supplies the 120th Congressional Districts and
+2026 state legislative districts for each in-scope state. Missouri's congressional
+districts come from the 119th layer because Census's 120th product still contains the
+superseded 2025 plan. The downloaded GeoJSON is used for spatial joins; only the browser
+export is simplified to TopoJSON. Each district carries `boundary_status`:
 
 - `current` — the file reflects the lines used in Nov 2026.
-- `pending` — the 2026 lines are newer than the file (see `config/sources.yaml →
-  vintage_caveats` and `overrides`). Pending districts are hatched on the map, still show
-  their 2026 winner by district number in tooltips, and are **excluded** from district counts.
-  Michigan's court-ordered Detroit-area redraw is approximated by flagging legislative
-  districts whose interior point falls in Wayne/Oakland/Macomb counties' envelope.
+- `pending` — an older mirror file lacks the 2026 lines (see `config/sources.yaml →
+  vintage_caveats` and `overrides`). Pending districts are hatched, still show the
+  2026 winner by district number, and are excluded from district counts. The current
+  TIGERweb build has no pending districts.
 
 ### Ohio's 2026 congressional map
 
-The plan adopted by the Ohio Redistricting Commission on 2025-10-31 (plan 430) is not in any
-Census release, and the Commission published it only as a block assignment file. The pipeline
-resolves it in this order (`districts.resolve_override`):
+The plan adopted by the Ohio Redistricting Commission on 2025-10-31 (plan 430) is
+included in the 120th Congressional District TIGERweb layer. When using the older
+`--mirror` fallback, the pipeline resolves an override in this order
+(`districts.resolve_override`):
 
 1. an official plan shapefile, if supplied;
 2. the block assignment file dissolved on 2020 census blocks (exact), or on 2020 block groups
@@ -49,7 +53,7 @@ resolves it in this order (`districts.resolve_override`):
    of State's county list). Of 88 counties, 73 lie wholly in one district and are drawn
    exactly. The 15 split counties are drawn as separate "split" pieces carrying both possible
    districts; they are hatched, left out of district counts, and listed with both members in
-   corridor pathways. This is the mode used for the committed build.
+   corridor pathways. This is not used in the current build.
 
 District-level flips in Ohio compare the 2026 winner with the incumbent of the same district
 number, which is approximate because the lines changed.

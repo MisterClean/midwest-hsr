@@ -26,8 +26,8 @@ hsr all                        # fetch + build + analyze + export + report + qa
 python -m http.server -d web   # open http://localhost:8000
 ```
 
-`hsr all` needs internet access to census.gov, the BTS NTAD ArcGIS services and GitHub.
-Without census.gov / NTAD, `hsr fetch --mirror` uses GitHub-hosted fallbacks (see
+`hsr all` needs internet access to Census TIGERweb, the BTS NTAD ArcGIS services and GitHub.
+Without Census / NTAD, `hsr fetch --mirror` uses GitHub-hosted fallbacks (see
 [Current build](#current-build)).
 
 | Command | What it does | Main outputs |
@@ -41,36 +41,32 @@ Without census.gov / NTAD, `hsr fetch --mirror` uses GitHub-hosted fallbacks (se
 
 ## Current build
 
-The committed outputs were built on 2026-11-06 in an environment that could reach GitHub but
-not census.gov, NTAD or the Ohio Redistricting Commission, so they use the fallbacks:
+The committed outputs were rebuilt on 2026-11-06 with the latest Census district
+geometry available for the 2026 election:
 
 | Input | Used for this build | Authoritative source (`hsr fetch`) |
 |---|---|---|
-| District boundaries | Census CB **2023** (GitHub mirror, pinned commit) | Census CB **2024** (`cb_2024_us_cd119/sldu/sldl_500k`) |
-| Ohio 2026 congressional map | Official **county composition** (`config/ohio_cd_2026_counties.yaml`) | Commission plan 430 block assignment file, dissolved on 2020 census blocks |
+| District boundaries | Census TIGERweb **2026** full-resolution GeoJSON: 120th Congress, 2026 state upper and lower districts | Same; per-state URLs and count checks in `data/raw/MANIFEST.json` |
+| Missouri congressional map | Census TIGERweb **119th** layer, which matches the 2026 election map | Replace with 120th only after Census confirms correction |
+| Ohio 2026 congressional map | Census TIGERweb **120th** layer | Same |
+| State/county background | Census CB **2024** | Same |
 | Rail network for routing | Natural Earth 10m railroads | BTS NTAD North American Rail Network |
 | Station coordinates | `config/stations.yaml` | BTS NTAD Amtrak Stations (matched by code) |
 | 2026 results | `data/snapshots/2026-11-06` (unofficial) | same, until certified returns are loaded |
-| Sitting members | unitedstates/congress-legislators, openstates/people @ `81148a0` | same |
+| Sitting members | unitedstates/congress-legislators, openstates/people @ `bcdda40` | same |
 
 Consequences you will see in the map and tables:
 
-- **Ohio's 2026 congressional map** (adopted 2025-10-31) is drawn from the state's official
-  county list. The 73 counties that sit wholly in one district are exact. The 15 split
-  counties (Franklin, Hamilton, Cuyahoga, etc.) are hatched in the colors of their two
-  possible districts, and both members are listed wherever a corridor crosses one. Those
-  pieces are excluded from district counts. To get exact lines, put the Commission's plan
-  zip at `data/overrides/oh_cong_2025_plan430.zip` (see `data/overrides/README.md`) and
-  rerun `hsr build analyze export report`.
-- **Wisconsin and Ohio legislative maps** (2024 / 2023) and **Michigan's Detroit-area redraw**
-  post-date the 2023 mirror. These districts are drawn hatched and excluded from district
-  counts. Running `hsr all` with census.gov access (vintage 2024) fixes Wisconsin and Ohio;
-  Michigan's 2026 Senate lines should be checked against the vintage you download.
-- Missouri used its **2022** congressional map in Nov 2026 (the 2025 map was blocked pending
-  a referendum), so the Census lines are correct there.
+- All **95 U.S. House**, **491 state senate**, and **1,148 state house** districts in scope
+  have 2026 election geometry. The Missouri congressional exception is explicitly sourced
+  from the 119th layer, which has the map used in 2022, 2024, and 2026. Census warns that
+  its current 120th Missouri product still contains the superseded 2025 map.
+- The full-resolution GeoJSON is simplified only for the browser's compact TopoJSON files;
+  corridor intersections use the original geometry.
 - On rail-following corridors, 35 of 123 station-to-station segments (about 2,050 of
   7,030 km, across 13 corridors) fell back to straight lines where Natural Earth has no track
-  or the routed path was a long detour. `hsr qa` lists them; NTAD routing removes most.
+  or the routed path was a long detour. `hsr qa` lists them. The NTAD response was incomplete
+  (10,000 of 81,866 lines in the map area), so the fetcher rejected it and used Natural Earth.
 
 ## Updating
 
@@ -81,7 +77,10 @@ Consequences you will see in the map and tables:
 - **New corridor or option.** Add stations to `config/stations.yaml` and an entry to
   `config/corridors.yaml` (waypoints, `follow: rail|direct`, sources). `~ID` marks a
   pass-through point that is not a stop. `make test` checks the config.
-- **Boundary changes.** Add an entry under `overrides` in `config/sources.yaml`. Each override
+- **Boundary changes.** Remove the cached `data/raw/boundaries/*_2026.geojson` files and
+  re-run `hsr all` to refresh Census TIGERweb. The Missouri 119th
+  exception is configured as `missouri_congress_layer` in `config/sources.yaml`. For local
+  plans or the older mirror fallback, add an entry under `overrides`. Each override
   takes, in order of preference, an official plan shapefile (`path`), a block assignment file
   (`baf_url` / `baf_path`, dissolved on 2020 blocks or, offline, block groups), or an official
   county list (`composition`).

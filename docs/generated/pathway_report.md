@@ -1,13 +1,13 @@
 # Midwest HSR political pathway: data tables
 
-_Generated from the pipeline. Results snapshot: 2026-11-06 (unofficial). Boundary vintage: {'congress': 2023, 'state_senate': 2023, 'state_house': 2023, 'states': 2023, 'counties': 2023}. Rail network: natural_earth._
+_Generated from the pipeline. Results snapshot: 2026-11-06 (unofficial). Boundary vintage: {'congress': 2026, 'state_senate': 2026, 'state_house': 2026, 'states': 2024, 'counties': 2024}. Rail network: natural_earth._
 
 ## 1. Network at a glance
 
 - High-speed backbone (default options): **3,084 km** across 6 corridors.
-- U.S. House districts touched: **50** (29 D, 13 R, 0 other, 8 on boundaries pending update; 5 flipped to D, 0 flipped to R, 3 decided by <5 pts).
-- state senate districts touched: **112** (45 D, 24 R, 0 other, 43 on boundaries pending update; 4 flipped to D, 0 flipped to R, 0 decided by <5 pts).
-- state house districts touched: **194** (78 D, 32 R, 0 other, 83 on boundaries pending update; 8 flipped to D, 0 flipped to R, 0 decided by <5 pts).
+- U.S. House districts touched: **47** (32 D, 15 R, 0 other, 0 on boundaries pending update; 6 flipped to D, 0 flipped to R, 4 decided by <5 pts).
+- state senate districts touched: **109** (67 D, 41 R, 0 other, 0 on boundaries pending update; 7 flipped to D, 0 flipped to R, 0 decided by <5 pts).
+- state house districts touched: **192** (128 D, 60 R, 0 other, 0 on boundaries pending update; 15 flipped to D, 0 flipped to R, 0 decided by <5 pts).
 
 ## 2. Who governs each state after Nov. 3, 2026
 
@@ -33,7 +33,7 @@ _Generated from the pipeline. Results snapshot: 2026-11-06 (unofficial). Boundar
 
 Status: Vision. FRA Midwest Regional Rail Plan's new high-speed 'foundation' line; Wisconsin's Milwaukee–Madison–Eau Claire–Twin Cities corridor is in Corridor ID (conventional service first).
 
-U.S. House districts: 11 D / 3 R; state legislative: 40 D / 0 R.
+U.S. House districts: 11 D / 3 R; state legislative: 72 D / 17 R.
 
 | State | km | Governor | Trifecta | U.S. senators | U.S. House along line (margin) |
 |---|---|---|---|---|---|
@@ -114,7 +114,7 @@ U.S. House districts: 9 D / 2 R; state legislative: 31 D / 18 R.
 
 Status: Pillar corridor in the FRA Midwest Regional Rail Plan and the HSRA network; Wolverine improvements in Corridor ID.
 
-U.S. House districts: 8 D / 1 R; state legislative: 32 D / 8 R.
+U.S. House districts: 8 D / 1 R; state legislative: 43 D / 8 R.
 
 | State | km | Governor | Trifecta | U.S. senators | U.S. House along line (margin) |
 |---|---|---|---|---|---|
@@ -130,13 +130,15 @@ Seats along this line decided by under 5 points: MI:4 Sean McCann (D, +1.8)
 
 Status: Pillar corridor (Chicago–Indianapolis) in the FRA plan and HSRA network; Indianapolis–Chicago and daily Cardinal service in Corridor ID.
 
-U.S. House districts: 5 D / 3 R / 2 pending; state legislative: 35 D / 20 R.
+U.S. House districts: 6 D / 4 R; state legislative: 37 D / 25 R.
 
 | State | km | Governor | Trifecta | U.S. senators | U.S. House along line (margin) |
 |---|---|---|---|---|---|
 | IL | 42 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-1 Jonathan L. Jackson (D, +42.6); IL-2 Donna Miller (D, +46.0); IL-7 La Shawn K. Ford (D, +78.2) |
 | IN | 398 | Mike Braun (R) | R trifecta | Todd Young (R), Jim Banks (R) | IN-1 Frank Mrvan (D, +26.0); IN-4 Jim Baird (R, +8.4); IN-6 Jefferson Shreve (R, +10.2); IN-7 Andre Carson (D, +56.6); IN-9 Erin Houchin (R, +10.5) |
-| OH | 48 | Amy Acton (D) | divided | Sherrod Brown (D), Bernie Moreno (R) | OH-1/8 Greg Landsman (D) or Warren Davidson (R) — split county, line pending; OH-8/10 Warren Davidson (R) or Kristina Knickerbocker (D) — split county, line pending |
+| OH | 48 | Amy Acton (D) | divided | Sherrod Brown (D), Bernie Moreno (R) | OH-1 Greg Landsman (D, +11.5); OH-8 Warren Davidson (R, +4.2) |
+
+Seats along this line decided by under 5 points: OH:8 Warren Davidson (R, +4.2)
 
 ### Chicago – Fort Wayne – Toledo – Cleveland
 
@@ -144,13 +146,13 @@ U.S. House districts: 5 D / 3 R / 2 pending; state legislative: 35 D / 20 R.
 
 Status: HSRA's line to Detroit and Cleveland (toward Buffalo and New York); first-phase corridor in the 2009 SNCF study.
 
-U.S. House districts: 5 D / 3 R / 2 pending; state legislative: 23 D / 13 R.
+U.S. House districts: 7 D / 3 R; state legislative: 34 D / 20 R.
 
 | State | km | Governor | Trifecta | U.S. senators | U.S. House along line (margin) |
 |---|---|---|---|---|---|
 | IL | 24 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-1 Jonathan L. Jackson (D, +42.6); IL-2 Donna Miller (D, +46.0); IL-7 La Shawn K. Ford (D, +78.2) |
 | IN | 254 | Mike Braun (R) | R trifecta | Todd Young (R), Jim Banks (R) | IN-1 Frank Mrvan (D, +26.0); IN-2 Rudy Yakym (R, +5.2); IN-3 Marlin A. Stutzman (R, +9.8) |
-| OH | 248 | Amy Acton (D) | divided | Sherrod Brown (D), Bernie Moreno (R) | OH-5 Bob Latta (R, +11.7); OH-5/9 Bob Latta (R) or Marcy Kaptur (D) — split county, line pending; OH-7/11 Brian Poindexter (D) or Shontel M. Brown (D) — split county, line pending; OH-9 Marcy Kaptur (D, +5.5) |
+| OH | 248 | Amy Acton (D) | divided | Sherrod Brown (D), Bernie Moreno (R) | OH-5 Bob Latta (R, +11.7); OH-7 Brian Poindexter (D, +9.9) *flip*; OH-9 Marcy Kaptur (D, +5.5); OH-11 Shontel M. Brown (D, +67.0) |
 
 ### Cleveland – Columbus – Dayton – Cincinnati (3C+D)
 
@@ -158,13 +160,13 @@ U.S. House districts: 5 D / 3 R / 2 pending; state legislative: 23 D / 13 R.
 
 Status: Ohio corridor in FRA Corridor ID (selected Dec 2023, Step 1 complete); expected to use FRA's new Core service-development path.
 
-U.S. House districts: 3 D / 2 R / 7 pending; state legislative: 0 D / 0 R.
+U.S. House districts: 6 D / 4 R; state legislative: 24 D / 21 R.
 
 | State | km | Governor | Trifecta | U.S. senators | U.S. House along line (margin) |
 |---|---|---|---|---|---|
-| OH | 425 | Amy Acton (D) | divided | Sherrod Brown (D), Bernie Moreno (R) | OH-1 Greg Landsman (D, +11.5); OH-1/8 Greg Landsman (D) or Warren Davidson (R) — split county, line pending; OH-3/15 Joyce Beatty (D) or Don Leonard (D) — split county, line pending; OH-4 Jim Jordan (R, +33.2); OH-4/12 Jim Jordan (R) or Troy Balderson (R) — split county, line pending; OH-4/15 Jim Jordan (R) or Don Leonard (D) — split county, line pending; OH-4/5 Jim Jordan (R) or Bob Latta (R) — split county, line pending; OH-5 Bob Latta (R, +11.7); OH-7/11 Brian Poindexter (D) or Shontel M. Brown (D) — split county, line pending; OH-8/10 Warren Davidson (R) or Kristina Knickerbocker (D) — split county, line pending; OH-10 Kristina Knickerbocker (D, +1.6) *flip*; OH-15 Don Leonard (D, +6.6) *flip* |
+| OH | 425 | Amy Acton (D) | divided | Sherrod Brown (D), Bernie Moreno (R) | OH-1 Greg Landsman (D, +11.5); OH-3 Joyce Beatty (D, +54.4); OH-4 Jim Jordan (R, +33.2); OH-5 Bob Latta (R, +11.7); OH-7 Brian Poindexter (D, +9.9) *flip*; OH-8 Warren Davidson (R, +4.2); OH-10 Kristina Knickerbocker (D, +1.6) *flip*; OH-11 Shontel M. Brown (D, +67.0); OH-12 Troy Balderson (R, +18.8); OH-15 Don Leonard (D, +6.6) *flip* |
 
-Seats along this line decided by under 5 points: OH:10 Kristina Knickerbocker (D, +1.6)
+Seats along this line decided by under 5 points: OH:10 Kristina Knickerbocker (D, +1.6), OH:8 Warren Davidson (R, +4.2)
 
 ### Chicago – Quad Cities – Iowa City – Des Moines – Omaha
 
@@ -202,13 +204,13 @@ Seats along this line decided by under 5 points: MO:2 Fred Wellman (D, +4.9)
 
 Status: Corridor ID (continuing to Pittsburgh); new service.
 
-U.S. House districts: 4 D / 3 R / 1 pending; state legislative: 22 D / 13 R.
+U.S. House districts: 6 D / 3 R; state legislative: 26 D / 20 R.
 
 | State | km | Governor | Trifecta | U.S. senators | U.S. House along line (margin) |
 |---|---|---|---|---|---|
 | IL | 24 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-1 Jonathan L. Jackson (D, +42.6); IL-2 Donna Miller (D, +46.0); IL-7 La Shawn K. Ford (D, +78.2) |
 | IN | 257 | Mike Braun (R) | R trifecta | Todd Young (R), Jim Banks (R) | IN-1 Frank Mrvan (D, +26.0); IN-2 Rudy Yakym (R, +5.2); IN-3 Marlin A. Stutzman (R, +9.8) |
-| OH | 201 | Amy Acton (D) | divided | Sherrod Brown (D), Bernie Moreno (R) | OH-3/15 Joyce Beatty (D) or Don Leonard (D) — split county, line pending; OH-4 Jim Jordan (R, +33.2) |
+| OH | 201 | Amy Acton (D) | divided | Sherrod Brown (D), Bernie Moreno (R) | OH-3 Joyce Beatty (D, +54.4); OH-4 Jim Jordan (R, +33.2); OH-15 Don Leonard (D, +6.6) *flip* |
 
 ### Indianapolis – Columbus – Louisville
 
@@ -229,7 +231,7 @@ U.S. House districts: 2 D / 2 R; state legislative: 6 D / 10 R.
 
 Status: Corridor ID (Minnesota); new service.
 
-U.S. House districts: 2 D / 3 R; state legislative: 14 D / 8 R.
+U.S. House districts: 2 D / 3 R; state legislative: 15 D / 10 R.
 
 | State | km | Governor | Trifecta | U.S. senators | U.S. House along line (margin) |
 |---|---|---|---|---|---|
@@ -242,7 +244,7 @@ U.S. House districts: 2 D / 3 R; state legislative: 14 D / 8 R.
 
 Status: Corridor ID (Wisconsin) Hiawatha extension.
 
-U.S. House districts: 1 D / 3 R; state legislative: 0 D / 0 R.
+U.S. House districts: 1 D / 3 R; state legislative: 16 D / 13 R.
 
 | State | km | Governor | Trifecta | U.S. senators | U.S. House along line (margin) |
 |---|---|---|---|---|---|
@@ -254,11 +256,11 @@ U.S. House districts: 1 D / 3 R; state legislative: 0 D / 0 R.
 
 Status: Corridor ID; new service.
 
-U.S. House districts: 3 D / 2 R / 2 pending; state legislative: 0 D / 2 R.
+U.S. House districts: 5 D / 2 R; state legislative: 18 D / 7 R.
 
 | State | km | Governor | Trifecta | U.S. senators | U.S. House along line (margin) |
 |---|---|---|---|---|---|
-| OH | 148 | Amy Acton (D) | divided | Sherrod Brown (D), Bernie Moreno (R) | OH-5 Bob Latta (R, +11.7); OH-5/9 Bob Latta (R) or Marcy Kaptur (D) — split county, line pending; OH-7/11 Brian Poindexter (D) or Shontel M. Brown (D) — split county, line pending; OH-9 Marcy Kaptur (D, +5.5) |
+| OH | 148 | Amy Acton (D) | divided | Sherrod Brown (D), Bernie Moreno (R) | OH-5 Bob Latta (R, +11.7); OH-7 Brian Poindexter (D, +9.9) *flip*; OH-9 Marcy Kaptur (D, +5.5); OH-11 Shontel M. Brown (D, +67.0) |
 | MI | 82 | Jocelyn Benson (D) | D trifecta | Abdul El-Sayed (D), Elissa Slotkin (D) | MI-5 Tim Walberg (R, +20.6); MI-6 Debbie Dingell (D, +37.1); MI-13 Donavan McKinney (D, +56.5) |
 
 ### Chicago – Rockford – Dubuque (Black Hawk)
@@ -306,13 +308,13 @@ U.S. House districts: 4 D / 2 R; state legislative: 25 D / 14 R.
 
 Status: Corridor ID (Michigan) service enhancement.
 
-U.S. House districts: 6 D / 0 R; state legislative: 21 D / 6 R.
+U.S. House districts: 6 D / 1 R; state legislative: 23 D / 7 R.
 
 | State | km | Governor | Trifecta | U.S. senators | U.S. House along line (margin) |
 |---|---|---|---|---|---|
 | IL | 24 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-1 Jonathan L. Jackson (D, +42.6); IL-2 Donna Miller (D, +46.0); IL-7 La Shawn K. Ford (D, +78.2) |
 | IN | 2 | Mike Braun (R) | R trifecta | Todd Young (R), Jim Banks (R) | IN-1 Frank Mrvan (D, +26.0) |
-| MI | 132 | Jocelyn Benson (D) | D trifecta | Abdul El-Sayed (D), Elissa Slotkin (D) | MI-3 Hillary Scholten (D, +15.7); MI-4 Sean McCann (D, +1.8) *flip* |
+| MI | 132 | Jocelyn Benson (D) | D trifecta | Abdul El-Sayed (D), Elissa Slotkin (D) | MI-3 Hillary Scholten (D, +15.7); MI-4 Sean McCann (D, +1.8) *flip*; MI-5 Tim Walberg (R, +20.6) |
 
 Seats along this line decided by under 5 points: MI:4 Sean McCann (D, +1.8)
 

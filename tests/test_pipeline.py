@@ -5,7 +5,7 @@ import pytest
 from shapely.geometry import LineString
 
 from hsr import config as C
-from hsr import results, routing
+from hsr import fetch, results, routing
 from hsr.districts import norm_district
 
 
@@ -104,7 +104,8 @@ OHIO_COUNTIES = 88
 
 def test_ohio_composition_is_complete():
     import yaml
-    comp = yaml.safe_load(open(C.ROOT / "config" / "ohio_cd_2026_counties.yaml"))
+    with open(C.ROOT / "config" / "ohio_cd_2026_counties.yaml") as fh:
+        comp = yaml.safe_load(fh)
     whole = [c for cs in comp["whole"].values() for c in (cs or [])]
     split = comp["split"]
     listed = whole + list(split)
@@ -119,6 +120,7 @@ def test_ohio_composition_is_complete():
 
 def test_read_baf_csv_and_zip(tmp_path):
     import zipfile
+
     from hsr.districts import read_baf
     csv = tmp_path / "baf.csv"
     csv.write_text("Block,DistrictID:1\n390010001001000,2\n390010001001001,2\n")
@@ -142,3 +144,37 @@ def test_baf_to_block_groups_majority_and_ties():
     got = dict(zip(best.bg, best.district))
     assert got == {"390010001001": "2", "390010001002": "3"}
     assert split == 2
+
+
+def test_tigerweb_congress_uses_2026_except_missouri(tmp_path, monkeypatch):
+    monkeypatch.setattr(C, "ROOT", tmp_path)
+    monkeypatch.setattr(C, "RAW", tmp_path / "raw")
+    monkeypatch.setattr(fetch, "MANIFEST", C.RAW / "MANIFEST.json")
+    monkeypatch.setattr(C, "states", lambda: {"IL": {"fips": "17", "house_seats": 1},
+                                             "MO": {"fips": "29", "house_seats": 1}})
+
+    class Response:
+        def __init__(self, url, params):
+            self.url = url
+            fips = "17" if "'17'" in params["where"] else "29"
+            field = "CD120" if fips == "17" else "CD119"
+            codes = ["01", "ZZ"] if fips == "17" else ["01"]
+            self.data = {"type": "FeatureCollection", "features": [
+                {"type": "Feature", "properties": {"STATE": fips, field: code, "GEOID": fips + code},
+                 "geometry": {"type": "Polygon", "coordinates": [[[0, 0], [1, 0], [1, 1], [0, 0]]]}}
+                for code in codes]}
+
+        def raise_for_status(self):
+            pass
+
+        def json(self):
+            return self.data
+
+    monkeypatch.setattr(fetch.requests, "get", lambda url, params, **kwargs: Response(url, params))
+    path, entry = fetch.fetch_tigerweb_layer("congress", C.sources()["boundaries"])
+    import json
+    features = json.loads(path.read_text())["features"]
+    assert len(features) == 2
+    assert all(f["properties"]["CD120FP"] == "01" for f in features)
+    assert "/0/query" in entry["states"]["IL"]["url"]
+    assert "/4/query" in entry["states"]["MO"]["url"]

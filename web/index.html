@@ -1,3 +1,4 @@
+<meta charset="utf-8">
 <title>Who Holds the Track</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Proposed Midwest high-speed rail corridors laid over every congressional and state legislative district, colored by the Nov. 3, 2026 results.">
@@ -692,8 +693,8 @@ function renderLegend() {
     <div class="lrow"><span class="ramp">${ramp("R")}</span><span>Republican</span></div>
     ${stw ? (state.office === "us_senate" ? `<div class="lrow"><svg width="22" height="10"><rect width="22" height="10" fill="url(#splitSen)"/></svg><span>Split delegation</span></div>` : "") :
       `<div class="lrow hideable"><span style="font-size:11px;color:var(--muted)">Brighter = wider margin</span></div>
-       ${state.office === "us_house" ? `<div class="lrow"><svg width="22" height="10"><rect width="22" height="10" fill="url(#hatchDR)"/></svg><span>Ohio county split between two districts</span></div>` :
-        `<div class="lrow"><svg width="22" height="10"><rect width="22" height="10" fill="url(#hatch)"/></svg><span>New 2026 lines, boundary file pending</span></div>`}
+       ${[...pending].some((id) => id.startsWith(state.office + ":"))
+         ? `<div class="lrow"><svg width="22" height="10"><rect width="22" height="10" fill="url(#hatch)"/></svg><span>Boundary geometry pending</span></div>` : ""}
        <div class="lrow hideable"><svg width="22" height="10"><rect width="22" height="10" fill="#3a4560"/></svg><span>Not yet called</span></div>`}
     <div class="lrow"><svg width="22" height="10"><line x1="1" y1="5" x2="21" y2="5" stroke="var(--signal)" stroke-width="3"/></svg><span>High-speed backbone (150–220 mph)</span></div>
     <div class="lrow"><svg width="22" height="10"><line x1="1" y1="5" x2="21" y2="5" stroke="var(--regional)" stroke-width="1.6" stroke-dasharray="5 4"/></svg><span>Regional feeder (79–125 mph)</span></div>`;
@@ -708,10 +709,10 @@ function renderNotes() {
     <p>Corridors come from the High Speed Rail Alliance's Midwest network, the FRA and Midwest Interstate Passenger Rail Commission's 2021 Midwest Regional Rail Plan, the FRA Corridor ID program, and the Illinois High-Speed Rail Commission's Chicago–St. Louis feasibility study, which has eight route options and no chosen route. Lines are drawn through the cities each plan names; none is an engineering alignment.</p>
     <ul>
       <li><b>Results.</b> U.S. House, Senate and governor races from AP-fed Poliwave pages; state legislative races from MultiState's results pages; both captured ${date}. "Not called" races show the current leader. Seats not on the 2026 ballot show the sitting member from OpenStates.</li>
-      <li><b>Ohio's new congressional map.</b> ${m.ohio_cd_method === "county-composition"
+      <li><b>Ohio's congressional map.</b> ${m.ohio_cd_method === "county-composition"
         ? "Drawn from the state's official county list for the plan adopted Oct. 31, 2025: the 73 counties that sit in one district are exact; the 15 split counties are hatched with both possible members until the Commission's block-level file is loaded."
-        : m.ohio_cd_method && m.ohio_cd_method.startsWith("baf") ? "Built from the Ohio Redistricting Commission's block assignment file for the plan adopted Oct. 31, 2025." : "Official plan geometry for the map adopted Oct. 31, 2025."}</li>
-      <li><b>Other boundaries.</b> Census cartographic boundary files (vintage ${esc(m.boundary_vintage.state_house)}). Hatched legislative districts in ${pendingStates.join(", ")} were redrawn after that vintage (Wisconsin's and Ohio's legislative maps, Michigan's Detroit-area redraw) and are left out of district counts.</li>
+        : m.ohio_cd_method && m.ohio_cd_method.startsWith("baf") ? "Built from the Ohio Redistricting Commission's block assignment file for the plan adopted Oct. 31, 2025." : "Census TIGERweb 120th Congressional Districts GeoJSON, reflecting the plan adopted Oct. 31, 2025."}</li>
+      <li><b>District boundaries.</b> Census TIGERweb full-resolution GeoJSON: 120th Congressional Districts and 2026 state legislative districts. Missouri's congressional districts use Census's 119th layer because its 120th files still show a superseded map. ${pendingStates.length ? `Hatched districts in ${pendingStates.join(", ")} use older geometry and are excluded from district counts.` : "All mapped legislative districts use the 2026 layer."}</li>
       <li><b>"Touched"</b> means the line runs at least 0.5 km through the district or a named stop sits in it.</li>
       <li><b>Margins</b> are the winner's share minus the runner-up's, in percentage points, where the source reported percentages.</li>
     </ul>

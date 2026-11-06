@@ -11,6 +11,7 @@ import json
 import logging
 import shutil
 import subprocess
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 import requests
@@ -49,8 +50,7 @@ def download(url: str, dest: Path, *, timeout: int = 300) -> Path:
     with requests.get(url, stream=True, timeout=timeout, headers=UA) as r:
         r.raise_for_status()
         with open(tmp, "wb") as fh:
-            for chunk in r.iter_content(1 << 20):
-                fh.write(chunk)
+            fh.writelines(r.iter_content(1 << 20))
     tmp.replace(dest)
     return dest
 
@@ -78,13 +78,77 @@ def first_working(key: str, candidates: list[tuple[str, Path, dict]]) -> tuple[P
 
 
 # --------------------------------------------------------------------- boundaries
+def fetch_tigerweb_layer(layer: str, src: dict) -> tuple[Path, dict]:
+    """Fetch complete 2026 district GeoJSON, one state at a time."""
+    cfg = src["tigerweb"]
+    vintage = cfg["vintage"]
+    source = f"tigerweb-{vintage}"
+    dest = C.RAW / "boundaries" / f"{layer}_{vintage}.geojson"
+    key = f"boundaries.{layer}"
+    cached = _manifest().get(key, {})
+    if (dest.exists() and cached.get("path") == str(dest.relative_to(C.ROOT))
+            and cached.get("source") == source and cached.get("sha256") == sha256(dest)):
+        log.info("cached %s -> %s", key, dest)
+        return dest, cached
+
+    def get_state(item: tuple[str, dict]) -> tuple[str, list[dict], str]:
+        st, state = item
+        fips = state["fips"]
+        layer_id = cfg["missouri_congress_layer"] if layer == "congress" and st == "MO" else cfg["layers"][layer]
+        field = "CD119" if layer == "congress" and st == "MO" else {
+            "congress": "CD120", "state_senate": "SLDU", "state_house": "SLDL"}[layer]
+        url = f"{cfg['base']}/{layer_id}/query"
+        params = {"where": f"STATE='{fips}'", "outFields": "*", "returnGeometry": "true",
+                  "outSR": 4326, "f": "geojson"}
+        response = requests.get(url, params=params, headers=UA, timeout=180)
+        response.raise_for_status()
+        data = response.json()
+        features = data.get("features")
+        if isinstance(features, list):
+            features = [f for f in features if not str(f.get("properties", {}).get(field, "")).upper().startswith("ZZ")]
+        expected = (state["house_seats"] if layer == "congress" else
+                    C.chamber_sizes()[st]["state_senate" if layer == "state_senate" else "state_house"])
+        if data.get("type") != "FeatureCollection" or not isinstance(features, list) or len(features) != expected:
+            raise ValueError(f"{layer} {st}: expected {expected} features, got {len(features) if isinstance(features, list) else data}")
+        codes = set()
+        for feature in features:
+            p = feature["properties"]
+            if p.get("STATE") != fips or not p.get(field) or not feature.get("geometry"):
+                raise ValueError(f"{layer} {st}: invalid state, district or geometry")
+            codes.add(p[field])
+            p["STATEFP"] = p["STATE"]
+            p[{"congress": "CD120FP", "state_senate": "SLDUST", "state_house": "SLDLST"}[layer]] = p[field]
+        if len(codes) != expected:
+            raise ValueError(f"{layer} {st}: duplicate district codes")
+        return st, features, response.url
+
+    items = [(st, state) for st, state in C.states().items() if layer != "state_house" or st != "NE"]
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        parts = list(pool.map(get_state, items))
+    collection = {"type": "FeatureCollection", "features": [f for _, features, _ in parts for f in features]}
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    tmp = dest.with_suffix(".geojson.part")
+    tmp.write_text(json.dumps(collection, separators=(",", ":")), encoding="utf-8")
+    tmp.replace(dest)
+    entry = {"path": str(dest.relative_to(C.ROOT)), "bytes": dest.stat().st_size,
+             "sha256": sha256(dest), "vintage": vintage, "mirror": False, "source": source,
+             "states": {st: {"url": url, "features": len(features)} for st, features, url in parts}}
+    _record(key, **entry)
+    log.info("fetched %s: %d districts across %d states", layer, len(collection["features"]), len(parts))
+    return dest, entry
+
+
 def fetch_boundaries(year: int | None = None, mirror_only: bool = False) -> dict:
-    """Census cartographic boundary files for districts and states."""
+    """2026 TIGERweb districts plus cartographic state and county backgrounds."""
     src = C.sources()["boundaries"]
     year = year or src["vintage"]
     mirror = src["mirror"]
     out = {}
     for layer in ("congress", "state_senate", "state_house", "states", "counties"):
+        if layer in ("congress", "state_senate", "state_house") and not mirror_only:
+            path, entry = fetch_tigerweb_layer(layer, src)
+            out[layer] = {"path": path, "vintage": entry["vintage"], "mirror": False}
+            continue
         cands = []
         if not mirror_only:
             for tmpl in src[layer]["urls"]:
@@ -105,6 +169,8 @@ def fetch_overrides(mirror_only: bool = False) -> None:
     Failures are logged, not raised: districts.py falls back to the next input
     (BAF on block groups, then the county composition) and flags the result.
     """
+    if not mirror_only:
+        return  # TIGERweb's 120th layer already contains the Ohio 2026 plan.
     mirror = C.sources()["boundaries"]["mirror"]
     for ov in C.sources().get("overrides", []):
         key = f"overrides.{ov['state']}.{ov['office']}"
@@ -163,13 +229,25 @@ def fetch_rosters(openstates_ref: str = "main", congress_ref: str = "main") -> d
 
 
 # --------------------------------------------------------------------------- rail
+def _arcgis_count(url: str, bbox: list[float], where: str = "1=1") -> int:
+    base_params = {"where": where, "geometry": ",".join(map(str, bbox)),
+                   "geometryType": "esriGeometryEnvelope", "inSR": 4326,
+                   "spatialRel": "esriSpatialRelIntersects"}
+    count_response = requests.get(url.rstrip("/") + "/query", params=base_params | {"returnCountOnly": "true", "f": "json"},
+                                  timeout=60, headers=UA)
+    count_response.raise_for_status()
+    return int(count_response.json()["count"])
+
+
 def _arcgis_geojson(url: str, bbox: list[float], where: str = "1=1", page: int = 2000) -> dict:
+    base_params = {"where": where, "geometry": ",".join(map(str, bbox)),
+                   "geometryType": "esriGeometryEnvelope", "inSR": 4326,
+                   "spatialRel": "esriSpatialRelIntersects"}
+    expected = _arcgis_count(url, bbox, where)
     feats, offset = [], 0
     while True:
-        params = {
-            "where": where, "outFields": "*", "f": "geojson", "outSR": 4326,
-            "geometry": ",".join(map(str, bbox)), "geometryType": "esriGeometryEnvelope",
-            "inSR": 4326, "spatialRel": "esriSpatialRelIntersects",
+        params = base_params | {
+            "outFields": "*", "f": "geojson", "outSR": 4326,
             "resultOffset": offset, "resultRecordCount": page,
         }
         r = requests.get(url.rstrip("/") + "/query", params=params, timeout=300, headers=UA)
@@ -180,6 +258,8 @@ def _arcgis_geojson(url: str, bbox: list[float], where: str = "1=1", page: int =
         if len(batch) < page and not js.get("exceededTransferLimit"):
             break
         offset += len(batch)
+    if len(feats) != expected:
+        raise ValueError(f"ArcGIS query returned {len(feats)} of {expected} features")
     return {"type": "FeatureCollection", "features": feats}
 
 
@@ -191,6 +271,11 @@ def fetch_rail(mirror_only: bool = False) -> dict:
     if not mirror_only:
         try:
             dest = C.RAW / "rail" / "ntad_narn_lines.geojson"
+            if dest.exists():
+                expected = _arcgis_count(rs["narn_lines"]["url"], bbox)
+                actual = len(json.loads(dest.read_text())["features"])
+                if actual != expected:
+                    raise ValueError(f"cached NTAD rail response has {actual} of {expected} features")
             if not dest.exists():
                 # Pull everything in the bbox; routing.py drops yards/abandoned track.
                 fc = _arcgis_geojson(rs["narn_lines"]["url"], bbox)
