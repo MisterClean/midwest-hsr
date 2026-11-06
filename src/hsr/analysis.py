@@ -88,6 +88,11 @@ def pathways(lines: gpd.GeoDataFrame, layers: dict, seats: pd.DataFrame, control
     """For each corridor: the states it crosses, in order, and who holds power in each."""
     states = layers["states"].to_crs(C.CRS_METERS)
     states = states[states.in_scope]
+    cand = {}
+    for o in C.OFFICES:
+        lay = layers[o]
+        if "candidates" in lay:
+            cand.update({i: c for i, c in zip(lay["id"], lay["candidates"].fillna("")) if c})
     out = {}
     for _, c in lines.iterrows():
         line = c.geometry
@@ -114,10 +119,7 @@ def pathways(lines: gpd.GeoDataFrame, layers: dict, seats: pd.DataFrame, control
                 "us_senators": [{"name": r.holder, "party": r.party, "new": r.source == "2026"} for r in sens.itertuples()],
                 "chambers": {o: ctrl.loc[o].to_dict() for o in ctrl.index},
                 "trifecta": tri["trifecta"],
-                "us_house_along": [{"district": r.district, "name": r.holder, "party": r.party,
-                                    "margin": None if pd.isna(r.margin) else round(float(r.margin), 1),
-                                    "flipped": bool(r.flipped), "status": r.status,
-                                    "boundary_status": r.boundary_status}
+                "us_house_along": [_house_row(r, seats, cand)
                                    for r in along[along.office == "us_house"].assign(
                                        _n=lambda x: x.district.str.extract(r"(\d+)", expand=False).astype(int)
                                    ).sort_values("_n").itertuples()],
@@ -126,6 +128,22 @@ def pathways(lines: gpd.GeoDataFrame, layers: dict, seats: pd.DataFrame, control
             })
         out[c["id"]] = steps
     return out
+
+
+def _house_row(r, seats: pd.DataFrame, cand: dict) -> dict:
+    """One U.S. House entry for a pathway; split-county pieces list both possible members."""
+    row = {"district": r.district, "name": r.holder, "party": r.party,
+           "margin": None if pd.isna(r.margin) else round(float(r.margin), 1),
+           "flipped": bool(r.flipped), "status": r.status, "boundary_status": r.boundary_status}
+    if r.id in cand:
+        sidx = seats.set_index("id")
+        opts = [sidx.loc[i] for i in cand[r.id].split(",") if i in sidx.index]
+        row.update({"name": " or ".join(o.holder for o in opts),
+                    "party": opts[0].party if len({o.party for o in opts}) == 1 else "",
+                    "margin": None, "flipped": False, "status": "split",
+                    "options": [{"district": i.split(":")[-1], "name": o.holder, "party": o.party}
+                                for i, o in zip(cand[r.id].split(","), opts)]})
+    return row
 
 
 def _endpoints(geom):

@@ -58,9 +58,15 @@ def export(layers: dict, lakes_path: Path | None, lines: gpd.GeoDataFrame, stops
     W = C.WEB_DATA
     W.mkdir(parents=True, exist_ok=True)
     for office in C.OFFICES:
-        g = layers[office][["id", "state", "district", "boundary_status", "geometry"]].rename(
-            columns={"boundary_status": "bs"})
+        lay = layers[office]
+        if "candidates" not in lay:
+            lay = lay.assign(candidates="")
+        g = lay[["id", "state", "district", "boundary_status", "boundary_note", "candidates", "geometry"]].rename(
+            columns={"boundary_status": "bs", "boundary_note": "note", "candidates": "alt"})
         g["bs"] = g["bs"].map({"pending": "p"}).fillna("")
+        g["alt"] = g["alt"].fillna("")
+        # Keep notes only where they say something the map shows (split pieces, partial districts).
+        g["note"] = [n if (a or str(n).startswith("Also includes")) else "" for n, a in zip(g["note"].fillna(""), g["alt"])]
         to_topojson(g, office, W / f"{office}.topo.json", SIMPLIFY[office])
     to_topojson(layers["states"], "states", W / "states.topo.json", SIMPLIFY["states"])
     if lakes_path:

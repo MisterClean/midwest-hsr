@@ -36,8 +36,16 @@ PARTY = {
 }
 CHAMBER = {"house": "state_house", "assembly": "state_house", "senate": "state_senate",
            "legislature": "state_senate"}
-STATUS = {"elected": "called", "called": "called", "leading": "leading", "counting": "leading",
-          "not called": "leading", "": "reported"}
+STATUS = {"elected": "called", "called": "called", "winner": "called", "leading": "leading", "counting": "leading",
+          "not called": "leading", "uncalled": "leading", "": "reported"}
+
+
+def norm_status(v: str) -> str:
+    """Normalize a results page's call label ('✓Elected', 'Dem. gain', 'Rep. hold', ...)."""
+    s = re.sub(r"[^a-z. ]", "", str(v).lower()).strip()
+    if re.fullmatch(r"(dem|rep|ind|gop)\.? (gain|hold)", s):
+        return "called"
+    return STATUS.get(s, s)
 
 
 def norm_party(p) -> str:
@@ -74,7 +82,7 @@ def load_snapshot(snapshot: Path | None = None) -> pd.DataFrame:
                 "winner": r["winner"], "party": norm_party(r["party"]),
                 "winner_pct": _pct(r["winner_pct"]), "runnerup": _first(r["runnerup"]),
                 "runnerup_party": norm_party(r["runnerup_party"]), "runnerup_pct": _pct(r["runnerup_pct"]),
-                "status": STATUS.get(r["status"].strip().lower(), r["status"].strip().lower()),
+                "status": norm_status(r["status"]),
                 "source_url": r["source_url"],
             })
     for f in sorted(glob.glob(str(snap / "multistate_state_leg_*.csv"))):
@@ -82,6 +90,8 @@ def load_snapshot(snapshot: Path | None = None) -> pd.DataFrame:
         df = pd.read_csv(f, dtype=str, keep_default_na=False)
         for r in df.to_dict("records"):
             none = r["winner"].strip().lower() in ("", "none")
+            # Optional per-row status: 'leading' rows carry the current leader as `winner`.
+            st_col = r.get("status", "").strip().lower()
             rows.append({
                 "office": CHAMBER[r["chamber"].strip().lower()], "state": st,
                 "district": norm_district(r["district"]),
@@ -89,7 +99,7 @@ def load_snapshot(snapshot: Path | None = None) -> pd.DataFrame:
                 "party": "" if none else norm_party(r["party"]),
                 "winner_pct": None, "runnerup": _first(r["runnerup"]),
                 "runnerup_party": norm_party(r["runnerup_party"]), "runnerup_pct": None,
-                "status": "uncalled" if none else "called",
+                "status": "uncalled" if none else ("leading" if st_col == "leading" else "called"),
                 "source_url": f"https://www.multistate.us/elections/results/{C.states()[st]['name'].lower()}-2026",
             })
     out = pd.DataFrame(rows)

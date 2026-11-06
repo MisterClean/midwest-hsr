@@ -354,6 +354,11 @@ function init() {
   const hatch = defs.append("pattern").attr("id", "hatch").attr("patternUnits", "userSpaceOnUse").attr("width", 6).attr("height", 6).attr("patternTransform", "rotate(45)");
   hatch.append("rect").attr("width", 6).attr("height", 6).attr("fill", "#1a2236");
   hatch.append("line").attr("x1", 0).attr("y1", 0).attr("x2", 0).attr("y2", 6).attr("stroke", "#4b5874").attr("stroke-width", 2.2);
+  for (const [pid, a, b] of [["hatchD", fill("D", 14), fill("D", 30)], ["hatchR", fill("R", 14), fill("R", 30)], ["hatchDR", fill("D", 22), fill("R", 22)]]) {
+    const pt = defs.append("pattern").attr("id", pid).attr("patternUnits", "userSpaceOnUse").attr("width", 7).attr("height", 7).attr("patternTransform", "rotate(45)");
+    pt.append("rect").attr("width", 7).attr("height", 7).attr("fill", a);
+    pt.append("rect").attr("width", 3).attr("height", 7).attr("fill", b);
+  }
   const split = defs.append("pattern").attr("id", "splitSen").attr("patternUnits", "userSpaceOnUse").attr("width", 14).attr("height", 14).attr("patternTransform", "rotate(45)");
   split.append("rect").attr("width", 7).attr("height", 14).attr("fill", fill("D", 20));
   split.append("rect").attr("x", 7).attr("width", 7).attr("height", 14).attr("fill", fill("R", 20));
@@ -418,6 +423,10 @@ function distFill(d) {
     const w = statewide(d.properties.state);
     if (w.p === "split") return "url(#splitSen)";
     return fill(w.p, state.office === "governor" ? w.s.m : 20, w.s ? w.s.s : "called");
+  }
+  if (d.properties.alt) {
+    const ps = [...new Set(d.properties.alt.split(",").map((o) => seat(o).p))];
+    return ps.length === 1 && (ps[0] === "D" || ps[0] === "R") ? `url(#hatch${ps[0]})` : "url(#hatchDR)";
   }
   if (d.properties.bs === "p") return "url(#hatch)";
   const s = seat(id);
@@ -497,13 +506,23 @@ function showTip(e, d) {
   } else if (state.office === "us_senate") {
     const st = d.properties.state, w = statewide(st);
     html = `<div class="t1">${STATE_NAME[st]} U.S. senators</div>` + w.sens.map((s) => `<div class="t2">${chip(s.p)} ${esc(s.h)}${s.src === "2026" ? " · elected Nov. 3" : ""}${s.f ? '<span class="flip">FLIP</span>' : ""}</div>`).join("");
+  } else if (d.properties.alt) {
+    const opts = d.properties.alt.split(",");
+    const county = (d.properties.note.match(/^(.*?) County/) || [])[1] || "This county";
+    html = `<div class="t1">${esc(county)} County · split</div>` + opts.map((o) => {
+      const s = seat(o);
+      return `<div class="t2">${dlabel(o)} ${chip(s.p)} ${esc(s.h || "not yet called")}${s.f ? '<span class="flip">FLIP</span>' : ""}</div>`;
+    }).join("") + `<div class="t2">The exact line through the county isn't loaded yet.</div>`;
+    const on = (byDistrict[id] || []).map((c) => cfeat[c]).filter((f) => f && corridorsVisible().includes(f));
+    if (on.length) html += `<div class="on">On: ${on.map((f) => esc(f.properties.short)).join(" · ")}</div>`;
   } else {
     const s = seat(id);
     const name = s.h ? esc(s.h) : "Winner not yet called";
     const res = s.src === "2026"
       ? (s.m != null ? `Won by ${s.m.toFixed(1)} pts` : s.s === "uncalled" ? "Too early to call" : "Won Nov. 3") + (s.s === "leading" ? " · leading, not called" : "")
       : s.src === "holdover" ? "Seat not on the 2026 ballot" : "";
-    const pend = d.properties.bs === "p" ? `<div class="t2">2026 lines are newer than this boundary file; result shown by district number.</div>` : "";
+    const pend = d.properties.bs === "p" ? `<div class="t2">2026 lines are newer than this boundary file; result shown by district number.</div>`
+      : d.properties.note ? `<div class="t2">${esc(d.properties.note)}</div>` : "";
     html = `<div class="t1">${dlabel(id)} ${chip(s.p)}${s.f ? '<span class="flip">FLIP</span>' : ""}</div><div class="t2">${name}${res ? " · " + res : ""}</div>${pend}`;
     const on = (byDistrict[id] || []).map((c) => cfeat[c]).filter((f) => f && corridorsVisible().includes(f));
     if (on.length) html += `<div class="on">On: ${on.map((f) => esc(f.properties.short)).join(" · ")}</div>`;
@@ -564,7 +583,7 @@ function renderStats() {
   });
   $("#verdict").innerHTML = state.sel
     ? `<strong>${esc(cfeat[state.sel].properties.short)}</strong> crosses ${[...states].map((s) => STATE_NAME[s]).join(", ")}. ${h.close ? `${h.close} House seat${h.close > 1 ? "s" : ""} along it ${h.close > 1 ? "were" : "was"} decided by under 5 points.` : ""}`
-    : `Along the backbone, <strong>${triList("D trifecta") || "no state"}</strong> now ${dT === 1 ? "has" : "have"} Democratic trifectas and <strong>${triList("R trifecta") || "no state"}</strong> Republican ones${divided.length ? `. ${divided.join(". ")}` : ""}. ${flips ? `${flips} House seat${flips > 1 ? "s" : ""} on these lines changed party on Nov. 3${h.P ? `, not counting ${h.P} district${h.P > 1 ? "s" : ""} on maps awaiting a new boundary file` : ""}.` : ""}`;
+    : `Along the backbone, <strong>${triList("D trifecta") || "no state"}</strong> now ${dT === 1 ? "has" : "have"} Democratic trifectas and <strong>${triList("R trifecta") || "no state"}</strong> Republican ones${divided.length ? `. ${divided.join(". ")}` : ""}. ${flips ? `${flips} House seat${flips > 1 ? "s" : ""} on these lines changed party on Nov. 3${h.P ? `, not counting ${h.P} split-county area${h.P > 1 ? "s" : ""} whose exact 2026 line isn't loaded yet` : ""}.` : ""}`;
 }
 
 function renderBoard() {
@@ -616,6 +635,9 @@ function renderDetail() {
     const triCls = /^D trifecta/.test(s.trifecta) ? "D" : /^R trifecta/.test(s.trifecta) ? "R" : "div";
     const ctrl = (c, lbl) => c ? `<span class="k">${lbl}</span><span class="ch">${c.control === "nonpartisan" ? "Nonpartisan unicameral" : `${chip(c.control === "D" || c.control === "R" ? c.control : "")} ${c.D} D · ${c.R} R${c.uncalled ? ` <span class="lead">${c.uncalled} uncalled</span>` : ""}`}</span>` : "";
     const reps = s.us_house_along.map((r) => {
+      if (r.status === "split" && r.options) {
+        return `<li><span class="dn">${s.state}-${esc(r.district)}</span><span>${r.options.map((o) => `${chip(o.party)} ${esc(o.name)}`).join(" <span class=\"dn\">or</span> ")}<span class="lead">split county</span></span><span class="mg"></span></li>`;
+      }
       const m = r.margin == null ? "" : `${r.margin < 0 ? "" : "+"}${r.margin.toFixed(1)}`;
       return `<li><span class="dn">${s.state}-${esc(r.district)}</span><span>${chip(r.party)} ${esc(r.name)}${r.flipped ? '<span class="flip">FLIP</span>' : ""}${r.status === "leading" ? '<span class="lead">not called</span>' : ""}${r.boundary_status === "pending" ? '<span class="lead">new map</span>' : ""}</span><span class="mg ${r.margin != null && Math.abs(r.margin) < 5 ? "close" : ""}">${m}</span></li>`;
     }).join("");
@@ -670,7 +692,8 @@ function renderLegend() {
     <div class="lrow"><span class="ramp">${ramp("R")}</span><span>Republican</span></div>
     ${stw ? (state.office === "us_senate" ? `<div class="lrow"><svg width="22" height="10"><rect width="22" height="10" fill="url(#splitSen)"/></svg><span>Split delegation</span></div>` : "") :
       `<div class="lrow hideable"><span style="font-size:11px;color:var(--muted)">Brighter = wider margin</span></div>
-       <div class="lrow"><svg width="22" height="10"><rect width="22" height="10" fill="url(#hatch)"/></svg><span>New 2026 lines, boundary file pending</span></div>
+       ${state.office === "us_house" ? `<div class="lrow"><svg width="22" height="10"><rect width="22" height="10" fill="url(#hatchDR)"/></svg><span>Ohio county split between two districts</span></div>` :
+        `<div class="lrow"><svg width="22" height="10"><rect width="22" height="10" fill="url(#hatch)"/></svg><span>New 2026 lines, boundary file pending</span></div>`}
        <div class="lrow hideable"><svg width="22" height="10"><rect width="22" height="10" fill="#3a4560"/></svg><span>Not yet called</span></div>`}
     <div class="lrow"><svg width="22" height="10"><line x1="1" y1="5" x2="21" y2="5" stroke="var(--signal)" stroke-width="3"/></svg><span>High-speed backbone (150–220 mph)</span></div>
     <div class="lrow"><svg width="22" height="10"><line x1="1" y1="5" x2="21" y2="5" stroke="var(--regional)" stroke-width="1.6" stroke-dasharray="5 4"/></svg><span>Regional feeder (79–125 mph)</span></div>`;
@@ -680,12 +703,15 @@ function renderNotes() {
   const m = A.meta;
   const date = m.results_snapshot;
   $("#asof").innerHTML = `Unofficial results captured ${date} · not certified`;
-  const pendingStates = [...new Set([...pending].map((id) => id.split(":")[1]))].sort();
+  const pendingStates = [...new Set([...pending].filter((id) => !id.startsWith("us_house:")).map((id) => id.split(":")[1]))].sort();
   $("#notesbody").innerHTML = `
     <p>Corridors come from the High Speed Rail Alliance's Midwest network, the FRA and Midwest Interstate Passenger Rail Commission's 2021 Midwest Regional Rail Plan, the FRA Corridor ID program, and the Illinois High-Speed Rail Commission's Chicago–St. Louis feasibility study, which has eight route options and no chosen route. Lines are drawn through the cities each plan names; none is an engineering alignment.</p>
     <ul>
       <li><b>Results.</b> U.S. House, Senate and governor races from AP-fed Poliwave pages; state legislative races from MultiState's results pages; both captured ${date}. "Not called" races show the current leader. Seats not on the 2026 ballot show the sitting member from OpenStates.</li>
-      <li><b>Boundaries.</b> Census cartographic boundary files (vintage ${esc(Object.values(m.boundary_vintage)[0])}). Hatched districts in ${pendingStates.join(", ")} were redrawn after that vintage: Ohio's 2026 congressional map, Wisconsin's and Ohio's legislative maps, and Michigan's court-ordered Detroit-area redraw. They are left out of district counts until the newer files are loaded.</li>
+      <li><b>Ohio's new congressional map.</b> ${m.ohio_cd_method === "county-composition"
+        ? "Drawn from the state's official county list for the plan adopted Oct. 31, 2025: the 73 counties that sit in one district are exact; the 15 split counties are hatched with both possible members until the Commission's block-level file is loaded."
+        : m.ohio_cd_method && m.ohio_cd_method.startsWith("baf") ? "Built from the Ohio Redistricting Commission's block assignment file for the plan adopted Oct. 31, 2025." : "Official plan geometry for the map adopted Oct. 31, 2025."}</li>
+      <li><b>Other boundaries.</b> Census cartographic boundary files (vintage ${esc(m.boundary_vintage.state_house)}). Hatched legislative districts in ${pendingStates.join(", ")} were redrawn after that vintage (Wisconsin's and Ohio's legislative maps, Michigan's Detroit-area redraw) and are left out of district counts.</li>
       <li><b>"Touched"</b> means the line runs at least 0.5 km through the district or a named stop sits in it.</li>
       <li><b>Margins</b> are the winner's share minus the runner-up's, in percentage points, where the source reported percentages.</li>
     </ul>

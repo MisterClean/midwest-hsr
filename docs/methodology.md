@@ -36,6 +36,24 @@ Census cartographic boundary files (1:500k). Each district carries `boundary_sta
   Michigan's court-ordered Detroit-area redraw is approximated by flagging legislative
   districts whose interior point falls in Wayne/Oakland/Macomb counties' envelope.
 
+### Ohio's 2026 congressional map
+
+The plan adopted by the Ohio Redistricting Commission on 2025-10-31 (plan 430) is not in any
+Census release, and the Commission published it only as a block assignment file. The pipeline
+resolves it in this order (`districts.resolve_override`):
+
+1. an official plan shapefile, if supplied;
+2. the block assignment file dissolved on 2020 census blocks (exact), or on 2020 block groups
+   when blocks are unavailable (approximate only where a line cuts a block group);
+3. the official county composition (`config/ohio_cd_2026_counties.yaml`, from the Secretary
+   of State's county list). Of 88 counties, 73 lie wholly in one district and are drawn
+   exactly. The 15 split counties are drawn as separate "split" pieces carrying both possible
+   districts; they are hatched, left out of district counts, and listed with both members in
+   corridor pathways. This is the mode used for the committed build.
+
+District-level flips in Ohio compare the 2026 winner with the incumbent of the same district
+number, which is approximate because the lines changed.
+
 ## Corridors
 
 Each corridor in `config/corridors.yaml` is an ordered list of stations from its source
@@ -68,7 +86,7 @@ current snapshot.
 
 ## Known limitations
 
-- Results are unofficial (captured 2026-11-05).
+- Results are unofficial (latest capture 2026-11-06; previous 2026-11-05 kept for diffing).
 - State legislative results were transcribed from MultiState's results pages by an automated
   extractor and spot-checked; verify individual rows against the state before quoting them.
 - Nebraska senators are nonpartisan; the map does not assign party affiliation.

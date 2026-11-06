@@ -102,6 +102,7 @@ def cmd_export(a) -> None:
         "rail_network": raw["rail"]["network_source"],
         "openstates_commit": raw["rosters"]["openstates_commit"],
         "pending_note": "Hatched districts: the 2026 lines are newer than the boundary file used here.",
+        "ohio_cd_method": str(layers["us_house"].loc[layers["us_house"].state == "OH", "vintage"].iloc[0]),
     }
     lines["segments"] = [[]] * len(lines)
     export.export(layers, raw["rail"].get("lakes"), lines, stops, seats, ctrl, tri, cd, summ, paths, meta)

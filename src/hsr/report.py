@@ -18,6 +18,14 @@ def _fmt_margin(m) -> str:
     return "" if m is None or pd.isna(m) else f"{m:+.1f}"
 
 
+def _rep_cell(state: str, r: dict) -> str:
+    if r.get("status") == "split" and r.get("options"):
+        who = " or ".join(f"{o['name']} ({o['party']})" for o in r["options"])
+        return f"{state}-{r['district']} {who} — split county, line pending"
+    m = f", {_fmt_margin(r['margin'])}" if r["margin"] is not None else ""
+    return f"{state}-{r['district']} {r['name']} ({r['party']}{m})" + (" *flip*" if r["flipped"] else "")
+
+
 def build() -> str:
     P = C.PROCESSED
     summ = json.loads((P / "summary.json").read_text())
@@ -79,8 +87,7 @@ def build() -> str:
         for st in paths.get(c.id, []):
             gov = st["governor"]
             sens = ", ".join(f"{x['name']} ({x['party']})" for x in st["us_senators"])
-            reps = "; ".join(f"{st['state']}-{r['district']} {r['name']} ({r['party']}{', ' + _fmt_margin(r['margin']) if r['margin'] is not None else ''})"
-                             + (" *flip*" if r["flipped"] else "") for r in st["us_house_along"])
+            reps = "; ".join(_rep_cell(st["state"], r) for r in st["us_house_along"])
             out.append(f"| {st['state']} | {st['km']:.0f} | {gov['name']} ({gov['party']}) | {st['trifecta']} | {sens} | {reps} |")
         swing = cd[(cd.corridor == c.id) & (cd.margin != "")]
         swing = swing[pd.to_numeric(swing.margin, errors="coerce").abs() < 5]

@@ -10,7 +10,7 @@ members of Congress and state legislators represent the districts it runs throug
 ```
 config/         corridors, stations, states, data sources   ← edit these, not code
 src/hsr/        pipeline (fetch → build → analyze → export → report)
-data/snapshots/ 2026 results captured on 2026-11-05, with per-row source URLs
+data/snapshots/ 2026 results (latest: 2026-11-06), with per-row source URLs
 data/processed/ seats, chamber control, trifectas, corridor×district joins (committed)
 web/            the map (index.html + data/ written by `hsr export`)
 docs/           report framework, methodology, data sources, generated tables
@@ -41,21 +41,27 @@ Without census.gov / NTAD, `hsr fetch --mirror` uses GitHub-hosted fallbacks (se
 
 ## Current build
 
-The committed outputs were built on 2026-11-05 in an environment that could reach GitHub but
-not census.gov or NTAD, so they use the fallbacks:
+The committed outputs were built on 2026-11-06 in an environment that could reach GitHub but
+not census.gov, NTAD or the Ohio Redistricting Commission, so they use the fallbacks:
 
 | Input | Used for this build | Authoritative source (`hsr fetch`) |
 |---|---|---|
 | District boundaries | Census CB **2023** (GitHub mirror, pinned commit) | Census CB **2024** (`cb_2024_us_cd119/sldu/sldl_500k`) |
+| Ohio 2026 congressional map | Official **county composition** (`config/ohio_cd_2026_counties.yaml`) | Commission plan 430 block assignment file, dissolved on 2020 census blocks |
 | Rail network for routing | Natural Earth 10m railroads | BTS NTAD North American Rail Network |
 | Station coordinates | `config/stations.yaml` | BTS NTAD Amtrak Stations (matched by code) |
-| 2026 results | `data/snapshots/2026-11-05` (unofficial) | same, until certified returns are loaded |
+| 2026 results | `data/snapshots/2026-11-06` (unofficial) | same, until certified returns are loaded |
 | Sitting members | unitedstates/congress-legislators, openstates/people @ `81148a0` | same |
 
 Consequences you will see in the map and tables:
 
-- **Ohio's 2026 congressional map** (adopted 2025-10-31) is in no Census vintage yet. Put the
-  official plan at `data/overrides/oh_congress_2026.zip` (see `data/overrides/README.md`).
+- **Ohio's 2026 congressional map** (adopted 2025-10-31) is drawn from the state's official
+  county list. The 73 counties that sit wholly in one district are exact. The 15 split
+  counties (Franklin, Hamilton, Cuyahoga, etc.) are hatched in the colors of their two
+  possible districts, and both members are listed wherever a corridor crosses one. Those
+  pieces are excluded from district counts. To get exact lines, put the Commission's plan
+  zip at `data/overrides/oh_cong_2025_plan430.zip` (see `data/overrides/README.md`) and
+  rerun `hsr build analyze export report`.
 - **Wisconsin and Ohio legislative maps** (2024 / 2023) and **Michigan's Detroit-area redraw**
   post-date the 2023 mirror. These districts are drawn hatched and excluded from district
   counts. Running `hsr all` with census.gov access (vintage 2024) fixes Wisconsin and Ohio;
@@ -75,7 +81,10 @@ Consequences you will see in the map and tables:
 - **New corridor or option.** Add stations to `config/stations.yaml` and an entry to
   `config/corridors.yaml` (waypoints, `follow: rail|direct`, sources). `~ID` marks a
   pass-through point that is not a stop. `make test` checks the config.
-- **Boundary changes.** Add an entry under `overrides` in `config/sources.yaml`.
+- **Boundary changes.** Add an entry under `overrides` in `config/sources.yaml`. Each override
+  takes, in order of preference, an official plan shapefile (`path`), a block assignment file
+  (`baf_url` / `baf_path`, dissolved on 2020 blocks or, offline, block groups), or an official
+  county list (`composition`).
 
 ## The map
 

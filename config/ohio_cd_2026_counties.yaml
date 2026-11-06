@@ -1,0 +1,53 @@
+# Ohio congressional plan adopted by the Ohio Redistricting Commission on 2025-10-31
+# (Commission plan id 430), used for the 2026-2032 elections.
+#
+# This is the official county-level composition. It is the fallback the pipeline uses
+# when neither an official plan shapefile nor the Commission's block assignment file
+# (BAF) is available: whole counties are drawn exactly (county lines); the 15 split
+# counties are drawn as "split between district X and Y" and kept out of district counts.
+#
+# Sources
+# - Ohio Secretary of State, "U.S. Congressional Districts 2026-2032" (adopted 10/31/2025),
+#   county list by district, as re-posted by the Lorain County Board of Elections:
+#   https://www.voteloraincountyohio.gov/_files/ugd/2568d0_30ae1f35062b42c19c5f4cb5b33d7a32.pdf
+# - Putnam County is absent from the text extracted from that list; it is placed in
+#   district 9 per The Crescent-News ("Henry, Paulding, and Putnam will join Defiance,
+#   Fulton, and Williams in the 9th"):
+#   https://www.crescent-news.com/news/local_news/local-counties-would-be-in-same-u-s-congressional-district-under-new-map/article_fcdfe8f4-8c54-4aa7-8dab-224888721ed9.html
+# - District 4 cross-checked against the Commission's BAF as aggregated by
+#   github.com/goedelsoup/allen-county-ohio (.yidam/corpus/division/ohio-congressional-district-4-2025.yml):
+#   11 whole counties plus parts of Clark, Delaware and Richland. Matches.
+plan: oh-cd-2025-10-31
+districts: 15
+whole:
+  1: [Clinton, Warren]
+  2: [Adams, Athens, Brown, Clermont, Gallia, Hocking, Jackson, Lawrence, Meigs, Morgan, Pike, Ross, Scioto, Vinton, Washington]
+  3: []
+  4: [Allen, Auglaize, Champaign, Hardin, Logan, Marion, Mercer, Morrow, Shelby, Union, Van Wert]
+  5: [Crawford, Hancock, Huron, Lorain, Sandusky, Seneca, Wyandot]
+  6: [Belmont, Carroll, Columbiana, Harrison, Jefferson, Tuscarawas]
+  7: [Ashland, Medina]
+  8: [Darke, Preble]
+  9: [Defiance, Erie, Fulton, Henry, Lucas, Ottawa, Paulding, Putnam, Williams]
+  10: [Greene, Montgomery]
+  11: []
+  12: [Coshocton, Fairfield, Guernsey, Knox, Licking, Monroe, Muskingum, Noble]
+  13: [Summit]
+  14: [Ashtabula, Geauga, Lake, Trumbull]
+  15: [Fayette, Highland, Madison, Pickaway]
+split:
+  Butler: [8, 10]
+  Clark: [4, 15]
+  Cuyahoga: [7, 11]
+  Delaware: [4, 12]
+  Franklin: [3, 15]
+  Hamilton: [1, 8]
+  Holmes: [6, 12]
+  Mahoning: [6, 14]
+  Miami: [8, 15]
+  Perry: [2, 12]
+  Portage: [13, 14]
+  Richland: [4, 5]
+  Stark: [6, 13]
+  Wayne: [6, 7]
+  Wood: [5, 9]

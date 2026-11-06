@@ -84,7 +84,7 @@ def fetch_boundaries(year: int | None = None, mirror_only: bool = False) -> dict
     year = year or src["vintage"]
     mirror = src["mirror"]
     out = {}
-    for layer in ("congress", "state_senate", "state_house", "states"):
+    for layer in ("congress", "state_senate", "state_house", "states", "counties"):
         cands = []
         if not mirror_only:
             for tmpl in src[layer]["urls"]:
@@ -96,6 +96,43 @@ def fetch_boundaries(year: int | None = None, mirror_only: bool = False) -> dict
         path, entry = first_working(f"boundaries.{layer}", cands)
         out[layer] = {"path": path, "vintage": entry.get("vintage"), "mirror": entry.get("mirror")}
     return out
+
+
+# ---------------------------------------------------------------------- overrides
+def fetch_overrides(mirror_only: bool = False) -> None:
+    """Download each override's block assignment file and the block geometry it needs.
+
+    Failures are logged, not raised: districts.py falls back to the next input
+    (BAF on block groups, then the county composition) and flags the result.
+    """
+    mirror = C.sources()["boundaries"]["mirror"]
+    for ov in C.sources().get("overrides", []):
+        key = f"overrides.{ov['state']}.{ov['office']}"
+        if (C.ROOT / ov.get("path", "_none_")).exists():
+            continue
+        baf = C.ROOT / ov["baf_path"] if ov.get("baf_path") else None
+        if baf and not baf.exists() and ov.get("baf_url") and not mirror_only:
+            try:
+                download(ov["baf_url"], baf)
+                if baf.stat().st_size < 10_000:  # the Commission's SPA answers 200 with a 2.4 KB shell
+                    baf.unlink()
+                    raise RuntimeError("response was the web app shell, not the plan zip")
+                _record(f"{key}.baf", url=ov["baf_url"], path=str(baf.relative_to(C.ROOT)),
+                        bytes=baf.stat().st_size, sha256=sha256(baf))
+            except Exception as exc:  # noqa: BLE001
+                log.warning("%s: block assignment file unavailable (%s)", key, exc)
+        if not (baf and baf.exists()):
+            continue
+        cands = []
+        if ov.get("blocks_url") and not mirror_only:
+            cands.append((ov["blocks_url"], C.RAW / "boundaries" / Path(ov["blocks_url"]).name,
+                          {"unit": "block"}))
+        fname = mirror["files"]["block_groups"]
+        cands.append((f"{mirror['base']}/{fname}", C.RAW / "boundaries" / fname, {"unit": "block_group"}))
+        try:
+            first_working(f"{key}.units", cands)
+        except RuntimeError as exc:
+            log.warning("%s: no block geometry (%s)", key, exc)
 
 
 # ------------------------------------------------------------------------ rosters
@@ -191,6 +228,7 @@ def fetch_all(mirror_only: bool = False) -> dict:
     C.ensure_dirs()
     return {
         "boundaries": fetch_boundaries(mirror_only=mirror_only),
+        "overrides": fetch_overrides(mirror_only=mirror_only),
         "rosters": fetch_rosters(),
         "rail": fetch_rail(mirror_only=mirror_only),
     }

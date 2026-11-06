@@ -18,6 +18,7 @@ dependencies = [
   "scipy>=1.11",
   "pyyaml>=6.0",
   "requests>=2.31",
+  "openpyxl>=3.1",
 ]
 
 [project.optional-dependencies]

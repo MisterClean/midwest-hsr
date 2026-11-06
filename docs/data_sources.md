@@ -1,17 +1,29 @@
 # Data sources
 
-## Election results (Nov 3, 2026, unofficial)
+## Election results (Nov 3, 2026, unofficial; latest snapshot 2026-11-06)
 
 | Office | Source | Captured |
 |---|---|---|
-| U.S. House (95 districts) | Poliwave state delegation pages, AP feed — `https://www.poliwave.com/us/live/midterms-2026/{state}/house` | 2026-11-05 |
-| U.S. Senate (8 races) | Poliwave — `https://www.poliwave.com/us/live/midterms-2026/senate` | 2026-11-05 |
-| Governor (8 races) | Poliwave — `https://www.poliwave.com/us/live/midterms-2026/governors`; Wisconsin from WPR | 2026-11-05 |
-| State legislatures | MultiState — `https://www.multistate.us/elections/results/{state}-2026` | 2026-11-05 |
+| U.S. House (95 districts) | Poliwave state delegation pages, AP feed — `https://www.poliwave.com/us/live/midterms-2026/{state}/house` | 2026-11-06 |
+| U.S. Senate (8 races) | Poliwave — `https://www.poliwave.com/us/live/midterms-2026/senate` | 2026-11-06 |
+| Governor (8 races) | Poliwave — `https://www.poliwave.com/us/live/midterms-2026/governors`; Wisconsin from WPR; Kansas from JCPost | 2026-11-06 |
+| State legislatures | MultiState — `https://www.multistate.us/elections/results/{state}-2026` (uncalled races re-checked) | 2026-11-06 |
 | Cross-checks | CBS News House flip list (Nov 4); WPR Wisconsin Legislature (Nov 4); CBS News Senate projections | 2026-11-05 |
+| Late calls | MPR News (MN-1 recount, Nov 5); KLKN-TV (NE-1 concession); JCPost (Kansas governor not called, Nov 5) | 2026-11-06 |
 
 Certified replacements: state election offices (mid-Nov to mid-Dec 2026), MIT Election Data
 + Science Lab, OpenElections.
+
+## Ohio 2026 congressional plan
+
+- Adopted plan (id 430) and block assignment file: Ohio Redistricting Commission,
+  `https://redistricting.ohio.gov/api/public/districtmaps/430/download` (route documented in
+  github.com/goedelsoup/allen-county-ohio, `.yidam/catalog/ohio-redistricting-commission.md`).
+- County composition: Ohio Secretary of State "U.S. Congressional Districts 2026-2032"
+  county list, via the Lorain County Board of Elections copy; Putnam County placement from
+  The Crescent-News; District 4 cross-checked against the BAF aggregation in
+  allen-county-ohio.
+- Census 2020 blocks for exact geometry: `tl_2020_39_tabblock20.zip` (TIGER2020).
 
 ## Redistricting status used for 2026
 

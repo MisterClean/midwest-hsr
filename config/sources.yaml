@@ -24,6 +24,9 @@ boundaries:
   states:
     urls:
       - https://www2.census.gov/geo/tiger/GENZ{year}/shp/cb_{year}_us_state_500k.zip
+  counties:
+    urls:
+      - https://www2.census.gov/geo/tiger/GENZ{year}/shp/cb_{year}_us_county_500k.zip
 
   # Public GitHub mirror of the 2023 cartographic boundary files (GeoJSON,
   # converted with mapshaper by github.com/lint/CartoBoundaryGeoFiles). Used only
@@ -37,21 +40,32 @@ boundaries:
       state_senate: cb_2023_us_sldu_500k.geojson
       state_house: cb_2023_us_sldl_500k.geojson
       states: cb_2023_us_state_500k.geojson
+      counties: cb_2023_us_county_500k.geojson
+      block_groups: cb_2023_us_bg_500k_0.045.geojson  # 2020 block groups, simplified to fit GitHub
 
-# Districts whose Nov 2026 lines are NOT in the Census vintage above. Supply the
-# official plan file (zip/shp/geojson with one feature per district) at `path`
-# and the pipeline swaps it in. Until then, the affected districts are drawn
-# hatched and excluded from district-level corridor counts.
+# Districts whose Nov 2026 lines are NOT in the Census vintage above. Each override
+# is resolved with the best input available, in this order:
+#   1. `path`      official plan geometry (zip/shp/geojson, one feature per district)
+#   2. `baf_path`  the plan's block assignment file (zip containing an .xlsx/.csv, or
+#                  the .xlsx/.csv itself). `hsr fetch` downloads it from `baf_url`.
+#                  Dissolved on 2020 census blocks from `blocks_url` (exact) or, if
+#                  those are unreachable, on 2020 block groups from the mirror
+#                  (approximate only where a district line cuts a block group).
+#   3. `composition` official county list: whole counties are exact, split counties
+#                  are drawn as "split between X and Y" and kept out of counts.
 overrides:
   - state: OH
     office: us_house
-    path: data/overrides/oh_congress_2026.zip
-    district_field: DISTRICT
     reason: >-
       Ohio Redistricting Commission adopted a new congressional map on
-      2025-10-31; it was used for the 2026 election. Census will not publish it
-      until the 120th-Congress vintage.
-    source_hint: Ohio Redistricting Commission / Ohio Secretary of State adopted-plan shapefile
+      2025-10-31 (plan 430); it was used for the 2026 election. Census will not
+      publish it until the 120th-Congress vintage.
+    path: data/overrides/oh_congress_2026.zip
+    district_field: DISTRICT
+    baf_url: https://redistricting.ohio.gov/api/public/districtmaps/430/download
+    baf_path: data/overrides/oh_cong_2025_plan430.zip
+    blocks_url: https://www2.census.gov/geo/tiger/TIGER2020/TABBLOCK20/tl_2020_39_tabblock20.zip
+    composition: config/ohio_cd_2026_counties.yaml
 
 # Caveats applied when a layer comes from an older vintage than the 2026 lines.
 vintage_caveats:
@@ -95,4 +109,4 @@ results:
   # The snapshot directory holds what was published on/after election night with
   # per-row source URLs. Swap in certified returns with the adapters in
   # src/hsr/results.py (MEDSL / OpenElections formats) once they are released.
-  snapshot: data/snapshots/2026-11-05
+  snapshot: data/snapshots/2026-11-06

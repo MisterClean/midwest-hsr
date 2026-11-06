@@ -38,12 +38,12 @@
         "state_house": {
           "state": "IL",
           "seats": 118,
-          "D": 80,
+          "D": 82,
           "R": 32,
           "other": 0,
-          "uncalled": 6,
-          "leaning_D": 0,
-          "leaning_R": 0,
+          "uncalled": 4,
+          "leaning_D": 2,
+          "leaning_R": 2,
           "majority": 60,
           "control": "D"
         }
@@ -54,7 +54,7 @@
           "district": "3",
           "name": "Delia Ramirez",
           "party": "D",
-          "margin": 51.6,
+          "margin": 52.8,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -63,7 +63,7 @@
           "district": "5",
           "name": "Mike Quigley",
           "party": "D",
-          "margin": 51.0,
+          "margin": 51.2,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -72,7 +72,7 @@
           "district": "7",
           "name": "La Shawn K. Ford",
           "party": "D",
-          "margin": 78.0,
+          "margin": 78.2,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -81,7 +81,7 @@
           "district": "9",
           "name": "Daniel Biss",
           "party": "D",
-          "margin": 51.6,
+          "margin": 51.8,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -302,12 +302,12 @@
         "state_senate": {
           "state": "MN",
           "seats": 67,
-          "D": 37,
+          "D": 39,
           "R": 26,
           "other": 0,
-          "uncalled": 4,
+          "uncalled": 2,
           "leaning_D": 0,
-          "leaning_R": 0,
+          "leaning_R": 2,
           "majority": 34,
           "control": "D"
         },
@@ -319,7 +319,7 @@
           "other": 0,
           "uncalled": 2,
           "leaning_D": 0,
-          "leaning_R": 0,
+          "leaning_R": 1,
           "majority": 68,
           "control": "D"
         }
@@ -418,12 +418,12 @@
         "state_house": {
           "state": "IL",
           "seats": 118,
-          "D": 80,
+          "D": 82,
           "R": 32,
           "other": 0,
-          "uncalled": 6,
-          "leaning_D": 0,
-          "leaning_R": 0,
+          "uncalled": 4,
+          "leaning_D": 2,
+          "leaning_R": 2,
           "majority": 60,
           "control": "D"
         }
@@ -432,9 +432,9 @@
       "us_house_along": [
         {
           "district": "1",
-          "name": "Jonathan Jackson",
+          "name": "Jonathan L. Jackson",
           "party": "D",
-          "margin": 40.6,
+          "margin": 42.6,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -443,7 +443,7 @@
           "district": "2",
           "name": "Donna Miller",
           "party": "D",
-          "margin": 45.6,
+          "margin": 46.0,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -452,7 +452,7 @@
           "district": "4",
           "name": "Patty Garcia",
           "party": "D",
-          "margin": 54.6,
+          "margin": 54.7,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -470,7 +470,7 @@
           "district": "7",
           "name": "La Shawn K. Ford",
           "party": "D",
-          "margin": 78.0,
+          "margin": 78.2,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -488,7 +488,7 @@
           "district": "14",
           "name": "Lauren Underwood",
           "party": "D",
-          "margin": 25.0,
+          "margin": 25.2,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -541,15 +541,15 @@
         "districts": 26,
         "counted": 26,
         "pending_boundaries": 0,
-        "D": 14,
+        "D": 15,
         "R": 11,
         "other": 0,
-        "undecided": 1,
+        "undecided": 0,
         "uncalled": 1,
-        "flipped_to_D": 0,
+        "flipped_to_D": 1,
         "flipped_to_R": 0,
         "close": 0,
-        "km_D": 97.4,
+        "km_D": 100.9,
         "km_R": 334.4,
         "with_stop": 5
       }
@@ -610,7 +610,7 @@
           "party": "D",
           "margin": 67.6,
           "flipped": false,
-          "status": "reported",
+          "status": "called",
           "boundary_status": "current"
         }
       ],
@@ -687,12 +687,12 @@
         "state_house": {
           "state": "IL",
           "seats": 118,
-          "D": 80,
+          "D": 82,
           "R": 32,
           "other": 0,
-          "uncalled": 6,
-          "leaning_D": 0,
-          "leaning_R": 0,
+          "uncalled": 4,
+          "leaning_D": 2,
+          "leaning_R": 2,
           "majority": 60,
           "control": "D"
         }
@@ -701,9 +701,9 @@
       "us_house_along": [
         {
           "district": "1",
-          "name": "Jonathan Jackson",
+          "name": "Jonathan L. Jackson",
           "party": "D",
-          "margin": 40.6,
+          "margin": 42.6,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -712,7 +712,7 @@
           "district": "2",
           "name": "Donna Miller",
           "party": "D",
-          "margin": 45.6,
+          "margin": 46.0,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -721,7 +721,7 @@
           "district": "4",
           "name": "Patty Garcia",
           "party": "D",
-          "margin": 54.6,
+          "margin": 54.7,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -739,7 +739,7 @@
           "district": "7",
           "name": "La Shawn K. Ford",
           "party": "D",
-          "margin": 78.0,
+          "margin": 78.2,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -783,15 +783,15 @@
         "districts": 30,
         "counted": 30,
         "pending_boundaries": 0,
-        "D": 18,
+        "D": 20,
         "R": 10,
         "other": 0,
-        "undecided": 2,
-        "uncalled": 2,
-        "flipped_to_D": 0,
+        "undecided": 0,
+        "uncalled": 1,
+        "flipped_to_D": 2,
         "flipped_to_R": 0,
         "close": 0,
-        "km_D": 119.4,
+        "km_D": 151.3,
         "km_R": 326.0,
         "with_stop": 5
       }
@@ -852,7 +852,7 @@
           "party": "D",
           "margin": 67.6,
           "flipped": false,
-          "status": "reported",
+          "status": "called",
           "boundary_status": "current"
         }
       ],
@@ -929,12 +929,12 @@
         "state_house": {
           "state": "IL",
           "seats": 118,
-          "D": 80,
+          "D": 82,
           "R": 32,
           "other": 0,
-          "uncalled": 6,
-          "leaning_D": 0,
-          "leaning_R": 0,
+          "uncalled": 4,
+          "leaning_D": 2,
+          "leaning_R": 2,
           "majority": 60,
           "control": "D"
         }
@@ -943,9 +943,9 @@
       "us_house_along": [
         {
           "district": "1",
-          "name": "Jonathan Jackson",
+          "name": "Jonathan L. Jackson",
           "party": "D",
-          "margin": 40.6,
+          "margin": 42.6,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -954,7 +954,7 @@
           "district": "2",
           "name": "Donna Miller",
           "party": "D",
-          "margin": 45.6,
+          "margin": 46.0,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -963,7 +963,7 @@
           "district": "4",
           "name": "Patty Garcia",
           "party": "D",
-          "margin": 54.6,
+          "margin": 54.7,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -981,7 +981,7 @@
           "district": "7",
           "name": "La Shawn K. Ford",
           "party": "D",
-          "margin": 78.0,
+          "margin": 78.2,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -1025,15 +1025,15 @@
         "districts": 29,
         "counted": 29,
         "pending_boundaries": 0,
-        "D": 18,
+        "D": 20,
         "R": 9,
         "other": 0,
-        "undecided": 2,
-        "uncalled": 2,
-        "flipped_to_D": 0,
+        "undecided": 0,
+        "uncalled": 1,
+        "flipped_to_D": 2,
         "flipped_to_R": 0,
         "close": 0,
-        "km_D": 137.1,
+        "km_D": 170.8,
         "km_R": 301.2,
         "with_stop": 5
       }
@@ -1094,7 +1094,7 @@
           "party": "D",
           "margin": 67.6,
           "flipped": false,
-          "status": "reported",
+          "status": "called",
           "boundary_status": "current"
         }
       ],
@@ -1171,12 +1171,12 @@
         "state_house": {
           "state": "IL",
           "seats": 118,
-          "D": 80,
+          "D": 82,
           "R": 32,
           "other": 0,
-          "uncalled": 6,
-          "leaning_D": 0,
-          "leaning_R": 0,
+          "uncalled": 4,
+          "leaning_D": 2,
+          "leaning_R": 2,
           "majority": 60,
           "control": "D"
         }
@@ -1185,9 +1185,9 @@
       "us_house_along": [
         {
           "district": "1",
-          "name": "Jonathan Jackson",
+          "name": "Jonathan L. Jackson",
           "party": "D",
-          "margin": 40.6,
+          "margin": 42.6,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -1196,7 +1196,7 @@
           "district": "2",
           "name": "Donna Miller",
           "party": "D",
-          "margin": 45.6,
+          "margin": 46.0,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -1205,7 +1205,7 @@
           "district": "4",
           "name": "Patty Garcia",
           "party": "D",
-          "margin": 54.6,
+          "margin": 54.7,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -1223,7 +1223,7 @@
           "district": "7",
           "name": "La Shawn K. Ford",
           "party": "D",
-          "margin": 78.0,
+          "margin": 78.2,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -1241,7 +1241,7 @@
           "district": "14",
           "name": "Lauren Underwood",
           "party": "D",
-          "margin": 25.0,
+          "margin": 25.2,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -1276,15 +1276,15 @@
         "districts": 28,
         "counted": 28,
         "pending_boundaries": 0,
-        "D": 15,
+        "D": 17,
         "R": 11,
         "other": 0,
-        "undecided": 2,
-        "uncalled": 2,
-        "flipped_to_D": 0,
+        "undecided": 0,
+        "uncalled": 1,
+        "flipped_to_D": 2,
         "flipped_to_R": 0,
         "close": 0,
-        "km_D": 124.6,
+        "km_D": 157.1,
         "km_R": 322.8,
         "with_stop": 5
       }
@@ -1345,7 +1345,7 @@
           "party": "D",
           "margin": 67.6,
           "flipped": false,
-          "status": "reported",
+          "status": "called",
           "boundary_status": "current"
         }
       ],
@@ -1422,12 +1422,12 @@
         "state_house": {
           "state": "IL",
           "seats": 118,
-          "D": 80,
+          "D": 82,
           "R": 32,
           "other": 0,
-          "uncalled": 6,
-          "leaning_D": 0,
-          "leaning_R": 0,
+          "uncalled": 4,
+          "leaning_D": 2,
+          "leaning_R": 2,
           "majority": 60,
           "control": "D"
         }
@@ -1436,9 +1436,9 @@
       "us_house_along": [
         {
           "district": "1",
-          "name": "Jonathan Jackson",
+          "name": "Jonathan L. Jackson",
           "party": "D",
-          "margin": 40.6,
+          "margin": 42.6,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -1447,7 +1447,7 @@
           "district": "2",
           "name": "Donna Miller",
           "party": "D",
-          "margin": 45.6,
+          "margin": 46.0,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -1456,7 +1456,7 @@
           "district": "4",
           "name": "Patty Garcia",
           "party": "D",
-          "margin": 54.6,
+          "margin": 54.7,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -1474,7 +1474,7 @@
           "district": "7",
           "name": "La Shawn K. Ford",
           "party": "D",
-          "margin": 78.0,
+          "margin": 78.2,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -1492,7 +1492,7 @@
           "district": "14",
           "name": "Lauren Underwood",
           "party": "D",
-          "margin": 25.0,
+          "margin": 25.2,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -1545,15 +1545,15 @@
         "districts": 27,
         "counted": 27,
         "pending_boundaries": 0,
-        "D": 15,
+        "D": 16,
         "R": 11,
         "other": 0,
-        "undecided": 1,
+        "undecided": 0,
         "uncalled": 1,
-        "flipped_to_D": 0,
+        "flipped_to_D": 1,
         "flipped_to_R": 0,
         "close": 0,
-        "km_D": 122.8,
+        "km_D": 126.2,
         "km_R": 366.1,
         "with_stop": 6
       }
@@ -1614,7 +1614,7 @@
           "party": "D",
           "margin": 67.6,
           "flipped": false,
-          "status": "reported",
+          "status": "called",
           "boundary_status": "current"
         }
       ],
@@ -1691,12 +1691,12 @@
         "state_house": {
           "state": "IL",
           "seats": 118,
-          "D": 80,
+          "D": 82,
           "R": 32,
           "other": 0,
-          "uncalled": 6,
-          "leaning_D": 0,
-          "leaning_R": 0,
+          "uncalled": 4,
+          "leaning_D": 2,
+          "leaning_R": 2,
           "majority": 60,
           "control": "D"
         }
@@ -1705,9 +1705,9 @@
       "us_house_along": [
         {
           "district": "1",
-          "name": "Jonathan Jackson",
+          "name": "Jonathan L. Jackson",
           "party": "D",
-          "margin": 40.6,
+          "margin": 42.6,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -1716,7 +1716,7 @@
           "district": "2",
           "name": "Donna Miller",
           "party": "D",
-          "margin": 45.6,
+          "margin": 46.0,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -1725,7 +1725,7 @@
           "district": "7",
           "name": "La Shawn K. Ford",
           "party": "D",
-          "margin": 78.0,
+          "margin": 78.2,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -1883,10 +1883,10 @@
         "state_senate": {
           "state": "MI",
           "seats": 38,
-          "D": 22,
+          "D": 23,
           "R": 15,
           "other": 0,
-          "uncalled": 1,
+          "uncalled": 0,
           "leaning_D": 0,
           "leaning_R": 0,
           "majority": 20,
@@ -1895,10 +1895,10 @@
         "state_house": {
           "state": "MI",
           "seats": 110,
-          "D": 60,
-          "R": 46,
+          "D": 62,
+          "R": 47,
           "other": 0,
-          "uncalled": 4,
+          "uncalled": 1,
           "leaning_D": 0,
           "leaning_R": 0,
           "majority": 56,
@@ -1913,14 +1913,14 @@
           "party": "D",
           "margin": 1.8,
           "flipped": true,
-          "status": "leading",
+          "status": "called",
           "boundary_status": "current"
         },
         {
           "district": "5",
           "name": "Tim Walberg",
           "party": "R",
-          "margin": 20.5,
+          "margin": 20.6,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -1938,7 +1938,7 @@
           "district": "12",
           "name": "Rashida Tlaib",
           "party": "D",
-          "margin": 54.8,
+          "margin": 54.6,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -2026,12 +2026,12 @@
         "state_house": {
           "state": "IL",
           "seats": 118,
-          "D": 80,
+          "D": 82,
           "R": 32,
           "other": 0,
-          "uncalled": 6,
-          "leaning_D": 0,
-          "leaning_R": 0,
+          "uncalled": 4,
+          "leaning_D": 2,
+          "leaning_R": 2,
           "majority": 60,
           "control": "D"
         }
@@ -2040,9 +2040,9 @@
       "us_house_along": [
         {
           "district": "1",
-          "name": "Jonathan Jackson",
+          "name": "Jonathan L. Jackson",
           "party": "D",
-          "margin": 40.6,
+          "margin": 42.6,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -2051,7 +2051,7 @@
           "district": "2",
           "name": "Donna Miller",
           "party": "D",
-          "margin": 45.6,
+          "margin": 46.0,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -2060,7 +2060,7 @@
           "district": "7",
           "name": "La Shawn K. Ford",
           "party": "D",
-          "margin": 78.0,
+          "margin": 78.2,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -2279,22 +2279,46 @@
       "trifecta": "divided",
       "us_house_along": [
         {
-          "district": "1",
-          "name": "Greg Landsman",
-          "party": "D",
-          "margin": 11.5,
+          "district": "1/8",
+          "name": "Greg Landsman or Warren Davidson",
+          "party": "",
+          "margin": null,
           "flipped": false,
-          "status": "called",
-          "boundary_status": "pending"
+          "status": "split",
+          "boundary_status": "pending",
+          "options": [
+            {
+              "district": "1",
+              "name": "Greg Landsman",
+              "party": "D"
+            },
+            {
+              "district": "8",
+              "name": "Warren Davidson",
+              "party": "R"
+            }
+          ]
         },
         {
-          "district": "8",
-          "name": "Warren Davidson",
-          "party": "R",
-          "margin": 4.2,
+          "district": "8/10",
+          "name": "Warren Davidson or Kristina Knickerbocker",
+          "party": "",
+          "margin": null,
           "flipped": false,
-          "status": "called",
-          "boundary_status": "pending"
+          "status": "split",
+          "boundary_status": "pending",
+          "options": [
+            {
+              "district": "8",
+              "name": "Warren Davidson",
+              "party": "R"
+            },
+            {
+              "district": "10",
+              "name": "Kristina Knickerbocker",
+              "party": "D"
+            }
+          ]
         }
       ],
       "state_senate_along": {
@@ -2370,12 +2394,12 @@
         "state_house": {
           "state": "IL",
           "seats": 118,
-          "D": 80,
+          "D": 82,
           "R": 32,
           "other": 0,
-          "uncalled": 6,
-          "leaning_D": 0,
-          "leaning_R": 0,
+          "uncalled": 4,
+          "leaning_D": 2,
+          "leaning_R": 2,
           "majority": 60,
           "control": "D"
         }
@@ -2384,9 +2408,9 @@
       "us_house_along": [
         {
           "district": "1",
-          "name": "Jonathan Jackson",
+          "name": "Jonathan L. Jackson",
           "party": "D",
-          "margin": 40.6,
+          "margin": 42.6,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -2395,7 +2419,7 @@
           "district": "2",
           "name": "Donna Miller",
           "party": "D",
-          "margin": 45.6,
+          "margin": 46.0,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -2404,7 +2428,7 @@
           "district": "7",
           "name": "La Shawn K. Ford",
           "party": "D",
-          "margin": 78.0,
+          "margin": 78.2,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -2513,7 +2537,7 @@
         },
         {
           "district": "3",
-          "name": "Marlin Stutzman",
+          "name": "Marlin A. Stutzman",
           "party": "R",
           "margin": 9.8,
           "flipped": false,
@@ -2611,34 +2635,58 @@
           "margin": 11.7,
           "flipped": false,
           "status": "called",
-          "boundary_status": "pending"
+          "boundary_status": "current"
         },
         {
-          "district": "7",
-          "name": "Brian Poindexter",
+          "district": "5/9",
+          "name": "Bob Latta or Marcy Kaptur",
+          "party": "",
+          "margin": null,
+          "flipped": false,
+          "status": "split",
+          "boundary_status": "pending",
+          "options": [
+            {
+              "district": "5",
+              "name": "Bob Latta",
+              "party": "R"
+            },
+            {
+              "district": "9",
+              "name": "Marcy Kaptur",
+              "party": "D"
+            }
+          ]
+        },
+        {
+          "district": "7/11",
+          "name": "Brian Poindexter or Shontel M. Brown",
           "party": "D",
-          "margin": 9.8,
-          "flipped": true,
-          "status": "called",
-          "boundary_status": "pending"
+          "margin": null,
+          "flipped": false,
+          "status": "split",
+          "boundary_status": "pending",
+          "options": [
+            {
+              "district": "7",
+              "name": "Brian Poindexter",
+              "party": "D"
+            },
+            {
+              "district": "11",
+              "name": "Shontel M. Brown",
+              "party": "D"
+            }
+          ]
         },
         {
           "district": "9",
           "name": "Marcy Kaptur",
           "party": "D",
-          "margin": 5.4,
+          "margin": 5.5,
           "flipped": false,
           "status": "called",
-          "boundary_status": "pending"
-        },
-        {
-          "district": "11",
-          "name": "Shontel M. Brown",
-          "party": "D",
-          "margin": 67.0,
-          "flipped": false,
-          "status": "called",
-          "boundary_status": "pending"
+          "boundary_status": "current"
         }
       ],
       "state_senate_along": {
@@ -2733,16 +2781,49 @@
           "margin": 11.5,
           "flipped": false,
           "status": "called",
-          "boundary_status": "pending"
+          "boundary_status": "current"
         },
         {
-          "district": "3",
-          "name": "Joyce Beatty",
-          "party": "D",
-          "margin": 54.4,
+          "district": "1/8",
+          "name": "Greg Landsman or Warren Davidson",
+          "party": "",
+          "margin": null,
           "flipped": false,
-          "status": "called",
-          "boundary_status": "pending"
+          "status": "split",
+          "boundary_status": "pending",
+          "options": [
+            {
+              "district": "1",
+              "name": "Greg Landsman",
+              "party": "D"
+            },
+            {
+              "district": "8",
+              "name": "Warren Davidson",
+              "party": "R"
+            }
+          ]
+        },
+        {
+          "district": "3/15",
+          "name": "Joyce Beatty or Don Leonard",
+          "party": "D",
+          "margin": null,
+          "flipped": false,
+          "status": "split",
+          "boundary_status": "pending",
+          "options": [
+            {
+              "district": "3",
+              "name": "Joyce Beatty",
+              "party": "D"
+            },
+            {
+              "district": "15",
+              "name": "Don Leonard",
+              "party": "D"
+            }
+          ]
         },
         {
           "district": "4",
@@ -2751,7 +2832,70 @@
           "margin": 33.2,
           "flipped": false,
           "status": "called",
-          "boundary_status": "pending"
+          "boundary_status": "current"
+        },
+        {
+          "district": "4/12",
+          "name": "Jim Jordan or Troy Balderson",
+          "party": "R",
+          "margin": null,
+          "flipped": false,
+          "status": "split",
+          "boundary_status": "pending",
+          "options": [
+            {
+              "district": "4",
+              "name": "Jim Jordan",
+              "party": "R"
+            },
+            {
+              "district": "12",
+              "name": "Troy Balderson",
+              "party": "R"
+            }
+          ]
+        },
+        {
+          "district": "4/15",
+          "name": "Jim Jordan or Don Leonard",
+          "party": "",
+          "margin": null,
+          "flipped": false,
+          "status": "split",
+          "boundary_status": "pending",
+          "options": [
+            {
+              "district": "4",
+              "name": "Jim Jordan",
+              "party": "R"
+            },
+            {
+              "district": "15",
+              "name": "Don Leonard",
+              "party": "D"
+            }
+          ]
+        },
+        {
+          "district": "4/5",
+          "name": "Jim Jordan or Bob Latta",
+          "party": "R",
+          "margin": null,
+          "flipped": false,
+          "status": "split",
+          "boundary_status": "pending",
+          "options": [
+            {
+              "district": "4",
+              "name": "Jim Jordan",
+              "party": "R"
+            },
+            {
+              "district": "5",
+              "name": "Bob Latta",
+              "party": "R"
+            }
+          ]
         },
         {
           "district": "5",
@@ -2760,25 +2904,49 @@
           "margin": 11.7,
           "flipped": false,
           "status": "called",
-          "boundary_status": "pending"
+          "boundary_status": "current"
         },
         {
-          "district": "7",
-          "name": "Brian Poindexter",
+          "district": "7/11",
+          "name": "Brian Poindexter or Shontel M. Brown",
           "party": "D",
-          "margin": 9.8,
-          "flipped": true,
-          "status": "called",
-          "boundary_status": "pending"
+          "margin": null,
+          "flipped": false,
+          "status": "split",
+          "boundary_status": "pending",
+          "options": [
+            {
+              "district": "7",
+              "name": "Brian Poindexter",
+              "party": "D"
+            },
+            {
+              "district": "11",
+              "name": "Shontel M. Brown",
+              "party": "D"
+            }
+          ]
         },
         {
-          "district": "8",
-          "name": "Warren Davidson",
-          "party": "R",
-          "margin": 4.2,
+          "district": "8/10",
+          "name": "Warren Davidson or Kristina Knickerbocker",
+          "party": "",
+          "margin": null,
           "flipped": false,
-          "status": "called",
-          "boundary_status": "pending"
+          "status": "split",
+          "boundary_status": "pending",
+          "options": [
+            {
+              "district": "8",
+              "name": "Warren Davidson",
+              "party": "R"
+            },
+            {
+              "district": "10",
+              "name": "Kristina Knickerbocker",
+              "party": "D"
+            }
+          ]
         },
         {
           "district": "10",
@@ -2787,16 +2955,7 @@
           "margin": 1.6,
           "flipped": true,
           "status": "called",
-          "boundary_status": "pending"
-        },
-        {
-          "district": "11",
-          "name": "Shontel M. Brown",
-          "party": "D",
-          "margin": 67.0,
-          "flipped": false,
-          "status": "called",
-          "boundary_status": "pending"
+          "boundary_status": "current"
         },
         {
           "district": "15",
@@ -2805,7 +2964,7 @@
           "margin": 6.6,
           "flipped": true,
           "status": "called",
-          "boundary_status": "pending"
+          "boundary_status": "current"
         }
       ],
       "state_senate_along": {
@@ -2881,12 +3040,12 @@
         "state_house": {
           "state": "IL",
           "seats": 118,
-          "D": 80,
+          "D": 82,
           "R": 32,
           "other": 0,
-          "uncalled": 6,
-          "leaning_D": 0,
-          "leaning_R": 0,
+          "uncalled": 4,
+          "leaning_D": 2,
+          "leaning_R": 2,
           "majority": 60,
           "control": "D"
         }
@@ -2897,7 +3056,7 @@
           "district": "4",
           "name": "Patty Garcia",
           "party": "D",
-          "margin": 54.6,
+          "margin": 54.7,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -2915,7 +3074,7 @@
           "district": "7",
           "name": "La Shawn K. Ford",
           "party": "D",
-          "margin": 78.0,
+          "margin": 78.2,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -2924,7 +3083,7 @@
           "district": "11",
           "name": "Bill Foster",
           "party": "D",
-          "margin": 30.8,
+          "margin": 28.4,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -2933,7 +3092,7 @@
           "district": "14",
           "name": "Lauren Underwood",
           "party": "D",
-          "margin": 25.0,
+          "margin": 25.2,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -3020,7 +3179,7 @@
           "R": 32,
           "other": 0,
           "uncalled": 1,
-          "leaning_D": 0,
+          "leaning_D": 1,
           "leaning_R": 0,
           "majority": 26,
           "control": "R"
@@ -3028,12 +3187,12 @@
         "state_house": {
           "state": "IA",
           "seats": 100,
-          "D": 43,
-          "R": 52,
+          "D": 44,
+          "R": 55,
           "other": 0,
-          "uncalled": 5,
+          "uncalled": 1,
           "leaning_D": 0,
-          "leaning_R": 0,
+          "leaning_R": 1,
           "majority": 51,
           "control": "R"
         }
@@ -3098,15 +3257,15 @@
         "counted": 27,
         "pending_boundaries": 0,
         "D": 15,
-        "R": 11,
+        "R": 12,
         "other": 0,
-        "undecided": 1,
+        "undecided": 0,
         "uncalled": 1,
         "flipped_to_D": 2,
         "flipped_to_R": 0,
         "close": 0,
         "km_D": 85.7,
-        "km_R": 357.2,
+        "km_R": 364.0,
         "with_stop": 2
       }
     },
@@ -3118,7 +3277,7 @@
         "party": "R",
         "source": "2026",
         "flipped": false,
-        "status": "leading"
+        "status": "called"
       },
       "us_senators": [
         {
@@ -3138,15 +3297,15 @@
           "seats": 49,
           "D": 0,
           "R": 0,
-          "other": 45,
-          "uncalled": 4,
+          "other": 48,
+          "uncalled": 1,
           "leaning_D": 0,
           "leaning_R": 0,
           "majority": 25,
           "control": "nonpartisan"
         }
       },
-      "trifecta": "R governor; nonpartisan legislature (governor race not called)",
+      "trifecta": "R governor; nonpartisan legislature",
       "us_house_along": [
         {
           "district": "2",
@@ -3249,7 +3408,7 @@
           "party": "D",
           "margin": 67.6,
           "flipped": false,
-          "status": "reported",
+          "status": "called",
           "boundary_status": "current"
         },
         {
@@ -3258,7 +3417,7 @@
           "party": "D",
           "margin": 4.9,
           "flipped": true,
-          "status": "reported",
+          "status": "called",
           "boundary_status": "current"
         },
         {
@@ -3267,7 +3426,7 @@
           "party": "R",
           "margin": 8.5,
           "flipped": false,
-          "status": "reported",
+          "status": "called",
           "boundary_status": "current"
         },
         {
@@ -3276,7 +3435,7 @@
           "party": "R",
           "margin": 25.3,
           "flipped": false,
-          "status": "reported",
+          "status": "called",
           "boundary_status": "current"
         },
         {
@@ -3285,7 +3444,7 @@
           "party": "D",
           "margin": 41.4,
           "flipped": false,
-          "status": "reported",
+          "status": "called",
           "boundary_status": "current"
         }
       ],
@@ -3362,12 +3521,12 @@
         "state_house": {
           "state": "IL",
           "seats": 118,
-          "D": 80,
+          "D": 82,
           "R": 32,
           "other": 0,
-          "uncalled": 6,
-          "leaning_D": 0,
-          "leaning_R": 0,
+          "uncalled": 4,
+          "leaning_D": 2,
+          "leaning_R": 2,
           "majority": 60,
           "control": "D"
         }
@@ -3376,9 +3535,9 @@
       "us_house_along": [
         {
           "district": "1",
-          "name": "Jonathan Jackson",
+          "name": "Jonathan L. Jackson",
           "party": "D",
-          "margin": 40.6,
+          "margin": 42.6,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -3387,7 +3546,7 @@
           "district": "2",
           "name": "Donna Miller",
           "party": "D",
-          "margin": 45.6,
+          "margin": 46.0,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -3396,7 +3555,7 @@
           "district": "7",
           "name": "La Shawn K. Ford",
           "party": "D",
-          "margin": 78.0,
+          "margin": 78.2,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -3505,7 +3664,7 @@
         },
         {
           "district": "3",
-          "name": "Marlin Stutzman",
+          "name": "Marlin A. Stutzman",
           "party": "R",
           "margin": 9.8,
           "flipped": false,
@@ -3597,13 +3756,25 @@
       "trifecta": "divided",
       "us_house_along": [
         {
-          "district": "3",
-          "name": "Joyce Beatty",
+          "district": "3/15",
+          "name": "Joyce Beatty or Don Leonard",
           "party": "D",
-          "margin": 54.4,
+          "margin": null,
           "flipped": false,
-          "status": "called",
-          "boundary_status": "pending"
+          "status": "split",
+          "boundary_status": "pending",
+          "options": [
+            {
+              "district": "3",
+              "name": "Joyce Beatty",
+              "party": "D"
+            },
+            {
+              "district": "15",
+              "name": "Don Leonard",
+              "party": "D"
+            }
+          ]
         },
         {
           "district": "4",
@@ -3612,25 +3783,7 @@
           "margin": 33.2,
           "flipped": false,
           "status": "called",
-          "boundary_status": "pending"
-        },
-        {
-          "district": "5",
-          "name": "Bob Latta",
-          "party": "R",
-          "margin": 11.7,
-          "flipped": false,
-          "status": "called",
-          "boundary_status": "pending"
-        },
-        {
-          "district": "15",
-          "name": "Don Leonard",
-          "party": "D",
-          "margin": 6.6,
-          "flipped": true,
-          "status": "called",
-          "boundary_status": "pending"
+          "boundary_status": "current"
         }
       ],
       "state_senate_along": {
@@ -3835,7 +3988,7 @@
           "party": "D",
           "margin": 40.6,
           "flipped": false,
-          "status": "reported",
+          "status": "called",
           "boundary_status": "current"
         }
       ],
@@ -3900,12 +4053,12 @@
         "state_senate": {
           "state": "MN",
           "seats": 67,
-          "D": 37,
+          "D": 39,
           "R": 26,
           "other": 0,
-          "uncalled": 4,
+          "uncalled": 2,
           "leaning_D": 0,
-          "leaning_R": 0,
+          "leaning_R": 2,
           "majority": 34,
           "control": "D"
         },
@@ -3917,7 +4070,7 @@
           "other": 0,
           "uncalled": 2,
           "leaning_D": 0,
-          "leaning_R": 0,
+          "leaning_R": 1,
           "majority": 68,
           "control": "D"
         }
@@ -3955,7 +4108,7 @@
           "district": "8",
           "name": "Pete Stauber",
           "party": "R",
-          "margin": 6.3,
+          "margin": 6.1,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -4268,34 +4421,58 @@
           "margin": 11.7,
           "flipped": false,
           "status": "called",
-          "boundary_status": "pending"
+          "boundary_status": "current"
         },
         {
-          "district": "7",
-          "name": "Brian Poindexter",
+          "district": "5/9",
+          "name": "Bob Latta or Marcy Kaptur",
+          "party": "",
+          "margin": null,
+          "flipped": false,
+          "status": "split",
+          "boundary_status": "pending",
+          "options": [
+            {
+              "district": "5",
+              "name": "Bob Latta",
+              "party": "R"
+            },
+            {
+              "district": "9",
+              "name": "Marcy Kaptur",
+              "party": "D"
+            }
+          ]
+        },
+        {
+          "district": "7/11",
+          "name": "Brian Poindexter or Shontel M. Brown",
           "party": "D",
-          "margin": 9.8,
-          "flipped": true,
-          "status": "called",
-          "boundary_status": "pending"
+          "margin": null,
+          "flipped": false,
+          "status": "split",
+          "boundary_status": "pending",
+          "options": [
+            {
+              "district": "7",
+              "name": "Brian Poindexter",
+              "party": "D"
+            },
+            {
+              "district": "11",
+              "name": "Shontel M. Brown",
+              "party": "D"
+            }
+          ]
         },
         {
           "district": "9",
           "name": "Marcy Kaptur",
           "party": "D",
-          "margin": 5.4,
+          "margin": 5.5,
           "flipped": false,
           "status": "called",
-          "boundary_status": "pending"
-        },
-        {
-          "district": "11",
-          "name": "Shontel M. Brown",
-          "party": "D",
-          "margin": 67.0,
-          "flipped": false,
-          "status": "called",
-          "boundary_status": "pending"
+          "boundary_status": "current"
         }
       ],
       "state_senate_along": {
@@ -4357,10 +4534,10 @@
         "state_senate": {
           "state": "MI",
           "seats": 38,
-          "D": 22,
+          "D": 23,
           "R": 15,
           "other": 0,
-          "uncalled": 1,
+          "uncalled": 0,
           "leaning_D": 0,
           "leaning_R": 0,
           "majority": 20,
@@ -4369,10 +4546,10 @@
         "state_house": {
           "state": "MI",
           "seats": 110,
-          "D": 60,
-          "R": 46,
+          "D": 62,
+          "R": 47,
           "other": 0,
-          "uncalled": 4,
+          "uncalled": 1,
           "leaning_D": 0,
           "leaning_R": 0,
           "majority": 56,
@@ -4385,7 +4562,7 @@
           "district": "5",
           "name": "Tim Walberg",
           "party": "R",
-          "margin": 20.5,
+          "margin": 20.6,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -4482,12 +4659,12 @@
         "state_house": {
           "state": "IL",
           "seats": 118,
-          "D": 80,
+          "D": 82,
           "R": 32,
           "other": 0,
-          "uncalled": 6,
-          "leaning_D": 0,
-          "leaning_R": 0,
+          "uncalled": 4,
+          "leaning_D": 2,
+          "leaning_R": 2,
           "majority": 60,
           "control": "D"
         }
@@ -4498,7 +4675,7 @@
           "district": "3",
           "name": "Delia Ramirez",
           "party": "D",
-          "margin": 51.6,
+          "margin": 52.8,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -4507,7 +4684,7 @@
           "district": "4",
           "name": "Patty Garcia",
           "party": "D",
-          "margin": 54.6,
+          "margin": 54.7,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -4525,16 +4702,16 @@
           "district": "7",
           "name": "La Shawn K. Ford",
           "party": "D",
-          "margin": 78.0,
+          "margin": 78.2,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
         },
         {
           "district": "8",
-          "name": "Melissa Bean",
+          "name": "Melissa L. Bean",
           "party": "D",
-          "margin": 29.6,
+          "margin": 27.6,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -4543,7 +4720,7 @@
           "district": "11",
           "name": "Bill Foster",
           "party": "D",
-          "margin": 30.8,
+          "margin": 28.4,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -4587,16 +4764,16 @@
         "districts": 19,
         "counted": 19,
         "pending_boundaries": 0,
-        "D": 14,
-        "R": 3,
+        "D": 15,
+        "R": 4,
         "other": 0,
-        "undecided": 2,
-        "uncalled": 2,
-        "flipped_to_D": 1,
+        "undecided": 0,
+        "uncalled": 1,
+        "flipped_to_D": 2,
         "flipped_to_R": 0,
         "close": 0,
-        "km_D": 101.4,
-        "km_R": 153.2,
+        "km_D": 106.3,
+        "km_R": 171.7,
         "with_stop": 6
       }
     },
@@ -4630,7 +4807,7 @@
           "R": 32,
           "other": 0,
           "uncalled": 1,
-          "leaning_D": 0,
+          "leaning_D": 1,
           "leaning_R": 0,
           "majority": 26,
           "control": "R"
@@ -4638,12 +4815,12 @@
         "state_house": {
           "state": "IA",
           "seats": 100,
-          "D": 43,
-          "R": 52,
+          "D": 44,
+          "R": 55,
           "other": 0,
-          "uncalled": 5,
+          "uncalled": 1,
           "leaning_D": 0,
-          "leaning_R": 0,
+          "leaning_R": 1,
           "majority": 51,
           "control": "R"
         }
@@ -4733,12 +4910,12 @@
         "state_house": {
           "state": "IL",
           "seats": 118,
-          "D": 80,
+          "D": 82,
           "R": 32,
           "other": 0,
-          "uncalled": 6,
-          "leaning_D": 0,
-          "leaning_R": 0,
+          "uncalled": 4,
+          "leaning_D": 2,
+          "leaning_R": 2,
           "majority": 60,
           "control": "D"
         }
@@ -4747,9 +4924,9 @@
       "us_house_along": [
         {
           "district": "1",
-          "name": "Jonathan Jackson",
+          "name": "Jonathan L. Jackson",
           "party": "D",
-          "margin": 40.6,
+          "margin": 42.6,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -4758,7 +4935,7 @@
           "district": "4",
           "name": "Patty Garcia",
           "party": "D",
-          "margin": 54.6,
+          "margin": 54.7,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -4776,7 +4953,7 @@
           "district": "7",
           "name": "La Shawn K. Ford",
           "party": "D",
-          "margin": 78.0,
+          "margin": 78.2,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -4785,7 +4962,7 @@
           "district": "11",
           "name": "Bill Foster",
           "party": "D",
-          "margin": 30.8,
+          "margin": 28.4,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -4794,7 +4971,7 @@
           "district": "14",
           "name": "Lauren Underwood",
           "party": "D",
-          "margin": 25.0,
+          "margin": 25.2,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -4891,12 +5068,12 @@
         "state_house": {
           "state": "IL",
           "seats": 118,
-          "D": 80,
+          "D": 82,
           "R": 32,
           "other": 0,
-          "uncalled": 6,
-          "leaning_D": 0,
-          "leaning_R": 0,
+          "uncalled": 4,
+          "leaning_D": 2,
+          "leaning_R": 2,
           "majority": 60,
           "control": "D"
         }
@@ -4905,9 +5082,9 @@
       "us_house_along": [
         {
           "district": "1",
-          "name": "Jonathan Jackson",
+          "name": "Jonathan L. Jackson",
           "party": "D",
-          "margin": 40.6,
+          "margin": 42.6,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -4916,7 +5093,7 @@
           "district": "2",
           "name": "Donna Miller",
           "party": "D",
-          "margin": 45.6,
+          "margin": 46.0,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -4925,7 +5102,7 @@
           "district": "7",
           "name": "La Shawn K. Ford",
           "party": "D",
-          "margin": 78.0,
+          "margin": 78.2,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -4978,16 +5155,16 @@
         "districts": 23,
         "counted": 23,
         "pending_boundaries": 0,
-        "D": 14,
-        "R": 7,
+        "D": 15,
+        "R": 8,
         "other": 0,
-        "undecided": 2,
-        "uncalled": 2,
-        "flipped_to_D": 0,
+        "undecided": 0,
+        "uncalled": 1,
+        "flipped_to_D": 1,
         "flipped_to_R": 0,
         "close": 0,
-        "km_D": 79.0,
-        "km_R": 371.9,
+        "km_D": 112.2,
+        "km_R": 397.6,
         "with_stop": 9
       }
     }
@@ -5031,12 +5208,12 @@
         "state_house": {
           "state": "IL",
           "seats": 118,
-          "D": 80,
+          "D": 82,
           "R": 32,
           "other": 0,
-          "uncalled": 6,
-          "leaning_D": 0,
-          "leaning_R": 0,
+          "uncalled": 4,
+          "leaning_D": 2,
+          "leaning_R": 2,
           "majority": 60,
           "control": "D"
         }
@@ -5045,9 +5222,9 @@
       "us_house_along": [
         {
           "district": "1",
-          "name": "Jonathan Jackson",
+          "name": "Jonathan L. Jackson",
           "party": "D",
-          "margin": 40.6,
+          "margin": 42.6,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -5056,7 +5233,7 @@
           "district": "2",
           "name": "Donna Miller",
           "party": "D",
-          "margin": 45.6,
+          "margin": 46.0,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -5065,7 +5242,7 @@
           "district": "7",
           "name": "La Shawn K. Ford",
           "party": "D",
-          "margin": 78.0,
+          "margin": 78.2,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -5223,10 +5400,10 @@
         "state_senate": {
           "state": "MI",
           "seats": 38,
-          "D": 22,
+          "D": 23,
           "R": 15,
           "other": 0,
-          "uncalled": 1,
+          "uncalled": 0,
           "leaning_D": 0,
           "leaning_R": 0,
           "majority": 20,
@@ -5235,10 +5412,10 @@
         "state_house": {
           "state": "MI",
           "seats": 110,
-          "D": 60,
-          "R": 46,
+          "D": 62,
+          "R": 47,
           "other": 0,
-          "uncalled": 4,
+          "uncalled": 1,
           "leaning_D": 0,
           "leaning_R": 0,
           "majority": 56,
@@ -5262,7 +5439,7 @@
           "party": "D",
           "margin": 1.8,
           "flipped": true,
-          "status": "leading",
+          "status": "called",
           "boundary_status": "current"
         }
       ],
@@ -5339,12 +5516,12 @@
         "state_house": {
           "state": "IL",
           "seats": 118,
-          "D": 80,
+          "D": 82,
           "R": 32,
           "other": 0,
-          "uncalled": 6,
-          "leaning_D": 0,
-          "leaning_R": 0,
+          "uncalled": 4,
+          "leaning_D": 2,
+          "leaning_R": 2,
           "majority": 60,
           "control": "D"
         }
@@ -5353,9 +5530,9 @@
       "us_house_along": [
         {
           "district": "1",
-          "name": "Jonathan Jackson",
+          "name": "Jonathan L. Jackson",
           "party": "D",
-          "margin": 40.6,
+          "margin": 42.6,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -5364,7 +5541,7 @@
           "district": "2",
           "name": "Donna Miller",
           "party": "D",
-          "margin": 45.6,
+          "margin": 46.0,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -5373,7 +5550,7 @@
           "district": "7",
           "name": "La Shawn K. Ford",
           "party": "D",
-          "margin": 78.0,
+          "margin": 78.2,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -5531,10 +5708,10 @@
         "state_senate": {
           "state": "MI",
           "seats": 38,
-          "D": 22,
+          "D": 23,
           "R": 15,
           "other": 0,
-          "uncalled": 1,
+          "uncalled": 0,
           "leaning_D": 0,
           "leaning_R": 0,
           "majority": 20,
@@ -5543,10 +5720,10 @@
         "state_house": {
           "state": "MI",
           "seats": 110,
-          "D": 60,
-          "R": 46,
+          "D": 62,
+          "R": 47,
           "other": 0,
-          "uncalled": 4,
+          "uncalled": 1,
           "leaning_D": 0,
           "leaning_R": 0,
           "majority": 56,
@@ -5561,14 +5738,14 @@
           "party": "D",
           "margin": 1.8,
           "flipped": true,
-          "status": "leading",
+          "status": "called",
           "boundary_status": "current"
         },
         {
           "district": "5",
           "name": "Tim Walberg",
           "party": "R",
-          "margin": 20.5,
+          "margin": 20.6,
           "flipped": false,
           "status": "called",
           "boundary_status": "current"
@@ -5579,7 +5756,7 @@
           "party": "D",
           "margin": 3.3,
           "flipped": true,
-          "status": "leading",
+          "status": "called",
           "boundary_status": "current"
         },
         {

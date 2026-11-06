@@ -1,0 +1,120 @@
+chamber,district,winner,party,runnerup,runnerup_party,flipped,status
+House,1,Steven Rudy,R,,,,called
+House,2,Kim Holloway,R,,,,called
+House,3,Randy Bridges,R,Michael McVicker,D,,called
+House,4,Wade Williams,R,,,,called
+House,5,Mary Beth Imes,R,,,,called
+House,6,Chris Freeland,R,,,,called
+House,7,Suzanne Miles,R,Laurie Campbell,D,,called
+House,8,Walker Thomas,R,,,,called
+House,9,Myron Dossett,R,,,,called
+House,10,Josh Calloway,R,John Whipple,D,,called
+House,11,J.T. Payne,R,Janelle Rowena Glass,D,,called
+House,12,Jim Gooch,R,,,,called
+House,13,D.J. Johnson,R,Rhondalyn Randolph,D,,called
+House,14,Wesley Pate,R,Donna Haynes,D,,called
+House,15,Rebecca Raymer,R,Chris Waddell,D,,called
+House,16,Jason Petrie,R,,,,called
+House,17,Robert Duvall,R,,,,called
+House,18,Samara Heavrin,R,,,,called
+House,19,Michael Meredith,R,,,,called
+House,20,Kevin Jackson,R,,,,called
+House,21,Amy Neighbors,R,,,,called
+House,22,Shawn McPherson,R,,,,called
+House,23,Steve Riley,R,,,,called
+House,24,Ryan Bivens,R,Johnny Pennington,D,,called
+House,25,Steve Bratcher,R,Cherlyn Smith,D,,called
+House,26,Peyton Griffee,R,,,,called
+House,27,Joseph Redmon,R,Susan Doman,D,,called
+House,28,Almaria Baker,D,Jared Bauman,R,R to D,called
+House,29,Cassie Blausey,D,Chris Lewis,R,R to D,called
+House,30,Mitra Subedi,D,,,,called
+House,31,Tim Hall,D,Susan Witten,R,R to D,called
+House,32,Tina Bojanowski,D,,,,called
+House,33,Jennifer Hardin,D,Jason Nemes,R,R to D,called
+House,34,Sarah Stalker,D,Victoria Ligon,R,,called
+House,35,Lisa Willner,D,Bret Shultz,R,,called
+House,36,none,,John Hodgson; William Zorn,R; D,,uncalled
+House,37,Emily Callaway,R,,,,called
+House,38,Rachel Roarx,D,Carrie Sanders McKeehan,R,,called
+House,39,Ryan Stanford,D,Matt Lockett,R,R to D,called
+House,40,Nima Kulkarni,D,,,,called
+House,41,Mary Lou Marzian,D,,,,called
+House,42,Joshua Watkins,D,,,,called
+House,43,Robert LeVertis Bell,D,Lisa Harris,write-in,,called
+House,44,Kenya Wade,D,,,,called
+House,45,Adam Moore,D,Killian Timoney,R,,called
+House,46,Al Gentry,D,Brad Woolridge,R,,called
+House,47,Felicia Rabourn,R,,,,called
+House,48,Suhas Kulkarni,D,Ken Fleming,R,R to D,called
+House,49,Thomas Huff,R,,,,called
+House,50,Candy Massaroni,R,J.D. Netherton,D,,called
+House,51,Michael Pollock,R,,,,called
+House,52,Kevin Jones,R,,,,called
+House,53,James Tipton,R,,,,called
+House,54,Daniel Elliott,R,,,,called
+House,55,Kim King,R,Katrina Sexton,D,,called
+House,56,Dan Fister,R,David Graves,D,,called
+House,57,Erika Hancock,D,,,,called
+House,58,Jennifer Decker,R,Andrew Monarch,D,,called
+House,59,David Osborne,R,Stephanie White,D,,called
+House,60,Marianne Proctor,R,Tracey Reid,D,,called
+House,61,Savannah Maddox,R,,,,called
+House,62,Tony Hampton,R,Randy Jackson Simpkins,D,,called
+House,63,Cole Cuzick,R,,,,called
+House,64,Kim Moser,R,William Whalen,D,,called
+House,65,Aaron Currin,D,Stephanie Dietz,R,R to D,called
+House,66,T.J. Roberts,R,Jason Ellis,D,,called
+House,67,Matt Lehman,D,Terry Hatton,R,,called
+House,68,Mike Clines,R,Amy Amin,D,,called
+House,69,Steven Doan,R,Wilanne Stangel,D,,called
+House,70,Mike Fisher,R,Charlotte Harris,D,,called
+House,71,Josh Bray,R,,,,called
+House,72,Matt Koch,R,,,,called
+House,73,Daniel Konstantopoulos,R,Chelsea Kirk,D,,called
+House,74,David Charles,R,,,,called
+House,75,Lindsey Burke,D,Jeff Forsyth; Geoff M. Young,R; Kentucky Party,,called
+House,76,Anne Donworth,D,Avram Hicks,R,,called
+House,77,George Brown,D,Jason Griffith,R,,called
+House,78,Mark Hart,R,,,,called
+House,79,Chad Aull,D,,,,called
+House,80,David Meade,R,Mary Russell,D,,called
+House,81,Deanna Gordon,R,Anthony Looney,D,,called
+House,82,Nick Wilson,R,,,,called
+House,83,Joshua Branscum,R,,,,called
+House,84,Chris Fugate,R,,,,called
+House,85,Shane Baker,R,,,,called
+House,86,Tom Smith,R,,,,called
+House,87,Adam Bowling,R,,,,called
+House,88,Vanessa Grossl,R,L. Scott Miller; Alisha Chaffin,I; D,,called
+House,89,Timmy Truett,R,,,,called
+House,90,Derek Lewis,R,,,,called
+House,91,Darrell Billings,R,David Johnson,D,,called
+House,92,John Blanton,R,,,,called
+House,93,Adrielle Camuel,D,Hannah Beth Rivera,R,,called
+House,94,Mitch Whitaker,R,,,,called
+House,95,Tanner Hesterberg,R,Johnny Ray Turner,D,D to R,called
+House,96,Patrick Flannery,R,Pamela Lewis,D,,called
+House,97,Bobby McCool,R,Rebekah Skaggs,D,,called
+House,98,Aaron Thompson,R,,,,called
+House,99,Richard White,R,Iva Markicevic Daley,D,,called
+House,100,Scott Sharp,R,,,,called
+Senate,2,Danny Carroll,R,,,,called
+Senate,4,Robby Mills,R,Janyna Lynn Russelburg,write-in,,called
+Senate,6,Christian Furman,D,Lindsey Tichenor,R,R to D,called
+Senate,8,Gary Boswell,R,Vicki Quisenberry,D,,called
+Senate,10,Matt Deneen,R,Christopher Gatrost,D,,called
+Senate,12,Amanda Bledsoe,R,Bill O'Brien; Tyler Dean,D; D,,called
+Senate,14,Ben Mudd,R,Carrie Gribbins Truitt,D,,called
+Senate,16,Max Wise,R,,,,called
+Senate,18,Robin Webb,R,,,,called
+Senate,20,Gex Williams,R,Stella Pollard,D,,called
+Senate,22,Don Douglas,R,Michael Wieland French,write-in,,called
+Senate,24,Shelley Frommeyer,R,Joshua Baker,D,,called
+Senate,26,Karen Berg,D,Everett Corley,R,,called
+Senate,28,Greg Elkins,R,,,,called
+Senate,30,Brandon Smith,R,,,,called
+Senate,32,Mike Wilson,R,,,,called
+Senate,34,Jared Carpenter,R,Jessica McIntosh,D,,called
+Senate,36,Sarah Cole McIntosh,D,Julie Raque Adams,R,R to D,called
+Senate,38,Mike Nemes,R,,,,called

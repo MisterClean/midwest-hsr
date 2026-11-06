@@ -1,13 +1,13 @@
 corridor,office,id,state,district,boundary_status,km,stops,holder,party,status,margin,flipped,prior_party,source
 chi-cdl,state_house,state_house:IL:101,IL,101,current,84.07,MAT,Chris Miller,R,called,,False,R,2026
 chi-cdl,state_house,state_house:IL:103,IL,103,current,6.61,CHM,Carol Ammons,D,called,,False,D,2026
-chi-cdl,state_house,state_house:IL:104,IL,104,current,33.17,RTL,,,uncalled,,False,R,2026
+chi-cdl,state_house,state_house:IL:104,IL,104,current,33.17,RTL,Mary Catherine Roberson,D,called,,True,R,2026
 chi-cdl,state_house,state_house:IL:106,IL,106,current,66.71,,Jason Bunting,R,called,,False,R,2026
 chi-cdl,state_house,state_house:IL:107,IL,107,current,44.3,EFG,Brad Halbrook,R,called,,False,R,2026
 chi-cdl,state_house,state_house:IL:109,IL,109,current,23.14,,Charlie Meier,R,called,,False,R,2026
 chi-cdl,state_house,state_house:IL:110,IL,110,current,77.56,CEN,Blaine Wilhour,R,called,,False,R,2026
 chi-cdl,state_house,state_house:IL:115,IL,115,current,39.76,,David Friess,R,called,,False,R,2026
-chi-cdl,state_house,state_house:IL:118,IL,118,current,25.72,CDL,,,uncalled,,False,R,2026
+chi-cdl,state_house,state_house:IL:118,IL,118,current,25.72,CDL,Scott Doody,R,leading,,False,R,2026
 chi-cdl,state_house,state_house:IL:24,IL,24,current,1.37,,Theresa Mah,D,called,,False,D,2026
 chi-cdl,state_house,state_house:IL:25,IL,25,current,2.13,,Curtis Tarver,D,called,,False,D,2026
 chi-cdl,state_house,state_house:IL:26,IL,26,current,3.79,,Kam Buckner,D,called,,False,D,2026
@@ -38,12 +38,12 @@ chi-cdl,state_senate,state_senate:IL:54,IL,54,current,44.3,EFG,Steve McClure,R,c
 chi-cdl,state_senate,state_senate:IL:55,IL,55,current,100.7,CEN,Jason Plummer,R,holdover,,False,R,holdover
 chi-cdl,state_senate,state_senate:IL:58,IL,58,current,39.76,,Terri Bryant,R,holdover,,False,R,holdover
 chi-cdl,state_senate,state_senate:IL:59,IL,59,current,25.72,CDL,Paul Jacobs,R,called,,False,R,2026
-chi-cdl,us_house,us_house:IL:1,IL,1,current,31.32,,Jonathan Jackson,D,called,40.6,False,D,2026
+chi-cdl,us_house,us_house:IL:1,IL,1,current,31.32,,Jonathan L. Jackson,D,called,42.6,False,D,2026
 chi-cdl,us_house,us_house:IL:12,IL,12,current,193.02,"EFG,CEN,CDL",Mike Bost,R,called,39.400000000000006,False,R,2026
 chi-cdl,us_house,us_house:IL:13,IL,13,current,18.92,CHM,Nikki Budzinski,D,called,25.200000000000003,False,D,2026
 chi-cdl,us_house,us_house:IL:15,IL,15,current,104.29,MAT,Mary Miller,R,called,33.800000000000004,False,R,2026
-chi-cdl,us_house,us_house:IL:2,IL,2,current,157.03,"HMW,KKI,RTL",Donna Miller,D,called,45.6,False,D,2026
-chi-cdl,us_house,us_house:IL:7,IL,7,current,5.25,CHI,La Shawn K. Ford,D,called,78.0,False,D,2026
+chi-cdl,us_house,us_house:IL:2,IL,2,current,157.03,"HMW,KKI,RTL",Donna Miller,D,called,46.0,False,D,2026
+chi-cdl,us_house,us_house:IL:7,IL,7,current,5.25,CHI,La Shawn K. Ford,D,called,78.19999999999999,False,D,2026
 chi-cle,state_house,state_house:IL:24,IL,24,current,1.37,,Theresa Mah,D,called,,False,D,2026
 chi-cle,state_house,state_house:IL:25,IL,25,current,5.17,,Curtis Tarver,D,called,,False,D,2026
 chi-cle,state_house,state_house:IL:26,IL,26,current,3.8,,Kam Buckner,D,called,,False,D,2026
@@ -101,16 +101,16 @@ chi-cle,state_senate,state_senate:OH:13,OH,13,pending,37.23,,,,uncalled,,False,,
 chi-cle,state_senate,state_senate:OH:2,OH,2,pending,60.59,,Theresa Gavarone,R,holdover,,False,R,holdover
 chi-cle,state_senate,state_senate:OH:23,OH,23,pending,13.64,CLE,Bride Sweeney,D,called,,False,D,2026
 chi-cle,state_senate,state_senate:OH:24,OH,24,pending,15.58,,Tom Patton,R,holdover,,False,R,holdover
-chi-cle,us_house,us_house:IL:1,IL,1,current,14.07,,Jonathan Jackson,D,called,40.6,False,D,2026
-chi-cle,us_house,us_house:IL:2,IL,2,current,4.28,,Donna Miller,D,called,45.6,False,D,2026
-chi-cle,us_house,us_house:IL:7,IL,7,current,5.25,CHI,La Shawn K. Ford,D,called,78.0,False,D,2026
+chi-cle,us_house,us_house:IL:1,IL,1,current,14.07,,Jonathan L. Jackson,D,called,42.6,False,D,2026
+chi-cle,us_house,us_house:IL:2,IL,2,current,4.28,,Donna Miller,D,called,46.0,False,D,2026
+chi-cle,us_house,us_house:IL:7,IL,7,current,5.25,CHI,La Shawn K. Ford,D,called,78.19999999999999,False,D,2026
 chi-cle,us_house,us_house:IN:1,IN,1,current,67.94,,Frank Mrvan,D,called,26.0,False,D,2026
 chi-cle,us_house,us_house:IN:2,IN,2,current,100.47,,Rudy Yakym,R,called,5.199999999999996,False,R,2026
-chi-cle,us_house,us_house:IN:3,IN,3,current,85.65,FTW,Marlin Stutzman,R,called,9.799999999999995,False,R,2026
-chi-cle,us_house,us_house:OH:11,OH,11,pending,19.21,CLE,Shontel M. Brown,D,called,67.0,False,D,2026
-chi-cle,us_house,us_house:OH:5,OH,5,pending,68.58,,Bob Latta,R,called,11.699999999999996,False,R,2026
-chi-cle,us_house,us_house:OH:7,OH,7,pending,10.0,,Brian Poindexter,D,called,9.799999999999995,True,R,2026
-chi-cle,us_house,us_house:OH:9,OH,9,pending,150.01,TOL,Marcy Kaptur,D,called,5.400000000000006,False,D,2026
+chi-cle,us_house,us_house:IN:3,IN,3,current,85.65,FTW,Marlin A. Stutzman,R,called,9.799999999999995,False,R,2026
+chi-cle,us_house,us_house:OH:5,OH,5,current,32.18,,Bob Latta,R,called,11.699999999999996,False,R,2026
+chi-cle,us_house,us_house:OH:5/9,OH,5/9,pending,3.43,,,,,,,,
+chi-cle,us_house,us_house:OH:7/11,OH,7/11,pending,29.21,CLE,,,,,,,
+chi-cle,us_house,us_house:OH:9,OH,9,current,182.98,TOL,Marcy Kaptur,D,called,5.5,False,D,2026
 chi-col,state_house,state_house:IL:24,IL,24,current,1.37,,Theresa Mah,D,called,,False,D,2026
 chi-col,state_house,state_house:IL:25,IL,25,current,5.17,,Curtis Tarver,D,called,,False,D,2026
 chi-col,state_house,state_house:IL:26,IL,26,current,3.8,,Kam Buckner,D,called,,False,D,2026
@@ -158,16 +158,14 @@ chi-col,state_senate,state_senate:OH:12,OH,12,pending,42.62,LIM,Susan Manchester
 chi-col,state_senate,state_senate:OH:16,OH,16,pending,11.8,,Beth Liston,D,holdover,,False,D,holdover
 chi-col,state_senate,state_senate:OH:25,OH,25,pending,10.32,CBUS,Bill DeMora,D,called,,False,D,2026
 chi-col,state_senate,state_senate:OH:26,OH,26,pending,52.63,MRY,Bill Reineke,R,holdover,,False,R,holdover
-chi-col,us_house,us_house:IL:1,IL,1,current,14.07,,Jonathan Jackson,D,called,40.6,False,D,2026
-chi-col,us_house,us_house:IL:2,IL,2,current,4.28,,Donna Miller,D,called,45.6,False,D,2026
-chi-col,us_house,us_house:IL:7,IL,7,current,5.25,CHI,La Shawn K. Ford,D,called,78.0,False,D,2026
+chi-col,us_house,us_house:IL:1,IL,1,current,14.07,,Jonathan L. Jackson,D,called,42.6,False,D,2026
+chi-col,us_house,us_house:IL:2,IL,2,current,4.28,,Donna Miller,D,called,46.0,False,D,2026
+chi-col,us_house,us_house:IL:7,IL,7,current,5.25,CHI,La Shawn K. Ford,D,called,78.19999999999999,False,D,2026
 chi-col,us_house,us_house:IN:1,IN,1,current,67.86,VPZ,Frank Mrvan,D,called,26.0,False,D,2026
 chi-col,us_house,us_house:IN:2,IN,2,current,102.96,"PLY,WSW",Rudy Yakym,R,called,5.199999999999996,False,R,2026
-chi-col,us_house,us_house:IN:3,IN,3,current,86.09,FTW,Marlin Stutzman,R,called,9.799999999999995,False,R,2026
-chi-col,us_house,us_house:OH:15,OH,15,pending,12.27,CBUS,Don Leonard,D,called,6.600000000000001,True,R,2026
-chi-col,us_house,us_house:OH:3,OH,3,pending,9.85,,Joyce Beatty,D,called,54.400000000000006,False,D,2026
-chi-col,us_house,us_house:OH:4,OH,4,pending,136.98,"LIM,MRY",Jim Jordan,R,called,33.2,False,R,2026
-chi-col,us_house,us_house:OH:5,OH,5,pending,41.55,,Bob Latta,R,called,11.699999999999996,False,R,2026
+chi-col,us_house,us_house:IN:3,IN,3,current,86.09,FTW,Marlin A. Stutzman,R,called,9.799999999999995,False,R,2026
+chi-col,us_house,us_house:OH:3/15,OH,3/15,pending,22.12,CBUS,,,,,,,
+chi-col,us_house,us_house:OH:4,OH,4,current,178.53,"LIM,MRY",Jim Jordan,R,called,33.2,False,R,2026
 chi-dbq,state_house,state_house:IA:71,IA,71,current,1.27,DBQ,Sam Wooden,D,called,,False,D,2026
 chi-dbq,state_house,state_house:IL:10,IL,10,current,7.52,,Jawaharial Williams,D,called,,False,D,2026
 chi-dbq,state_house,state_house:IL:42,IL,42,current,9.12,,Margaret DeLaRosa,D,called,,False,D,2026
@@ -176,13 +174,13 @@ chi-dbq,state_house,state_house:IL:45,IL,45,current,2.1,,Marti Deuter,D,called,,
 chi-dbq,state_house,state_house:IL:46,IL,46,current,2.78,,Diane Blair-Sherlock,D,called,,False,D,2026
 chi-dbq,state_house,state_house:IL:47,IL,47,current,8.37,,Erica Bray-Parker,D,called,,True,R,2026
 chi-dbq,state_house,state_house:IL:49,IL,49,current,16.28,,Maura Hirschauer,D,called,,False,D,2026
-chi-dbq,state_house,state_house:IL:65,IL,65,current,4.87,,,,uncalled,,False,R,2026
+chi-dbq,state_house,state_house:IL:65,IL,65,current,4.87,,Ricky Rivard,D,called,,True,R,2026
 chi-dbq,state_house,state_house:IL:66,IL,66,current,5.89,,Suzanne Ness,D,called,,False,D,2026
 chi-dbq,state_house,state_house:IL:67,IL,67,current,8.15,RFD,Maurice West,D,called,,False,D,2026
 chi-dbq,state_house,state_house:IL:68,IL,68,current,19.63,BEL,Dave Vella,D,called,,False,D,2026
 chi-dbq,state_house,state_house:IL:69,IL,69,current,17.11,,Joe Sosnowski,R,called,,False,R,2026
 chi-dbq,state_house,state_house:IL:7,IL,7,current,9.42,,"Emanuel ""Chris"" Welch",D,called,,False,D,2026
-chi-dbq,state_house,state_house:IL:70,IL,70,current,18.55,,,,uncalled,,False,R,2026
+chi-dbq,state_house,state_house:IL:70,IL,70,current,18.55,,Jeff Keicher,R,leading,,False,R,2026
 chi-dbq,state_house,state_house:IL:78,IL,78,current,3.48,,Camille Lilly,D,called,,False,D,2026
 chi-dbq,state_house,state_house:IL:8,IL,8,current,2.43,,Shantel Franklin,D,called,,False,D,2026
 chi-dbq,state_house,state_house:IL:89,IL,89,current,109.47,GLA,Tony McCombie,R,called,,False,R,2026
@@ -202,14 +200,14 @@ chi-dbq,state_senate,state_senate:IL:4,IL,4,current,11.84,,Kimberly Lightford,D,
 chi-dbq,state_senate,state_senate:IL:45,IL,45,current,136.07,"FPT,GLA",Andrew Chesney,R,called,,False,R,2026
 chi-dbq,state_senate,state_senate:IL:5,IL,5,current,9.0,CHI,Lakesia Collins,D,called,,False,D,2026
 chi-dbq,us_house,us_house:IA:2,IA,2,current,1.27,DBQ,Lindsay James,D,called,4.0,True,R,2026
-chi-dbq,us_house,us_house:IL:11,IL,11,current,36.41,BEL,Bill Foster,D,called,30.800000000000004,False,D,2026
+chi-dbq,us_house,us_house:IL:11,IL,11,current,36.41,BEL,Bill Foster,D,called,28.40000000000001,False,D,2026
 chi-dbq,us_house,us_house:IL:16,IL,16,current,76.74,GLA,Darin LaHood,R,called,17.599999999999994,False,R,2026
 chi-dbq,us_house,us_house:IL:17,IL,17,current,77.22,"RFD,FPT",Eric Sorensen,D,called,20.200000000000003,False,D,2026
-chi-dbq,us_house,us_house:IL:3,IL,3,current,28.85,,Delia Ramirez,D,called,51.6,False,D,2026
-chi-dbq,us_house,us_house:IL:4,IL,4,current,2.66,,Patty Garcia,D,called,54.60000000000001,False,D,2026
+chi-dbq,us_house,us_house:IL:3,IL,3,current,28.85,,Delia Ramirez,D,called,52.8,False,D,2026
+chi-dbq,us_house,us_house:IL:4,IL,4,current,2.66,,Patty Garcia,D,called,54.7,False,D,2026
 chi-dbq,us_house,us_house:IL:6,IL,6,current,14.08,,Sean Casten,D,called,25.0,False,D,2026
-chi-dbq,us_house,us_house:IL:7,IL,7,current,22.47,CHI,La Shawn K. Ford,D,called,78.0,False,D,2026
-chi-dbq,us_house,us_house:IL:8,IL,8,current,19.61,ELG,Melissa Bean,D,called,29.599999999999994,False,D,2026
+chi-dbq,us_house,us_house:IL:7,IL,7,current,22.47,CHI,La Shawn K. Ford,D,called,78.19999999999999,False,D,2026
+chi-dbq,us_house,us_house:IL:8,IL,8,current,19.61,ELG,Melissa L. Bean,D,called,27.599999999999994,False,D,2026
 chi-det,state_house,state_house:IL:24,IL,24,current,1.37,,Theresa Mah,D,called,,False,D,2026
 chi-det,state_house,state_house:IL:25,IL,25,current,5.17,,Curtis Tarver,D,called,,False,D,2026
 chi-det,state_house,state_house:IL:26,IL,26,current,3.8,,Kam Buckner,D,called,,False,D,2026
@@ -262,14 +260,14 @@ chi-det,state_senate,state_senate:MI:20,MI,20,current,15.94,,Chris Moraitis,R,ca
 chi-det,state_senate,state_senate:MI:3,MI,3,pending,0.89,DET,John Conyers III,D,called,,False,D,2026
 chi-det,state_senate,state_senate:MI:4,MI,4,pending,11.51,,Darrin Camilleri,D,called,,False,D,2026
 chi-det,state_senate,state_senate:MI:5,MI,5,pending,9.91,,Matt Koleszar,D,called,,False,D,2026
-chi-det,us_house,us_house:IL:1,IL,1,current,14.07,,Jonathan Jackson,D,called,40.6,False,D,2026
-chi-det,us_house,us_house:IL:2,IL,2,current,4.28,,Donna Miller,D,called,45.6,False,D,2026
-chi-det,us_house,us_house:IL:7,IL,7,current,5.25,CHI,La Shawn K. Ford,D,called,78.0,False,D,2026
+chi-det,us_house,us_house:IL:1,IL,1,current,14.07,,Jonathan L. Jackson,D,called,42.6,False,D,2026
+chi-det,us_house,us_house:IL:2,IL,2,current,4.28,,Donna Miller,D,called,46.0,False,D,2026
+chi-det,us_house,us_house:IL:7,IL,7,current,5.25,CHI,La Shawn K. Ford,D,called,78.19999999999999,False,D,2026
 chi-det,us_house,us_house:IN:1,IN,1,current,74.38,"HMI,MCI",Frank Mrvan,D,called,26.0,False,D,2026
-chi-det,us_house,us_house:MI:12,MI,12,current,17.76,DER,Rashida Tlaib,D,called,54.8,False,D,2026
+chi-det,us_house,us_house:MI:12,MI,12,current,17.76,DER,Rashida Tlaib,D,called,54.6,False,D,2026
 chi-det,us_house,us_house:MI:13,MI,13,current,15.99,DET,Donavan McKinney,D,called,56.5,False,D,2026
-chi-det,us_house,us_house:MI:4,MI,4,current,95.36,"KAL,BTL",Sean McCann,D,leading,1.8000000000000045,True,R,2026
-chi-det,us_house,us_house:MI:5,MI,5,current,159.74,"NLS,JXN",Tim Walberg,R,called,20.5,False,R,2026
+chi-det,us_house,us_house:MI:4,MI,4,current,95.36,"KAL,BTL",Sean McCann,D,called,1.8000000000000045,True,R,2026
+chi-det,us_house,us_house:MI:5,MI,5,current,159.74,"NLS,JXN",Tim Walberg,R,called,20.6,False,R,2026
 chi-det,us_house,us_house:MI:6,MI,6,current,65.07,ARB,Debbie Dingell,D,called,37.10000000000001,False,D,2026
 chi-grr,state_house,state_house:IL:24,IL,24,current,1.37,,Theresa Mah,D,called,,False,D,2026
 chi-grr,state_house,state_house:IL:25,IL,25,current,5.16,,Curtis Tarver,D,called,,False,D,2026
@@ -298,12 +296,12 @@ chi-grr,state_senate,state_senate:MI:20,MI,20,current,79.83,"SJM,BAM",Chris Mora
 chi-grr,state_senate,state_senate:MI:29,MI,29,current,2.12,GRR,Abbie Groff-Blaszak,D,called,,False,D,2026
 chi-grr,state_senate,state_senate:MI:30,MI,30,current,8.19,,Carol Glanville,D,called,,True,R,2026
 chi-grr,state_senate,state_senate:MI:31,MI,31,current,41.37,HOM,John Wetzel,R,called,,False,R,2026
-chi-grr,us_house,us_house:IL:1,IL,1,current,14.07,,Jonathan Jackson,D,called,40.6,False,D,2026
-chi-grr,us_house,us_house:IL:2,IL,2,current,4.28,,Donna Miller,D,called,45.6,False,D,2026
-chi-grr,us_house,us_house:IL:7,IL,7,current,5.25,CHI,La Shawn K. Ford,D,called,78.0,False,D,2026
+chi-grr,us_house,us_house:IL:1,IL,1,current,14.07,,Jonathan L. Jackson,D,called,42.6,False,D,2026
+chi-grr,us_house,us_house:IL:2,IL,2,current,4.28,,Donna Miller,D,called,46.0,False,D,2026
+chi-grr,us_house,us_house:IL:7,IL,7,current,5.25,CHI,La Shawn K. Ford,D,called,78.19999999999999,False,D,2026
 chi-grr,us_house,us_house:IN:1,IN,1,current,2.19,HMI,Frank Mrvan,D,called,26.0,False,D,2026
 chi-grr,us_house,us_house:MI:3,MI,3,current,11.04,GRR,Hillary Scholten,D,called,15.700000000000005,False,D,2026
-chi-grr,us_house,us_house:MI:4,MI,4,current,120.46,"SJM,BAM,HOM",Sean McCann,D,leading,1.8000000000000045,True,R,2026
+chi-grr,us_house,us_house:MI:4,MI,4,current,120.46,"SJM,BAM,HOM",Sean McCann,D,called,1.8000000000000045,True,R,2026
 chi-ind-cin,state_house,state_house:IL:24,IL,24,current,1.37,,Theresa Mah,D,called,,False,D,2026
 chi-ind-cin,state_house,state_house:IL:25,IL,25,current,2.13,,Curtis Tarver,D,called,,False,D,2026
 chi-ind-cin,state_house,state_house:IL:26,IL,26,current,3.8,,Kam Buckner,D,called,,False,D,2026
@@ -367,16 +365,16 @@ chi-ind-cin,state_senate,state_senate:IN:7,IN,7,current,65.6,CRF,Brian Buchanan,
 chi-ind-cin,state_senate,state_senate:OH:4,OH,4,pending,16.93,,George Lang,R,holdover,,False,R,holdover
 chi-ind-cin,state_senate,state_senate:OH:8,OH,8,pending,24.04,,Bill Blessing,R,holdover,,False,R,holdover
 chi-ind-cin,state_senate,state_senate:OH:9,OH,9,pending,6.54,CIN,Catherine Ingram,D,called,,False,D,2026
-chi-ind-cin,us_house,us_house:IL:1,IL,1,current,15.12,,Jonathan Jackson,D,called,40.6,False,D,2026
-chi-ind-cin,us_house,us_house:IL:2,IL,2,current,21.6,,Donna Miller,D,called,45.6,False,D,2026
-chi-ind-cin,us_house,us_house:IL:7,IL,7,current,5.25,CHI,La Shawn K. Ford,D,called,78.0,False,D,2026
+chi-ind-cin,us_house,us_house:IL:1,IL,1,current,15.12,,Jonathan L. Jackson,D,called,42.6,False,D,2026
+chi-ind-cin,us_house,us_house:IL:2,IL,2,current,21.6,,Donna Miller,D,called,46.0,False,D,2026
+chi-ind-cin,us_house,us_house:IL:7,IL,7,current,5.25,CHI,La Shawn K. Ford,D,called,78.19999999999999,False,D,2026
 chi-ind-cin,us_house,us_house:IN:1,IN,1,current,48.02,DYE,Frank Mrvan,D,called,26.0,False,D,2026
 chi-ind-cin,us_house,us_house:IN:4,IN,4,current,189.67,"REN,LAF,CRF",Jim Baird,R,called,8.400000000000006,False,R,2026
 chi-ind-cin,us_house,us_house:IN:6,IN,6,current,113.14,CON,Jefferson Shreve,R,called,10.200000000000005,False,R,2026
 chi-ind-cin,us_house,us_house:IN:7,IN,7,current,34.75,IND,Andre Carson,D,called,56.6,False,D,2026
 chi-ind-cin,us_house,us_house:IN:9,IN,9,current,12.6,,Erin Houchin,R,called,10.5,False,R,2026
-chi-ind-cin,us_house,us_house:OH:1,OH,1,pending,6.54,CIN,Greg Landsman,D,called,11.5,False,D,2026
-chi-ind-cin,us_house,us_house:OH:8,OH,8,pending,40.97,,Warren Davidson,R,called,4.200000000000003,False,R,2026
+chi-ind-cin,us_house,us_house:OH:1/8,OH,1/8,pending,30.58,CIN,,,,,,,
+chi-ind-cin,us_house,us_house:OH:8/10,OH,8/10,pending,16.93,,,,,,,,
 chi-msp,state_house,state_house:IL:10,IL,10,current,1.74,,Jawaharial Williams,D,called,,False,D,2026
 chi-msp,state_house,state_house:IL:15,IL,15,current,10.57,,Michael Kelly,D,called,,False,D,2026
 chi-msp,state_house,state_house:IL:17,IL,17,current,7.93,,Jen Gong-Gershowitz,D,called,,False,D,2026
@@ -471,10 +469,10 @@ chi-msp,state_senate,state_senate:WI:5,WI,5,pending,16.27,,Robyn Vining,D,called
 chi-msp,state_senate,state_senate:WI:6,WI,6,pending,0.47,MKE,LaTonya Johnson,D,holdover,,False,D,holdover
 chi-msp,state_senate,state_senate:WI:7,WI,7,pending,15.21,MKA,Chris Larson,D,called,,False,D,2026
 chi-msp,us_house,us_house:IL:10,IL,10,current,43.64,,Brad Schneider,D,called,39.6,False,D,2026
-chi-msp,us_house,us_house:IL:3,IL,3,current,5.45,,Delia Ramirez,D,called,51.6,False,D,2026
-chi-msp,us_house,us_house:IL:5,IL,5,current,9.52,,Mike Quigley,D,called,51.0,False,D,2026
-chi-msp,us_house,us_house:IL:7,IL,7,current,4.52,CHI,La Shawn K. Ford,D,called,78.0,False,D,2026
-chi-msp,us_house,us_house:IL:9,IL,9,current,12.88,,Daniel Biss,D,called,51.6,False,D,2026
+chi-msp,us_house,us_house:IL:3,IL,3,current,5.45,,Delia Ramirez,D,called,52.8,False,D,2026
+chi-msp,us_house,us_house:IL:5,IL,5,current,9.52,,Mike Quigley,D,called,51.2,False,D,2026
+chi-msp,us_house,us_house:IL:7,IL,7,current,4.52,CHI,La Shawn K. Ford,D,called,78.19999999999999,False,D,2026
+chi-msp,us_house,us_house:IL:9,IL,9,current,12.88,,Daniel Biss,D,called,51.8,False,D,2026
 chi-msp,us_house,us_house:MN:4,MN,4,current,40.38,MSP,Betty McCollum,D,called,46.3,False,D,2026
 chi-msp,us_house,us_house:MN:5,MN,5,current,7.15,MPL,Ilhan Omar,D,called,60.3,False,D,2026
 chi-msp,us_house,us_house:WI:1,WI,1,current,48.98,,Mitchell Berman,D,called,4.0,True,R,2026
@@ -487,7 +485,7 @@ chi-msp,us_house,us_house:WI:7,WI,7,current,96.8,,Michael Alfonso,R,called,13.20
 chi-oma,state_house,state_house:IA:15,IA,15,current,4.67,,Jason Sherer,R,called,,False,R,2026
 chi-oma,state_house,state_house:IA:16,IA,16,current,48.48,,David Sieck,R,called,,False,R,2026
 chi-oma,state_house,state_house:IA:18,IA,18,current,38.45,,Tom Moore,R,called,,False,R,2026
-chi-oma,state_house,state_house:IA:19,IA,19,current,6.77,,,,uncalled,,False,R,2026
+chi-oma,state_house,state_house:IA:19,IA,19,current,6.77,,Brent Siegrist,R,leading,,False,R,2026
 chi-oma,state_house,state_house:IA:20,IA,20,current,6.14,,Eric Armstrong,D,called,,False,D,2026
 chi-oma,state_house,state_house:IA:23,IA,23,current,58.89,,Ray Sorensen,R,called,,False,R,2026
 chi-oma,state_house,state_house:IA:27,IA,27,current,2.16,,Kenan Judge,D,called,,False,D,2026
@@ -569,13 +567,13 @@ chi-oma,us_house,us_house:IA:1,IA,1,current,191.71,IOW,Christina Bohannan,D,call
 chi-oma,us_house,us_house:IA:2,IA,2,current,38.66,,Lindsay James,D,called,4.0,True,R,2026
 chi-oma,us_house,us_house:IA:3,IA,3,current,153.7,DSM,Sarah Trone Garriott,D,called,7.299999999999997,True,R,2026
 chi-oma,us_house,us_house:IA:4,IA,4,current,66.05,,Chris McGowan,R,called,18.1,False,R,2026
-chi-oma,us_house,us_house:IL:11,IL,11,current,18.3,NPV,Bill Foster,D,called,30.800000000000004,False,D,2026
-chi-oma,us_house,us_house:IL:14,IL,14,current,95.68,"PLO,MDT",Lauren Underwood,D,called,25.0,False,D,2026
+chi-oma,us_house,us_house:IL:11,IL,11,current,18.3,NPV,Bill Foster,D,called,28.40000000000001,False,D,2026
+chi-oma,us_house,us_house:IL:14,IL,14,current,95.68,"PLO,MDT",Lauren Underwood,D,called,25.200000000000003,False,D,2026
 chi-oma,us_house,us_house:IL:16,IL,16,current,86.33,"PCT,GEN",Darin LaHood,R,called,17.599999999999994,False,R,2026
 chi-oma,us_house,us_house:IL:17,IL,17,current,20.84,MOL,Eric Sorensen,D,called,20.200000000000003,False,D,2026
-chi-oma,us_house,us_house:IL:4,IL,4,current,16.94,,Patty Garcia,D,called,54.60000000000001,False,D,2026
+chi-oma,us_house,us_house:IL:4,IL,4,current,16.94,,Patty Garcia,D,called,54.7,False,D,2026
 chi-oma,us_house,us_house:IL:6,IL,6,current,13.34,,Sean Casten,D,called,25.0,False,D,2026
-chi-oma,us_house,us_house:IL:7,IL,7,current,10.03,CHI,La Shawn K. Ford,D,called,78.0,False,D,2026
+chi-oma,us_house,us_house:IL:7,IL,7,current,10.03,CHI,La Shawn K. Ford,D,called,78.19999999999999,False,D,2026
 chi-oma,us_house,us_house:NE:2,NE,2,current,1.05,OMA,Denise Powell,D,called,15.4,True,R,2026
 chi-pia,state_house,state_house:IL:1,IL,1,current,5.73,,Aarón Ortíz,D,called,,False,D,2026
 chi-pia,state_house,state_house:IL:105,IL,105,current,53.17,,Tim Ruestman,R,called,,False,R,2026
@@ -604,14 +602,14 @@ chi-pia,state_senate,state_senate:IL:43,IL,43,current,33.95,JOL,Rachel Ventura,D
 chi-pia,state_senate,state_senate:IL:46,IL,46,current,6.4,PIA,Dave Koehler,D,holdover,,False,D,holdover
 chi-pia,state_senate,state_senate:IL:5,IL,5,current,2.58,CHI,Lakesia Collins,D,called,,False,D,2026
 chi-pia,state_senate,state_senate:IL:53,IL,53,current,68.19,,Chris Balkema,R,called,,False,R,2026
-chi-pia,us_house,us_house:IL:1,IL,1,current,13.22,,Jonathan Jackson,D,called,40.6,False,D,2026
-chi-pia,us_house,us_house:IL:11,IL,11,current,10.49,,Bill Foster,D,called,30.800000000000004,False,D,2026
-chi-pia,us_house,us_house:IL:14,IL,14,current,80.49,"JOL,OTW,LSP",Lauren Underwood,D,called,25.0,False,D,2026
+chi-pia,us_house,us_house:IL:1,IL,1,current,13.22,,Jonathan L. Jackson,D,called,42.6,False,D,2026
+chi-pia,us_house,us_house:IL:11,IL,11,current,10.49,,Bill Foster,D,called,28.40000000000001,False,D,2026
+chi-pia,us_house,us_house:IL:14,IL,14,current,80.49,"JOL,OTW,LSP",Lauren Underwood,D,called,25.200000000000003,False,D,2026
 chi-pia,us_house,us_house:IL:16,IL,16,current,89.5,,Darin LaHood,R,called,17.599999999999994,False,R,2026
 chi-pia,us_house,us_house:IL:17,IL,17,current,6.4,PIA,Eric Sorensen,D,called,20.200000000000003,False,D,2026
-chi-pia,us_house,us_house:IL:4,IL,4,current,16.41,,Patty Garcia,D,called,54.60000000000001,False,D,2026
+chi-pia,us_house,us_house:IL:4,IL,4,current,16.41,,Patty Garcia,D,called,54.7,False,D,2026
 chi-pia,us_house,us_house:IL:6,IL,6,current,12.59,,Sean Casten,D,called,25.0,False,D,2026
-chi-pia,us_house,us_house:IL:7,IL,7,current,5.99,CHI,La Shawn K. Ford,D,called,78.0,False,D,2026
+chi-pia,us_house,us_house:IL:7,IL,7,current,5.99,CHI,La Shawn K. Ford,D,called,78.19999999999999,False,D,2026
 chi-pth,state_house,state_house:IL:24,IL,24,current,1.37,,Theresa Mah,D,called,,False,D,2026
 chi-pth,state_house,state_house:IL:25,IL,25,current,5.17,,Curtis Tarver,D,called,,False,D,2026
 chi-pth,state_house,state_house:IL:26,IL,26,current,3.8,,Kam Buckner,D,called,,False,D,2026
@@ -664,13 +662,13 @@ chi-pth,state_senate,state_senate:MI:25,MI,25,current,45.09,PTH,Andrew Beeler,R,
 chi-pth,state_senate,state_senate:MI:26,MI,26,current,53.66,LPE,Matt Bierlein,R,called,,False,R,2026
 chi-pth,state_senate,state_senate:MI:27,MI,27,current,28.98,FLN,John Cherry,D,called,,False,D,2026
 chi-pth,state_senate,state_senate:MI:28,MI,28,current,47.75,"ELN,DRD",Rashida Harrison,D,called,,False,D,2026
-chi-pth,us_house,us_house:IL:1,IL,1,current,14.07,,Jonathan Jackson,D,called,40.6,False,D,2026
-chi-pth,us_house,us_house:IL:2,IL,2,current,4.28,,Donna Miller,D,called,45.6,False,D,2026
-chi-pth,us_house,us_house:IL:7,IL,7,current,5.25,CHI,La Shawn K. Ford,D,called,78.0,False,D,2026
+chi-pth,us_house,us_house:IL:1,IL,1,current,14.07,,Jonathan L. Jackson,D,called,42.6,False,D,2026
+chi-pth,us_house,us_house:IL:2,IL,2,current,4.28,,Donna Miller,D,called,46.0,False,D,2026
+chi-pth,us_house,us_house:IL:7,IL,7,current,5.25,CHI,La Shawn K. Ford,D,called,78.19999999999999,False,D,2026
 chi-pth,us_house,us_house:IN:1,IN,1,current,72.02,HMI,Frank Mrvan,D,called,26.0,False,D,2026
-chi-pth,us_house,us_house:MI:4,MI,4,current,97.16,"KAL,BTL",Sean McCann,D,leading,1.8000000000000045,True,R,2026
-chi-pth,us_house,us_house:MI:5,MI,5,current,79.98,NLS,Tim Walberg,R,called,20.5,False,R,2026
-chi-pth,us_house,us_house:MI:7,MI,7,current,113.43,"ELN,DRD",William Lawrence,D,leading,3.299999999999997,True,R,2026
+chi-pth,us_house,us_house:MI:4,MI,4,current,97.16,"KAL,BTL",Sean McCann,D,called,1.8000000000000045,True,R,2026
+chi-pth,us_house,us_house:MI:5,MI,5,current,79.98,NLS,Tim Walberg,R,called,20.6,False,R,2026
+chi-pth,us_house,us_house:MI:7,MI,7,current,113.43,"ELN,DRD",William Lawrence,D,called,3.299999999999997,True,R,2026
 chi-pth,us_house,us_house:MI:8,MI,8,current,42.96,FLN,Kristen McDonald Rivet,D,called,13.6,False,D,2026
 chi-pth,us_house,us_house:MI:9,MI,9,current,84.77,"LPE,PTH",Lisa McClain,R,called,27.9,False,R,2026
 chi-stl-1,state_house,state_house:IL:1,IL,1,current,3.06,,Aarón Ortíz,D,called,,False,D,2026
@@ -682,7 +680,7 @@ chi-stl-1,state_house,state_house:IL:109,IL,109,current,19.52,,Charlie Meier,R,c
 chi-stl-1,state_house,state_house:IL:111,IL,111,current,9.91,,Amy Elik,R,called,,False,R,2026
 chi-stl-1,state_house,state_house:IL:112,IL,112,current,14.6,,Katie Stuart,D,called,,False,D,2026
 chi-stl-1,state_house,state_house:IL:113,IL,113,current,3.26,,Jay Hoffman,D,called,,False,D,2026
-chi-stl-1,state_house,state_house:IL:114,IL,114,current,3.44,ESL,,,uncalled,,False,R,2026
+chi-stl-1,state_house,state_house:IL:114,IL,114,current,3.44,ESL,George McClellan Jr.,D,leading,,True,R,2026
 chi-stl-1,state_house,state_house:IL:21,IL,21,current,1.53,,Abdelnasser Rashid,D,called,,False,D,2026
 chi-stl-1,state_house,state_house:IL:22,IL,22,current,7.39,,Angie Guerrero-Cuellar,D,called,,False,D,2026
 chi-stl-1,state_house,state_house:IL:23,IL,23,current,3.12,,Edgar González,D,called,,False,D,2026
@@ -720,29 +718,29 @@ chi-stl-1,state_senate,state_senate:IL:55,IL,55,current,19.52,,Jason Plummer,R,h
 chi-stl-1,state_senate,state_senate:IL:56,IL,56,current,24.51,,Marsia Geldert-Murphey,D,called,,True,R,2026
 chi-stl-1,state_senate,state_senate:IL:57,IL,57,current,6.7,ESL,Christopher Belt,D,called,,False,D,2026
 chi-stl-1,state_senate,state_senate:MO:5,MO,5,current,2.11,STL,Steve Roberts,D,holdover,,False,D,holdover
-chi-stl-1,us_house,us_house:IL:1,IL,1,current,31.58,,Jonathan Jackson,D,called,40.6,False,D,2026
+chi-stl-1,us_house,us_house:IL:1,IL,1,current,31.58,,Jonathan L. Jackson,D,called,42.6,False,D,2026
 chi-stl-1,us_house,us_house:IL:13,IL,13,current,89.12,"SPI,ESL",Nikki Budzinski,D,called,25.200000000000003,False,D,2026
-chi-stl-1,us_house,us_house:IL:14,IL,14,current,16.07,JOL,Lauren Underwood,D,called,25.0,False,D,2026
+chi-stl-1,us_house,us_house:IL:14,IL,14,current,16.07,JOL,Lauren Underwood,D,called,25.200000000000003,False,D,2026
 chi-stl-1,us_house,us_house:IL:15,IL,15,current,123.23,,Mary Miller,R,called,33.800000000000004,False,R,2026
 chi-stl-1,us_house,us_house:IL:16,IL,16,current,72.94,,Darin LaHood,R,called,17.599999999999994,False,R,2026
 chi-stl-1,us_house,us_house:IL:17,IL,17,current,35.6,BNL,Eric Sorensen,D,called,20.200000000000003,False,D,2026
-chi-stl-1,us_house,us_house:IL:2,IL,2,current,33.41,,Donna Miller,D,called,45.6,False,D,2026
-chi-stl-1,us_house,us_house:IL:4,IL,4,current,12.97,,Patty Garcia,D,called,54.60000000000001,False,D,2026
+chi-stl-1,us_house,us_house:IL:2,IL,2,current,33.41,,Donna Miller,D,called,46.0,False,D,2026
+chi-stl-1,us_house,us_house:IL:4,IL,4,current,12.97,,Patty Garcia,D,called,54.7,False,D,2026
 chi-stl-1,us_house,us_house:IL:6,IL,6,current,17.38,,Sean Casten,D,called,25.0,False,D,2026
-chi-stl-1,us_house,us_house:IL:7,IL,7,current,2.9,CHI,La Shawn K. Ford,D,called,78.0,False,D,2026
-chi-stl-1,us_house,us_house:MO:1,MO,1,current,2.11,STL,Wesley Bell,D,reported,67.6,False,D,2026
+chi-stl-1,us_house,us_house:IL:7,IL,7,current,2.9,CHI,La Shawn K. Ford,D,called,78.19999999999999,False,D,2026
+chi-stl-1,us_house,us_house:MO:1,MO,1,current,2.11,STL,Wesley Bell,D,called,67.6,False,D,2026
 chi-stl-3,state_house,state_house:IL:1,IL,1,current,0.83,,Aarón Ortíz,D,called,,False,D,2026
 chi-stl-3,state_house,state_house:IL:100,IL,100,current,2.29,,C.D. Davidsmeyer,R,called,,False,R,2026
 chi-stl-3,state_house,state_house:IL:101,IL,101,current,20.29,,Chris Miller,R,called,,False,R,2026
 chi-stl-3,state_house,state_house:IL:103,IL,103,current,7.94,CHM,Carol Ammons,D,called,,False,D,2026
-chi-stl-3,state_house,state_house:IL:104,IL,104,current,28.39,,,,uncalled,,False,R,2026
+chi-stl-3,state_house,state_house:IL:104,IL,104,current,28.39,,Mary Catherine Roberson,D,called,,True,R,2026
 chi-stl-3,state_house,state_house:IL:106,IL,106,current,66.52,,Jason Bunting,R,called,,False,R,2026
 chi-stl-3,state_house,state_house:IL:108,IL,108,current,81.43,,Wayne Rosenthal,R,called,,False,R,2026
 chi-stl-3,state_house,state_house:IL:109,IL,109,current,19.52,,Charlie Meier,R,called,,False,R,2026
 chi-stl-3,state_house,state_house:IL:111,IL,111,current,9.91,,Amy Elik,R,called,,False,R,2026
 chi-stl-3,state_house,state_house:IL:112,IL,112,current,14.6,,Katie Stuart,D,called,,False,D,2026
 chi-stl-3,state_house,state_house:IL:113,IL,113,current,3.26,,Jay Hoffman,D,called,,False,D,2026
-chi-stl-3,state_house,state_house:IL:114,IL,114,current,3.44,ESL,,,uncalled,,False,R,2026
+chi-stl-3,state_house,state_house:IL:114,IL,114,current,3.44,ESL,George McClellan Jr.,D,leading,,True,R,2026
 chi-stl-3,state_house,state_house:IL:24,IL,24,current,4.96,,Theresa Mah,D,called,,False,D,2026
 chi-stl-3,state_house,state_house:IL:27,IL,27,current,1.32,,Justin Slaughter,D,called,,False,D,2026
 chi-stl-3,state_house,state_house:IL:28,IL,28,current,5.23,,Bob Rita,D,called,,False,D,2026
@@ -784,25 +782,25 @@ chi-stl-3,state_senate,state_senate:IL:55,IL,55,current,19.52,,Jason Plummer,R,h
 chi-stl-3,state_senate,state_senate:IL:56,IL,56,current,24.51,,Marsia Geldert-Murphey,D,called,,True,R,2026
 chi-stl-3,state_senate,state_senate:IL:57,IL,57,current,6.7,ESL,Christopher Belt,D,called,,False,D,2026
 chi-stl-3,state_senate,state_senate:MO:5,MO,5,current,2.11,STL,Steve Roberts,D,holdover,,False,D,holdover
-chi-stl-3,us_house,us_house:IL:1,IL,1,current,27.26,,Jonathan Jackson,D,called,40.6,False,D,2026
+chi-stl-3,us_house,us_house:IL:1,IL,1,current,27.26,,Jonathan L. Jackson,D,called,42.6,False,D,2026
 chi-stl-3,us_house,us_house:IL:13,IL,13,current,201.78,"CHM,SPI,ESL",Nikki Budzinski,D,called,25.200000000000003,False,D,2026
 chi-stl-3,us_house,us_house:IL:15,IL,15,current,91.02,,Mary Miller,R,called,33.800000000000004,False,R,2026
-chi-stl-3,us_house,us_house:IL:2,IL,2,current,140.17,UPK,Donna Miller,D,called,45.6,False,D,2026
-chi-stl-3,us_house,us_house:IL:4,IL,4,current,5.6,,Patty Garcia,D,called,54.60000000000001,False,D,2026
+chi-stl-3,us_house,us_house:IL:2,IL,2,current,140.17,UPK,Donna Miller,D,called,46.0,False,D,2026
+chi-stl-3,us_house,us_house:IL:4,IL,4,current,5.6,,Patty Garcia,D,called,54.7,False,D,2026
 chi-stl-3,us_house,us_house:IL:6,IL,6,current,3.36,,Sean Casten,D,called,25.0,False,D,2026
-chi-stl-3,us_house,us_house:IL:7,IL,7,current,8.06,CHI,La Shawn K. Ford,D,called,78.0,False,D,2026
-chi-stl-3,us_house,us_house:MO:1,MO,1,current,2.11,STL,Wesley Bell,D,reported,67.6,False,D,2026
+chi-stl-3,us_house,us_house:IL:7,IL,7,current,8.06,CHI,La Shawn K. Ford,D,called,78.19999999999999,False,D,2026
+chi-stl-3,us_house,us_house:MO:1,MO,1,current,2.11,STL,Wesley Bell,D,called,67.6,False,D,2026
 chi-stl-4,state_house,state_house:IL:1,IL,1,current,0.83,,Aarón Ortíz,D,called,,False,D,2026
 chi-stl-4,state_house,state_house:IL:100,IL,100,current,31.63,,C.D. Davidsmeyer,R,called,,False,R,2026
 chi-stl-4,state_house,state_house:IL:101,IL,101,current,20.99,,Chris Miller,R,called,,False,R,2026
 chi-stl-4,state_house,state_house:IL:103,IL,103,current,6.54,CHM,Carol Ammons,D,called,,False,D,2026
-chi-stl-4,state_house,state_house:IL:104,IL,104,current,30.09,,,,uncalled,,False,R,2026
+chi-stl-4,state_house,state_house:IL:104,IL,104,current,30.09,,Mary Catherine Roberson,D,called,,True,R,2026
 chi-stl-4,state_house,state_house:IL:106,IL,106,current,66.91,,Jason Bunting,R,called,,False,R,2026
 chi-stl-4,state_house,state_house:IL:108,IL,108,current,58.01,,Wayne Rosenthal,R,called,,False,R,2026
 chi-stl-4,state_house,state_house:IL:111,IL,111,current,23.37,,Amy Elik,R,called,,False,R,2026
 chi-stl-4,state_house,state_house:IL:112,IL,112,current,5.87,,Katie Stuart,D,called,,False,D,2026
 chi-stl-4,state_house,state_house:IL:113,IL,113,current,2.47,,Jay Hoffman,D,called,,False,D,2026
-chi-stl-4,state_house,state_house:IL:114,IL,114,current,3.58,ESL,,,uncalled,,False,R,2026
+chi-stl-4,state_house,state_house:IL:114,IL,114,current,3.58,ESL,George McClellan Jr.,D,leading,,True,R,2026
 chi-stl-4,state_house,state_house:IL:24,IL,24,current,4.96,,Theresa Mah,D,called,,False,D,2026
 chi-stl-4,state_house,state_house:IL:27,IL,27,current,1.32,,Justin Slaughter,D,called,,False,D,2026
 chi-stl-4,state_house,state_house:IL:28,IL,28,current,5.23,,Bob Rita,D,called,,False,D,2026
@@ -843,25 +841,25 @@ chi-stl-4,state_senate,state_senate:IL:54,IL,54,current,58.01,,Steve McClure,R,c
 chi-stl-4,state_senate,state_senate:IL:56,IL,56,current,29.25,,Marsia Geldert-Murphey,D,called,,True,R,2026
 chi-stl-4,state_senate,state_senate:IL:57,IL,57,current,6.05,ESL,Christopher Belt,D,called,,False,D,2026
 chi-stl-4,state_senate,state_senate:MO:5,MO,5,current,2.11,STL,Steve Roberts,D,holdover,,False,D,holdover
-chi-stl-4,us_house,us_house:IL:1,IL,1,current,21.42,,Jonathan Jackson,D,called,40.6,False,D,2026
+chi-stl-4,us_house,us_house:IL:1,IL,1,current,21.42,,Jonathan L. Jackson,D,called,42.6,False,D,2026
 chi-stl-4,us_house,us_house:IL:13,IL,13,current,257.0,"CHM,DEC,SPI,ESL",Nikki Budzinski,D,called,25.200000000000003,False,D,2026
 chi-stl-4,us_house,us_house:IL:15,IL,15,current,30.37,,Mary Miller,R,called,33.800000000000004,False,R,2026
-chi-stl-4,us_house,us_house:IL:2,IL,2,current,146.17,UPK,Donna Miller,D,called,45.6,False,D,2026
-chi-stl-4,us_house,us_house:IL:4,IL,4,current,5.6,,Patty Garcia,D,called,54.60000000000001,False,D,2026
+chi-stl-4,us_house,us_house:IL:2,IL,2,current,146.17,UPK,Donna Miller,D,called,46.0,False,D,2026
+chi-stl-4,us_house,us_house:IL:4,IL,4,current,5.6,,Patty Garcia,D,called,54.7,False,D,2026
 chi-stl-4,us_house,us_house:IL:6,IL,6,current,3.36,,Sean Casten,D,called,25.0,False,D,2026
-chi-stl-4,us_house,us_house:IL:7,IL,7,current,8.06,CHI,La Shawn K. Ford,D,called,78.0,False,D,2026
-chi-stl-4,us_house,us_house:MO:1,MO,1,current,2.11,STL,Wesley Bell,D,reported,67.6,False,D,2026
+chi-stl-4,us_house,us_house:IL:7,IL,7,current,8.06,CHI,La Shawn K. Ford,D,called,78.19999999999999,False,D,2026
+chi-stl-4,us_house,us_house:MO:1,MO,1,current,2.11,STL,Wesley Bell,D,called,67.6,False,D,2026
 chi-stl-5,state_house,state_house:IL:1,IL,1,current,3.06,,Aarón Ortíz,D,called,,False,D,2026
 chi-stl-5,state_house,state_house:IL:100,IL,100,current,31.63,,C.D. Davidsmeyer,R,called,,False,R,2026
 chi-stl-5,state_house,state_house:IL:101,IL,101,current,20.58,,Chris Miller,R,called,,False,R,2026
 chi-stl-5,state_house,state_house:IL:103,IL,103,current,6.74,CHM,Carol Ammons,D,called,,False,D,2026
-chi-stl-5,state_house,state_house:IL:104,IL,104,current,28.9,,,,uncalled,,False,R,2026
+chi-stl-5,state_house,state_house:IL:104,IL,104,current,28.9,,Mary Catherine Roberson,D,called,,True,R,2026
 chi-stl-5,state_house,state_house:IL:106,IL,106,current,63.91,,Jason Bunting,R,called,,False,R,2026
 chi-stl-5,state_house,state_house:IL:108,IL,108,current,58.01,,Wayne Rosenthal,R,called,,False,R,2026
 chi-stl-5,state_house,state_house:IL:111,IL,111,current,23.37,,Amy Elik,R,called,,False,R,2026
 chi-stl-5,state_house,state_house:IL:112,IL,112,current,5.87,,Katie Stuart,D,called,,False,D,2026
 chi-stl-5,state_house,state_house:IL:113,IL,113,current,2.47,,Jay Hoffman,D,called,,False,D,2026
-chi-stl-5,state_house,state_house:IL:114,IL,114,current,3.58,ESL,,,uncalled,,False,R,2026
+chi-stl-5,state_house,state_house:IL:114,IL,114,current,3.58,ESL,George McClellan Jr.,D,leading,,True,R,2026
 chi-stl-5,state_house,state_house:IL:21,IL,21,current,1.53,,Abdelnasser Rashid,D,called,,False,D,2026
 chi-stl-5,state_house,state_house:IL:22,IL,22,current,7.39,,Angie Guerrero-Cuellar,D,called,,False,D,2026
 chi-stl-5,state_house,state_house:IL:23,IL,23,current,3.12,,Edgar González,D,called,,False,D,2026
@@ -901,15 +899,15 @@ chi-stl-5,state_senate,state_senate:IL:54,IL,54,current,58.01,,Steve McClure,R,c
 chi-stl-5,state_senate,state_senate:IL:56,IL,56,current,29.25,,Marsia Geldert-Murphey,D,called,,True,R,2026
 chi-stl-5,state_senate,state_senate:IL:57,IL,57,current,6.05,ESL,Christopher Belt,D,called,,False,D,2026
 chi-stl-5,state_senate,state_senate:MO:5,MO,5,current,2.11,STL,Steve Roberts,D,holdover,,False,D,holdover
-chi-stl-5,us_house,us_house:IL:1,IL,1,current,33.51,,Jonathan Jackson,D,called,40.6,False,D,2026
+chi-stl-5,us_house,us_house:IL:1,IL,1,current,33.51,,Jonathan L. Jackson,D,called,42.6,False,D,2026
 chi-stl-5,us_house,us_house:IL:13,IL,13,current,256.76,"CHM,DEC,SPI,ESL",Nikki Budzinski,D,called,25.200000000000003,False,D,2026
-chi-stl-5,us_house,us_house:IL:14,IL,14,current,22.96,JOL,Lauren Underwood,D,called,25.0,False,D,2026
+chi-stl-5,us_house,us_house:IL:14,IL,14,current,22.96,JOL,Lauren Underwood,D,called,25.200000000000003,False,D,2026
 chi-stl-5,us_house,us_house:IL:15,IL,15,current,29.89,,Mary Miller,R,called,33.800000000000004,False,R,2026
-chi-stl-5,us_house,us_house:IL:2,IL,2,current,103.6,,Donna Miller,D,called,45.6,False,D,2026
-chi-stl-5,us_house,us_house:IL:4,IL,4,current,12.97,,Patty Garcia,D,called,54.60000000000001,False,D,2026
+chi-stl-5,us_house,us_house:IL:2,IL,2,current,103.6,,Donna Miller,D,called,46.0,False,D,2026
+chi-stl-5,us_house,us_house:IL:4,IL,4,current,12.97,,Patty Garcia,D,called,54.7,False,D,2026
 chi-stl-5,us_house,us_house:IL:6,IL,6,current,17.38,,Sean Casten,D,called,25.0,False,D,2026
-chi-stl-5,us_house,us_house:IL:7,IL,7,current,2.9,CHI,La Shawn K. Ford,D,called,78.0,False,D,2026
-chi-stl-5,us_house,us_house:MO:1,MO,1,current,2.11,STL,Wesley Bell,D,reported,67.6,False,D,2026
+chi-stl-5,us_house,us_house:IL:7,IL,7,current,2.9,CHI,La Shawn K. Ford,D,called,78.19999999999999,False,D,2026
+chi-stl-5,us_house,us_house:MO:1,MO,1,current,2.11,STL,Wesley Bell,D,called,67.6,False,D,2026
 chi-stl-7,state_house,state_house:IL:1,IL,1,current,3.06,,Aarón Ortíz,D,called,,False,D,2026
 chi-stl-7,state_house,state_house:IL:100,IL,100,current,2.29,,C.D. Davidsmeyer,R,called,,False,R,2026
 chi-stl-7,state_house,state_house:IL:105,IL,105,current,40.2,,Tim Ruestman,R,called,,False,R,2026
@@ -919,7 +917,7 @@ chi-stl-7,state_house,state_house:IL:109,IL,109,current,19.52,,Charlie Meier,R,c
 chi-stl-7,state_house,state_house:IL:111,IL,111,current,9.91,,Amy Elik,R,called,,False,R,2026
 chi-stl-7,state_house,state_house:IL:112,IL,112,current,14.6,,Katie Stuart,D,called,,False,D,2026
 chi-stl-7,state_house,state_house:IL:113,IL,113,current,3.26,,Jay Hoffman,D,called,,False,D,2026
-chi-stl-7,state_house,state_house:IL:114,IL,114,current,3.44,ESL,,,uncalled,,False,R,2026
+chi-stl-7,state_house,state_house:IL:114,IL,114,current,3.44,ESL,George McClellan Jr.,D,leading,,True,R,2026
 chi-stl-7,state_house,state_house:IL:21,IL,21,current,1.53,,Abdelnasser Rashid,D,called,,False,D,2026
 chi-stl-7,state_house,state_house:IL:22,IL,22,current,7.39,,Angie Guerrero-Cuellar,D,called,,False,D,2026
 chi-stl-7,state_house,state_house:IL:23,IL,23,current,3.12,,Edgar González,D,called,,False,D,2026
@@ -959,17 +957,17 @@ chi-stl-7,state_senate,state_senate:IL:55,IL,55,current,19.52,,Jason Plummer,R,h
 chi-stl-7,state_senate,state_senate:IL:56,IL,56,current,24.51,,Marsia Geldert-Murphey,D,called,,True,R,2026
 chi-stl-7,state_senate,state_senate:IL:57,IL,57,current,6.7,ESL,Christopher Belt,D,called,,False,D,2026
 chi-stl-7,state_senate,state_senate:MO:5,MO,5,current,2.11,STL,Steve Roberts,D,holdover,,False,D,holdover
-chi-stl-7,us_house,us_house:IL:1,IL,1,current,31.58,,Jonathan Jackson,D,called,40.6,False,D,2026
+chi-stl-7,us_house,us_house:IL:1,IL,1,current,31.58,,Jonathan L. Jackson,D,called,42.6,False,D,2026
 chi-stl-7,us_house,us_house:IL:13,IL,13,current,88.52,"SPI,ESL",Nikki Budzinski,D,called,25.200000000000003,False,D,2026
-chi-stl-7,us_house,us_house:IL:14,IL,14,current,16.07,JOL,Lauren Underwood,D,called,25.0,False,D,2026
+chi-stl-7,us_house,us_house:IL:14,IL,14,current,16.07,JOL,Lauren Underwood,D,called,25.200000000000003,False,D,2026
 chi-stl-7,us_house,us_house:IL:15,IL,15,current,117.13,,Mary Miller,R,called,33.800000000000004,False,R,2026
 chi-stl-7,us_house,us_house:IL:16,IL,16,current,147.87,,Darin LaHood,R,called,17.599999999999994,False,R,2026
 chi-stl-7,us_house,us_house:IL:17,IL,17,current,24.43,"BNL,PIA",Eric Sorensen,D,called,20.200000000000003,False,D,2026
-chi-stl-7,us_house,us_house:IL:2,IL,2,current,33.41,,Donna Miller,D,called,45.6,False,D,2026
-chi-stl-7,us_house,us_house:IL:4,IL,4,current,12.97,,Patty Garcia,D,called,54.60000000000001,False,D,2026
+chi-stl-7,us_house,us_house:IL:2,IL,2,current,33.41,,Donna Miller,D,called,46.0,False,D,2026
+chi-stl-7,us_house,us_house:IL:4,IL,4,current,12.97,,Patty Garcia,D,called,54.7,False,D,2026
 chi-stl-7,us_house,us_house:IL:6,IL,6,current,17.38,,Sean Casten,D,called,25.0,False,D,2026
-chi-stl-7,us_house,us_house:IL:7,IL,7,current,2.9,CHI,La Shawn K. Ford,D,called,78.0,False,D,2026
-chi-stl-7,us_house,us_house:MO:1,MO,1,current,2.11,STL,Wesley Bell,D,reported,67.6,False,D,2026
+chi-stl-7,us_house,us_house:IL:7,IL,7,current,2.9,CHI,La Shawn K. Ford,D,called,78.19999999999999,False,D,2026
+chi-stl-7,us_house,us_house:MO:1,MO,1,current,2.11,STL,Wesley Bell,D,called,67.6,False,D,2026
 cle-cin,state_house,state_house:OH:1,OH,1,pending,0.82,,Dontavius Jarrells,D,called,,False,D,2026
 cle-cin,state_house,state_house:OH:12,OH,12,pending,30.15,,Brian W Stewart,R,called,,False,R,2026
 cle-cin,state_house,state_house:OH:13,OH,13,pending,7.51,,Tristan Rader,D,called,,False,D,2026
@@ -1019,19 +1017,22 @@ cle-cin,state_senate,state_senate:OH:6,OH,6,pending,28.35,DAY,Willis Blackshear,
 cle-cin,state_senate,state_senate:OH:7,OH,7,pending,5.35,,Zac Haines,R,called,,False,R,2026
 cle-cin,state_senate,state_senate:OH:8,OH,8,pending,7.92,SHV,Bill Blessing,R,holdover,,False,R,holdover
 cle-cin,state_senate,state_senate:OH:9,OH,9,pending,19.15,CIN,Catherine Ingram,D,called,,False,D,2026
-cle-cin,us_house,us_house:OH:1,OH,1,pending,22.52,"SHV,CIN",Greg Landsman,D,called,11.5,False,D,2026
-cle-cin,us_house,us_house:OH:10,OH,10,pending,60.78,"SPF,DAY",Kristina Knickerbocker,D,called,1.5999999999999943,True,R,2026
-cle-cin,us_house,us_house:OH:11,OH,11,pending,19.21,CLE,Shontel M. Brown,D,called,67.0,False,D,2026
-cle-cin,us_house,us_house:OH:15,OH,15,pending,76.46,CBUS,Don Leonard,D,called,6.600000000000001,True,R,2026
-cle-cin,us_house,us_house:OH:3,OH,3,pending,18.18,,Joyce Beatty,D,called,54.400000000000006,False,D,2026
-cle-cin,us_house,us_house:OH:4,OH,4,pending,95.78,DLW,Jim Jordan,R,called,33.2,False,R,2026
-cle-cin,us_house,us_house:OH:5,OH,5,pending,85.76,,Bob Latta,R,called,11.699999999999996,False,R,2026
-cle-cin,us_house,us_house:OH:7,OH,7,pending,6.74,,Brian Poindexter,D,called,9.799999999999995,True,R,2026
-cle-cin,us_house,us_house:OH:8,OH,8,pending,39.51,,Warren Davidson,R,called,4.200000000000003,False,R,2026
+cle-cin,us_house,us_house:OH:1,OH,1,current,5.35,,Greg Landsman,D,called,11.5,False,D,2026
+cle-cin,us_house,us_house:OH:1/8,OH,1/8,pending,27.07,"SHV,CIN",,,,,,,
+cle-cin,us_house,us_house:OH:10,OH,10,current,44.01,DAY,Kristina Knickerbocker,D,called,1.5999999999999943,True,R,2026
+cle-cin,us_house,us_house:OH:15,OH,15,current,28.08,,Don Leonard,D,called,6.600000000000001,True,R,2026
+cle-cin,us_house,us_house:OH:3/15,OH,3/15,pending,41.76,CBUS,,,,,,,
+cle-cin,us_house,us_house:OH:4,OH,4,current,37.06,,Jim Jordan,R,called,33.2,False,R,2026
+cle-cin,us_house,us_house:OH:4/12,OH,4/12,pending,36.01,DLW,,,,,,,
+cle-cin,us_house,us_house:OH:4/15,OH,4/15,pending,41.57,SPF,,,,,,,
+cle-cin,us_house,us_house:OH:4/5,OH,4/5,pending,22.72,,,,,,,,
+cle-cin,us_house,us_house:OH:5,OH,5,current,85.76,,Bob Latta,R,called,11.699999999999996,False,R,2026
+cle-cin,us_house,us_house:OH:7/11,OH,7/11,pending,25.95,CLE,,,,,,,
+cle-cin,us_house,us_house:OH:8/10,OH,8/10,pending,29.61,,,,,,,,
 cle-det,state_house,state_house:MI:1,MI,1,pending,12.41,,Tyrone Carter,D,called,,False,,2026
 cle-det,state_house,state_house:MI:2,MI,2,pending,2.97,,Joanna Whaley,D,called,,False,D,2026
 cle-det,state_house,state_house:MI:27,MI,27,pending,18.22,,Jaime Churches,D,called,,True,R,2026
-cle-det,state_house,state_house:MI:28,MI,28,pending,18.3,,,,uncalled,,False,R,2026
+cle-det,state_house,state_house:MI:28,MI,28,pending,18.3,,Sherry A. Berecz,D,called,,True,R,2026
 cle-det,state_house,state_house:MI:29,MI,29,pending,1.4,,Jim DeSana,R,called,,False,R,2026
 cle-det,state_house,state_house:MI:30,MI,30,current,27.08,MON,Will Bruck,R,called,,False,R,2026
 cle-det,state_house,state_house:MI:8,MI,8,pending,1.77,DET,Chris Gilmer-Hill,D,called,,False,D,2026
@@ -1057,12 +1058,12 @@ cle-det,state_senate,state_senate:OH:2,OH,2,pending,69.84,SKY,Theresa Gavarone,R
 cle-det,state_senate,state_senate:OH:23,OH,23,pending,13.64,CLE,Bride Sweeney,D,called,,False,D,2026
 cle-det,state_senate,state_senate:OH:24,OH,24,pending,15.58,,Tom Patton,R,holdover,,False,R,holdover
 cle-det,us_house,us_house:MI:13,MI,13,current,22.92,DET,Donavan McKinney,D,called,56.5,False,D,2026
-cle-det,us_house,us_house:MI:5,MI,5,current,44.17,MON,Tim Walberg,R,called,20.5,False,R,2026
+cle-det,us_house,us_house:MI:5,MI,5,current,44.17,MON,Tim Walberg,R,called,20.6,False,R,2026
 cle-det,us_house,us_house:MI:6,MI,6,current,15.07,,Debbie Dingell,D,called,37.10000000000001,False,D,2026
-cle-det,us_house,us_house:OH:11,OH,11,pending,19.21,CLE,Shontel M. Brown,D,called,67.0,False,D,2026
-cle-det,us_house,us_house:OH:5,OH,5,pending,32.18,ELY,Bob Latta,R,called,11.699999999999996,False,R,2026
-cle-det,us_house,us_house:OH:7,OH,7,pending,10.0,,Brian Poindexter,D,called,9.799999999999995,True,R,2026
-cle-det,us_house,us_house:OH:9,OH,9,pending,86.65,"SKY,TOL",Marcy Kaptur,D,called,5.400000000000006,False,D,2026
+cle-det,us_house,us_house:OH:5,OH,5,current,32.18,ELY,Bob Latta,R,called,11.699999999999996,False,R,2026
+cle-det,us_house,us_house:OH:5/9,OH,5/9,pending,3.43,,,,,,,,
+cle-det,us_house,us_house:OH:7/11,OH,7/11,pending,29.21,CLE,,,,,,,
+cle-det,us_house,us_house:OH:9,OH,9,current,83.22,"SKY,TOL",Marcy Kaptur,D,called,5.5,False,D,2026
 ind-lou,state_house,state_house:IN:47,IN,47,current,23.49,,Robb Greene,R,called,,False,R,2026
 ind-lou,state_house,state_house:IN:58,IN,58,current,11.7,,John Reed,R,called,,False,R,2026
 ind-lou,state_house,state_house:IN:59,IN,59,current,28.34,CLI,Ryan Lauer,R,called,,False,R,2026
@@ -1083,7 +1084,7 @@ ind-lou,state_senate,state_senate:KY:33,KY,33,current,1.96,LOU,Gerald Neal,D,hol
 ind-lou,us_house,us_house:IN:6,IN,6,current,69.08,CLI,Jefferson Shreve,R,called,10.200000000000005,False,R,2026
 ind-lou,us_house,us_house:IN:7,IN,7,current,5.22,IND,Andre Carson,D,called,56.6,False,D,2026
 ind-lou,us_house,us_house:IN:9,IN,9,current,107.85,SEY,Erin Houchin,R,called,10.5,False,R,2026
-ind-lou,us_house,us_house:KY:3,KY,3,current,1.96,LOU,Morgan McGarvey,D,reported,40.6,False,D,2026
+ind-lou,us_house,us_house:KY:3,KY,3,current,1.96,LOU,Morgan McGarvey,D,called,40.6,False,D,2026
 mke-grb,state_house,state_house:WI:13,WI,13,pending,10.93,,Amy Zimmerman,D,called,,False,D,2026
 mke-grb,state_house,state_house:WI:14,WI,14,pending,5.34,,Angelito Tenorio,D,called,,False,D,2026
 mke-grb,state_house,state_house:WI:16,WI,16,pending,0.2,MKE,Kalan Haywood,D,called,,False,D,2026
@@ -1148,7 +1149,7 @@ msp-dul,state_senate,state_senate:WI:25,WI,25,pending,34.63,SUP,Erik Severson,R,
 msp-dul,us_house,us_house:MN:3,MN,3,current,11.11,CRP,Kelly Morrison,D,called,28.200000000000003,False,D,2026
 msp-dul,us_house,us_house:MN:5,MN,5,current,17.42,MPL,Ilhan Omar,D,called,60.3,False,D,2026
 msp-dul,us_house,us_house:MN:6,MN,6,current,22.57,,Tom Emmer,R,called,11.5,False,R,2026
-msp-dul,us_house,us_house:MN:8,MN,8,current,156.27,"CMB,HNK,DUL",Pete Stauber,R,called,6.300000000000004,False,R,2026
+msp-dul,us_house,us_house:MN:8,MN,8,current,156.27,"CMB,HNK,DUL",Pete Stauber,R,called,6.100000000000001,False,R,2026
 msp-dul,us_house,us_house:WI:7,WI,7,current,34.63,SUP,Michael Alfonso,R,called,13.200000000000005,False,R,2026
 stl-kc,state_house,state_house:MO:109,MO,109,current,53.47,WAH,John Simmons,R,called,,False,R,2026
 stl-kc,state_house,state_house:MO:111,MO,111,current,1.65,,Cecelie Williams,R,called,,False,R,2026
@@ -1195,8 +1196,8 @@ stl-kc,state_senate,state_senate:MO:6,MO,6,current,86.81,JEF,Jake Vogel,R,called
 stl-kc,state_senate,state_senate:MO:7,MO,7,current,3.07,KCY,Patty Lewis,D,holdover,,False,D,holdover
 stl-kc,state_senate,state_senate:MO:8,MO,8,current,14.69,LEE,Keri Ingle,D,called,,True,R,2026
 stl-kc,state_senate,state_senate:MO:9,MO,9,current,13.25,,Barbara Washington,D,holdover,,False,D,holdover
-stl-kc,us_house,us_house:MO:1,MO,1,current,14.17,STL,Wesley Bell,D,reported,67.6,False,D,2026
-stl-kc,us_house,us_house:MO:2,MO,2,current,100.04,"KWD,WAH",Fred Wellman,D,reported,4.899999999999999,True,R,2026
-stl-kc,us_house,us_house:MO:3,MO,3,current,152.88,"HEM,JEF",Bob Onder,R,reported,8.5,False,R,2026
-stl-kc,us_house,us_house:MO:4,MO,4,current,129.92,"SED,WAR",Mark Alford,R,reported,25.300000000000004,False,R,2026
-stl-kc,us_house,us_house:MO:5,MO,5,current,46.12,"LEE,IDP,KCY",Emanuel Cleaver II,D,reported,41.4,False,D,2026
+stl-kc,us_house,us_house:MO:1,MO,1,current,14.17,STL,Wesley Bell,D,called,67.6,False,D,2026
+stl-kc,us_house,us_house:MO:2,MO,2,current,100.04,"KWD,WAH",Fred Wellman,D,called,4.899999999999999,True,R,2026
+stl-kc,us_house,us_house:MO:3,MO,3,current,152.88,"HEM,JEF",Bob Onder,R,called,8.5,False,R,2026
+stl-kc,us_house,us_house:MO:4,MO,4,current,129.92,"SED,WAR",Mark Alford,R,called,25.300000000000004,False,R,2026
+stl-kc,us_house,us_house:MO:5,MO,5,current,46.12,"LEE,IDP,KCY",Emanuel Cleaver II,D,called,41.4,False,D,2026

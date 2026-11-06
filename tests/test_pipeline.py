@@ -96,3 +96,49 @@ def test_chamber_control_majority():
     assert wi.loc["state_senate", "control"] == "D"
     assert wi.loc["state_house", "control"] == "D"
     assert wi.loc["state_senate", "D"] == 18
+
+
+# ------------------------------------------------------------------ Ohio 2026 map
+OHIO_COUNTIES = 88
+
+
+def test_ohio_composition_is_complete():
+    import yaml
+    comp = yaml.safe_load(open(C.ROOT / "config" / "ohio_cd_2026_counties.yaml"))
+    whole = [c for cs in comp["whole"].values() for c in (cs or [])]
+    split = comp["split"]
+    listed = whole + list(split)
+    assert len(listed) == len(set(listed)) == OHIO_COUNTIES
+    assert all(len(ds) == 2 and ds[0] != ds[1] for ds in split.values())
+    present = {int(d) for d, cs in comp["whole"].items() if cs} | {d for ds in split.values() for d in ds}
+    assert present == set(range(1, comp["districts"] + 1)), "every district needs territory"
+    # District 4 per the Commission's BAF (via allen-county-ohio): 11 whole + Clark, Delaware, Richland.
+    assert len(comp["whole"][4]) == 11
+    assert {c for c, ds in split.items() if 4 in ds} == {"Clark", "Delaware", "Richland"}
+
+
+def test_read_baf_csv_and_zip(tmp_path):
+    import zipfile
+    from hsr.districts import read_baf
+    csv = tmp_path / "baf.csv"
+    csv.write_text("Block,DistrictID:1\n390010001001000,2\n390010001001001,2\n")
+    df = read_baf(csv)
+    assert df.to_dict("records") == [{"block": "390010001001000", "district": "2"},
+                                     {"block": "390010001001001", "district": "2"}]
+    z = tmp_path / "plan.zip"
+    with zipfile.ZipFile(z, "w") as zz:
+        zz.writestr("stats.pdf", b"%PDF")
+        zz.writestr("October 31 2025 CD BAF.csv", csv.read_text())
+    assert len(read_baf(z)) == 2
+
+
+def test_baf_to_block_groups_majority_and_ties():
+    from hsr.districts import baf_to_block_groups
+    baf = pd.DataFrame({
+        "block": ["390010001001000", "390010001001001", "390010001001002",   # bg ...0011: 2,2,3
+                  "390010001002000", "390010001002001"],                    # bg ...0012: 3,4 (tie)
+        "district": ["2", "2", "3", "4", "3"]})
+    best, split = baf_to_block_groups(baf)
+    got = dict(zip(best.bg, best.district))
+    assert got == {"390010001001": "2", "390010001002": "3"}
+    assert split == 2

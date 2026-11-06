@@ -1,27 +1,27 @@
 # Midwest HSR political pathway: data tables
 
-_Generated from the pipeline. Results snapshot: 2026-11-05 (unofficial). Boundary vintage: {'congress': 2023, 'state_senate': 2023, 'state_house': 2023, 'states': 2023}. Rail network: natural_earth._
+_Generated from the pipeline. Results snapshot: 2026-11-06 (unofficial). Boundary vintage: {'congress': 2023, 'state_senate': 2023, 'state_house': 2023, 'states': 2023, 'counties': 2023}. Rail network: natural_earth._
 
 ## 1. Network at a glance
 
 - High-speed backbone (default options): **3,084 km** across 6 corridors.
-- U.S. House districts touched: **46** (25 D, 11 R, 0 other, 10 on boundaries pending update; 3 flipped to D, 0 flipped to R, 2 decided by <5 pts).
+- U.S. House districts touched: **50** (29 D, 13 R, 0 other, 8 on boundaries pending update; 5 flipped to D, 0 flipped to R, 3 decided by <5 pts).
 - state senate districts touched: **112** (45 D, 24 R, 0 other, 43 on boundaries pending update; 4 flipped to D, 0 flipped to R, 0 decided by <5 pts).
-- state house districts touched: **194** (77 D, 32 R, 0 other, 83 on boundaries pending update; 7 flipped to D, 0 flipped to R, 0 decided by <5 pts).
+- state house districts touched: **194** (78 D, 32 R, 0 other, 83 on boundaries pending update; 8 flipped to D, 0 flipped to R, 0 decided by <5 pts).
 
 ## 2. Who governs each state after Nov. 3, 2026
 
 | State | Governor | State senate (D–R) | State house (D–R) | Status |
 |---|---|---|---|---|
-| IL | JB Pritzker (D) | D 45–13 (1 uncalled) | D 80–32 (6 uncalled) | D trifecta |
+| IL | JB Pritzker (D) | D 45–13 (1 uncalled) | D 82–32 (4 uncalled) | D trifecta |
 | IN | Mike Braun (R) | R 15–34 (1 uncalled) | R 45–52 (3 uncalled) | R trifecta |
-| IA | Rob Sand (D) (flip) | R 17–32 (1 uncalled) | R 43–52 (5 uncalled) | divided |
-| KS | Cindy Holscher (D) (leading, not called) | R 9–31 | R 49–65 (11 uncalled) | divided (governor race not called) |
+| IA | Rob Sand (D) (flip) | R 17–32 (1 uncalled) | R 44–55 (1 uncalled) | divided |
+| KS | Cindy Holscher (D) (leading, not called) | R 9–31 | R 52–66 (7 uncalled) | divided (governor race not called) |
 | KY | Andy Beshear (D) | R 8–30 | R 26–73 (1 uncalled) | divided |
-| MI | Jocelyn Benson (D) | D 22–15 (1 uncalled) | D 60–46 (4 uncalled) | D trifecta |
-| MN | Amy Klobuchar (D) | D 37–26 (4 uncalled) | D 77–55 (2 uncalled) | D trifecta |
+| MI | Jocelyn Benson (D) | D 23–15 | D 62–47 (1 uncalled) | D trifecta |
+| MN | Amy Klobuchar (D) | D 39–26 (2 uncalled) | D 77–55 (2 uncalled) | D trifecta |
 | MO | Mike Kehoe (R) | R 12–21 (1 uncalled) | R 68–93 (2 uncalled) | R trifecta |
-| NE | Jim Pillen (R) (leading, not called) | nonpartisan | — | R governor; nonpartisan legislature (governor race not called) |
+| NE | Jim Pillen (R) | nonpartisan | — | R governor; nonpartisan legislature |
 | OH | Amy Acton (D) (flip) | R 11–21 (1 uncalled) | R 42–52 (5 uncalled) | divided |
 | WI | David Crowley (D) | D 18–15 | D 53–46 | D trifecta |
 
@@ -37,7 +37,7 @@ U.S. House districts: 11 D / 3 R; state legislative: 40 D / 0 R.
 
 | State | km | Governor | Trifecta | U.S. senators | U.S. House along line (margin) |
 |---|---|---|---|---|---|
-| IL | 76 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-3 Delia Ramirez (D, +51.6); IL-5 Mike Quigley (D, +51.0); IL-7 La Shawn K. Ford (D, +78.0); IL-9 Daniel Biss (D, +51.6); IL-10 Brad Schneider (D, +39.6) |
+| IL | 76 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-3 Delia Ramirez (D, +52.8); IL-5 Mike Quigley (D, +51.2); IL-7 La Shawn K. Ford (D, +78.2); IL-9 Daniel Biss (D, +51.8); IL-10 Brad Schneider (D, +39.6) |
 | WI | 581 | David Crowley (D) | D trifecta | Ron Johnson (R), Tammy Baldwin (D) | WI-1 Mitchell Berman (D, +4.0) *flip*; WI-2 Mark Pocan (D); WI-3 Rebecca Cooke (D, +6.6) *flip*; WI-4 Gwen Moore (D, +62.5); WI-5 Scott Fitzgerald (R, +20.0); WI-6 Glenn Grothman (R, +9.5); WI-7 Michael Alfonso (R, +13.2) |
 | MN | 48 | Amy Klobuchar (D) | D trifecta | Peggy Flanagan (D), Amy Klobuchar (D) | MN-4 Betty McCollum (D, +46.3); MN-5 Ilhan Omar (D, +60.3) |
 
@@ -49,11 +49,11 @@ Seats along this line decided by under 5 points: WI:1 Mitchell Berman (D, +4.0)
 
 Status: Feasibility study by the Illinois High-Speed Rail Commission (created 2021); eight route options identified in 2025, study due mid-2026. No route selected.
 
-U.S. House districts: 9 D / 2 R; state legislative: 29 D / 17 R.
+U.S. House districts: 9 D / 2 R; state legislative: 30 D / 17 R.
 
 | State | km | Governor | Trifecta | U.S. senators | U.S. House along line (margin) |
 |---|---|---|---|---|---|
-| IL | 435 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-1 Jonathan Jackson (D, +40.6); IL-2 Donna Miller (D, +45.6); IL-4 Patty Garcia (D, +54.6); IL-6 Sean Casten (D, +25.0); IL-7 La Shawn K. Ford (D, +78.0); IL-13 Nikki Budzinski (D, +25.2); IL-14 Lauren Underwood (D, +25.0); IL-15 Mary Miller (R, +33.8); IL-16 Darin LaHood (R, +17.6); IL-17 Eric Sorensen (D, +20.2) |
+| IL | 435 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-1 Jonathan L. Jackson (D, +42.6); IL-2 Donna Miller (D, +46.0); IL-4 Patty Garcia (D, +54.7); IL-6 Sean Casten (D, +25.0); IL-7 La Shawn K. Ford (D, +78.2); IL-13 Nikki Budzinski (D, +25.2); IL-14 Lauren Underwood (D, +25.2); IL-15 Mary Miller (R, +33.8); IL-16 Darin LaHood (R, +17.6); IL-17 Eric Sorensen (D, +20.2) |
 | MO | 2 | Mike Kehoe (R) | R trifecta | Eric Schmitt (R), Josh Hawley (R) | MO-1 Wesley Bell (D, +67.6) |
 
 ### Chicago – Champaign – Springfield – St. Louis (via University Park)
@@ -62,11 +62,11 @@ U.S. House districts: 9 D / 2 R; state legislative: 29 D / 17 R.
 
 Status: One of eight options in the Illinois HSR feasibility study.
 
-U.S. House districts: 7 D / 1 R; state legislative: 35 D / 16 R.
+U.S. House districts: 7 D / 1 R; state legislative: 37 D / 16 R.
 
 | State | km | Governor | Trifecta | U.S. senators | U.S. House along line (margin) |
 |---|---|---|---|---|---|
-| IL | 477 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-1 Jonathan Jackson (D, +40.6); IL-2 Donna Miller (D, +45.6); IL-4 Patty Garcia (D, +54.6); IL-6 Sean Casten (D, +25.0); IL-7 La Shawn K. Ford (D, +78.0); IL-13 Nikki Budzinski (D, +25.2); IL-15 Mary Miller (R, +33.8) |
+| IL | 477 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-1 Jonathan L. Jackson (D, +42.6); IL-2 Donna Miller (D, +46.0); IL-4 Patty Garcia (D, +54.7); IL-6 Sean Casten (D, +25.0); IL-7 La Shawn K. Ford (D, +78.2); IL-13 Nikki Budzinski (D, +25.2); IL-15 Mary Miller (R, +33.8) |
 | MO | 2 | Mike Kehoe (R) | R trifecta | Eric Schmitt (R), Josh Hawley (R) | MO-1 Wesley Bell (D, +67.6) |
 
 ### Chicago – Champaign – Decatur – Springfield – St. Louis (via University Park, greenfield)
@@ -75,11 +75,11 @@ U.S. House districts: 7 D / 1 R; state legislative: 35 D / 16 R.
 
 Status: One of eight options in the Illinois HSR feasibility study.
 
-U.S. House districts: 7 D / 1 R; state legislative: 35 D / 14 R.
+U.S. House districts: 7 D / 1 R; state legislative: 37 D / 14 R.
 
 | State | km | Governor | Trifecta | U.S. senators | U.S. House along line (margin) |
 |---|---|---|---|---|---|
-| IL | 472 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-1 Jonathan Jackson (D, +40.6); IL-2 Donna Miller (D, +45.6); IL-4 Patty Garcia (D, +54.6); IL-6 Sean Casten (D, +25.0); IL-7 La Shawn K. Ford (D, +78.0); IL-13 Nikki Budzinski (D, +25.2); IL-15 Mary Miller (R, +33.8) |
+| IL | 472 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-1 Jonathan L. Jackson (D, +42.6); IL-2 Donna Miller (D, +46.0); IL-4 Patty Garcia (D, +54.7); IL-6 Sean Casten (D, +25.0); IL-7 La Shawn K. Ford (D, +78.2); IL-13 Nikki Budzinski (D, +25.2); IL-15 Mary Miller (R, +33.8) |
 | MO | 2 | Mike Kehoe (R) | R trifecta | Eric Schmitt (R), Josh Hawley (R) | MO-1 Wesley Bell (D, +67.6) |
 
 ### Chicago – Joliet – Champaign – Decatur – Springfield – St. Louis
@@ -88,11 +88,11 @@ U.S. House districts: 7 D / 1 R; state legislative: 35 D / 14 R.
 
 Status: One of eight options in the Illinois HSR feasibility study.
 
-U.S. House districts: 8 D / 1 R; state legislative: 31 D / 17 R.
+U.S. House districts: 8 D / 1 R; state legislative: 33 D / 17 R.
 
 | State | km | Governor | Trifecta | U.S. senators | U.S. House along line (margin) |
 |---|---|---|---|---|---|
-| IL | 480 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-1 Jonathan Jackson (D, +40.6); IL-2 Donna Miller (D, +45.6); IL-4 Patty Garcia (D, +54.6); IL-6 Sean Casten (D, +25.0); IL-7 La Shawn K. Ford (D, +78.0); IL-13 Nikki Budzinski (D, +25.2); IL-14 Lauren Underwood (D, +25.0); IL-15 Mary Miller (R, +33.8) |
+| IL | 480 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-1 Jonathan L. Jackson (D, +42.6); IL-2 Donna Miller (D, +46.0); IL-4 Patty Garcia (D, +54.7); IL-6 Sean Casten (D, +25.0); IL-7 La Shawn K. Ford (D, +78.2); IL-13 Nikki Budzinski (D, +25.2); IL-14 Lauren Underwood (D, +25.2); IL-15 Mary Miller (R, +33.8) |
 | MO | 2 | Mike Kehoe (R) | R trifecta | Eric Schmitt (R), Josh Hawley (R) | MO-1 Wesley Bell (D, +67.6) |
 
 ### Chicago – Bloomington-Normal – Peoria – Springfield – St. Louis
@@ -101,11 +101,11 @@ U.S. House districts: 8 D / 1 R; state legislative: 31 D / 17 R.
 
 Status: One of eight options in the Illinois HSR feasibility study.
 
-U.S. House districts: 9 D / 2 R; state legislative: 30 D / 18 R.
+U.S. House districts: 9 D / 2 R; state legislative: 31 D / 18 R.
 
 | State | km | Governor | Trifecta | U.S. senators | U.S. House along line (margin) |
 |---|---|---|---|---|---|
-| IL | 492 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-1 Jonathan Jackson (D, +40.6); IL-2 Donna Miller (D, +45.6); IL-4 Patty Garcia (D, +54.6); IL-6 Sean Casten (D, +25.0); IL-7 La Shawn K. Ford (D, +78.0); IL-13 Nikki Budzinski (D, +25.2); IL-14 Lauren Underwood (D, +25.0); IL-15 Mary Miller (R, +33.8); IL-16 Darin LaHood (R, +17.6); IL-17 Eric Sorensen (D, +20.2) |
+| IL | 492 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-1 Jonathan L. Jackson (D, +42.6); IL-2 Donna Miller (D, +46.0); IL-4 Patty Garcia (D, +54.7); IL-6 Sean Casten (D, +25.0); IL-7 La Shawn K. Ford (D, +78.2); IL-13 Nikki Budzinski (D, +25.2); IL-14 Lauren Underwood (D, +25.2); IL-15 Mary Miller (R, +33.8); IL-16 Darin LaHood (R, +17.6); IL-17 Eric Sorensen (D, +20.2) |
 | MO | 2 | Mike Kehoe (R) | R trifecta | Eric Schmitt (R), Josh Hawley (R) | MO-1 Wesley Bell (D, +67.6) |
 
 ### Chicago – Kalamazoo – Ann Arbor – Detroit
@@ -118,9 +118,9 @@ U.S. House districts: 8 D / 1 R; state legislative: 32 D / 8 R.
 
 | State | km | Governor | Trifecta | U.S. senators | U.S. House along line (margin) |
 |---|---|---|---|---|---|
-| IL | 24 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-1 Jonathan Jackson (D, +40.6); IL-2 Donna Miller (D, +45.6); IL-7 La Shawn K. Ford (D, +78.0) |
+| IL | 24 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-1 Jonathan L. Jackson (D, +42.6); IL-2 Donna Miller (D, +46.0); IL-7 La Shawn K. Ford (D, +78.2) |
 | IN | 74 | Mike Braun (R) | R trifecta | Todd Young (R), Jim Banks (R) | IN-1 Frank Mrvan (D, +26.0) |
-| MI | 354 | Jocelyn Benson (D) | D trifecta | Abdul El-Sayed (D), Elissa Slotkin (D) | MI-4 Sean McCann (D, +1.8) *flip*; MI-5 Tim Walberg (R, +20.5); MI-6 Debbie Dingell (D, +37.1); MI-12 Rashida Tlaib (D, +54.8); MI-13 Donavan McKinney (D, +56.5) |
+| MI | 354 | Jocelyn Benson (D) | D trifecta | Abdul El-Sayed (D), Elissa Slotkin (D) | MI-4 Sean McCann (D, +1.8) *flip*; MI-5 Tim Walberg (R, +20.6); MI-6 Debbie Dingell (D, +37.1); MI-12 Rashida Tlaib (D, +54.6); MI-13 Donavan McKinney (D, +56.5) |
 
 Seats along this line decided by under 5 points: MI:4 Sean McCann (D, +1.8)
 
@@ -134,11 +134,9 @@ U.S. House districts: 5 D / 3 R / 2 pending; state legislative: 35 D / 20 R.
 
 | State | km | Governor | Trifecta | U.S. senators | U.S. House along line (margin) |
 |---|---|---|---|---|---|
-| IL | 42 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-1 Jonathan Jackson (D, +40.6); IL-2 Donna Miller (D, +45.6); IL-7 La Shawn K. Ford (D, +78.0) |
+| IL | 42 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-1 Jonathan L. Jackson (D, +42.6); IL-2 Donna Miller (D, +46.0); IL-7 La Shawn K. Ford (D, +78.2) |
 | IN | 398 | Mike Braun (R) | R trifecta | Todd Young (R), Jim Banks (R) | IN-1 Frank Mrvan (D, +26.0); IN-4 Jim Baird (R, +8.4); IN-6 Jefferson Shreve (R, +10.2); IN-7 Andre Carson (D, +56.6); IN-9 Erin Houchin (R, +10.5) |
-| OH | 48 | Amy Acton (D) | divided | Sherrod Brown (D), Bernie Moreno (R) | OH-1 Greg Landsman (D, +11.5); OH-8 Warren Davidson (R, +4.2) |
-
-Seats along this line decided by under 5 points: OH:8 Warren Davidson (R, +4.2)
+| OH | 48 | Amy Acton (D) | divided | Sherrod Brown (D), Bernie Moreno (R) | OH-1/8 Greg Landsman (D) or Warren Davidson (R) — split county, line pending; OH-8/10 Warren Davidson (R) or Kristina Knickerbocker (D) — split county, line pending |
 
 ### Chicago – Fort Wayne – Toledo – Cleveland
 
@@ -146,13 +144,13 @@ Seats along this line decided by under 5 points: OH:8 Warren Davidson (R, +4.2)
 
 Status: HSRA's line to Detroit and Cleveland (toward Buffalo and New York); first-phase corridor in the 2009 SNCF study.
 
-U.S. House districts: 4 D / 2 R / 4 pending; state legislative: 23 D / 13 R.
+U.S. House districts: 5 D / 3 R / 2 pending; state legislative: 23 D / 13 R.
 
 | State | km | Governor | Trifecta | U.S. senators | U.S. House along line (margin) |
 |---|---|---|---|---|---|
-| IL | 24 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-1 Jonathan Jackson (D, +40.6); IL-2 Donna Miller (D, +45.6); IL-7 La Shawn K. Ford (D, +78.0) |
-| IN | 254 | Mike Braun (R) | R trifecta | Todd Young (R), Jim Banks (R) | IN-1 Frank Mrvan (D, +26.0); IN-2 Rudy Yakym (R, +5.2); IN-3 Marlin Stutzman (R, +9.8) |
-| OH | 248 | Amy Acton (D) | divided | Sherrod Brown (D), Bernie Moreno (R) | OH-5 Bob Latta (R, +11.7); OH-7 Brian Poindexter (D, +9.8) *flip*; OH-9 Marcy Kaptur (D, +5.4); OH-11 Shontel M. Brown (D, +67.0) |
+| IL | 24 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-1 Jonathan L. Jackson (D, +42.6); IL-2 Donna Miller (D, +46.0); IL-7 La Shawn K. Ford (D, +78.2) |
+| IN | 254 | Mike Braun (R) | R trifecta | Todd Young (R), Jim Banks (R) | IN-1 Frank Mrvan (D, +26.0); IN-2 Rudy Yakym (R, +5.2); IN-3 Marlin A. Stutzman (R, +9.8) |
+| OH | 248 | Amy Acton (D) | divided | Sherrod Brown (D), Bernie Moreno (R) | OH-5 Bob Latta (R, +11.7); OH-5/9 Bob Latta (R) or Marcy Kaptur (D) — split county, line pending; OH-7/11 Brian Poindexter (D) or Shontel M. Brown (D) — split county, line pending; OH-9 Marcy Kaptur (D, +5.5) |
 
 ### Cleveland – Columbus – Dayton – Cincinnati (3C+D)
 
@@ -160,13 +158,13 @@ U.S. House districts: 4 D / 2 R / 4 pending; state legislative: 23 D / 13 R.
 
 Status: Ohio corridor in FRA Corridor ID (selected Dec 2023, Step 1 complete); expected to use FRA's new Core service-development path.
 
-U.S. House districts: 0 D / 0 R / 9 pending; state legislative: 0 D / 0 R.
+U.S. House districts: 3 D / 2 R / 7 pending; state legislative: 0 D / 0 R.
 
 | State | km | Governor | Trifecta | U.S. senators | U.S. House along line (margin) |
 |---|---|---|---|---|---|
-| OH | 425 | Amy Acton (D) | divided | Sherrod Brown (D), Bernie Moreno (R) | OH-1 Greg Landsman (D, +11.5); OH-3 Joyce Beatty (D, +54.4); OH-4 Jim Jordan (R, +33.2); OH-5 Bob Latta (R, +11.7); OH-7 Brian Poindexter (D, +9.8) *flip*; OH-8 Warren Davidson (R, +4.2); OH-10 Kristina Knickerbocker (D, +1.6) *flip*; OH-11 Shontel M. Brown (D, +67.0); OH-15 Don Leonard (D, +6.6) *flip* |
+| OH | 425 | Amy Acton (D) | divided | Sherrod Brown (D), Bernie Moreno (R) | OH-1 Greg Landsman (D, +11.5); OH-1/8 Greg Landsman (D) or Warren Davidson (R) — split county, line pending; OH-3/15 Joyce Beatty (D) or Don Leonard (D) — split county, line pending; OH-4 Jim Jordan (R, +33.2); OH-4/12 Jim Jordan (R) or Troy Balderson (R) — split county, line pending; OH-4/15 Jim Jordan (R) or Don Leonard (D) — split county, line pending; OH-4/5 Jim Jordan (R) or Bob Latta (R) — split county, line pending; OH-5 Bob Latta (R, +11.7); OH-7/11 Brian Poindexter (D) or Shontel M. Brown (D) — split county, line pending; OH-8/10 Warren Davidson (R) or Kristina Knickerbocker (D) — split county, line pending; OH-10 Kristina Knickerbocker (D, +1.6) *flip*; OH-15 Don Leonard (D, +6.6) *flip* |
 
-Seats along this line decided by under 5 points: OH:10 Kristina Knickerbocker (D, +1.6), OH:8 Warren Davidson (R, +4.2)
+Seats along this line decided by under 5 points: OH:10 Kristina Knickerbocker (D, +1.6)
 
 ### Chicago – Quad Cities – Iowa City – Des Moines – Omaha
 
@@ -174,13 +172,13 @@ Seats along this line decided by under 5 points: OH:10 Kristina Knickerbocker (D
 
 Status: Chicago–Quad Cities in Corridor ID (Illinois); Iowa City, Des Moines and Omaha extension in the FRA Midwest Regional Rail Plan.
 
-U.S. House districts: 10 D / 2 R; state legislative: 47 D / 32 R.
+U.S. House districts: 10 D / 2 R; state legislative: 47 D / 33 R.
 
 | State | km | Governor | Trifecta | U.S. senators | U.S. House along line (margin) |
 |---|---|---|---|---|---|
-| IL | 262 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-4 Patty Garcia (D, +54.6); IL-6 Sean Casten (D, +25.0); IL-7 La Shawn K. Ford (D, +78.0); IL-11 Bill Foster (D, +30.8); IL-14 Lauren Underwood (D, +25.0); IL-16 Darin LaHood (R, +17.6); IL-17 Eric Sorensen (D, +20.2) |
+| IL | 262 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-4 Patty Garcia (D, +54.7); IL-6 Sean Casten (D, +25.0); IL-7 La Shawn K. Ford (D, +78.2); IL-11 Bill Foster (D, +28.4); IL-14 Lauren Underwood (D, +25.2); IL-16 Darin LaHood (R, +17.6); IL-17 Eric Sorensen (D, +20.2) |
 | IA | 450 | Rob Sand (D) | divided | Josh Turek (D), Chuck Grassley (R) | IA-1 Christina Bohannan (D, +9.2) *flip*; IA-2 Lindsay James (D, +4.0) *flip*; IA-3 Sarah Trone Garriott (D, +7.3) *flip*; IA-4 Chris McGowan (R, +18.1) |
-| NE | 1 | Jim Pillen (R) | R governor; nonpartisan legislature (governor race not called) | Pete Ricketts (R), Deb Fischer (R) | NE-2 Denise Powell (D, +15.4) *flip* |
+| NE | 1 | Jim Pillen (R) | R governor; nonpartisan legislature | Pete Ricketts (R), Deb Fischer (R) | NE-2 Denise Powell (D, +15.4) *flip* |
 
 Seats along this line decided by under 5 points: IA:2 Lindsay James (D, +4.0)
 
@@ -204,13 +202,13 @@ Seats along this line decided by under 5 points: MO:2 Fred Wellman (D, +4.9)
 
 Status: Corridor ID (continuing to Pittsburgh); new service.
 
-U.S. House districts: 4 D / 2 R / 4 pending; state legislative: 22 D / 13 R.
+U.S. House districts: 4 D / 3 R / 1 pending; state legislative: 22 D / 13 R.
 
 | State | km | Governor | Trifecta | U.S. senators | U.S. House along line (margin) |
 |---|---|---|---|---|---|
-| IL | 24 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-1 Jonathan Jackson (D, +40.6); IL-2 Donna Miller (D, +45.6); IL-7 La Shawn K. Ford (D, +78.0) |
-| IN | 257 | Mike Braun (R) | R trifecta | Todd Young (R), Jim Banks (R) | IN-1 Frank Mrvan (D, +26.0); IN-2 Rudy Yakym (R, +5.2); IN-3 Marlin Stutzman (R, +9.8) |
-| OH | 201 | Amy Acton (D) | divided | Sherrod Brown (D), Bernie Moreno (R) | OH-3 Joyce Beatty (D, +54.4); OH-4 Jim Jordan (R, +33.2); OH-5 Bob Latta (R, +11.7); OH-15 Don Leonard (D, +6.6) *flip* |
+| IL | 24 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-1 Jonathan L. Jackson (D, +42.6); IL-2 Donna Miller (D, +46.0); IL-7 La Shawn K. Ford (D, +78.2) |
+| IN | 257 | Mike Braun (R) | R trifecta | Todd Young (R), Jim Banks (R) | IN-1 Frank Mrvan (D, +26.0); IN-2 Rudy Yakym (R, +5.2); IN-3 Marlin A. Stutzman (R, +9.8) |
+| OH | 201 | Amy Acton (D) | divided | Sherrod Brown (D), Bernie Moreno (R) | OH-3/15 Joyce Beatty (D) or Don Leonard (D) — split county, line pending; OH-4 Jim Jordan (R, +33.2) |
 
 ### Indianapolis – Columbus – Louisville
 
@@ -235,7 +233,7 @@ U.S. House districts: 2 D / 3 R; state legislative: 14 D / 8 R.
 
 | State | km | Governor | Trifecta | U.S. senators | U.S. House along line (margin) |
 |---|---|---|---|---|---|
-| MN | 207 | Amy Klobuchar (D) | D trifecta | Peggy Flanagan (D), Amy Klobuchar (D) | MN-3 Kelly Morrison (D, +28.2); MN-5 Ilhan Omar (D, +60.3); MN-6 Tom Emmer (R, +11.5); MN-8 Pete Stauber (R, +6.3) |
+| MN | 207 | Amy Klobuchar (D) | D trifecta | Peggy Flanagan (D), Amy Klobuchar (D) | MN-3 Kelly Morrison (D, +28.2); MN-5 Ilhan Omar (D, +60.3); MN-6 Tom Emmer (R, +11.5); MN-8 Pete Stauber (R, +6.1) |
 | WI | 35 | David Crowley (D) | D trifecta | Ron Johnson (R), Tammy Baldwin (D) | WI-7 Michael Alfonso (R, +13.2) |
 
 ### Milwaukee – Fond du Lac – Green Bay
@@ -256,12 +254,12 @@ U.S. House districts: 1 D / 3 R; state legislative: 0 D / 0 R.
 
 Status: Corridor ID; new service.
 
-U.S. House districts: 2 D / 1 R / 4 pending; state legislative: 0 D / 2 R.
+U.S. House districts: 3 D / 2 R / 2 pending; state legislative: 0 D / 2 R.
 
 | State | km | Governor | Trifecta | U.S. senators | U.S. House along line (margin) |
 |---|---|---|---|---|---|
-| OH | 148 | Amy Acton (D) | divided | Sherrod Brown (D), Bernie Moreno (R) | OH-5 Bob Latta (R, +11.7); OH-7 Brian Poindexter (D, +9.8) *flip*; OH-9 Marcy Kaptur (D, +5.4); OH-11 Shontel M. Brown (D, +67.0) |
-| MI | 82 | Jocelyn Benson (D) | D trifecta | Abdul El-Sayed (D), Elissa Slotkin (D) | MI-5 Tim Walberg (R, +20.5); MI-6 Debbie Dingell (D, +37.1); MI-13 Donavan McKinney (D, +56.5) |
+| OH | 148 | Amy Acton (D) | divided | Sherrod Brown (D), Bernie Moreno (R) | OH-5 Bob Latta (R, +11.7); OH-5/9 Bob Latta (R) or Marcy Kaptur (D) — split county, line pending; OH-7/11 Brian Poindexter (D) or Shontel M. Brown (D) — split county, line pending; OH-9 Marcy Kaptur (D, +5.5) |
+| MI | 82 | Jocelyn Benson (D) | D trifecta | Abdul El-Sayed (D), Elissa Slotkin (D) | MI-5 Tim Walberg (R, +20.6); MI-6 Debbie Dingell (D, +37.1); MI-13 Donavan McKinney (D, +56.5) |
 
 ### Chicago – Rockford – Dubuque (Black Hawk)
 
@@ -269,11 +267,11 @@ U.S. House districts: 2 D / 1 R / 4 pending; state legislative: 0 D / 2 R.
 
 Status: HSRA priority corridor; restoration of the former Black Hawk route.
 
-U.S. House districts: 8 D / 1 R; state legislative: 26 D / 4 R.
+U.S. House districts: 8 D / 1 R; state legislative: 27 D / 5 R.
 
 | State | km | Governor | Trifecta | U.S. senators | U.S. House along line (margin) |
 |---|---|---|---|---|---|
-| IL | 278 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-3 Delia Ramirez (D, +51.6); IL-4 Patty Garcia (D, +54.6); IL-6 Sean Casten (D, +25.0); IL-7 La Shawn K. Ford (D, +78.0); IL-8 Melissa Bean (D, +29.6); IL-11 Bill Foster (D, +30.8); IL-16 Darin LaHood (R, +17.6); IL-17 Eric Sorensen (D, +20.2) |
+| IL | 278 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-3 Delia Ramirez (D, +52.8); IL-4 Patty Garcia (D, +54.7); IL-6 Sean Casten (D, +25.0); IL-7 La Shawn K. Ford (D, +78.2); IL-8 Melissa L. Bean (D, +27.6); IL-11 Bill Foster (D, +28.4); IL-16 Darin LaHood (R, +17.6); IL-17 Eric Sorensen (D, +20.2) |
 | IA | 1 | Rob Sand (D) | divided | Josh Turek (D), Chuck Grassley (R) | IA-2 Lindsay James (D, +4.0) *flip* |
 
 Seats along this line decided by under 5 points: IA:2 Lindsay James (D, +4.0)
@@ -288,7 +286,7 @@ U.S. House districts: 7 D / 1 R; state legislative: 18 D / 9 R.
 
 | State | km | Governor | Trifecta | U.S. senators | U.S. House along line (margin) |
 |---|---|---|---|---|---|
-| IL | 235 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-1 Jonathan Jackson (D, +40.6); IL-4 Patty Garcia (D, +54.6); IL-6 Sean Casten (D, +25.0); IL-7 La Shawn K. Ford (D, +78.0); IL-11 Bill Foster (D, +30.8); IL-14 Lauren Underwood (D, +25.0); IL-16 Darin LaHood (R, +17.6); IL-17 Eric Sorensen (D, +20.2) |
+| IL | 235 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-1 Jonathan L. Jackson (D, +42.6); IL-4 Patty Garcia (D, +54.7); IL-6 Sean Casten (D, +25.0); IL-7 La Shawn K. Ford (D, +78.2); IL-11 Bill Foster (D, +28.4); IL-14 Lauren Underwood (D, +25.2); IL-16 Darin LaHood (R, +17.6); IL-17 Eric Sorensen (D, +20.2) |
 
 ### Chicago – Champaign – Carbondale (Illini / Saluki)
 
@@ -296,11 +294,11 @@ U.S. House districts: 7 D / 1 R; state legislative: 18 D / 9 R.
 
 Status: Corridor ID (Illinois) service enhancement.
 
-U.S. House districts: 4 D / 2 R; state legislative: 24 D / 13 R.
+U.S. House districts: 4 D / 2 R; state legislative: 25 D / 14 R.
 
 | State | km | Governor | Trifecta | U.S. senators | U.S. House along line (margin) |
 |---|---|---|---|---|---|
-| IL | 510 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-1 Jonathan Jackson (D, +40.6); IL-2 Donna Miller (D, +45.6); IL-7 La Shawn K. Ford (D, +78.0); IL-12 Mike Bost (R, +39.4); IL-13 Nikki Budzinski (D, +25.2); IL-15 Mary Miller (R, +33.8) |
+| IL | 510 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-1 Jonathan L. Jackson (D, +42.6); IL-2 Donna Miller (D, +46.0); IL-7 La Shawn K. Ford (D, +78.2); IL-12 Mike Bost (R, +39.4); IL-13 Nikki Budzinski (D, +25.2); IL-15 Mary Miller (R, +33.8) |
 
 ### Chicago – Holland – Grand Rapids (Pere Marquette)
 
@@ -312,7 +310,7 @@ U.S. House districts: 6 D / 0 R; state legislative: 21 D / 6 R.
 
 | State | km | Governor | Trifecta | U.S. senators | U.S. House along line (margin) |
 |---|---|---|---|---|---|
-| IL | 24 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-1 Jonathan Jackson (D, +40.6); IL-2 Donna Miller (D, +45.6); IL-7 La Shawn K. Ford (D, +78.0) |
+| IL | 24 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-1 Jonathan L. Jackson (D, +42.6); IL-2 Donna Miller (D, +46.0); IL-7 La Shawn K. Ford (D, +78.2) |
 | IN | 2 | Mike Braun (R) | R trifecta | Todd Young (R), Jim Banks (R) | IN-1 Frank Mrvan (D, +26.0) |
 | MI | 132 | Jocelyn Benson (D) | D trifecta | Abdul El-Sayed (D), Elissa Slotkin (D) | MI-3 Hillary Scholten (D, +15.7); MI-4 Sean McCann (D, +1.8) *flip* |
 
@@ -328,8 +326,8 @@ U.S. House districts: 7 D / 2 R; state legislative: 36 D / 16 R.
 
 | State | km | Governor | Trifecta | U.S. senators | U.S. House along line (margin) |
 |---|---|---|---|---|---|
-| IL | 24 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-1 Jonathan Jackson (D, +40.6); IL-2 Donna Miller (D, +45.6); IL-7 La Shawn K. Ford (D, +78.0) |
+| IL | 24 | JB Pritzker (D) | D trifecta | Juliana Stratton (D), Tammy Duckworth (D) | IL-1 Jonathan L. Jackson (D, +42.6); IL-2 Donna Miller (D, +46.0); IL-7 La Shawn K. Ford (D, +78.2) |
 | IN | 72 | Mike Braun (R) | R trifecta | Todd Young (R), Jim Banks (R) | IN-1 Frank Mrvan (D, +26.0) |
-| MI | 418 | Jocelyn Benson (D) | D trifecta | Abdul El-Sayed (D), Elissa Slotkin (D) | MI-4 Sean McCann (D, +1.8) *flip*; MI-5 Tim Walberg (R, +20.5); MI-7 William Lawrence (D, +3.3) *flip*; MI-8 Kristen McDonald Rivet (D, +13.6); MI-9 Lisa McClain (R, +27.9) |
+| MI | 418 | Jocelyn Benson (D) | D trifecta | Abdul El-Sayed (D), Elissa Slotkin (D) | MI-4 Sean McCann (D, +1.8) *flip*; MI-5 Tim Walberg (R, +20.6); MI-7 William Lawrence (D, +3.3) *flip*; MI-8 Kristen McDonald Rivet (D, +13.6); MI-9 Lisa McClain (R, +27.9) |
 
 Seats along this line decided by under 5 points: MI:4 Sean McCann (D, +1.8), MI:7 William Lawrence (D, +3.3)

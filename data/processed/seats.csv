@@ -105,7 +105,7 @@ state_house,IL,44,Fred Crespo,D,2026,called,,Ralph Black,R,,,Fred Crespo,D,https
 state_house,IL,45,Marti Deuter,D,2026,called,,Gina Parrilli,R,,,Marti Deuter,D,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:45,False
 state_house,IL,46,Diane Blair-Sherlock,D,2026,called,,Pedro Mendoza,R,,,Diane Blair-Sherlock,D,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:46,False
 state_house,IL,47,Erica Bray-Parker,D,2026,called,,Robert Vrankovich,R,,,Amy Grant,R,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:47,True
-state_house,IL,48,,,2026,uncalled,,Amanda Zahorak,D,,,Jennifer Sanalitro,R,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:48,False
+state_house,IL,48,Amanda Zahorak,D,2026,leading,,Jennifer Sanalitro,R,,,Jennifer Sanalitro,R,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:48,True
 state_house,IL,49,Maura Hirschauer,D,2026,called,,John Paul Augustynowicz,R,,,Maura Hirschauer,D,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:49,False
 state_house,IL,50,Barbara Hernandez,D,2026,called,,,,,,Barbara Hernandez,D,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:50,False
 state_house,IL,51,Jenny Levin,D,2026,called,,Lori Smith,R,,,Nabeela Syed,D,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:51,False
@@ -122,12 +122,12 @@ state_house,IL,61,Joyce Mason,D,2026,called,,Tina Durrant,R,,,Joyce Mason,D,http
 state_house,IL,62,Laura Faver Dias,D,2026,called,,,,,,Laura Faver Dias,D,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:62,False
 state_house,IL,63,Steve Reick,R,2026,called,,,,,,Steve Reick,R,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:63,False
 state_house,IL,64,Tom Weber,R,2026,called,,AJ Johnson,D,,,Tom Weber,R,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:64,False
-state_house,IL,65,,,2026,uncalled,,Ricky Rivard,D,,,Dan Ugaste,R,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:65,False
+state_house,IL,65,Ricky Rivard,D,2026,called,,Dan Ugaste,R,,,Dan Ugaste,R,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:65,True
 state_house,IL,66,Suzanne Ness,D,2026,called,,Laurie Parman,R,,,Suzanne Ness,D,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:66,False
 state_house,IL,67,Maurice West,D,2026,called,,,,,,Maurice West,D,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:67,False
 state_house,IL,68,Dave Vella,D,2026,called,,Kathy Easton,R,,,Dave Vella,D,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:68,False
 state_house,IL,69,Joe Sosnowski,R,2026,called,,Peter Janko,D,,,Joe Sosnowski,R,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:69,False
-state_house,IL,70,,,2026,uncalled,,Veronica Garcia-Martinez,D,,,Jeff Keicher,R,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:70,False
+state_house,IL,70,Jeff Keicher,R,2026,leading,,Veronica Garcia-Martinez,D,,,Jeff Keicher,R,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:70,False
 state_house,IL,71,Dan Swanson,R,2026,called,,Kermit Thomas,D,,,Dan Swanson,R,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:71,False
 state_house,IL,72,Gregg Johnson,D,2026,called,,,,,,Gregg Johnson,D,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:72,False
 state_house,IL,73,Ryan Spain,R,2026,called,,Nicole Dopler,D,,,Ryan Spain,R,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:73,False
@@ -161,7 +161,7 @@ state_house,IL,100,C.D. Davidsmeyer,R,2026,called,,,,,,C.D. Davidsmeyer,R,https:
 state_house,IL,101,Chris Miller,R,2026,called,,Douglas Fagan,D,,,Chris Miller,R,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:101,False
 state_house,IL,102,Adam Niemerg,R,2026,called,,,,,,Adam Niemerg,R,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:102,False
 state_house,IL,103,Carol Ammons,D,2026,called,,,,,,Carol Ammons,D,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:103,False
-state_house,IL,104,,,2026,uncalled,,Mary Catherine Roberson,D,,,Brandun Schweizer,R,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:104,False
+state_house,IL,104,Mary Catherine Roberson,D,2026,called,,Brandun Schweizer,R,,,Brandun Schweizer,R,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:104,True
 state_house,IL,105,Tim Ruestman,R,2026,called,,,,,,Dennis Tipsword,R,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:105,False
 state_house,IL,106,Jason Bunting,R,2026,called,,,,,,Jason Bunting,R,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:106,False
 state_house,IL,107,Brad Halbrook,R,2026,called,,,,,,Brad Halbrook,R,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:107,False
@@ -171,11 +171,11 @@ state_house,IL,110,Blaine Wilhour,R,2026,called,,,,,,Blaine Wilhour,R,https://ww
 state_house,IL,111,Amy Elik,R,2026,called,,Rosetta Brown,D,,,Amy Elik,R,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:111,False
 state_house,IL,112,Katie Stuart,D,2026,called,,Jimmy Ford,R,,,Katie Stuart,D,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:112,False
 state_house,IL,113,Jay Hoffman,D,2026,called,,,,,,Jay Hoffman,D,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:113,False
-state_house,IL,114,,,2026,uncalled,,George McClellan Jr.,D,,,Kevin Schmidt,R,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:114,False
+state_house,IL,114,George McClellan Jr.,D,2026,leading,,Kevin Schmidt,R,,,Kevin Schmidt,R,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:114,True
 state_house,IL,115,David Friess,R,2026,called,,,,,,David Friess,R,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:115,False
 state_house,IL,116,Dave Severin,R,2026,called,,,,,,Dave Severin,R,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:116,False
 state_house,IL,117,Patrick Windhorst,R,2026,called,,,,,,Patrick Windhorst,R,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:117,False
-state_house,IL,118,,,2026,uncalled,,Scott Doody,R,,,Scott Doody,R,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:118,False
+state_house,IL,118,Scott Doody,R,2026,leading,,Homer Markel,D,,,Scott Doody,R,https://www.multistate.us/elections/results/illinois-2026,state_house:IL:118,False
 state_senate,IN,1,Scott Houldieson,D,2026,called,,Trevor De Vries,R,,,Dan Dernulc,R,https://www.multistate.us/elections/results/indiana-2026,state_senate:IN:1,True
 state_senate,IN,2,Lonnie Randolph,D,holdover,holdover,,,,,,Lonnie Randolph,D,,state_senate:IN:2,False
 state_senate,IN,3,Mark Spencer,D,holdover,holdover,,,,,,Mark Spencer,D,,state_senate:IN:3,False
@@ -372,7 +372,7 @@ state_senate,IA,43,Meghann Foster,D,2026,called,,,,,,Zach Wahls,D,https://www.mu
 state_senate,IA,44,Adrian Dickey,R,holdover,holdover,,,,,,Adrian Dickey,R,,state_senate:IA:44,False
 state_senate,IA,45,Janice Weiner,D,2026,called,,,,,,Janice Weiner,D,https://www.multistate.us/elections/results/iowa-2026,state_senate:IA:45,False
 state_senate,IA,46,Dawn Driscoll,R,holdover,holdover,,,,,,Dawn Driscoll,R,,state_senate:IA:46,False
-state_senate,IA,47,,,2026,uncalled,,Nikhil Wagle,D,,,Scott Webster,R,https://www.multistate.us/elections/results/iowa-2026,state_senate:IA:47,False
+state_senate,IA,47,Nikhil Wagle,D,2026,leading,,Scott Webster,R,,,Scott Webster,R,https://www.multistate.us/elections/results/iowa-2026,state_senate:IA:47,True
 state_senate,IA,48,Mark Lofgren,R,holdover,holdover,,,,,,Mark Lofgren,R,,state_senate:IA:48,False
 state_senate,IA,49,Cindy Winckler,D,2026,called,,Cynthia Mensendick,R,,,Cindy Winckler,D,https://www.multistate.us/elections/results/iowa-2026,state_senate:IA:49,False
 state_senate,IA,50,Jeff Reichman,R,holdover,holdover,,,,,,Jeff Reichman,R,,state_senate:IA:50,False
@@ -394,9 +394,9 @@ state_house,IA,15,Jason Sherer,R,2026,called,,Benjamin Schauer,D,,,Matt Windschi
 state_house,IA,16,David Sieck,R,2026,called,,Jack Goodman,D,,,David Sieck,R,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:16,False
 state_house,IA,17,Devon Wood,R,2026,called,,,,,,Devon Wood,R,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:17,False
 state_house,IA,18,Tom Moore,R,2026,called,,Tripp Narup,D,,,Tom Moore,R,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:18,False
-state_house,IA,19,,,2026,uncalled,,Brent Siegrist,R,,,Brent Siegrist,R,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:19,False
+state_house,IA,19,Brent Siegrist,R,2026,leading,,Benjamin Thomas Larson,D,,,Brent Siegrist,R,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:19,False
 state_house,IA,20,Eric Armstrong,D,2026,called,,Keith Jones,R,,,Josh Turek,D,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:20,False
-state_house,IA,21,,,2026,uncalled,,Brooke Boden,R,,,Brooke Boden,R,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:21,False
+state_house,IA,21,Brooke Boden,R,2026,called,,Spencer Waugh,D,,,Brooke Boden,R,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:21,False
 state_house,IA,22,Samantha Fett,R,2026,called,,Rory Taylor,D,,,Samantha Fett,R,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:22,False
 state_house,IA,23,Ray Sorensen,R,2026,called,,Karen Varley,D,,,Bubba Sorensen,R,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:23,False
 state_house,IA,24,Sam Wengryn,R,2026,called,,Sonya Hicks,D,,,Sam Wengryn,R,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:24,False
@@ -421,7 +421,7 @@ state_house,IA,42,Amy Tagliareni,D,2026,called,,Heather Stephenson,R,,,Heather M
 state_house,IA,43,Jill Alesch,D,2026,called,,Nicole Hasso,R,,,Eddie Andrews,R,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:43,True
 state_house,IA,44,Larry McBurney,D,2026,called,,,,,,Larry McBurney,D,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:44,False
 state_house,IA,45,Austin Stubbs,R,2026,called,,Kendra Haug,D,,,Brian Lohse,R,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:45,False
-state_house,IA,46,,,2026,uncalled,,Mandy Newton Rosenow,D,,,Dan Gehlbach,R,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:46,False
+state_house,IA,46,Mandy Newton Rosenow,D,2026,called,,Dan Gehlbach,R,,,Dan Gehlbach,R,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:46,True
 state_house,IA,47,Carter Nordman,R,2026,called,,Chris New,D,,,Carter Nordman,R,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:47,False
 state_house,IA,48,Chad Behn,R,2026,called,,Benjamin Olsen,D,,,Chad Behn,R,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:48,False
 state_house,IA,49,Beth Wessel-Kroeschell,D,2026,called,,,,,,Beth Wessel-Kroeschell,D,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:49,False
@@ -458,7 +458,7 @@ state_house,IA,79,Tracy Ehlert,D,2026,called,,Barclay Woerner,R,,,Tracy Ehlert,D
 state_house,IA,80,Aime Wichtendahl,D,2026,called,,,,,,Aime Wichtendahl,D,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:80,False
 state_house,IA,81,Daniel Gosa,D,2026,called,,Dillon Fillion,R,,,Dan Gosa,D,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:81,False
 state_house,IA,82,Bobby Kaufmann,R,2026,called,,James Behrmann,D,,,Bobby Kaufmann,R,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:82,False
-state_house,IA,83,,,2026,uncalled,,Cindy Golding,R,,,Cindy Golding,R,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:83,False
+state_house,IA,83,Cindy Golding,R,2026,called,,Mike Bergman,D,,,Cindy Golding,R,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:83,False
 state_house,IA,84,Tom Gerhold,R,2026,called,,Polly Denison,D,,,Tom Gerhold,R,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:84,False
 state_house,IA,85,Amy Nielsen,D,2026,called,,,,,,Amy Nielsen,D,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:85,False
 state_house,IA,86,Dave Jacoby,D,2026,called,,,,,,Dave Jacoby,D,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:86,False
@@ -469,7 +469,7 @@ state_house,IA,90,Adam Zabner,D,2026,called,,,,,,Adam Zabner,D,https://www.multi
 state_house,IA,91,Judd Lawler,R,2026,called,,Mark Divitt,D,,,Judd Lawler,R,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:91,False
 state_house,IA,92,Heather Hora,R,2026,called,,Brittany Erickson,D,,,Heather Hora,R,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:92,False
 state_house,IA,93,Gary Mohr,R,2026,called,,Keith Soko,D,,,Gary Mohr,R,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:93,False
-state_house,IA,94,,,2026,uncalled,,Mike Vondran,R,,,Mike Vondran,R,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:94,False
+state_house,IA,94,Mike Vondran,R,2026,called,,Karen Roebuck,D,,,Mike Vondran,R,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:94,False
 state_house,IA,95,Taylor Collins,R,2026,called,,Carrie Trevino,D,,,Taylor Collins,R,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:95,False
 state_house,IA,96,Nick Salazar,D,2026,called,,Mark Cisneros,R,,,Mark Cisneros,R,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:96,True
 state_house,IA,97,Adam Peters,D,2026,called,,Charlie Helmick,R,,,Ken Croken,D,https://www.multistate.us/elections/results/iowa-2026,state_house:IA:97,False
@@ -545,7 +545,7 @@ state_house,KS,26,,,2026,uncalled,,Chip VanHouden,R,,,Chip VanHouden,R,https://w
 state_house,KS,27,,,2026,uncalled,,Sara Kiewiet,D,,,Sean Tarwater,R,https://www.multistate.us/elections/results/kansas-2026,state_house:KS:27,False
 state_house,KS,28,Bryan Mouber,D,2026,called,,Alex. N Bergman,R,,,Carl Turner,R,https://www.multistate.us/elections/results/kansas-2026,state_house:KS:28,True
 state_house,KS,29,Heather Meyer,D,2026,called,,,,,,Heather Meyer,D,https://www.multistate.us/elections/results/kansas-2026,state_house:KS:29,False
-state_house,KS,30,,,2026,uncalled,,Amelia Wiederaenders,D,,,Laura Williams,R,https://www.multistate.us/elections/results/kansas-2026,state_house:KS:30,False
+state_house,KS,30,Amelia Wiederaenders,D,2026,called,,Laura Williams,R,,,Laura Williams,R,https://www.multistate.us/elections/results/kansas-2026,state_house:KS:30,True
 state_house,KS,31,Emily Hane,D,2026,called,,Dennis Grindel,R,,,Louis Ruiz,D,https://www.multistate.us/elections/results/kansas-2026,state_house:KS:31,False
 state_house,KS,32,Pam Curtis,D,2026,called,,,,,,Pam Curtis,D,https://www.multistate.us/elections/results/kansas-2026,state_house:KS:32,False
 state_house,KS,33,Emily Blanks,D,2026,called,,Carolyn Caiharr,R,,,Carolyn Caiharr,R,https://www.multistate.us/elections/results/kansas-2026,state_house:KS:33,True
@@ -554,7 +554,7 @@ state_house,KS,35,Wanda Paige,D,2026,called,,Alex Sanchez,R,,,Wanda Paige,D,http
 state_house,KS,36,Lynn Melton,D,2026,called,,Brian Dickason,R,,,Lynn Melton,D,https://www.multistate.us/elections/results/kansas-2026,state_house:KS:36,False
 state_house,KS,37,Melissa Oropeza,D,2026,called,,Connie Jo Henry,R,,,Melissa Oropeza,D,https://www.multistate.us/elections/results/kansas-2026,state_house:KS:37,False
 state_house,KS,38,Tim Johnson,R,2026,called,,Richard Paz,D,,,Tim Johnson,R,https://www.multistate.us/elections/results/kansas-2026,state_house:KS:38,False
-state_house,KS,39,,,2026,uncalled,,Zach Maier,D,,,Angela Stiens,R,https://www.multistate.us/elections/results/kansas-2026,state_house:KS:39,False
+state_house,KS,39,Zach Maier,D,2026,called,,Angela Stiens,R,,,Angela Stiens,R,https://www.multistate.us/elections/results/kansas-2026,state_house:KS:39,True
 state_house,KS,40,,,2026,uncalled,,Dave Buehler,R,,,Dave Buehler,R,https://www.multistate.us/elections/results/kansas-2026,state_house:KS:40,False
 state_house,KS,41,Jeff Pittman,D,2026,called,,Ann Reinhart,R,,,Pat Proctor,R,https://www.multistate.us/elections/results/kansas-2026,state_house:KS:41,True
 state_house,KS,42,Lance Neelly,R,2026,called,,Brandon Wendt,D,,,Lance Neelly,R,https://www.multistate.us/elections/results/kansas-2026,state_house:KS:42,False
@@ -575,7 +575,7 @@ state_house,KS,56,Virgil Weigel,D,2026,called,,Elvin Fajardo,R,,,Virgil Weigel,D
 state_house,KS,57,John Alcala,D,2026,called,,,,,,John Alcala,D,https://www.multistate.us/elections/results/kansas-2026,state_house:KS:57,False
 state_house,KS,58,Alexis Simmons,D,2026,called,,Michael Mathewson,R,,,Alexis Simmons,D,https://www.multistate.us/elections/results/kansas-2026,state_house:KS:58,False
 state_house,KS,59,Rebecca Schmoe,R,2026,called,,Michael Lewis,D,,,Rebecca Schmoe,R,https://www.multistate.us/elections/results/kansas-2026,state_house:KS:59,False
-state_house,KS,60,,,2026,uncalled,,Mark Schreiber,R,,,Mark Schreiber,R,https://www.multistate.us/elections/results/kansas-2026,state_house:KS:60,False
+state_house,KS,60,Mark Schreiber,R,2026,called,,Maddison D. Glover,D,,,Mark Schreiber,R,https://www.multistate.us/elections/results/kansas-2026,state_house:KS:60,False
 state_house,KS,61,Francis Awerkamp,R,2026,called,,,,,,Francis Awerkamp,R,https://www.multistate.us/elections/results/kansas-2026,state_house:KS:61,False
 state_house,KS,62,Sean Willcott,R,2026,called,,Jack E. Geiger,I,,,Sean Willcott,R,https://www.multistate.us/elections/results/kansas-2026,state_house:KS:62,False
 state_house,KS,63,Allen Reavis,R,2026,called,,Adam Booth,D,,,Allen Reavis,R,https://www.multistate.us/elections/results/kansas-2026,state_house:KS:63,False
@@ -593,7 +593,7 @@ state_house,KS,74,Mike King,R,2026,called,,Michele L. Ediger,D,,,Mike King,R,htt
 state_house,KS,75,Tyler Coats,R,2026,called,,Randy Quinn,D,,,Will Carpenter,R,https://www.multistate.us/elections/results/kansas-2026,state_house:KS:75,False
 state_house,KS,76,Russel Stukey,R,2026,called,,David A. Claridge,D,,,Brad Barrett,R,https://www.multistate.us/elections/results/kansas-2026,state_house:KS:76,False
 state_house,KS,77,Kristey Williams,R,2026,called,,Troy Nicks,D,,,Kristey Williams,R,https://www.multistate.us/elections/results/kansas-2026,state_house:KS:77,False
-state_house,KS,78,,,2026,uncalled,,Tim Lundberg,D,,,Robyn Essex,R,https://www.multistate.us/elections/results/kansas-2026,state_house:KS:78,False
+state_house,KS,78,Tim Lundberg,D,2026,called,,Robyn Essex,R,,,Robyn Essex,R,https://www.multistate.us/elections/results/kansas-2026,state_house:KS:78,True
 state_house,KS,79,Web Roth,R,2026,called,,Siobhan McIntyre,D,,,Web Roth,R,https://www.multistate.us/elections/results/kansas-2026,state_house:KS:79,False
 state_house,KS,80,Bill Rhiley,R,2026,called,,Lex Goff,I,,,Bill Rhiley,R,https://www.multistate.us/elections/results/kansas-2026,state_house:KS:80,False
 state_house,KS,81,Blake Carpenter,R,2026,called,,Kayden Bennett,D,,,Blake Carpenter,R,https://www.multistate.us/elections/results/kansas-2026,state_house:KS:81,False
@@ -810,7 +810,7 @@ state_senate,MI,28,Rashida Harrison,D,2026,called,,Julie L. DeRose,R,,,Sam Singh
 state_senate,MI,29,Abbie Groff-Blaszak,D,2026,called,,Brady A. Middleton,R,,,Winnie Brinks,D,https://www.multistate.us/elections/results/michigan-2026,state_senate:MI:29,False
 state_senate,MI,30,Carol Glanville,D,2026,called,,Mark Huizenga,R,,,Mark Huizenga,R,https://www.multistate.us/elections/results/michigan-2026,state_senate:MI:30,True
 state_senate,MI,31,John Wetzel,R,2026,called,,Chris Kleinjans,D,,,Roger Victory,R,https://www.multistate.us/elections/results/michigan-2026,state_senate:MI:31,False
-state_senate,MI,32,,,2026,uncalled,,Rebecca Amidon,D,,,Jon Bumstead,R,https://www.multistate.us/elections/results/michigan-2026,state_senate:MI:32,False
+state_senate,MI,32,Rebecca Amidon,D,2026,called,,Kim Cole,R,,,Jon Bumstead,R,https://www.multistate.us/elections/results/michigan-2026,state_senate:MI:32,True
 state_senate,MI,33,Gina Johnsen,R,2026,called,,Stan Opal,D,,,Rick Outman,R,https://www.multistate.us/elections/results/michigan-2026,state_senate:MI:33,False
 state_senate,MI,34,Roger Hauck,R,2026,called,,Tyler Landgraf,D,,,Roger Hauck,R,https://www.multistate.us/elections/results/michigan-2026,state_senate:MI:34,False
 state_senate,MI,35,Chedrick Greene,D,2026,called,,Jason Tunney,R,,,Chedrick Greene,D,https://www.multistate.us/elections/results/michigan-2026,state_senate:MI:35,False
@@ -844,7 +844,7 @@ state_house,MI,24,Ranjeev Puri,D,2026,called,,Allison Kay Fuller,R,,,Ranjeev Pur
 state_house,MI,25,Peter Herzberg,D,2026,called,,Dawn Udell,R,,,Peter Herzberg,D,https://www.multistate.us/elections/results/michigan-2026,state_house:MI:25,False
 state_house,MI,26,Dylan Wegela,D,2026,called,,Chris Dobis,R,,,Dylan Wegela,D,https://www.multistate.us/elections/results/michigan-2026,state_house:MI:26,False
 state_house,MI,27,Jaime Churches,D,2026,called,,Rylee Linting,R,,,Rylee Linting,R,https://www.multistate.us/elections/results/michigan-2026,state_house:MI:27,True
-state_house,MI,28,,,2026,uncalled,,Sherry A. Berecz,D,,,Jamie Thompson,R,https://www.multistate.us/elections/results/michigan-2026,state_house:MI:28,False
+state_house,MI,28,Sherry A. Berecz,D,2026,called,,Jamie Thompson,R,,,Jamie Thompson,R,https://www.multistate.us/elections/results/michigan-2026,state_house:MI:28,True
 state_house,MI,29,Jim DeSana,R,2026,called,,Darian Counts,D,,,Jim DeSana,R,https://www.multistate.us/elections/results/michigan-2026,state_house:MI:29,False
 state_house,MI,30,Will Bruck,R,2026,called,,Omar G. Ferdin,D,,,Will Bruck,R,https://www.multistate.us/elections/results/michigan-2026,state_house:MI:30,False
 state_house,MI,31,,,2026,uncalled,,Laura M. Perry,R,,,Reggie Miller,D,https://www.multistate.us/elections/results/michigan-2026,state_house:MI:31,False
@@ -873,10 +873,10 @@ state_house,MI,53,Brenda Carter,D,2026,called,,Melissa Schultz,R,,,Brenda Carter
 state_house,MI,54,Sarah Pounds,D,2026,called,,Roman Gaskey,R,,,Donni Steele,R,https://www.multistate.us/elections/results/michigan-2026,state_house:MI:54,True
 state_house,MI,55,Alex Hawkins,D,2026,called,,Mark Tisdel,R,,,Mark Tisdel,R,https://www.multistate.us/elections/results/michigan-2026,state_house:MI:55,True
 state_house,MI,56,Sharon MacDonell,D,2026,called,,Ashok Baddi,R,,,Sharon MacDonell,D,https://www.multistate.us/elections/results/michigan-2026,state_house:MI:56,False
-state_house,MI,57,,,2026,uncalled,,Thomas Turner,D,,,Tom Kuhn,R,https://www.multistate.us/elections/results/michigan-2026,state_house:MI:57,False
+state_house,MI,57,Thomas Turner,D,2026,called,,Tom Kuhn,R,,,Tom Kuhn,R,https://www.multistate.us/elections/results/michigan-2026,state_house:MI:57,True
 state_house,MI,58,Katrina Manetta,D,2026,called,,Ron Robinson,R,,,Ron Robinson,R,https://www.multistate.us/elections/results/michigan-2026,state_house:MI:58,True
 state_house,MI,59,Sylvia Grot,R,2026,called,,Jason Robbins,D,,,Doug Wozniak,R,https://www.multistate.us/elections/results/michigan-2026,state_house:MI:59,False
-state_house,MI,60,,,2026,uncalled,,Joe Aragona,R,,,Joe Aragona,R,https://www.multistate.us/elections/results/michigan-2026,state_house:MI:60,False
+state_house,MI,60,Joe Aragona,R,2026,called,,Amy Gray,D,,,Joe Aragona,R,https://www.multistate.us/elections/results/michigan-2026,state_house:MI:60,False
 state_house,MI,61,Denise Mentzer,D,2026,called,,Robert Wojtowicz,R,,,Denise Mentzer,D,https://www.multistate.us/elections/results/michigan-2026,state_house:MI:61,False
 state_house,MI,62,Alicia St. Germaine,R,2026,called,,Matt Smith,D,,,Alicia St. Germaine,R,https://www.multistate.us/elections/results/michigan-2026,state_house:MI:62,False
 state_house,MI,63,Pamela Hornberger,R,2026,called,,Jamie Sonneberger,D,,,Jay DeBoyer,R,https://www.multistate.us/elections/results/michigan-2026,state_house:MI:63,False
@@ -930,7 +930,7 @@ state_house,MI,110,Greg Markkanen,R,2026,called,,Brian Irizarry,D,,,Greg Markkan
 state_senate,MN,1,Mark Johnson,R,2026,called,,Bjorn Solberg,D,,,Mark Johnson,R,https://www.multistate.us/elections/results/minnesota-2026,state_senate:MN:1,False
 state_senate,MN,2,Steve Green,R,2026,called,,Dan R. Rogers,D,,,Steve Green,R,https://www.multistate.us/elections/results/minnesota-2026,state_senate:MN:2,False
 state_senate,MN,3,Grant Hauschild,D,2026,called,,Andrea Zupancich,R,,,Grant Hauschild,D,https://www.multistate.us/elections/results/minnesota-2026,state_senate:MN:3,False
-state_senate,MN,4,,,2026,uncalled,,Austin Peterson,R,,,Rob Kupec,D,https://www.multistate.us/elections/results/minnesota-2026,state_senate:MN:4,False
+state_senate,MN,4,Austin Peterson,R,2026,leading,,Rob Kupec,D,,,Rob Kupec,D,https://www.multistate.us/elections/results/minnesota-2026,state_senate:MN:4,True
 state_senate,MN,5,Mike Wiener,R,2026,called,,Skylar Fynboh,D,,,Paul Utke,R,https://www.multistate.us/elections/results/minnesota-2026,state_senate:MN:5,False
 state_senate,MN,6,Keri Heintzeman,R,2026,called,,Denise Slipy,D,,,Keri Heintzeman,R,https://www.multistate.us/elections/results/minnesota-2026,state_senate:MN:6,False
 state_senate,MN,7,Rob Farnsworth,R,2026,called,,Kim McLaughlin,D,,,Rob Farnsworth,R,https://www.multistate.us/elections/results/minnesota-2026,state_senate:MN:7,False
@@ -950,7 +950,7 @@ state_senate,MN,20,Steve Jacob,R,2026,called,,Jason Lohmann,D,,,Steve Drazkowski
 state_senate,MN,21,Chris Knoll,R,2026,called,,Caitlyn Sanow-Minett,D,,,Bill Weber,R,https://www.multistate.us/elections/results/minnesota-2026,state_senate:MN:21,False
 state_senate,MN,22,Jeremy Munson,R,2026,called,,Marisa Ulmen,D,,,Rich Draheim,R,https://www.multistate.us/elections/results/minnesota-2026,state_senate:MN:22,False
 state_senate,MN,23,Gene Dornink,R,2026,called,,Angie Hanson,D,,,Gene Dornink,R,https://www.multistate.us/elections/results/minnesota-2026,state_senate:MN:23,False
-state_senate,MN,24,,,2026,uncalled,,Simon Glaser,D,,,Carla Nelson,R,https://www.multistate.us/elections/results/minnesota-2026,state_senate:MN:24,False
+state_senate,MN,24,Simon Glaser,D,2026,called,,Nels Pierson,R,,,Carla Nelson,R,https://www.multistate.us/elections/results/minnesota-2026,state_senate:MN:24,True
 state_senate,MN,25,Liz Boldon,D,2026,called,,John Howie,R,,,Liz Boldon,D,https://www.multistate.us/elections/results/minnesota-2026,state_senate:MN:25,False
 state_senate,MN,26,Cherie Johnson,R,2026,called,,Jack Hedin,D,,,Jeremy Miller,R,https://www.multistate.us/elections/results/minnesota-2026,state_senate:MN:26,False
 state_senate,MN,27,Andrew Mathews,R,2026,called,,Brandon Van Dover,D,,,Andrew Mathews,R,https://www.multistate.us/elections/results/minnesota-2026,state_senate:MN:27,False
@@ -959,7 +959,7 @@ state_senate,MN,29,Mike Holmstrom,R,2026,called,,Louis McNutt,D,,,Mike Holmstrom
 state_senate,MN,30,Eric Lucero,R,2026,called,,Leah Temple,D,,,Eric Lucero,R,https://www.multistate.us/elections/results/minnesota-2026,state_senate:MN:30,False
 state_senate,MN,31,Cal Bahr,R,2026,called,,Gadisa Berkessa,D,,,Cal Bahr,R,https://www.multistate.us/elections/results/minnesota-2026,state_senate:MN:31,False
 state_senate,MN,32,Chris Ford,D,2026,called,,Michael Kreun,R,,,Michael Kreun,R,https://www.multistate.us/elections/results/minnesota-2026,state_senate:MN:32,True
-state_senate,MN,33,,,2026,uncalled,,Karin Housley,R,,,Karin Housley,R,https://www.multistate.us/elections/results/minnesota-2026,state_senate:MN:33,False
+state_senate,MN,33,Karin Housley,R,2026,leading,,Nat Smith,D,,,Karin Housley,R,https://www.multistate.us/elections/results/minnesota-2026,state_senate:MN:33,False
 state_senate,MN,34,John Hoffman,D,2026,called,,Karen Attia,R,,,John Hoffman,D,https://www.multistate.us/elections/results/minnesota-2026,state_senate:MN:34,False
 state_senate,MN,35,Angela Nelson,D,2026,called,,Jim Abeler,R,,,Jim Abeler,R,https://www.multistate.us/elections/results/minnesota-2026,state_senate:MN:35,True
 state_senate,MN,36,Heather Gustafson,D,2026,called,,Heidi Heino,R,,,Heather Gustafson,D,https://www.multistate.us/elections/results/minnesota-2026,state_senate:MN:36,False
@@ -980,7 +980,7 @@ state_senate,MN,50,Karla Hult,D,2026,called,,Owen Michaelson,R,,,Alice Mann,D,ht
 state_senate,MN,51,Simon Trautmann Cordova,D,2026,called,,Juline Birgersson,R,,,Melissa Wiklund,D,https://www.multistate.us/elections/results/minnesota-2026,state_senate:MN:51,False
 state_senate,MN,52,Liz Reyer,D,2026,called,,Brady O'Neil,R,,,Jim Carlson,D,https://www.multistate.us/elections/results/minnesota-2026,state_senate:MN:52,False
 state_senate,MN,53,Paul Cumings,D,2026,called,,Todd Podgorski,R,,,Matt Klein,D,https://www.multistate.us/elections/results/minnesota-2026,state_senate:MN:53,False
-state_senate,MN,54,,,2026,uncalled,,Rick Olson,D,,,Eric Pratt,R,https://www.multistate.us/elections/results/minnesota-2026,state_senate:MN:54,False
+state_senate,MN,54,Rick Olson,D,2026,called,,Ben Bakeberg,R,,,Eric Pratt,R,https://www.multistate.us/elections/results/minnesota-2026,state_senate:MN:54,True
 state_senate,MN,55,Lindsey Port,D,2026,called,,Van Holston,R,,,Lindsey Port,D,https://www.multistate.us/elections/results/minnesota-2026,state_senate:MN:55,False
 state_senate,MN,56,Erin Maye Quade,D,2026,called,,Raymond David Petersen,R,,,Erin Maye Quade,D,https://www.multistate.us/elections/results/minnesota-2026,state_senate:MN:56,False
 state_senate,MN,57,Zach Duckworth,R,2026,called,,Steven Schroer,D,,,Zach Duckworth,R,https://www.multistate.us/elections/results/minnesota-2026,state_senate:MN:57,False
@@ -1056,7 +1056,7 @@ state_house,MN,30A,Walter Hudson,R,2026,called,,Joey Smyth,D,,,Walter Hudson,R,h
 state_house,MN,30B,Chad Westberg,R,2026,called,,Keenan Gentry,D,,,Paul Novotny,R,https://www.multistate.us/elections/results/minnesota-2026,state_house:MN:30B,False
 state_house,MN,31A,Harry Niska,R,2026,called,,Brian Walker,D,,,Harry Niska,R,https://www.multistate.us/elections/results/minnesota-2026,state_house:MN:31A,False
 state_house,MN,31B,Peggy Scott,R,2026,called,,Jen Bloomquist,D,,,Peggy Scott,R,https://www.multistate.us/elections/results/minnesota-2026,state_house:MN:31B,False
-state_house,MN,32A,,,2026,uncalled,,Nolan West,R,,,Nolan West,R,https://www.multistate.us/elections/results/minnesota-2026,state_house:MN:32A,False
+state_house,MN,32A,Nolan West,R,2026,leading,,Amanda Matchett,D,,,Nolan West,R,https://www.multistate.us/elections/results/minnesota-2026,state_house:MN:32A,False
 state_house,MN,32B,Matt Norris,D,2026,called,,Leslie Larson,R,,,Matt Norris,D,https://www.multistate.us/elections/results/minnesota-2026,state_house:MN:32B,False
 state_house,MN,33A,Stacey Stout,R,2026,called,,Angela Thompson,D,,,Patti Anderson,R,https://www.multistate.us/elections/results/minnesota-2026,state_house:MN:33A,False
 state_house,MN,33B,Josiah Hill,D,2026,called,,Jessica L. Johnson,R,,,Josiah Hill,D,https://www.multistate.us/elections/results/minnesota-2026,state_house:MN:33B,False
@@ -1328,7 +1328,7 @@ state_house,MO,163,Cathy Loy,R,2026,called,,Brenna Barksdale,D,,,Cathy Loy,R,htt
 state_senate,NE,1,Bob Hallstrom,NP,holdover,holdover,,,,,,Bob Hallstrom,NP,,state_senate:NE:1,False
 state_senate,NE,2,Dean Helmick,NP,2026,called,,Caitlin Knutson,NP,,,Rob Clements,NP,https://www.multistate.us/elections/results/nebraska-2026,state_senate:NE:2,False
 state_senate,NE,3,Victor Rountree,NP,holdover,holdover,,,,,,Victor Rountree,NP,,state_senate:NE:3,False
-state_senate,NE,4,,,2026,uncalled,,Cindy Maxwell-Ostdiek,NP,,,Brad von Gillern,NP,https://www.multistate.us/elections/results/nebraska-2026,state_senate:NE:4,False
+state_senate,NE,4,Cindy Maxwell-Ostdiek,NP,2026,leading,,Brad von Gillern,NP,,,Brad von Gillern,NP,https://www.multistate.us/elections/results/nebraska-2026,state_senate:NE:4,False
 state_senate,NE,5,Margo Juarez,NP,holdover,holdover,,,,,,Margo Juarez,NP,,state_senate:NE:5,False
 state_senate,NE,6,Patrick Leahy,NP,2026,called,,Nate Ostdiek,NP,,,Machaela Cavanaugh,NP,https://www.multistate.us/elections/results/nebraska-2026,state_senate:NE:6,False
 state_senate,NE,7,Dunixi Guereca,NP,holdover,holdover,,,,,,Dunixi Guereca,NP,,state_senate:NE:7,False
@@ -1338,11 +1338,11 @@ state_senate,NE,10,Cindy Johnson,NP,2026,called,,Rebecca Rens,NP,,,Wendy DeBoer,
 state_senate,NE,11,Terrell McKinney,NP,holdover,holdover,,,,,,Terrell McKinney,NP,,state_senate:NE:11,False
 state_senate,NE,12,Christy Knorr,NP,2026,called,,Merv Riepe,NP,,,Merv Riepe,NP,https://www.multistate.us/elections/results/nebraska-2026,state_senate:NE:12,False
 state_senate,NE,13,Ashlei Spivey,NP,holdover,holdover,,,,,,Ashlei Spivey,NP,,state_senate:NE:13,False
-state_senate,NE,14,,,2026,uncalled,,Bill Bowes,NP,,,John Arch,NP,https://www.multistate.us/elections/results/nebraska-2026,state_senate:NE:14,False
+state_senate,NE,14,Bill Bowes,NP,2026,called,,SuAnn Witt,NP,,,John Arch,NP,https://www.multistate.us/elections/results/nebraska-2026,state_senate:NE:14,False
 state_senate,NE,15,Woody Wordekemper,NP,holdover,holdover,,,,,,Woody Wordekemper,NP,,state_senate:NE:15,False
 state_senate,NE,16,Ted Japp,NP,2026,called,,Cindy Chatt,NP,,,Ben Hansen,NP,https://www.multistate.us/elections/results/nebraska-2026,state_senate:NE:16,False
 state_senate,NE,17,Glen Meyer,NP,holdover,holdover,,,,,,Glen Meyer,NP,,state_senate:NE:17,False
-state_senate,NE,18,,,2026,uncalled,,Jess Goldoni,NP,,,Christy Armendariz,NP,https://www.multistate.us/elections/results/nebraska-2026,state_senate:NE:18,False
+state_senate,NE,18,Jess Goldoni,NP,2026,called,,Taylor Royal,NP,,,Christy Armendariz,NP,https://www.multistate.us/elections/results/nebraska-2026,state_senate:NE:18,False
 state_senate,NE,19,Robert Dover,NP,holdover,holdover,,,,,,Robert Dover,NP,,state_senate:NE:19,False
 state_senate,NE,20,John Fredrickson,NP,2026,called,,Chris Anderson,NP,,,John Fredrickson,NP,https://www.multistate.us/elections/results/nebraska-2026,state_senate:NE:20,False
 state_senate,NE,21,Beau Ballard,NP,holdover,holdover,,,,,,Beau Ballard,NP,,state_senate:NE:21,False
@@ -1360,7 +1360,7 @@ state_senate,NE,32,Mark Schoenrock,NP,2026,called,,Shay Smith,NP,,,Tom Brandt,NP
 state_senate,NE,33,Dan Lonowski,NP,holdover,holdover,,,,,,Dan Lonowski,NP,,state_senate:NE:33,False
 state_senate,NE,34,Loren Lippincott,NP,2026,called,,Ben Blodgett,NP,,,Loren Lippincott,NP,https://www.multistate.us/elections/results/nebraska-2026,state_senate:NE:34,False
 state_senate,NE,35,Dan Quick,NP,holdover,holdover,,,,,,Dan Quick,NP,,state_senate:NE:35,False
-state_senate,NE,36,,,2026,uncalled,,Rick Holdcroft,NP,,,Rick Holdcroft,NP,https://www.multistate.us/elections/results/nebraska-2026,state_senate:NE:36,False
+state_senate,NE,36,Rick Holdcroft,NP,2026,called,,Darin Tompkins,NP,,,Rick Holdcroft,NP,https://www.multistate.us/elections/results/nebraska-2026,state_senate:NE:36,False
 state_senate,NE,37,Stan Clouse,NP,holdover,holdover,,,,,,Stan Clouse,NP,,state_senate:NE:37,False
 state_senate,NE,38,Tim Anderson,NP,2026,called,,Janell Anderson Ehrke,NP,,,Dave Murman,NP,https://www.multistate.us/elections/results/nebraska-2026,state_senate:NE:38,False
 state_senate,NE,39,Tony Sorrentino,NP,holdover,holdover,,,,,,Tony Sorrentino,NP,,state_senate:NE:39,False
@@ -1638,26 +1638,26 @@ state_house,WI,96,Tara Johnson,D,2026,called,,Jim Green,R,,,Tara Johnson,D,https
 state_house,WI,97,Cindi Duchow,R,2026,called,,,,,,Cindi Duchow,R,https://www.multistate.us/elections/results/wisconsin-2026,state_house:WI:97,False
 state_house,WI,98,Jim Piwowarczyk,R,2026,called,,Matt Philibert,D,,,Jim Piwowarczyk,R,https://www.multistate.us/elections/results/wisconsin-2026,state_house:WI:98,False
 state_house,WI,99,Barbara Dittrich,R,2026,called,,,,,,Barbara Dittrich,R,https://www.multistate.us/elections/results/wisconsin-2026,state_house:WI:99,False
-us_house,IL,1,Jonathan Jackson,D,2026,called,70.3,Christian Maxwell,R,29.7,40.599999999999994,Jonathan L. Jackson,D,https://www.poliwave.com/us/live/midterms-2026/illinois/house,us_house:IL:1,False
-us_house,IL,2,Donna Miller,D,2026,called,72.8,Michael Noack,R,27.2,45.599999999999994,Robin L. Kelly,D,https://www.poliwave.com/us/live/midterms-2026/illinois/house,us_house:IL:2,False
-us_house,IL,3,Delia Ramirez,D,2026,called,75.8,Angel Oakley,R,24.2,51.599999999999994,Delia C. Ramirez,D,https://www.poliwave.com/us/live/midterms-2026/illinois/house,us_house:IL:3,False
-us_house,IL,4,Patty Garcia,D,2026,called,70.9,Lupe Castillo,R,16.3,54.60000000000001,"Jesús G. ""Chuy"" García",D,https://www.poliwave.com/us/live/midterms-2026/illinois/house,us_house:IL:4,False
-us_house,IL,5,Mike Quigley,D,2026,called,75.5,Tommy Hanson,R,24.5,51.0,Mike Quigley,D,https://www.poliwave.com/us/live/midterms-2026/illinois/house,us_house:IL:5,False
+us_house,IL,1,Jonathan L. Jackson,D,2026,called,71.3,Christian Maxwell,R,28.7,42.599999999999994,Jonathan L. Jackson,D,https://www.poliwave.com/us/live/midterms-2026/illinois/house,us_house:IL:1,False
+us_house,IL,2,Donna Miller,D,2026,called,73.0,Michael Scott Noack,R,27.0,46.0,Robin L. Kelly,D,https://www.poliwave.com/us/live/midterms-2026/illinois/house,us_house:IL:2,False
+us_house,IL,3,Delia Ramirez,D,2026,called,76.4,Angel Oakley,R,23.6,52.800000000000004,Delia C. Ramirez,D,https://www.poliwave.com/us/live/midterms-2026/illinois/house,us_house:IL:3,False
+us_house,IL,4,Patty Garcia,D,2026,called,70.9,Lupe Castillo,R,16.2,54.7,"Jesús G. ""Chuy"" García",D,https://www.poliwave.com/us/live/midterms-2026/illinois/house,us_house:IL:4,False
+us_house,IL,5,Mike Quigley,D,2026,called,75.6,Tommy Hanson,R,24.4,51.199999999999996,Mike Quigley,D,https://www.poliwave.com/us/live/midterms-2026/illinois/house,us_house:IL:5,False
 us_house,IL,6,Sean Casten,D,2026,called,62.5,Niki Conforti,R,37.5,25.0,Sean Casten,D,https://www.poliwave.com/us/live/midterms-2026/illinois/house,us_house:IL:6,False
-us_house,IL,7,La Shawn K. Ford,D,2026,called,89.0,Chad Koppie,R,11.0,78.0,Danny K. Davis,D,https://www.poliwave.com/us/live/midterms-2026/illinois/house,us_house:IL:7,False
-us_house,IL,8,Melissa Bean,D,2026,called,64.8,Jennifer Davis,R,35.2,29.599999999999994,Raja Krishnamoorthi,D,https://www.poliwave.com/us/live/midterms-2026/illinois/house,us_house:IL:8,False
-us_house,IL,9,Daniel Biss,D,2026,called,75.8,John Elleson,R,24.2,51.599999999999994,Janice D. Schakowsky,D,https://www.poliwave.com/us/live/midterms-2026/illinois/house,us_house:IL:9,False
+us_house,IL,7,La Shawn K. Ford,D,2026,called,89.1,Chad Koppie,R,10.9,78.19999999999999,Danny K. Davis,D,https://www.poliwave.com/us/live/midterms-2026/illinois/house,us_house:IL:7,False
+us_house,IL,8,Melissa L. Bean,D,2026,called,63.8,Jennifer Davis,R,36.2,27.599999999999994,Raja Krishnamoorthi,D,https://www.poliwave.com/us/live/midterms-2026/illinois/house,us_house:IL:8,False
+us_house,IL,9,Daniel Biss,D,2026,called,75.9,John Elleson,R,24.1,51.800000000000004,Janice D. Schakowsky,D,https://www.poliwave.com/us/live/midterms-2026/illinois/house,us_house:IL:9,False
 us_house,IL,10,Brad Schneider,D,2026,called,69.8,Carl Lambrecht,R,30.2,39.599999999999994,Bradley Scott Schneider,D,https://www.poliwave.com/us/live/midterms-2026/illinois/house,us_house:IL:10,False
-us_house,IL,11,Bill Foster,D,2026,called,65.4,Jeff Walter,R,34.6,30.800000000000004,Bill Foster,D,https://www.poliwave.com/us/live/midterms-2026/illinois/house,us_house:IL:11,False
+us_house,IL,11,Bill Foster,D,2026,called,64.2,Jeff Walter,R,35.8,28.400000000000006,Bill Foster,D,https://www.poliwave.com/us/live/midterms-2026/illinois/house,us_house:IL:11,False
 us_house,IL,12,Mike Bost,R,2026,called,69.7,Julie Fortier,D,30.3,39.400000000000006,Mike Bost,R,https://www.poliwave.com/us/live/midterms-2026/illinois/house,us_house:IL:12,False
 us_house,IL,13,Nikki Budzinski,D,2026,called,62.6,Jeff Wilson,R,37.4,25.200000000000003,Nikki Budzinski,D,https://www.poliwave.com/us/live/midterms-2026/illinois/house,us_house:IL:13,False
-us_house,IL,14,Lauren Underwood,D,2026,called,62.5,James Marter,R,37.5,25.0,Lauren Underwood,D,https://www.poliwave.com/us/live/midterms-2026/illinois/house,us_house:IL:14,False
+us_house,IL,14,Lauren Underwood,D,2026,called,62.6,James Marter,R,37.4,25.200000000000003,Lauren Underwood,D,https://www.poliwave.com/us/live/midterms-2026/illinois/house,us_house:IL:14,False
 us_house,IL,15,Mary Miller,R,2026,called,66.9,Jennifer Todd,D,33.1,33.800000000000004,Mary E. Miller,R,https://www.poliwave.com/us/live/midterms-2026/illinois/house,us_house:IL:15,False
 us_house,IL,16,Darin LaHood,R,2026,called,58.8,Paul Nolley,D,41.2,17.599999999999994,Darin LaHood,R,https://www.poliwave.com/us/live/midterms-2026/illinois/house,us_house:IL:16,False
-us_house,IL,17,Eric Sorensen,D,2026,called,60.1,Dillan Vancil,R,39.9,20.200000000000003,Eric Sorensen,D,https://www.poliwave.com/us/live/midterms-2026/illinois/house,us_house:IL:17,False
+us_house,IL,17,Eric Sorensen,D,2026,called,60.1,Dillan S. Vancil,R,39.9,20.200000000000003,Eric Sorensen,D,https://www.poliwave.com/us/live/midterms-2026/illinois/house,us_house:IL:17,False
 us_house,IN,1,Frank Mrvan,D,2026,called,63.0,Barb Regnitz,R,37.0,26.0,Frank J. Mrvan,D,https://www.poliwave.com/us/live/midterms-2026/indiana/house,us_house:IN:1,False
 us_house,IN,2,Rudy Yakym,R,2026,called,51.3,Jamee Decio,D,46.1,5.199999999999996,Rudy Yakym III,R,https://www.poliwave.com/us/live/midterms-2026/indiana/house,us_house:IN:2,False
-us_house,IN,3,Marlin Stutzman,R,2026,called,54.9,Kelly Thompson,D,45.1,9.799999999999997,Marlin A. Stutzman,R,https://www.poliwave.com/us/live/midterms-2026/indiana/house,us_house:IN:3,False
+us_house,IN,3,Marlin A. Stutzman,R,2026,called,54.9,Kelly Thompson,D,45.1,9.799999999999997,Marlin A. Stutzman,R,https://www.poliwave.com/us/live/midterms-2026/indiana/house,us_house:IN:3,False
 us_house,IN,4,Jim Baird,R,2026,called,54.2,Drew Cox,D,45.8,8.400000000000006,James R. Baird,R,https://www.poliwave.com/us/live/midterms-2026/indiana/house,us_house:IN:4,False
 us_house,IN,5,J.D. Ford,D,2026,called,51.7,Victoria Spartz,R,48.3,3.4000000000000057,Victoria Spartz,R,https://www.poliwave.com/us/live/midterms-2026/indiana/house,us_house:IN:5,True
 us_house,IN,6,Jefferson Shreve,R,2026,called,55.1,Cynthia Wirth,D,44.9,10.200000000000003,Jefferson Shreve,R,https://www.poliwave.com/us/live/midterms-2026/indiana/house,us_house:IN:6,False
@@ -1672,42 +1672,42 @@ us_house,KS,1,Tracey Mann,R,2026,called,59.4,Lauren Reinhold,D,37.9,21.5,Tracey 
 us_house,KS,2,Derek Schmidt,R,2026,called,51.3,Don Coover,D,45.0,6.299999999999997,Derek Schmidt,R,https://www.poliwave.com/us/live/midterms-2026/kansas/house,us_house:KS:2,False
 us_house,KS,3,Sharice L. Davids,D,2026,called,59.5,Eric Jenkins,R,38.4,21.1,Sharice Davids,D,https://www.poliwave.com/us/live/midterms-2026/kansas/house,us_house:KS:3,False
 us_house,KS,4,Ron Estes,R,2026,called,53.6,Katy Tyndell,D,44.1,9.5,Ron Estes,R,https://www.poliwave.com/us/live/midterms-2026/kansas/house,us_house:KS:4,False
-us_house,KY,1,James Comer,R,2026,reported,67.6,John Williams,D,32.4,35.199999999999996,James Comer,R,https://www.poliwave.com/us/live/midterms-2026/kentucky/house,us_house:KY:1,False
-us_house,KY,2,S. Guthrie,R,2026,reported,62.8,Megan Wingfield,D,35.1,27.699999999999996,Brett Guthrie,R,https://www.poliwave.com/us/live/midterms-2026/kentucky/house,us_house:KY:2,False
-us_house,KY,3,Morgan McGarvey,D,2026,reported,70.3,Maria Rodriguez,R,29.7,40.599999999999994,Morgan McGarvey,D,https://www.poliwave.com/us/live/midterms-2026/kentucky/house,us_house:KY:3,False
-us_house,KY,4,Ed Gallrein,R,2026,reported,54.2,Melissa Claire Strange,D,40.9,13.300000000000004,Thomas Massie,R,https://www.poliwave.com/us/live/midterms-2026/kentucky/house,us_house:KY:4,False
-us_house,KY,5,Hal Rogers,R,2026,reported,71.1,Ned Pillersdorf,D,25.3,45.8,Harold Rogers,R,https://www.poliwave.com/us/live/midterms-2026/kentucky/house,us_house:KY:5,False
-us_house,KY,6,Zach Dembo,D,2026,reported,52.7,Ralph Alvarado,R,43.3,9.400000000000006,Andy Barr,R,https://www.poliwave.com/us/live/midterms-2026/kentucky/house,us_house:KY:6,True
+us_house,KY,1,James Comer,R,2026,called,67.6,John Williams,D,32.4,35.199999999999996,James Comer,R,https://www.poliwave.com/us/live/midterms-2026/kentucky/house,us_house:KY:1,False
+us_house,KY,2,S. Guthrie,R,2026,called,62.8,Megan Wingfield,D,35.1,27.699999999999996,Brett Guthrie,R,https://www.poliwave.com/us/live/midterms-2026/kentucky/house,us_house:KY:2,False
+us_house,KY,3,Morgan McGarvey,D,2026,called,70.3,Maria Rodriguez,R,29.7,40.599999999999994,Morgan McGarvey,D,https://www.poliwave.com/us/live/midterms-2026/kentucky/house,us_house:KY:3,False
+us_house,KY,4,Ed Gallrein,R,2026,called,54.2,Melissa Claire Strange,D,40.9,13.300000000000004,Thomas Massie,R,https://www.poliwave.com/us/live/midterms-2026/kentucky/house,us_house:KY:4,False
+us_house,KY,5,Hal Rogers,R,2026,called,71.1,Ned Pillersdorf,D,25.3,45.8,Harold Rogers,R,https://www.poliwave.com/us/live/midterms-2026/kentucky/house,us_house:KY:5,False
+us_house,KY,6,Zach Dembo,D,2026,called,52.7,Ralph Alvarado,R,43.3,9.400000000000006,Andy Barr,R,https://www.poliwave.com/us/live/midterms-2026/kentucky/house,us_house:KY:6,True
 us_house,MI,1,Jack Bergman,R,2026,called,53.8,Callie Barr,D,44.2,9.599999999999994,Jack Bergman,R,https://www.poliwave.com/us/live/midterms-2026/michigan/house,us_house:MI:1,False
-us_house,MI,2,John Moolenaar,R,2026,called,61.5,Ben Ambrose,D,37.0,24.5,John R. Moolenaar,R,https://www.poliwave.com/us/live/midterms-2026/michigan/house,us_house:MI:2,False
+us_house,MI,2,John Moolenaar,R,2026,called,61.4,Ben Ambrose,D,36.9,24.5,John R. Moolenaar,R,https://www.poliwave.com/us/live/midterms-2026/michigan/house,us_house:MI:2,False
 us_house,MI,3,Hillary Scholten,D,2026,called,57.1,Terri DeBoer,R,41.4,15.700000000000003,Hillary J. Scholten,D,https://www.poliwave.com/us/live/midterms-2026/michigan/house,us_house:MI:3,False
-us_house,MI,4,Sean McCann,D,2026,leading,50.1,Bill Huizenga,R,48.3,1.8000000000000043,Bill Huizenga,R,https://www.poliwave.com/us/live/midterms-2026/michigan/house,us_house:MI:4,True
-us_house,MI,5,Tim Walberg,R,2026,called,59.1,Christian Vukasovich,D,38.6,20.5,Tim Walberg,R,https://www.poliwave.com/us/live/midterms-2026/michigan/house,us_house:MI:5,False
+us_house,MI,4,Sean McCann,D,2026,called,50.1,Bill Huizenga,R,48.3,1.8000000000000043,Bill Huizenga,R,https://www.poliwave.com/us/live/midterms-2026/michigan/house,us_house:MI:4,True
+us_house,MI,5,Tim Walberg,R,2026,called,59.1,Christian Vukasovich,D,38.5,20.6,Tim Walberg,R,https://www.poliwave.com/us/live/midterms-2026/michigan/house,us_house:MI:5,False
 us_house,MI,6,Debbie Dingell,D,2026,called,67.4,Heather Smiley,R,30.3,37.10000000000001,Debbie Dingell,D,https://www.poliwave.com/us/live/midterms-2026/michigan/house,us_house:MI:6,False
-us_house,MI,7,William Lawrence,D,2026,leading,51.0,Tom Barrett,R,47.7,3.299999999999997,Tom Barrett,R,https://www.poliwave.com/us/live/midterms-2026/michigan/house,us_house:MI:7,True
-us_house,MI,8,Kristen McDonald Rivet,D,2026,called,55.5,Thomas Smith,R,41.9,13.600000000000001,Kristen McDonald Rivet,D,https://www.poliwave.com/us/live/midterms-2026/michigan/house,us_house:MI:8,False
+us_house,MI,7,William Lawrence,D,2026,called,51.0,Tom Barrett,R,47.7,3.299999999999997,Tom Barrett,R,https://www.poliwave.com/us/live/midterms-2026/michigan/house,us_house:MI:7,True
+us_house,MI,8,Kristen McDonald Rivet,D,2026,called,55.5,Thomas J. Smith,R,41.9,13.600000000000001,Kristen McDonald Rivet,D,https://www.poliwave.com/us/live/midterms-2026/michigan/house,us_house:MI:8,False
 us_house,MI,9,Lisa McClain,R,2026,called,62.6,Ray Pooley,D,34.7,27.9,Lisa C. McClain,R,https://www.poliwave.com/us/live/midterms-2026/michigan/house,us_house:MI:9,False
 us_house,MI,10,Christina Bertrand Hines,D,2026,called,52.4,Michael Bouchard,R,45.2,7.199999999999996,John James,R,https://www.poliwave.com/us/live/midterms-2026/michigan/house,us_house:MI:10,True
 us_house,MI,11,Jeremy Moss,D,2026,called,60.9,Ethan Baker,R,36.8,24.1,Haley M. Stevens,D,https://www.poliwave.com/us/live/midterms-2026/michigan/house,us_house:MI:11,False
-us_house,MI,12,Rashida Tlaib,D,2026,called,76.0,James Hooper,R,21.2,54.8,Rashida Tlaib,D,https://www.poliwave.com/us/live/midterms-2026/michigan/house,us_house:MI:12,False
+us_house,MI,12,Rashida Tlaib,D,2026,called,75.8,James D. Hooper,R,21.2,54.599999999999994,Rashida Tlaib,D,https://www.poliwave.com/us/live/midterms-2026/michigan/house,us_house:MI:12,False
 us_house,MI,13,Donavan McKinney,D,2026,called,76.3,T.P. Nykoriak,R,19.8,56.5,Shri Thanedar,D,https://www.poliwave.com/us/live/midterms-2026/michigan/house,us_house:MI:13,False
-us_house,MN,1,Jake Johnson,D,2026,leading,50.0,Brad Finstad,R,49.9,0.10000000000000142,Brad Finstad,R,https://www.poliwave.com/us/live/midterms-2026/minnesota/house,us_house:MN:1,True
+us_house,MN,1,Jake Johnson,D,2026,leading,50.0,Brad Finstad,R,49.9,0.10000000000000142,Brad Finstad,R,https://www.mprnews.org/story/2026/11/05/minnesota-1st-congressional-district-republican-rep-brad-finstad-calls-for-recount,us_house:MN:1,True
 us_house,MN,2,Matt Little,D,2026,called,57.1,Eric Pratt,R,42.8,14.300000000000004,Angie Craig,D,https://www.poliwave.com/us/live/midterms-2026/minnesota/house,us_house:MN:2,False
 us_house,MN,3,Kelly Morrison,D,2026,called,64.0,Tyler Bass,R,35.8,28.200000000000003,Kelly Morrison,D,https://www.poliwave.com/us/live/midterms-2026/minnesota/house,us_house:MN:3,False
 us_house,MN,4,Betty McCollum,D,2026,called,73.1,Paul Wikstrom,R,26.8,46.3,Betty McCollum,D,https://www.poliwave.com/us/live/midterms-2026/minnesota/house,us_house:MN:4,False
 us_house,MN,5,Ilhan Omar,D,2026,called,76.5,John Nagel,R,16.2,60.3,Ilhan Omar,D,https://www.poliwave.com/us/live/midterms-2026/minnesota/house,us_house:MN:5,False
 us_house,MN,6,Tom Emmer,R,2026,called,55.7,Doug Chapin,D,44.2,11.5,Tom Emmer,R,https://www.poliwave.com/us/live/midterms-2026/minnesota/house,us_house:MN:6,False
 us_house,MN,7,Michelle Fischbach,R,2026,called,64.9,Erik Osberg,D,35.0,29.900000000000006,Michelle Fischbach,R,https://www.poliwave.com/us/live/midterms-2026/minnesota/house,us_house:MN:7,False
-us_house,MN,8,Pete Stauber,R,2026,called,53.1,Trina Swanson,D,46.8,6.300000000000004,Pete Stauber,R,https://www.poliwave.com/us/live/midterms-2026/minnesota/house,us_house:MN:8,False
-us_house,MO,1,Wesley Bell,D,2026,reported,81.5,Paul Berry III,R,13.9,67.6,Wesley Bell,D,https://www.poliwave.com/us/live/midterms-2026/missouri/house,us_house:MO:1,False
-us_house,MO,2,Fred Wellman,D,2026,reported,51.1,Ann Wagner,R,46.2,4.899999999999999,Ann Wagner,R,https://www.poliwave.com/us/live/midterms-2026/missouri/house,us_house:MO:2,True
-us_house,MO,3,Bob Onder,R,2026,reported,52.9,Bethany E. Mann,D,44.4,8.5,"Robert F. Onder, Jr.",R,https://www.poliwave.com/us/live/midterms-2026/missouri/house,us_house:MO:3,False
-us_house,MO,4,Mark Alford,R,2026,reported,61.2,Jordan Herrera,D,35.9,25.300000000000004,Mark Alford,R,https://www.poliwave.com/us/live/midterms-2026/missouri/house,us_house:MO:4,False
-us_house,MO,5,Emanuel Cleaver II,D,2026,reported,69.5,Rick Brattin,R,28.1,41.4,Emanuel Cleaver,D,https://www.poliwave.com/us/live/midterms-2026/missouri/house,us_house:MO:5,False
-us_house,MO,6,Chris Stigall,R,2026,reported,58.7,Josh Smead,D,39.0,19.700000000000003,Sam Graves,R,https://www.poliwave.com/us/live/midterms-2026/missouri/house,us_house:MO:6,False
-us_house,MO,7,Eric W. Burlison,R,2026,reported,62.2,Missi Hesketh,D,35.4,26.800000000000004,Eric Burlison,R,https://www.poliwave.com/us/live/midterms-2026/missouri/house,us_house:MO:7,False
-us_house,MO,8,Jason T. Smith,R,2026,reported,67.7,Chris Reichard,D,29.2,38.5,Jason Smith,R,https://www.poliwave.com/us/live/midterms-2026/missouri/house,us_house:MO:8,False
-us_house,NE,1,Mike Flood,R,2026,leading,50.3,Chris Backemeyer,D,46.2,4.099999999999994,Mike Flood,R,https://www.poliwave.com/us/live/midterms-2026/nebraska/house,us_house:NE:1,False
+us_house,MN,8,Pete Stauber,R,2026,called,53.0,Trina Swanson,D,46.9,6.100000000000001,Pete Stauber,R,https://www.poliwave.com/us/live/midterms-2026/minnesota/house,us_house:MN:8,False
+us_house,MO,1,Wesley Bell,D,2026,called,81.5,Paul Berry III,R,13.9,67.6,Wesley Bell,D,https://www.poliwave.com/us/live/midterms-2026/missouri/house,us_house:MO:1,False
+us_house,MO,2,Fred Wellman,D,2026,called,51.1,Ann Wagner,R,46.2,4.899999999999999,Ann Wagner,R,https://www.poliwave.com/us/live/midterms-2026/missouri/house,us_house:MO:2,True
+us_house,MO,3,Bob Onder,R,2026,called,52.9,Bethany E. Mann,D,44.4,8.5,"Robert F. Onder, Jr.",R,https://www.poliwave.com/us/live/midterms-2026/missouri/house,us_house:MO:3,False
+us_house,MO,4,Mark Alford,R,2026,called,61.2,Jordan Herrera,D,35.9,25.300000000000004,Mark Alford,R,https://www.poliwave.com/us/live/midterms-2026/missouri/house,us_house:MO:4,False
+us_house,MO,5,Emanuel Cleaver II,D,2026,called,69.5,Rick Brattin,R,28.1,41.4,Emanuel Cleaver,D,https://www.poliwave.com/us/live/midterms-2026/missouri/house,us_house:MO:5,False
+us_house,MO,6,Chris Stigall,R,2026,called,58.7,Josh Smead,D,39.0,19.700000000000003,Sam Graves,R,https://www.poliwave.com/us/live/midterms-2026/missouri/house,us_house:MO:6,False
+us_house,MO,7,Eric W. Burlison,R,2026,called,62.2,Missi Hesketh,D,35.4,26.800000000000004,Eric Burlison,R,https://www.poliwave.com/us/live/midterms-2026/missouri/house,us_house:MO:7,False
+us_house,MO,8,Jason T. Smith,R,2026,called,67.7,Chris Reichard,D,29.2,38.5,Jason Smith,R,https://www.poliwave.com/us/live/midterms-2026/missouri/house,us_house:MO:8,False
+us_house,NE,1,Mike Flood,R,2026,called,50.3,Chris Backemeyer,D,46.2,4.099999999999994,Mike Flood,R,https://www.klkntv.com/mike-flood-wins-first-congressional-district-race-backemeyer-concedes/,us_house:NE:1,False
 us_house,NE,2,Denise Powell,D,2026,called,56.4,Brinker Harding,R,41.0,15.399999999999999,Don Bacon,R,https://www.poliwave.com/us/live/midterms-2026/nebraska/house,us_house:NE:2,True
 us_house,NE,3,Adrian Smith,R,2026,called,71.0,Becky Stille,D,20.0,51.0,Adrian Smith,R,https://www.poliwave.com/us/live/midterms-2026/nebraska/house,us_house:NE:3,False
 us_house,OH,1,Greg Landsman,D,2026,called,54.4,Eric Conroy,R,42.9,11.5,Greg Landsman,D,https://www.poliwave.com/us/live/midterms-2026/ohio/house,us_house:OH:1,False
@@ -1716,9 +1716,9 @@ us_house,OH,3,Joyce Beatty,D,2026,called,77.2,Cleophus Dulaney,R,22.8,54.4000000
 us_house,OH,4,Jim Jordan,R,2026,called,64.5,Joshua D. Kolasinski,D,31.3,33.2,Jim Jordan,R,https://www.poliwave.com/us/live/midterms-2026/ohio/house,us_house:OH:4,False
 us_house,OH,5,Bob Latta,R,2026,called,54.3,Brian A. Shaver,D,42.6,11.699999999999996,Robert E. Latta,R,https://www.poliwave.com/us/live/midterms-2026/ohio/house,us_house:OH:5,False
 us_house,OH,6,Michael A. Rulli,R,2026,called,60.4,Elizabeth Kirtley,D,39.6,20.799999999999997,Michael A. Rulli,R,https://www.poliwave.com/us/live/midterms-2026/ohio/house,us_house:OH:6,False
-us_house,OH,7,Brian Poindexter,D,2026,called,54.9,Max Miller,R,45.1,9.799999999999997,Max L. Miller,R,https://www.poliwave.com/us/live/midterms-2026/ohio/house,us_house:OH:7,True
+us_house,OH,7,Brian Poindexter,D,2026,called,54.9,Max Miller,R,45.0,9.899999999999999,Max L. Miller,R,https://www.poliwave.com/us/live/midterms-2026/ohio/house,us_house:OH:7,True
 us_house,OH,8,Warren Davidson,R,2026,called,52.1,Vanessa Enoch,D,47.9,4.200000000000003,Warren Davidson,R,https://www.poliwave.com/us/live/midterms-2026/ohio/house,us_house:OH:8,False
-us_house,OH,9,Marcy Kaptur,D,2026,called,52.7,Derek Merrin,R,47.3,5.400000000000006,Marcy Kaptur,D,https://www.poliwave.com/us/live/midterms-2026/ohio/house,us_house:OH:9,False
+us_house,OH,9,Marcy Kaptur,D,2026,called,52.7,Derek Merrin,R,47.2,5.5,Marcy Kaptur,D,https://www.poliwave.com/us/live/midterms-2026/ohio/house,us_house:OH:9,False
 us_house,OH,10,Kristina Knickerbocker,D,2026,called,49.3,Mike Turner,R,47.7,1.5999999999999943,Michael R. Turner,R,https://www.poliwave.com/us/live/midterms-2026/ohio/house,us_house:OH:10,True
 us_house,OH,11,Shontel M. Brown,D,2026,called,83.5,Mike Kirchner,R,16.5,67.0,Shontel M. Brown,D,https://www.poliwave.com/us/live/midterms-2026/ohio/house,us_house:OH:11,False
 us_house,OH,12,Troy Balderson,R,2026,called,59.4,Jerrad Christian,D,40.6,18.799999999999997,Troy Balderson,R,https://www.poliwave.com/us/live/midterms-2026/ohio/house,us_house:OH:12,False
@@ -1733,7 +1733,7 @@ us_house,WI,5,Scott Fitzgerald,R,2026,called,60.0,Andrew Beck,D,40.0,20.0,Scott 
 us_house,WI,6,Glenn Grothman,R,2026,called,52.8,Brad Smith,D,43.3,9.5,Glenn Grothman,R,https://www.poliwave.com/us/live/midterms-2026/wisconsin/house,us_house:WI:6,False
 us_house,WI,7,Michael Alfonso,R,2026,called,56.6,Fred Clark,D,43.4,13.200000000000003,Thomas P. Tiffany,R,https://www.poliwave.com/us/live/midterms-2026/wisconsin/house,us_house:WI:7,False
 us_house,WI,8,Tony Wied,R,2026,called,53.9,Rick Crosson,D,46.1,7.799999999999997,Tony Wied,R,https://www.poliwave.com/us/live/midterms-2026/wisconsin/house,us_house:WI:8,False
-us_senate,IL,class2,Juliana Stratton,D,2026,called,60.8,Don Tracy,R,37.6,23.199999999999996,Richard J. Durbin,D,https://www.poliwave.com/us/live/midterms-2026/senate,us_senate:IL:class2,False
+us_senate,IL,class2,Juliana Stratton,D,2026,called,61.0,Don Tracy,R,37.4,23.6,Richard J. Durbin,D,https://www.poliwave.com/us/live/midterms-2026/senate,us_senate:IL:class2,False
 us_senate,IL,class3,Tammy Duckworth,D,holdover,holdover,,,,,,Tammy Duckworth,D,,us_senate:IL:class3,False
 us_senate,IN,class3,Todd Young,R,holdover,holdover,,,,,,Todd Young,R,,us_senate:IN:class3,False
 us_senate,IN,class1,Jim Banks,R,holdover,holdover,,,,,,Jim Banks,R,,us_senate:IN:class1,False
@@ -1751,18 +1751,18 @@ us_senate,MO,class3,Eric Schmitt,R,holdover,holdover,,,,,,Eric Schmitt,R,,us_sen
 us_senate,MO,class1,Josh Hawley,R,holdover,holdover,,,,,,Josh Hawley,R,,us_senate:MO:class1,False
 us_senate,NE,class2,Pete Ricketts,R,2026,called,50.4,Dan Osborn,I,,,Pete Ricketts,R,https://www.poliwave.com/us/live/midterms-2026/senate,us_senate:NE:class2,False
 us_senate,NE,class1,Deb Fischer,R,holdover,holdover,,,,,,Deb Fischer,R,,us_senate:NE:class1,False
-us_senate,OH,class3,Sherrod Brown,D,2026,called,50.0,Jon Husted,R,45.2,4.799999999999997,Jon Husted,R,https://www.poliwave.com/us/live/midterms-2026/senate,us_senate:OH:class3,True
+us_senate,OH,class3,Sherrod Brown,D,2026,called,50.0,Jon Husted,R,45.1,4.899999999999999,Jon Husted,R,https://www.poliwave.com/us/live/midterms-2026/senate,us_senate:OH:class3,True
 us_senate,OH,class1,Bernie Moreno,R,holdover,holdover,,,,,,Bernie Moreno,R,,us_senate:OH:class1,False
 us_senate,WI,class3,Ron Johnson,R,holdover,holdover,,,,,,Ron Johnson,R,,us_senate:WI:class3,False
 us_senate,WI,class1,Tammy Baldwin,D,holdover,holdover,,,,,,Tammy Baldwin,D,,us_senate:WI:class1,False
-governor,IL,,JB Pritzker,D,2026,called,59.7,Darren Bailey,R,37.0,22.700000000000003,J. B. Pritzker,D,https://www.poliwave.com/us/live/midterms-2026/governors,governor:IL:,False
+governor,IL,,JB Pritzker,D,2026,called,59.8,Darren Bailey,R,36.8,23.0,J. B. Pritzker,D,https://www.poliwave.com/us/live/midterms-2026/governors,governor:IL:,False
 governor,IN,,Mike Braun,R,holdover,holdover,,,,,,Mike Braun,R,,governor:IN:,False
 governor,IA,,Rob Sand,D,2026,called,55.4,Zach Lahn,R,44.4,11.0,Kim Reynolds,R,https://www.poliwave.com/us/live/midterms-2026/governors,governor:IA:,True
-governor,KS,,Cindy Holscher,D,2026,leading,50.3,Ty Masterson,R,49.7,0.5999999999999943,Laura Kelly,D,https://www.wibw.com/2026/11/04/holscher-claims-victory-kansas-gubernatorial-race-thats-still-too-close-call/,governor:KS:,False
+governor,KS,,Cindy Holscher,D,2026,leading,50.3,Ty Masterson,R,49.7,0.5999999999999943,Laura Kelly,D,https://jcpost.com/posts/656e6fcc-4d8d-4e5f-a076-a581300632e6,governor:KS:,False
 governor,KY,,Andy Beshear,D,holdover,holdover,,,,,,Andy Beshear,D,,governor:KY:,False
 governor,MI,,Jocelyn Benson,D,2026,called,54.5,John James,R,43.8,10.700000000000003,Gretchen Whitmer,D,https://www.poliwave.com/us/live/midterms-2026/governors,governor:MI:,False
 governor,MN,,Amy Klobuchar,D,2026,called,55.5,Lisa Demuth,R,42.6,12.899999999999999,Tim Walz,D,https://www.poliwave.com/us/live/midterms-2026/governors,governor:MN:,False
 governor,MO,,Mike Kehoe,R,holdover,holdover,,,,,,Mike Kehoe,R,,governor:MO:,False
-governor,NE,,Jim Pillen,R,2026,leading,50.8,Lynne Walz,D,42.2,8.599999999999994,Jim Pillen,R,https://www.poliwave.com/us/live/midterms-2026/governors,governor:NE:,False
+governor,NE,,Jim Pillen,R,2026,called,50.8,Lynne Walz,D,42.2,8.599999999999994,Jim Pillen,R,https://www.poliwave.com/us/live/midterms-2026/governors,governor:NE:,False
 governor,OH,,Amy Acton,D,2026,called,52.3,Vivek Ramaswamy,R,44.4,7.899999999999999,Mike DeWine,R,https://www.poliwave.com/us/live/midterms-2026/governors,governor:OH:,True
 governor,WI,,David Crowley,D,2026,called,,Tom Tiffany,R,,,Tony Evers,D,https://www.wpr.org/news/wisconsin-assembly-senate-election-results-2026,governor:WI:,False
